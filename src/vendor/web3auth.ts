@@ -28,7 +28,7 @@ export async function initModal({ clientId }: { clientId: string }) {
   const { PhantomAdapter } = web3AuthPhantomAdapter;
 
   // Create Web3Auth Instance
-  const name = 'My App Name';
+  const name = 'coindotfun';
 
   const chainConfig: CustomChainConfig = {
     blockExplorerUrl: 'https://explorer.solana.com',
@@ -51,7 +51,7 @@ export async function initModal({ clientId }: { clientId: string }) {
     privateKeyProvider,
     uiConfig: {
       appName: name,
-      loginMethodsOrder: ['google'],
+      loginMethodsOrder: ['twitter', 'google', 'facebook', 'discord'],
       defaultLanguage: 'en',
       modalZIndex: '2147483647',
       logoLight: 'https://web3auth.io/images/w3a-L-Favicon-1.svg',
