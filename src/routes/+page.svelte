@@ -4,6 +4,7 @@
   import { enhance } from '$app/forms';
   import Collapsible from '$lib/components/Collapsible.svelte';
   import { Button } from '$lib/components/ui/button';
+  import { Buffer } from 'buffer';
   import { type SolanaContext } from '$lib/solana';
   import { type UserContext } from '$lib/user';
 
