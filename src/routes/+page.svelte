@@ -37,7 +37,7 @@
         const msg = Buffer.from('Test Signing Message ', 'utf8');
         const result = await $user?.wallet?.signMessage(msg);
         if (!result) return console.error(`No result: ${result}.`);
-        console.log({ result: Buffer.from(result).toString('hex') });
+        // console.log({ result: Buffer.from(result).toString('hex') });
       }}
       type="button">Sign Message</Button
     >
