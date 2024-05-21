@@ -66,6 +66,17 @@
 
     --ring: 240 4.9% 83.9%;
   }
+
+  body,
+  html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text inside the container */
+    @apply bg-background text-foreground;
+  }
 }
 
 @layer base {
