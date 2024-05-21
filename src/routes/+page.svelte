@@ -22,9 +22,15 @@
   <p>You are on: {url}</p>
   <p>Solana block height is {$solana?.block}</p>
 
-  <Collapsible title="User details">
-    <pre>{JSON.stringify($user, null, 2)}</pre>
-  </Collapsible>
+  <div class="max-w-lg">
+    <Collapsible title="User details">
+      <div
+        class="scrollbar-visible h-48 w-auto overflow-auto overflow-x-auto border"
+      >
+        <pre class="text-xs">{JSON.stringify($user, null, 2)}</pre>
+      </div>
+    </Collapsible>
+  </div>
 
   {#if $user?.wallet}
     {#await $user?.wallet.requestAccounts() then accounts}
@@ -37,24 +43,19 @@
           const msg = Buffer.from('Test Signing Message ', 'utf8');
           const result = await $user?.wallet?.signMessage(msg);
           if (!result) return console.error(`No result: ${result}.`);
-          // console.log({ result: Buffer.from(result).toString('hex') });
         }}
         type="button">Sign Message</Button
       >
     </p>
   {/if}
 
-  {#if !$user.isConnected}
-    <Button on:click={() => $user?.connect?.()} type="button">Web3Auth</Button>
-  {:else}
+  {#if $user.isConnected}
     <Button on:click={() => $user?.disconnect?.()} type="button">
       Disconnect
     </Button>
+  {:else}
+    <Button on:click={() => $user?.connect?.()} type="button">Log In</Button>
   {/if}
-
-  <p>
-    Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation
-  </p>
 
   <Collapsible title="All users">
     <pre>{JSON.stringify(users, null, 2)}</pre>
