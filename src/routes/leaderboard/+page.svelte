@@ -1,3 +1,3 @@
 <div>
-  <h1>Leaderboard</h1>
+  <h1>leaderboard</h1>
 </div>

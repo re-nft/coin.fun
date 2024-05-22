@@ -1,3 +1,3 @@
 <div>
-  <h1>Pointonomics</h1>
+  <h1>pointonomics</h1>
 </div>
