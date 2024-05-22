@@ -6,6 +6,10 @@ export type { UserAuthInfo } from '@web3auth/base';
 export type { Web3Auth } from '@web3auth/modal';
 export type { SolanaWallet } from '@web3auth/solana-provider';
 
+// TODO: SAPPHIRE_DEVNET -> SAPPHIRE_PROD for prod launch
+// so we need to abstract the Environment here
+// this can be tied up to DB_URL. the URL will contain 'password' if local env?
+
 export async function initModal({ clientId }: { clientId: string }) {
   const [
     web3AuthBase,
