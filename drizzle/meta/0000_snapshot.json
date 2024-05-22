@@ -1,5 +1,5 @@
 {
-  "id": "d91ceec6-e7d2-42ba-b081-2520984bf42c",
+  "id": "a5e6bd32-720a-492e-9390-11a54bd08a83",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "6",
   "dialect": "postgresql",
@@ -24,7 +24,37 @@
           "name": "email",
           "type": "text",
           "primaryKey": false,
-          "notNull": false
+          "notNull": true
+        },
+        "profileImage": {
+          "name": "profileImage",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "typeOfLogin": {
+          "name": "typeOfLogin",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "aggregateVerifier": {
+          "name": "aggregateVerifier",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "verifier": {
+          "name": "verifier",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        },
+        "verifierId": {
+          "name": "verifierId",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
         },
         "created_at": {
           "name": "created_at",

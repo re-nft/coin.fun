@@ -1,0 +1,127 @@
+{
+    "accounts": [
+      "EFJocWiUfsLQwS71XzBrq52n7For5MGmVJn1SQkAZ7Bo"
+    ],
+    "info": {
+      "appState": "",
+      "email": "naz@renft.io",
+      "aggregateVerifier": "web3auth-google-sapphire-devnet",
+      "name": "Naz Vavryk",
+      "profileImage": "https://lh3.googleusercontent.com/a/ACg8ocIbFK7-0rtqt40CfpRXMlI-rWUrKhZwekn2hOfp7R3bFXSMEg=s96-c",
+      "typeOfLogin": "google",
+      "verifier": "web3auth",
+      "verifierId": "naz@renft.io",
+      "dappShare": "",
+      "oAuthIdToken": "",
+      "oAuthAccessToken": "",
+      "isMfaEnabled": false,
+      "idToken": "eyJhbGciOiJFUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6IlRZT2dnXy01RU9FYmxhWS1WVlJZcVZhREFncHRuZktWNDUzNU1aUEMwdzAifQ.eyJpYXQiOjE3MTYzODA0OTksImF1ZCI6IkJOWG40MFYwT1BpVzdzRFhZWVlxX0hhZFhpMUtXOUM3c3B0djY2aHRSbnM2OXcxRU9ocGRFR2o0WFRjaUtpOENFLU1WUXRubXZsRC1vZFd6T0tqdzdqcyIsIm5vbmNlIjoiMDM1M2Q4NjU4OGYzNzEwNjllNWI0YTgxMDM4OTAwZjQ5ZjhmZWM0YzZmZjBiYmUyM2M2NjQzOTc1MDliZmM0NmIwIiwiaXNzIjoiaHR0cHM6Ly9hcGktYXV0aC53ZWIzYXV0aC5pbyIsIndhbGxldHMiOlt7InB1YmxpY19rZXkiOiJjNGQyMzEyOTA1YjdmOGM4YWIzNzFhZmVkYTBkYWYwMWY4NWRiNTk2NjFhMzQ2YmYzZGEzNzA3OGY4MDQ5OWZhIiwidHlwZSI6IndlYjNhdXRoX2FwcF9rZXkiLCJjdXJ2ZSI6ImVkMjU1MTkifSx7InB1YmxpY19rZXkiOiI0ZGIxZDlkNGRmNGQyYzAxZGEwOTcxZGJlMGJiZjlkYmIyYjNiNTQwZDNkNjFmZWQwNGVmNGUxM2E4MWY4MTE1IiwidHlwZSI6IndlYjNhdXRoX3RocmVzaG9sZF9rZXkiLCJjdXJ2ZSI6ImVkMjU1MTkifV0sImVtYWlsIjoibmF6QHJlbmZ0LmlvIiwibmFtZSI6Ik5heiBWYXZyeWsiLCJwcm9maWxlSW1hZ2UiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQ2c4b2NJYkZLNy0wcnRxdDQwQ2ZwUlhNbEktcldVcktoWndla24yaE9mcDdSM2JGWFNNRWc9czk2LWMiLCJ2ZXJpZmllciI6IndlYjNhdXRoIiwidmVyaWZpZXJJZCI6Im5hekByZW5mdC5pbyIsImFnZ3JlZ2F0ZVZlcmlmaWVyIjoid2ViM2F1dGgtZ29vZ2xlLXNhcHBoaXJlLWRldm5ldCIsImV4cCI6MTcxNjQ2Njg5OX0.lebAOyT2mD7Jb4QWLH8Bt_flPXjjYz0umNWj3DTIiHWp0FOuO4RSYN2-S2hXjxzWstpBK-m5JHsUVTl5XTEfOA"
+    },
+    "isConnected": true,
+    "isReady": true,
+    "wallet": {
+      "provider": {
+        "_events": {},
+        "_eventsCount": 0,
+        "defaultConfig": {
+          "chainConfig": {
+            "logo": "https://images.toruswallet.io/solana.svg",
+            "chainNamespace": "solana",
+            "chainId": "0x3",
+            "rpcTarget": "https://api.devnet.solana.com",
+            "displayName": "Solana Devnet",
+            "blockExplorerUrl": "https://explorer.solana.com",
+            "ticker": "SOL",
+            "tickerName": "Solana",
+            "decimals": 9
+          },
+          "networks": {
+            "0x3": {
+              "logo": "https://images.toruswallet.io/solana.svg",
+              "chainNamespace": "solana",
+              "chainId": "0x3",
+              "rpcTarget": "https://api.devnet.solana.com",
+              "displayName": "Solana Devnet",
+              "blockExplorerUrl": "https://explorer.solana.com",
+              "ticker": "SOL",
+              "tickerName": "Solana",
+              "decimals": 9
+            }
+          }
+        },
+        "defaultState": {
+          "chainId": "loading"
+        },
+        "disabled": false,
+        "name": "BaseController",
+        "initialConfig": {
+          "chainConfig": {
+            "logo": "https://images.toruswallet.io/solana.svg",
+            "chainNamespace": "solana",
+            "chainId": "0x3",
+            "rpcTarget": "https://api.devnet.solana.com",
+            "displayName": "Solana Devnet",
+            "blockExplorerUrl": "https://explorer.solana.com",
+            "ticker": "SOL",
+            "tickerName": "Solana",
+            "decimals": 9
+          }
+        },
+        "initialState": {},
+        "internalConfig": {
+          "chainConfig": {
+            "logo": "https://images.toruswallet.io/solana.svg",
+            "chainNamespace": "solana",
+            "chainId": "0x3",
+            "rpcTarget": "https://api.devnet.solana.com",
+            "displayName": "Solana Devnet",
+            "blockExplorerUrl": "https://explorer.solana.com",
+            "ticker": "SOL",
+            "tickerName": "Solana",
+            "decimals": 9
+          },
+          "networks": {
+            "0x3": {
+              "logo": "https://images.toruswallet.io/solana.svg",
+              "chainNamespace": "solana",
+              "chainId": "0x3",
+              "rpcTarget": "https://api.devnet.solana.com",
+              "displayName": "Solana Devnet",
+              "blockExplorerUrl": "https://explorer.solana.com",
+              "ticker": "SOL",
+              "tickerName": "Solana",
+              "decimals": 9
+            }
+          }
+        },
+        "internalState": {
+          "chainId": "0x3"
+        },
+        "_providerEngineProxy": {},
+        "chainConfig": {
+          "logo": "https://images.toruswallet.io/solana.svg",
+          "chainNamespace": "solana",
+          "chainId": "0x3",
+          "rpcTarget": "https://api.devnet.solana.com",
+          "displayName": "Solana Devnet",
+          "blockExplorerUrl": "https://explorer.solana.com",
+          "ticker": "SOL",
+          "tickerName": "Solana",
+          "decimals": 9
+        },
+        "networks": {
+          "0x3": {
+            "logo": "https://images.toruswallet.io/solana.svg",
+            "chainNamespace": "solana",
+            "chainId": "0x3",
+            "rpcTarget": "https://api.devnet.solana.com",
+            "displayName": "Solana Devnet",
+            "blockExplorerUrl": "https://explorer.solana.com",
+            "ticker": "SOL",
+            "tickerName": "Solana",
+            "decimals": 9
+          }
+        }
+      }
+    }
+  }
