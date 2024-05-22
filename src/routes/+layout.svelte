@@ -12,4 +12,8 @@
   setContext('user', createUserStore());
 </script>
 
+<nav>
+  <a href="/">home</a>
+</nav>
+
 <slot />

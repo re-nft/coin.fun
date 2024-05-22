@@ -14,12 +14,10 @@
   const solana = getContext<SolanaContext>('solana');
   const user = getContext<UserContext>('user');
 
-  $: url = data.url;
   $: users = data.users;
 </script>
 
 <div>
-  <p>You are on: {url}</p>
   <p>Solana block height is {$solana?.block}</p>
 
   <div class="max-w-lg">
