@@ -1,10 +1,15 @@
 <script lang="ts">
   import { getContext } from 'svelte';
+  import {
+    PUBLIC_SUPABASE_PROJECT_ID,
+    PUBLIC_SUPABASE_ANON_KEY
+  } from '$env/static/public';
 
   import Collapsible from '$lib/components/Collapsible.svelte';
   import { Button } from '$lib/components/ui/button';
   import { Buffer } from 'buffer';
-  import { type UserContext, handleConnectTwitter } from '$lib/user';
+  import { type UserContext } from '$lib/user';
+  import { createClient } from '@supabase/supabase-js';
 
   const user = getContext<UserContext>('user');
 
@@ -14,6 +19,26 @@
 
   // TODO: should not be able to navigate to this page if you are not logged in
   // just give text that says: you should log in first
+
+  const supabase = createClient(
+    `https://${PUBLIC_SUPABASE_PROJECT_ID}.supabase.co`,
+    PUBLIC_SUPABASE_ANON_KEY
+  );
+
+  async function signInWithTwitter() {
+    const { data, error } = await supabase.auth.signInWithOAuth({
+      provider: 'twitter'
+    });
+
+    if (error) {
+      console.error('Authentication error:', error);
+      return;
+    }
+
+    console.log('data', data);
+    // Handle the authenticated user data
+    // console.log('Authenticated user:', data.user);
+  }
 </script>
 
 <div>
@@ -48,4 +73,4 @@
 {/if}
 
 <h1>Quest 1: 1000 points</h1>
-<Button type="button" on:click={handleConnectTwitter}>Connect Twitter</Button>
+<Button type="button" on:click={signInWithTwitter}>Connect Twitter</Button>

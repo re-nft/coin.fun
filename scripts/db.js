@@ -1,7 +1,5 @@
 import { spawn, spawnSync } from 'node:child_process';
 
-// console.log(process.env.DB_URL);
-
 // if DB_URL contains "password" then it must be a local env
 // and so we don't need to spawn a docker container
 const dbUrlIsNotLocal = process.env.DB_URL.search("password")

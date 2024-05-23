@@ -25,25 +25,6 @@ async function solana_devnet_chain_config() {
   return SOLANA_DEVNET_CHAIN_CONFIG;
 }
 
-export async function wallet_adapters() {
-  const web3AuthBase = await import('@web3auth/base');
-  return web3AuthBase.WALLET_ADAPTERS;
-}
-
-export async function initNoModal({ clientId }: { clientId: string }) {
-  const [web3AuthNoModal] = await Promise.all([import('@web3auth/no-modal'), import('@web3auth/base')]);
-  const { Web3AuthNoModal } = web3AuthNoModal;
-
-  const web3Auth = new Web3AuthNoModal({
-    chainConfig: await solana_devnet_chain_config(),
-    clientId,
-    storageKey: 'local',
-    enableLogging: false,
-  });
-
-  return web3Auth;
-}
-
 export async function initModal({ clientId }: { clientId: string }) {
   // TODO: why do we import like this?
   const [
