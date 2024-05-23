@@ -22,17 +22,20 @@
 
   // TODO: probably will use supabase client in other places
   // should the client be a store?
+  // TODO: we also have instance of supabace in locals, do we need it there as well
+  // or can it be used here?
   const supabase = createClient(
     `https://${PUBLIC_SUPABASE_PROJECT_ID}.supabase.co`,
     PUBLIC_SUPABASE_ANON_KEY
   );
 
   async function signInWithTwitter() {
+    const redirectTo = `${window.location.origin}/myprofile/twitter/auth/callback`;
     const { data, error } = await supabase.auth.signInWithOAuth({
       provider: 'twitter',
-      // options: {
-      //   redirectTo: 'http://localhost:3000/myprofile'
-      // }
+      options: {
+        redirectTo
+      }
     });
 
     if (error) {
