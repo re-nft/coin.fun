@@ -14,8 +14,8 @@ export async function POST({ request }: RequestEvent) {
     );
   }
 
-  const userExists = await db.select().from(user).where(eq(user.verifierId, userData.verifierId)).limit(1);
-  console.log('userExists', userExists);
+  const result = await db.select().from(user).where(eq(user.verifierId, userData.verifierId)).limit(1);
+  const userExists = result.length == 1;
 
   if (!userExists) {
     const value = userParse({
