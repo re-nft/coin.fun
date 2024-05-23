@@ -4,9 +4,16 @@
   import Collapsible from '$lib/components/Collapsible.svelte';
   import { Button } from '$lib/components/ui/button';
   import { Buffer } from 'buffer';
-  import { type UserContext } from '$lib/user';
+  import { type UserContext, handleConnectTwitter } from '$lib/user';
 
   const user = getContext<UserContext>('user');
+
+  // one of the quests to earn points is to connect your twitter account
+  // we are likely to get a ton of bots
+  // if it comes to that, it will be a good problem to solve
+
+  // TODO: should not be able to navigate to this page if you are not logged in
+  // just give text that says: you should log in first
 </script>
 
 <div>
@@ -39,3 +46,6 @@
     >
   </p>
 {/if}
+
+<h1>Quest 1: 1000 points</h1>
+<Button type="button" on:click={handleConnectTwitter}>Connect Twitter</Button>

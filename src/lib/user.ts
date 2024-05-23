@@ -4,9 +4,11 @@ import { browser } from '$app/environment';
 import { PUBLIC_WEB3AUTH_CLIENT_KEY } from '$env/static/public';
 import {
   initModal,
+  initNoModal,
   initWallet,
   type SolanaWallet,
-  type UserAuthInfo
+  type UserAuthInfo,
+  wallet_adapters
 } from '$vendor/web3auth';
 
 interface UserStore {
@@ -125,4 +127,13 @@ async function init({
     isReady: true,
     wallet
   });
+}
+
+export async function handleConnectTwitter() {
+  const web3auth = await initNoModal({ clientId: PUBLIC_WEB3AUTH_CLIENT_KEY });
+  const wa = await wallet_adapters();
+  const web3authProvider = await web3auth.connectTo(wa.OPENLOGIN, {
+    loginProvider: "twitter",
+  });
+  console.log('----- web3authprovider --------', web3authProvider);
 }

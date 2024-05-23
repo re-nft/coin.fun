@@ -10,7 +10,42 @@ export type { SolanaWallet } from '@web3auth/solana-provider';
 // so we need to abstract the Environment here
 // this can be tied up to DB_URL. the URL will contain 'password' if local env?
 
+async function solana_devnet_chain_config() {
+  const web3AuthBase = await import('@web3auth/base');
+  let SOLANA_DEVNET_CHAIN_CONFIG: CustomChainConfig = {
+    blockExplorerUrl: 'https://explorer.solana.com',
+    chainNamespace: web3AuthBase.CHAIN_NAMESPACES.SOLANA,
+    rpcTarget: 'https://api.devnet.solana.com',
+    ticker: 'SOL',
+    tickerName: 'Solana',
+    chainId: '0x3', // Please use 0x1 for Mainnet, 0x2 for Testnet, 0x3 for Devnet
+    displayName: 'Solana Devnet',
+    logo: 'https://images.toruswallet.io/solana.svg'
+  };
+  return SOLANA_DEVNET_CHAIN_CONFIG;
+}
+
+export async function wallet_adapters() {
+  const web3AuthBase = await import('@web3auth/base');
+  return web3AuthBase.WALLET_ADAPTERS;
+}
+
+export async function initNoModal({ clientId }: { clientId: string }) {
+  const [web3AuthNoModal] = await Promise.all([import('@web3auth/no-modal'), import('@web3auth/base')]);
+  const { Web3AuthNoModal } = web3AuthNoModal;
+
+  const web3Auth = new Web3AuthNoModal({
+    chainConfig: await solana_devnet_chain_config(),
+    clientId,
+    storageKey: 'local',
+    enableLogging: false,
+  });
+
+  return web3Auth;
+}
+
 export async function initModal({ clientId }: { clientId: string }) {
+  // TODO: why do we import like this?
   const [
     web3AuthBase,
     web3AuthModal,
@@ -25,7 +60,7 @@ export async function initModal({ clientId }: { clientId: string }) {
     import('@web3auth/phantom-adapter')
   ]);
 
-  const { CHAIN_NAMESPACES, WEB3AUTH_NETWORK } = web3AuthBase;
+  const { WEB3AUTH_NETWORK } = web3AuthBase;
   const { SolanaPrivateKeyProvider } = web3AuthProvider;
   const { Web3Auth } = web3AuthModal;
   const { OpenloginAdapter, OPENLOGIN_NETWORK } = web3AuthOpenLoginAdapter;
@@ -34,24 +69,14 @@ export async function initModal({ clientId }: { clientId: string }) {
   // Create Web3Auth Instance
   const name = 'coindotfun';
 
-  const chainConfig: CustomChainConfig = {
-    blockExplorerUrl: 'https://explorer.solana.com',
-    chainNamespace: CHAIN_NAMESPACES.SOLANA,
-    rpcTarget: 'https://api.devnet.solana.com',
-    ticker: 'SOL',
-    tickerName: 'Solana',
-    chainId: '0x3', // Please use 0x1 for Mainnet, 0x2 for Testnet, 0x3 for Devnet
-    displayName: 'Solana Devnet',
-    logo: 'https://images.toruswallet.io/solana.svg'
-  };
-
   const privateKeyProvider = new SolanaPrivateKeyProvider({
-    config: { chainConfig }
+    config: { chainConfig: await solana_devnet_chain_config() }
   });
 
   const options: Web3AuthOptions = {
     clientId,
-    chainConfig,
+    chainConfig: await solana_devnet_chain_config(),
+    storageKey: 'local',
     privateKeyProvider,
     uiConfig: {
       appName: name,
@@ -64,7 +89,7 @@ export async function initModal({ clientId }: { clientId: string }) {
       mode: 'light'
     },
     web3AuthNetwork: WEB3AUTH_NETWORK.SAPPHIRE_DEVNET,
-    enableLogging: true
+    enableLogging: false
   };
 
   const openLoginAdapter = new OpenloginAdapter({
@@ -78,7 +103,7 @@ export async function initModal({ clientId }: { clientId: string }) {
 
   const phantomAdapter = new PhantomAdapter({
     clientId,
-    chainConfig,
+    chainConfig: await solana_devnet_chain_config(),
     web3AuthNetwork: WEB3AUTH_NETWORK.SAPPHIRE_DEVNET
   });
 
