@@ -20,6 +20,8 @@
   // TODO: should not be able to navigate to this page if you are not logged in
   // just give text that says: you should log in first
 
+  // TODO: probably will use supabase client in other places
+  // should the client be a store?
   const supabase = createClient(
     `https://${PUBLIC_SUPABASE_PROJECT_ID}.supabase.co`,
     PUBLIC_SUPABASE_ANON_KEY
@@ -27,17 +29,27 @@
 
   async function signInWithTwitter() {
     const { data, error } = await supabase.auth.signInWithOAuth({
-      provider: 'twitter'
+      provider: 'twitter',
+      // options: {
+      //   redirectTo: 'http://localhost:3000/myprofile'
+      // }
     });
 
     if (error) {
-      console.error('Authentication error:', error);
+      // console.error('authentication error:', error);
       return;
     }
 
-    console.log('data', data);
-    // Handle the authenticated user data
-    // console.log('Authenticated user:', data.user);
+    return data;
+  }
+
+  async function signOutWithTwitter() {
+    const { error } = await supabase.auth.signOut();
+    if (error) {
+      console.error('error signing out of twitter', error);
+      return;
+    }
+    console.log('twitter sign out success');
   }
 </script>
 
@@ -74,3 +86,6 @@
 
 <h1>Quest 1: 1000 points</h1>
 <Button type="button" on:click={signInWithTwitter}>Connect Twitter</Button>
+<Button type="button" on:click={signOutWithTwitter}
+  >Sign Out From Twitter</Button
+>
