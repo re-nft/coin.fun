@@ -8,9 +8,6 @@ import {
   type SolanaWallet,
   type UserAuthInfo
 } from '$vendor/web3auth';
-// import { db } from '$lib/server/db';
-// import { user, userParse } from '$lib/server/schema';
-// import { eq } from 'drizzle-orm';
 
 interface UserStore {
   accounts?: string[];
@@ -75,27 +72,24 @@ async function init({
 
     accounts = await wallet?.requestAccounts();
 
+    // ! NOTE: if we were to directly insert to db here, we would be importing
+    // from lib/server, which would turn this module into server-side
+    // and by default stuff in lib is shared. so importing this module
+    // in client-side code would not work.
+    // therefore, we communicate with the api server code through post requests
+    if (info.verifierId) {
+      const response = await fetch('/api/user', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(info),
+      });
 
-    // persist some of user's data into db if they do not exist
-    if (!info.verifierId) {
-      throw Error('fucked');
+      if (!response.ok) {
+        throw new Error('Failed to create user');
+      }
     }
-    // TODO: typescript, the actual type is non-nullable, it's because of the stupid Partial
-    // that it thinks that verifierId is optional. FUCK TYPESCRIPT
-    // const userExists = await db.select().from(user).where(eq(user.verifierId, info.verifierId)).limit(1);
-    // console.log(userExists);
-    // if (!userExists) {
-    //   await db.insert(user).values(userParse({
-    //     name: info.name,
-    //     email: info.email,
-    //     profileImage: info.profileImage,
-    //     typeOfLogin: info.typeOfLogin,
-    //     aggregateVerifier: info.aggregateVerifier,
-    //     verifier: info.verifier,
-    //     verifierId: info.verifierId,
-    //   }));
-    // }
-
     // TODO: set cookie for login so we can SSR.
     // const { idToken } = (await web3auth.authenticateUser());
 
