@@ -30,12 +30,13 @@
   );
 
   async function signInWithTwitter() {
-    const redirectTo = `${window.location.origin}/myprofile/twitter/auth/callback`;
+    // const redirectTo = `${window.location.origin}/myprofile/twitter/auth/callback`;
+    // console.log('redirecting to', redirectTo);
     const { data, error } = await supabase.auth.signInWithOAuth({
-      provider: 'twitter',
-      options: {
-        redirectTo
-      }
+      provider: 'twitter'
+      // options: {
+      //   redirectTo,
+      // }
     });
 
     if (error) {

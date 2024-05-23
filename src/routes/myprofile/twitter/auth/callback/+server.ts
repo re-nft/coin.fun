@@ -6,7 +6,12 @@ export const GET = async (event) => {
     locals: { supabase }
   } = event;
   const accessToken = url.searchParams.get('accessToken') as string;
-  const next = url.searchParams.get('next') ?? '/';
+
+  console.log("------------- URL ------------", url);
+  console.log("------------- URL SEARCH PARAMS", url.searchParams);
+
+  // how do we actually verify the url search params?
+  // say someone purposefully manually navigated to this url
 
   // TODO: implement here persistence of user's acces token plus other log in info
 
@@ -31,5 +36,6 @@ export const GET = async (event) => {
   // TODO: this page does not exist
   // return the user to an error page with instructions
   // throw redirect(303, '/auth/auth-error');
-  redirect(303, '/myprofile');
+  // if someone manually, for example, tried to navigate to the callback url
+  redirect(303, '/');
 };
