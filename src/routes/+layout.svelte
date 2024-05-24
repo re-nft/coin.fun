@@ -7,6 +7,7 @@
   import { createStore as createUserStore } from '$lib/user';
   import * as DropdownMenu from '$lib/components/ui/dropdown-menu';
   import { goto } from '$app/navigation';
+  import DropdownMenuItem from '$lib/components/ui/dropdown-menu/dropdown-menu-item.svelte';
 
   export let data;
 
@@ -24,25 +25,27 @@
   <a href="/">home</a>
   <a href="/leaderboard">leaderboard</a>
   <a href="/pointonomics">pointonomics</a>
-  {#if $user.isConnected}
-    <span>
-      <DropdownMenu.Root>
-        <!-- if user is not connected, will show "sign in" and on click will invoke web3auth-->
-        <!-- if user is connected, will show "my account" and will act as a dropdown -->
-        <DropdownMenu.Trigger>my account</DropdownMenu.Trigger>
-        <DropdownMenu.Content>
-          <DropdownMenu.Group>
+  <span>
+    <DropdownMenu.Root>
+      <!-- if user is not connected, will show "sign in" and on click will invoke web3auth-->
+      <!-- if user is connected, will show "my account" and will act as a dropdown -->
+      <DropdownMenu.Trigger>my account</DropdownMenu.Trigger>
+      <DropdownMenu.Content>
+        <DropdownMenu.Group>
+          {#if $user.isConnected}
             <DropdownMenu.Item href="/myprofile">settings</DropdownMenu.Item>
             <DropdownMenu.Item on:click={handleSignOut}
               >sign out</DropdownMenu.Item
             >
-          </DropdownMenu.Group>
-        </DropdownMenu.Content>
-      </DropdownMenu.Root>
-    </span>
-  {:else}
-    <button on:click={() => $user.connect?.()} type="button">sign in</button>
-  {/if}
+          {:else}
+            <DropdownMenu.Item on:click={() => $user.connect?.()} type="button"
+              >sign in</DropdownMenu.Item
+            >
+          {/if}
+        </DropdownMenu.Group>
+      </DropdownMenu.Content>
+    </DropdownMenu.Root>
+  </span>
 </nav>
 
 <slot />
@@ -57,8 +60,7 @@
   }
 
   nav a,
-  span,
-  button {
+  span {
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -67,8 +69,7 @@
   }
 
   nav a:hover,
-  span:hover,
-  button:hover {
+  span:hover {
     background-color: #fff000;
   }
 </style>
