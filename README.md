@@ -1,5 +1,28 @@
 # 021 Svelte
 
+### TODOS
+
+v1.0 launch:
+
+1/ once logged in user into the server side session, persist that information
+in a store -> might not be needed because supabase.auth.startSession might be doing it their side
+2/ ask for oauth that is longer than 1 hour initially
+3/ figure out if we need to refresh the auth -> we are using this: https://supabase.com/docs/reference/javascript/auth-setsession
+which it seems handles autorefresh by itself
+4/ how do we check the validity of oauth tokens -> I think supabase does this check
+5/ do not ask the user to connect to twitter if they have used x for web3auth
+6/ fist few quests
+7/ waitlist
+8/ referrals
+9/ some form of pointonomics
+10/ leaderboard as per points
+11/ how many cumulative users
+12/ design and copy
+
+v2.0 launch:
+
+## Template Intro
+
 Everything you need to build a Blockchain Svelte project, powered by:
 
 - [Svelte](https://svelte.dev/docs/introduction) & [SvelteKit](https://kit.svelte.dev/docs/introduction) for the engine.
