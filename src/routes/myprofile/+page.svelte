@@ -16,19 +16,40 @@
 
   let session: Session | undefined;
 
+  // serves 2 purposes
+  // 1. Supabase redirects to this url (defined in sign in to twitter function
+  // in this very same component), but rather than using query params, it uses
+  // hash params. Unfortunately, that means we need to turn these into query
+  // params and send server-side. Then server-side starts a server-side
+  // twitter oauth session
+  // 2. If we have already went through 1., then we ask server side to provide
+  // us with current session. If we haven't went through 1., then we obviously
+  // don't get anything in this step.
   onMount(async () => {
-    try {
-      const response = await fetch('/api/twitter/get-session');
-      const result = await response.json();
+    const hashParams = new URLSearchParams(window.location.hash.substring(1));
+    const accessToken = hashParams.get('access_token');
+    const refreshToken = hashParams.get('refresh_token');
 
-      if (response.ok) {
-        session = result.session;
-        console.log('session retrieved:', session);
-      } else {
-        console.error('failed to retrieve session:', result.error);
+    // if there are hash params, then this must be a callback from supabase
+    // with twitter oauth params
+    if (accessToken && refreshToken) {
+      const params = new URLSearchParams(hashParams);
+      window.location.href = `/api/twitter/callback?${params.toString()}`;
+      // else we need to pull the session from server side (if it exists)
+    } else {
+      try {
+        const response = await fetch('/api/twitter/get-session');
+        const result = await response.json();
+
+        if (response.ok) {
+          session = result.session;
+          console.log('session retrieved:', session);
+        } else {
+          console.error('failed to retrieve session:', result.error);
+        }
+      } catch (error) {
+        console.error('error fetching session:', error);
       }
-    } catch (error) {
-      console.error('error fetching session:', error);
     }
   });
 
@@ -51,8 +72,7 @@
   // TODO: only sign in to twitter if we are connected via methods other than
   // X in web3auth
   async function signInWithTwitterSupabaseSession() {
-    const redirectTo = `${window.location.origin}/myprofile/twitter/redirect`;
-    // console.log('redirecting to', redirectTo);
+    const redirectTo = `${window.location.origin}/myprofile`;
     const { data, error } = await supabase.auth.signInWithOAuth({
       provider: 'twitter',
       options: {

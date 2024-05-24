@@ -8,22 +8,15 @@ export const GET = async (event) => {
   const searchParams = new URLSearchParams(url.search);
   const accessToken = searchParams.get('access_token');
   const refreshToken = searchParams.get('refresh_token');
-  const providerToken = searchParams.get('provider_token');
-  const expiresIn = searchParams.get('expires_in');
-  const tokenType = searchParams.get('token_type');
-  // console.log("Received query params:", {
-  //   accessToken,
-  //   refreshToken,
-  //   providerToken,
-  //   expiresIn,
-  //   tokenType,
-  // });
+  // const providerToken = searchParams.get('provider_token');
+  // const expiresIn = searchParams.get('expires_in');
+  // const tokenType = searchParams.get('token_type');
+
   if (accessToken && refreshToken) {
     const { data, error } = await supabase.auth.setSession({
       access_token: accessToken,
       refresh_token: refreshToken,
     });
-    // console.log('data', data);
 
     if (error) {
       // console.error('Error setting session:', error);
