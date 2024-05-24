@@ -5,12 +5,15 @@
 v1.0 launch:
 
 1/ once logged in user into the server side session, persist that information
-in a store -> might not be needed because supabase.auth.startSession might be doing it their side
+in a store -> this isn't needed. we start supabase session server side
+so we can retrieve the session any time. in fact, I have implemented an api
+get endpoint for this
 2/ ask for oauth that is longer than 1 hour initially
 3/ figure out if we need to refresh the auth -> we are using this: https://supabase.com/docs/reference/javascript/auth-setsession
 which it seems handles autorefresh by itself
 4/ how do we check the validity of oauth tokens -> I think supabase does this check
 5/ do not ask the user to connect to twitter if they have used x for web3auth
+-> let's implement this
 6/ fist few quests
 7/ waitlist
 8/ referrals
