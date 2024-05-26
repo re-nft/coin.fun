@@ -1,7 +1,7 @@
 import { json } from '@sveltejs/kit';
 
 export const POST = async ({ locals: { supabase }, request }) => {
-  const { data, error } = await supabase.auth.signOut();
+  const { error } = await supabase.auth.signOut();
 
   if (error) {
     console.error('Error signing out:', error);

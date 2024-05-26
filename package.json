@@ -36,6 +36,7 @@
     "postgres": "3.4.4",
     "tailwind-merge": "2.3.0",
     "tailwind-variants": "0.2.1",
+    "three": "^0.164.1",
     "valibot": "0.30.0"
   },
   "devDependencies": {
@@ -46,6 +47,7 @@
     "@tailwindcss/forms": "0.5.7",
     "@types/eslint": "8.56.10",
     "@types/node": "20.12.12",
+    "@types/three": "^0.164.1",
     "@typescript-eslint/eslint-plugin": "7.9.0",
     "@typescript-eslint/parser": "7.9.0",
     "autoprefixer": "10.4.19",

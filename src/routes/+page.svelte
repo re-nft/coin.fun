@@ -1,56 +1,159 @@
 <script lang="ts">
-  // import { getContext } from 'svelte';
+  import { onMount } from 'svelte';
+  import { Progress } from '$lib/components/ui/progress/index.js';
+  import * as THREE from 'three';
+  import Coin from '$lib/assets/coin.png';
 
-  // import { enhance } from '$app/forms';
-  // import Collapsible from '$lib/components/Collapsible.svelte';
-  // import { Button } from '$lib/components/ui/button';
-  // import { Buffer } from 'buffer';
-  // import { type SolanaContext } from '$lib/solana';
-  // import { type UserContext } from '$lib/user';
+  let value = 13;
+  onMount(() => {
+    const timer = setTimeout(() => (value = 30), 500);
+    initThreeJS();
+    return () => clearTimeout(timer);
+  });
 
-  // export let data;
-  // export let form;
+  function initThreeJS() {
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(
+      75,
+      window.innerWidth / window.innerHeight,
+      0.1,
+      1000
+    );
+    const renderer = new THREE.WebGLRenderer({ alpha: true });
 
-  // const solana = getContext<SolanaContext>('solana');
-  // const user = getContext<UserContext>('user');
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
 
-  // $: users = data.users;
+    const textureLoader = new THREE.TextureLoader();
+    const texture = textureLoader.load(Coin, (texture) => {
+      texture.minFilter = THREE.LinearFilter;
+      texture.magFilter = THREE.LinearFilter;
+    });
+
+    const geometry = new THREE.CylinderGeometry(5, 5, 1, 32);
+    const materials = [
+      new THREE.MeshBasicMaterial({ map: texture }),
+      new THREE.MeshBasicMaterial({ map: texture }),
+      new THREE.MeshBasicMaterial({ map: texture })
+    ];
+
+    const coin = new THREE.Mesh(geometry, materials);
+    scene.add(coin);
+    camera.position.z = 15;
+
+    function animate() {
+      requestAnimationFrame(animate);
+      coin.rotation.x += 0.01;
+      coin.rotation.y += 0.01;
+      renderer.render(scene, camera);
+    }
+    animate();
+  }
 </script>
 
-<div>
-  <!-- <p>Solana block height is {$solana?.block}</p> -->
+<div class="landing-page">
+  <h1>Community Owned Memetoken Creator</h1>
 
-  <!-- {#if $user.isConnected} -->
-  <!--   <Button on:click={() => $user.disconnect?.()} type="button"> -->
-  <!--     Disconnect -->
-  <!--   </Button> -->
-  <!-- {:else} -->
-  <!--   <Button on:click={() => $user.connect?.()} type="button">Log In</Button> -->
-  <!-- {/if} -->
+  <div class="progress-container">
+    <h1>v1.0 Launch Progress</h1>
+    <Progress {value} max={100} class="w-60" />
+  </div>
 
-  <!-- <Collapsible title="All users"> -->
-  <!--   <pre>{JSON.stringify(users, null, 2)}</pre> -->
-  <!-- </Collapsible> -->
+  <div class="milestones">
+    <h1>v1.0 Milestones</h1>
+    <p>- Pointonomics v1.0 introduced</p>
+    <p>- Referral leaderboard</p>
+    <p>- Waitlist</p>
+    <p>- Twitter authentication</p>
+    <p>- Social wallet creation</p>
+  </div>
 
-  <!-- <form method="POST" use:enhance> -->
-  <!--   {#if form?.errors} -->
-  <!--     <ul class="list-inside list-disc text-destructive"> -->
-  <!--       {#each Object.keys(form?.errors) as key} -->
-  <!--         <li> -->
-  <!--           {key}: {form?.errors?.[key]?.join(', ')} -->
-  <!--         </li> -->
-  <!--       {/each} -->
-  <!--     </ul> -->
-  <!--   {/if} -->
-  <!---->
-  <!--   <label> -->
-  <!--     Name -->
-  <!--     <input name="name" type="text" value={form?.data?.name ?? ''} /> -->
-  <!--   </label> -->
-  <!--   <label> -->
-  <!--     Email -->
-  <!--     <input name="email" type="email" value={form?.data?.email ?? ''} /> -->
-  <!--   </label> -->
-  <!--   <Button type="submit">Add</Button> -->
-  <!-- </form> -->
+  <div class="steps">
+    <h1>1/ Earn 100% of the memetoken trading fees</h1>
+    <h1>2/ Invite your friends and earn their fees</h1>
+    <h1>3/ Complete quests and earn $COIN points</h1>
+    <h1>4/ Share on Twitter and earn more $COIN</h1>
+  </div>
 </div>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+  .landing-page {
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: black;
+    position: relative;
+    z-index: 1;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    text-transform: uppercase;
+    animation: fadeIn 2s ease-in-out;
+  }
+
+  .progress-container {
+    margin: 20px 0;
+  }
+
+  .milestones,
+  .steps {
+    text-align: left;
+    margin: 20px 0;
+  }
+
+  .milestones h1,
+  .steps h1 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    animation: fadeInUp 1s ease-in-out;
+  }
+
+  .milestones p,
+  .steps p {
+    margin: 10px 0;
+    animation: fadeInUp 1s ease-in-out;
+  }
+
+  .w-60 {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  body {
+    overflow: hidden;
+    margin: 0;
+  }
+
+  canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+</style>
