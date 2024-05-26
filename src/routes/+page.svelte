@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { browser } from '$app/environment';
   import { onMount } from 'svelte';
   import { Progress } from '$lib/components/ui/progress/index.js';
   import * as THREE from 'three';
@@ -7,47 +8,67 @@
   let value = 13;
   onMount(() => {
     const timer = setTimeout(() => (value = 30), 500);
-    initThreeJS();
     return () => clearTimeout(timer);
   });
 
-  function initThreeJS() {
-    const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera(
-      75,
-      window.innerWidth / window.innerHeight,
-      0.1,
-      1000
-    );
-    const renderer = new THREE.WebGLRenderer({ alpha: true });
+  function animateCoin() {
+    let camera: THREE.PerspectiveCamera;
+    let scene: THREE.Scene;
+    let renderer: THREE.WebGLRenderer;
+    let coin: THREE.Mesh;
 
-    renderer.setSize(window.innerWidth, window.innerHeight);
-    document.body.appendChild(renderer.domElement);
+    const init = () => {
+      scene = new THREE.Scene();
+      camera = new THREE.PerspectiveCamera(
+        75,
+        window.innerWidth / window.innerHeight,
+        0.1,
+        1000
+      );
+      renderer = new THREE.WebGLRenderer({ alpha: true });
 
-    const textureLoader = new THREE.TextureLoader();
-    const texture = textureLoader.load(Coin, (texture) => {
-      texture.minFilter = THREE.LinearFilter;
-      texture.magFilter = THREE.LinearFilter;
-    });
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      document.body.appendChild(renderer.domElement);
 
-    const geometry = new THREE.CylinderGeometry(5, 5, 1, 32);
-    const materials = [
-      new THREE.MeshBasicMaterial({ map: texture }),
-      new THREE.MeshBasicMaterial({ map: texture }),
-      new THREE.MeshBasicMaterial({ map: texture })
-    ];
+      const textureLoader = new THREE.TextureLoader();
+      const texture = textureLoader.load(Coin, (texture) => {
+        texture.minFilter = THREE.LinearFilter;
+        texture.magFilter = THREE.LinearFilter;
+      });
 
-    const coin = new THREE.Mesh(geometry, materials);
-    scene.add(coin);
-    camera.position.z = 15;
+      const geometry = new THREE.CylinderGeometry(5, 5, 1, 32);
+      const materials = [
+        new THREE.MeshBasicMaterial({ map: texture }),
+        new THREE.MeshBasicMaterial({ map: texture }),
+        new THREE.MeshBasicMaterial({ map: texture })
+      ];
 
-    function animate() {
+      coin = new THREE.Mesh(geometry, materials);
+      scene.add(coin);
+
+      camera.position.z = 15;
+    };
+
+    const render = () => {
+      renderer.clear();
+      renderer.render(scene, camera);
+    };
+
+    const animate = () => {
       requestAnimationFrame(animate);
+
       coin.rotation.x += 0.01;
       coin.rotation.y += 0.01;
-      renderer.render(scene, camera);
-    }
+
+      render();
+    };
+
+    init();
     animate();
+  }
+
+  if (browser) {
+    animateCoin();
   }
 </script>
 
