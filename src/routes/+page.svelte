@@ -6,29 +6,30 @@
   import Coin from '$lib/assets/coin.png';
 
   let value = 13;
-  onMount(() => {
-    const timer = setTimeout(() => (value = 30), 500);
-    return () => clearTimeout(timer);
-  });
+  let container: HTMLElement;
 
-  function animateCoin() {
-    let camera: THREE.PerspectiveCamera;
-    let scene: THREE.Scene;
-    let renderer: THREE.WebGLRenderer;
-    let coin: THREE.Mesh;
+  class CoinAnimation {
+    camera: THREE.PerspectiveCamera;
+    scene: THREE.Scene;
+    renderer: THREE.WebGLRenderer;
+    coin: THREE.Mesh;
 
-    const init = () => {
-      scene = new THREE.Scene();
-      camera = new THREE.PerspectiveCamera(
+    constructor(container: HTMLElement) {
+      // if (!container) {
+      //   console.error('Container element is not defined');
+      //   return;
+      // }
+
+      this.scene = new THREE.Scene();
+      this.camera = new THREE.PerspectiveCamera(
         75,
-        window.innerWidth / window.innerHeight,
+        container.clientWidth / container.clientHeight,
         0.1,
         1000
       );
-      renderer = new THREE.WebGLRenderer({ alpha: true });
-
-      renderer.setSize(window.innerWidth, window.innerHeight);
-      document.body.appendChild(renderer.domElement);
+      this.renderer = new THREE.WebGLRenderer({ alpha: true });
+      this.renderer.setSize(container.clientWidth, container.clientHeight);
+      container.appendChild(this.renderer.domElement);
 
       const textureLoader = new THREE.TextureLoader();
       const texture = textureLoader.load(Coin, (texture) => {
@@ -37,43 +38,59 @@
       });
 
       const geometry = new THREE.CylinderGeometry(5, 5, 1, 32);
+      texture.colorSpace = THREE.SRGBColorSpace;
       const materials = [
         new THREE.MeshBasicMaterial({ map: texture }),
         new THREE.MeshBasicMaterial({ map: texture }),
         new THREE.MeshBasicMaterial({ map: texture })
       ];
+      this.coin = new THREE.Mesh(geometry, materials);
+      this.scene.add(this.coin);
+      this.camera.position.z = 15;
 
-      coin = new THREE.Mesh(geometry, materials);
-      scene.add(coin);
+      this.animate();
+    }
 
-      camera.position.z = 15;
+    animate = () => {
+      requestAnimationFrame(this.animate);
+      this.coin.rotation.x += 0.01;
+      this.coin.rotation.y += 0.01;
+      this.renderer.render(this.scene, this.camera);
     };
 
-    const render = () => {
-      renderer.clear();
-      renderer.render(scene, camera);
+    dispose = () => {
+      if (this.renderer) {
+        this.renderer.dispose();
+        this.scene.remove(this.coin);
+        this.coin.geometry.dispose();
+        if (this.renderer.domElement.parentElement) {
+          this.renderer.domElement.parentElement.removeChild(
+            this.renderer.domElement
+          );
+        }
+      }
     };
-
-    const animate = () => {
-      requestAnimationFrame(animate);
-
-      coin.rotation.x += 0.01;
-      coin.rotation.y += 0.01;
-
-      render();
-    };
-
-    init();
-    animate();
   }
 
-  if (browser) {
-    animateCoin();
-  }
+  let coinAnimation: CoinAnimation;
+
+  onMount(() => {
+    const timer = setTimeout(() => (value = 30), 500);
+    if (browser) {
+      coinAnimation = new CoinAnimation(container);
+    }
+    return () => {
+      clearTimeout(timer);
+      if (coinAnimation) {
+        coinAnimation.dispose();
+      }
+    };
+  });
 </script>
 
 <div class="landing-page">
   <h1>Community Owned Memetoken Creator</h1>
+  <div bind:this={container} style="width: 100%; height: 300px;" />
 
   <div class="progress-container">
     <h1>v1.0 Launch Progress</h1>
