@@ -21,6 +21,13 @@ which it seems handles autorefresh by itself
 10/ leaderboard as per points
 11/ how many cumulative users
 12/ design and copy
+13/ in pointonomics show how many $COIN points have been already claimed
+14/ need urgency levers. the sooner you do quests - the more $COIN points you
+get. the later you do it, the less points you will get
+15/ moon math section. how much would you earn given pump.fun fees given
+you have x $COIN points
+
+hack their brain to the max
 
 v2.0 launch:
 
