@@ -3,7 +3,7 @@
   import { onMount } from 'svelte';
   import { Progress } from '$lib/components/ui/progress/index.js';
   import * as THREE from 'three';
-  import Coin from '$lib/assets/coin.png';
+  import Coin from '$lib/assets/coinsvg.svg';
 
   let value = 13;
   let container: HTMLElement;
@@ -37,10 +37,10 @@
         texture.magFilter = THREE.LinearFilter;
       });
 
-      const geometry = new THREE.CylinderGeometry(5, 5, 1, 32);
+      const geometry = new THREE.CylinderGeometry(5, 5, 1, 64);
       texture.colorSpace = THREE.SRGBColorSpace;
       const materials = [
-        new THREE.MeshBasicMaterial({ map: texture }),
+        new THREE.MeshBasicMaterial({ color: '#ff8a33' }),
         new THREE.MeshBasicMaterial({ map: texture }),
         new THREE.MeshBasicMaterial({ map: texture })
       ];
@@ -152,15 +152,9 @@
     animation: fadeInUp 1s ease-in-out;
   }
 
-  .milestones p,
-  .steps p {
+  .milestones p {
     margin: 10px 0;
     animation: fadeInUp 1s ease-in-out;
-  }
-
-  .w-60 {
-    width: 60%;
-    margin: 0 auto;
   }
 
   @keyframes fadeIn {
@@ -181,17 +175,5 @@
       opacity: 1;
       transform: translateY(0);
     }
-  }
-
-  body {
-    overflow: hidden;
-    margin: 0;
-  }
-
-  canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 0;
   }
 </style>
