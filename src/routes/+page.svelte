@@ -89,6 +89,9 @@
 </script>
 
 <div class="landing-page">
+  <br />
+
+  <h1>Coin.fun</h1>
   <h1>Community Owned Memetoken Creator</h1>
   <div bind:this={container} style="width: 100%; height: 300px;" />
 
@@ -106,12 +109,16 @@
     <p>- Social wallet creation</p>
   </div>
 
+  <br />
+
   <div class="steps">
     <h1>1/ Earn 100% of the memetoken trading fees</h1>
     <h1>2/ Invite your friends and earn their fees</h1>
     <h1>3/ Complete quests and earn $COIN points</h1>
     <h1>4/ Share on Twitter and earn more $COIN</h1>
   </div>
+
+  <br />
 
   <div>
     <h1>Philosophy</h1>
