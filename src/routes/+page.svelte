@@ -112,6 +112,13 @@
     <h1>3/ Complete quests and earn $COIN points</h1>
     <h1>4/ Share on Twitter and earn more $COIN</h1>
   </div>
+
+  <div>
+    <h1>Philosophy</h1>
+    <p>anyone can create a memetoken, including your grandma</p>
+    <p>we are ruthless autocrats - community takes 90% of all points</p>
+    <p>empower big and small twitter accounts</p>
+  </div>
 </div>
 
 <style>
