@@ -48,7 +48,7 @@
 </script>
 
 <Table.Root>
-  <Table.Caption>A list of your recent invoices.</Table.Caption>
+  <Table.Caption>Top Gs</Table.Caption>
   <Table.Header>
     <Table.Row>
       <Table.Head class="w-[100px]">Username</Table.Head>

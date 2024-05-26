@@ -5,7 +5,7 @@
   import * as THREE from 'three';
   import Coin from '$lib/assets/coinsvg.svg';
 
-  let value = 13;
+  let progressValue = 0;
   let container: HTMLElement;
 
   class CoinAnimation {
@@ -75,7 +75,7 @@
   let coinAnimation: CoinAnimation;
 
   onMount(() => {
-    const timer = setTimeout(() => (value = 30), 500);
+    const timer = setTimeout(() => (progressValue = 30), 500);
     if (browser) {
       coinAnimation = new CoinAnimation(container);
     }
@@ -94,7 +94,7 @@
 
   <div class="progress-container">
     <h1>v1.0 Launch Progress</h1>
-    <Progress {value} max={100} class="w-60" />
+    <Progress value={progressValue} max={100} />
   </div>
 
   <div class="milestones">
