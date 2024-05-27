@@ -91,17 +91,17 @@
 <div class="landing-page">
   <br />
 
-  <h1>Coin.fun</h1>
-  <h1>Community Owned Memetoken Creator</h1>
+  <h1 class="martian-mono-extrabold">Coin.fun</h1>
+  <h1 class="martian-mono-extrabold">Community Owned Memetoken Creator</h1>
   <div bind:this={container} style="width: 100%; height: 300px;" />
 
   <div class="progress-container">
-    <h1>v1.0 Launch Progress</h1>
+    <h1 class="martian-mono-medium">v1.0 Launch Progress</h1>
     <Progress value={progressValue} max={100} />
   </div>
 
   <div class="milestones">
-    <h1>v1.0 Milestones</h1>
+    <h1 class="martian-mono-medium">v1.0 Milestones</h1>
     <p>- Pointonomics v1.0 introduced</p>
     <p>- Referral leaderboard</p>
     <p>- Waitlist</p>
@@ -132,7 +132,6 @@
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
   .landing-page {
-    font-family: 'Roboto', sans-serif;
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;

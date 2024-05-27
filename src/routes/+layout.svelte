@@ -21,7 +21,7 @@
   }
 </script>
 
-<nav>
+<nav class="martian-mono-light">
   <a href="/">home</a>
   <a href="/leaderboard">leaderboard</a>
   <a href="/pointonomics">pointonomics</a>
