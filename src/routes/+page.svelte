@@ -47,7 +47,7 @@
       ];
       this.coin = new THREE.Mesh(geometry, materials);
       this.scene.add(this.coin);
-      this.camera.position.z = 15;
+      this.camera.position.z = 9;
 
       this.animate();
     }
@@ -94,7 +94,7 @@
 
   <!-- <h1 class="martian-mono-extrabold">Coin.fun</h1> -->
   <img src={CoinfunWordmark} alt="coin.fun text" />
-  <h1 class="martian-mono-extrabold">Community Owned Memetoken Creator</h1>
+  <h1 class="martian-mono-extrabold">Community Owned Memetoken Printer</h1>
   <div bind:this={container} style="width: 100%; height: 300px;" />
 
   <div class="progress-container">

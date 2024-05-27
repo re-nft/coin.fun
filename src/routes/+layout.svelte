@@ -53,7 +53,7 @@
 <!-- shadcn/ui for svelte does not have the nav component -->
 <style>
   nav {
-    background-color: #000;
+    background-color: #111111;
     padding: 10px;
     display: flex;
     justify-content: space-around;
@@ -70,6 +70,6 @@
 
   nav a:hover,
   span:hover {
-    background-color: #fff000;
+    background-color: #02AD64;
   }
 </style>
