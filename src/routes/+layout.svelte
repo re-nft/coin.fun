@@ -25,7 +25,7 @@
   <a href="/">home</a>
   <a href="/leaderboard">leaderboard</a>
   <a href="/pointonomics">pointonomics</a>
-  <span>
+  <span style="cursor: pointer;">
     <DropdownMenu.Root>
       <!-- if user is not connected, will show "sign in" and on click will invoke web3auth-->
       <!-- if user is connected, will show "my account" and will act as a dropdown -->

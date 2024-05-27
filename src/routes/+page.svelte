@@ -4,6 +4,7 @@
   import { Progress } from '$lib/components/ui/progress/index.js';
   import * as THREE from 'three';
   import Coin from '$lib/assets/coinsvg.svg';
+  import CoinfunWordmark from '$lib/assets/coinfunwordmark.svg';
 
   let progressValue = 0;
   let container: HTMLElement;
@@ -91,7 +92,8 @@
 <div class="landing-page">
   <br />
 
-  <h1 class="martian-mono-extrabold">Coin.fun</h1>
+  <!-- <h1 class="martian-mono-extrabold">Coin.fun</h1> -->
+  <img src={CoinfunWordmark} alt="coin.fun text" />
   <h1 class="martian-mono-extrabold">Community Owned Memetoken Creator</h1>
   <div bind:this={container} style="width: 100%; height: 300px;" />
 
