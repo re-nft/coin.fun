@@ -26,6 +26,8 @@ which it seems handles autorefresh by itself
 get. the later you do it, the less points you will get
 15/ moon math section. how much would you earn given pump.fun fees given
 you have x $COIN points
+16/ daily check in bonus
+17/ tap on coin and earn coin (like notcoin)
 
 hack their brain to the max
 
