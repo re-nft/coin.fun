@@ -98,13 +98,13 @@
   <div bind:this={container} style="width: 100%; height: 300px;" />
 
   <div class="progress-container">
-    <h1 class="martian-mono-medium">v1.0 Launch Progress</h1>
+    <h1 class="martian-mono-medium">Launch Progress</h1>
     <Progress value={progressValue} max={100} />
   </div>
 
   <div class="milestones">
-    <h1 class="martian-mono-medium">v1.0 Milestones</h1>
-    <p>- Pointonomics v1.0 introduced</p>
+    <h1 class="martian-mono-medium">v1 Milestones</h1>
+    <p>- Pointonomics v1 introduced</p>
     <p>- Referral leaderboard</p>
     <p>- Waitlist</p>
     <p>- Twitter authentication</p>
