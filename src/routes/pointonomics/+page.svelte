@@ -5,8 +5,7 @@
   import Chads from '$lib/assets/Chads.svg';
 </script>
 
-<div>
-  <h1 class="martian-mono-extrabold">pointonomics</h1>
+<div style="padding-top: 2em;">
   <p>
     There will be a total supply of 420,690,000,000 tokens (cough cough points).
   </p>
@@ -23,7 +22,8 @@
   <br />
 
   <h1 class="martian-mono-extrabold">playable characters</h1>
-  <div style="display: flex;">
+
+  <div class="playable-character">
     <div>
       💸 <span class="martian-mono-medium">Hefties</span>
       <br />
@@ -31,13 +31,14 @@
       <br />
       learned the dark arts of X algorithm
       <br />
-      buying APs, driving Lambos, bonking, floking, wifing
+      buying APs, driving Lambos, bonking, floking
       <br />
       life is a movie
     </div>
     <div class="w-48"><img src={Hefties} alt="fat coin" /></div>
   </div>
-  <div style="display: flex; padding-top: 2em;">
+
+  <div class="playable-character">
     <div class="w-48"><img src={Normies} alt="normal coin" /></div>
     <div>
       ☺️ <span class="martian-mono-medium">Normies</span>
@@ -46,14 +47,44 @@
       <br />
       nothing else to say
       <br />
-      take a loan on the house and get a SOL bag
+      takes a loan on the house and gets a SOL bag
+      <br />
+      bets on hamster races
     </div>
   </div>
-  <p>🧟<span class="martian-mono-medium">Zombies</span> - bots</p>
+
+  <div class="playable-character">
+    <div>
+      🧟 <span class="martian-mono-medium">Zombies</span>
+      <br />
+      they will find a way to game the system
+      <br />
+      props for trying
+      <br />
+      we embrace you, and you will get your slice of the pie
+    </div>
+    <div class="w-48"><img src={Zombies} alt="zombie coin" /></div>
+  </div>
+
+  <div class="playable-character">
+    <div class="w-48"><img src={Chads} alt="sunglasses coin" /></div>
+    <div>
+      😎 <span class="martian-mono-medium">Chads</span>
+      🫰🤑
+      <br />
+      coining and printing memes on coin.fun app
+      <br />
+      coin.fun's lifeblood
+      <br />
+    </div>
+  </div>
+
+  <br />
   <p>
-    😎 <span class="martian-mono-medium">Chads</span> - people printing the memecoins
-    🫰🤑
+    Think of coin.fun as GTA V. You can play more than one character at the same
+    time. You can be zombying and chading at the same time, for example.
   </p>
+
   <br />
 
   <br />
@@ -83,6 +114,11 @@
     padding-left: 2em;
     padding-right: 2em;
     margin: 0 auto;
+  }
+
+  .playable-character {
+    display: flex;
+    padding-top: 2em;
   }
 
   h1 {

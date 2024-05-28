@@ -7,7 +7,6 @@
   import { createStore as createUserStore } from '$lib/user';
   import * as DropdownMenu from '$lib/components/ui/dropdown-menu';
   import { goto } from '$app/navigation';
-  import DropdownMenuItem from '$lib/components/ui/dropdown-menu/dropdown-menu-item.svelte';
 
   export let data;
 
@@ -23,7 +22,7 @@
 
 <nav class="martian-mono-light">
   <a href="/">home</a>
-  <a href="/leaderboard">leaderboard</a>
+  <!-- <a href="/leaderboard">leaderboard</a> -->
   <a href="/pointonomics">pointonomics</a>
   <span style="cursor: pointer;">
     <DropdownMenu.Root>
@@ -70,6 +69,6 @@
 
   nav a:hover,
   span:hover {
-    background-color: #02AD64;
+    background-color: #02ad64;
   }
 </style>

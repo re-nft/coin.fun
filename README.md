@@ -28,6 +28,7 @@ get. the later you do it, the less points you will get
 you have x $COIN points
 16/ daily check in bonus
 17/ tap on coin and earn coin (like notcoin)
+18/ sentry + analytics (ga?)
 
 hack their brain to the max
 
