@@ -5,12 +5,11 @@
     PUBLIC_SUPABASE_ANON_KEY
   } from '$env/static/public';
 
-  import Collapsible from '$lib/components/Collapsible.svelte';
   import { Button } from '$lib/components/ui/button';
-  import { Buffer } from 'buffer';
   import { type UserContext } from '$lib/user';
   import { createClient, type Session } from '@supabase/supabase-js';
   import { onMount } from 'svelte';
+  import * as Card from '$lib/components/ui/card';
 
   const user = getContext<UserContext>('user');
 
@@ -110,44 +109,52 @@
   }
 </script>
 
-<!-- <div> -->
-<!--   <h1>my profile</h1> -->
-<!-- </div> -->
+<div class="myprofile-root">
+  <Card.Root class="w-[350px]">
+    <Card.Header>
+      <Card.Title>Quest 1</Card.Title>
+      <Card.Description>Prove your Xness. Connect to Twitter.</Card.Description>
+    </Card.Header>
+    <Card.Content>
+      <form>
+        <div class="grid w-full items-center gap-4">
+          <!-- <div class="flex flex-col space-y-1.5"> -->
+          <!--   <Label for="name">Name</Label> -->
+          <!--   <Input id="name" placeholder="Name of your project" /> -->
+          <!-- </div> -->
+          <!-- <div class="flex flex-col space-y-1.5"> -->
+          <!--   <Label for="framework">Framework</Label> -->
+          <!-- </div> -->
+        </div>
+      </form>
+    </Card.Content>
+    <Card.Footer class="flex justify-between">
+      {#if session}<Button
+          variant="outline"
+          type="button"
+          on:click={signOutSupabaseSession}>Sign Out</Button
+        >{/if}
+      {#if !session}<Button
+          type="button"
+          on:click={signInWithTwitterSupabaseSession}>Sign In</Button
+        >{/if}
+    </Card.Footer>
+  </Card.Root>
+</div>
 
-<!-- <div class="max-w-lg"> -->
-<!--   <Collapsible title="User details"> -->
-<!--     <div -->
-<!--       class="scrollbar-visible h-48 w-auto overflow-auto overflow-x-auto border" -->
-<!--     > -->
-<!--       <pre class="text-xs">{JSON.stringify($user, null, 2)}</pre> -->
-<!--     </div> -->
-<!--   </Collapsible> -->
-<!-- </div> -->
-
-<!-- {#if $user?.wallet} -->
-<!--   {#await $user?.wallet.requestAccounts() then accounts} -->
-<!--     Accounts: {accounts.join(', ')} -->
-<!--   {/await} -->
-<!---->
-<!--   <p> -->
-<!--     Sign message: <Button -->
-<!--       on:click={async () => { -->
-<!--         const msg = Buffer.from('Test Signing Message ', 'utf8'); -->
-<!--         const result = await $user?.wallet?.signMessage(msg); -->
-<!--         if (!result) return console.error(`No result: ${result}.`); -->
-<!--       }} -->
-<!--       type="button">Sign Message</Button -->
-<!--     > -->
-<!--   </p> -->
+<!-- <h1>Quest 1: 1000 points</h1> -->
+<!-- {#if !session} -->
+<!--   <Button type="button" on:click={signInWithTwitterSupabaseSession} -->
+<!--     >Connect Twitter</Button -->
+<!--   > -->
+<!-- {:else} -->
+<!--   <Button type="button" on:click={signOutSupabaseSession} -->
+<!--     >Sign Out From Twitter</Button -->
+<!--   > -->
 <!-- {/if} -->
 
-<h1>Quest 1: 1000 points</h1>
-{#if !session}
-  <Button type="button" on:click={signInWithTwitterSupabaseSession}
-    >Connect Twitter</Button
-  >
-{:else}
-  <Button type="button" on:click={signOutSupabaseSession}
-    >Sign Out From Twitter</Button
-  >
-{/if}
+<style>
+  .myprofile-root {
+    padding: 2em;
+  }
+</style>
