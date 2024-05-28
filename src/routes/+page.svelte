@@ -104,9 +104,10 @@
 
   <div class="milestones">
     <h1 class="martian-mono-medium">v1 Milestones</h1>
+    <p>- Landing Page</p>
     <p>- Pointonomics v1 introduced</p>
-    <p>- Referral leaderboard</p>
-    <p>- Waitlist</p>
+    <!-- <p>- Referral leaderboard</p> -->
+    <!-- <p>- Waitlist</p> -->
     <p>- Twitter authentication</p>
     <p>- Social wallet creation</p>
   </div>

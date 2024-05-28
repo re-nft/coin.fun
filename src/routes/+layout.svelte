@@ -18,33 +18,40 @@
     await $user.disconnect?.();
     goto('/');
   }
+
+  let hidden = true;
 </script>
 
 <nav class="martian-mono-light">
   <a href="/">home</a>
-  <!-- <a href="/leaderboard">leaderboard</a> -->
+  {#if !hidden}
+    <a href="/leaderboard">leaderboard</a>
+  {/if}
   <a href="/pointonomics">pointonomics</a>
-  <span style="cursor: pointer;">
-    <DropdownMenu.Root>
-      <!-- if user is not connected, will show "sign in" and on click will invoke web3auth-->
-      <!-- if user is connected, will show "my account" and will act as a dropdown -->
-      <DropdownMenu.Trigger>my account</DropdownMenu.Trigger>
-      <DropdownMenu.Content>
-        <DropdownMenu.Group>
-          {#if $user.isConnected}
-            <DropdownMenu.Item href="/myprofile">settings</DropdownMenu.Item>
-            <DropdownMenu.Item on:click={handleSignOut}
-              >sign out</DropdownMenu.Item
-            >
-          {:else}
-            <DropdownMenu.Item on:click={() => $user.connect?.()} type="button"
-              >sign in</DropdownMenu.Item
-            >
-          {/if}
-        </DropdownMenu.Group>
-      </DropdownMenu.Content>
-    </DropdownMenu.Root>
-  </span>
+  {#if !hidden}
+    <span style="cursor: pointer;">
+      <DropdownMenu.Root>
+        <!-- if user is not connected, will show "sign in" and on click will invoke web3auth-->
+        <!-- if user is connected, will show "my account" and will act as a dropdown -->
+        <DropdownMenu.Trigger>my account</DropdownMenu.Trigger>
+        <DropdownMenu.Content>
+          <DropdownMenu.Group>
+            {#if $user.isConnected}
+              <DropdownMenu.Item href="/myprofile">settings</DropdownMenu.Item>
+              <DropdownMenu.Item on:click={handleSignOut}
+                >sign out</DropdownMenu.Item
+              >
+            {:else}
+              <DropdownMenu.Item
+                on:click={() => $user.connect?.()}
+                type="button">sign in</DropdownMenu.Item
+              >
+            {/if}
+          </DropdownMenu.Group>
+        </DropdownMenu.Content>
+      </DropdownMenu.Root>
+    </span>
+  {/if}
 </nav>
 
 <slot />
