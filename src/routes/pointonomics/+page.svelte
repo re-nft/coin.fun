@@ -98,6 +98,11 @@
 
   <br />
 
+  <p>80% of all points will go to players</p>
+  <p>the rest will go to coin.fun dev team</p>
+
+  <br />
+
   <br />
 
   <p>
