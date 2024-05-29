@@ -167,9 +167,10 @@
   <br />
 
   <p>
-    People on the waitlist will be given exclusive access to coin.fun in the
-    first two weeks of launch. All fees accrued will be shared between these
-    accounts only
+    Those that register with coin.fun prior to Season 1 are eligible for trading
+    fee share. If you join during Season 1 you will not share in the trading
+    fees, but you are still able to earn points. Registering will be introduced
+    some time before Season 1 begins.
   </p>
   <br />
 
