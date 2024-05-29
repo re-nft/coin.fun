@@ -25,7 +25,7 @@
 
   <div style="margin: 0 3em;">
     <div class="row">
-      <div class="column">
+      <div class="column-left">
         <span class="martian-mono-medium">Hefties</span>
         <br />
         20k+ twitter followers
@@ -45,7 +45,7 @@
       <div class="column">
         <div><img class="w-48" src={Normies} alt="normal coin" /></div>
       </div>
-      <div class="column">
+      <div class="column-left">
         <span class="martian-mono-medium">Normies</span>
         <br />
         we are just normal bruh
@@ -59,7 +59,7 @@
     </div>
 
     <div class="row">
-      <div class="column">
+      <div class="column-left">
         <span class="martian-mono-medium">Zombies</span>
         <br />
         bots will find a way into the system
@@ -79,7 +79,7 @@
       <div class="column">
         <img class="w-48" src={Chads} alt="sunglasses coin" />
       </div>
-      <div class="column">
+      <div class="column-left">
         <span class="martian-mono-medium">Chads</span>
         <br />
         coining and printing memes on coin.fun app
@@ -122,7 +122,10 @@
   }
 
   .row {
-    margin-top: 2em;
+    max-width: 64em;
+    padding-left: 2em;
+    padding-right: 2em;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -138,10 +141,14 @@
     align-items: center;
   }
 
-  .playable-character {
+  .column-left {
     display: flex;
-    padding-top: 2em;
-    margin: 0 auto;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
   }
 
   h1 {
