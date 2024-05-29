@@ -23,59 +23,70 @@
 
   <h1 class="martian-mono-extrabold">playable characters</h1>
 
-  <div class="playable-character">
-    <div>
-      💸 <span class="martian-mono-medium">Hefties</span>
-      <br />
-      20k+ twitter followers
-      <br />
-      learned the dark arts of X algorithm
-      <br />
-      buying APs, driving Lambos, bonking, floking
-      <br />
-      life is a movie
+  <div style="margin: 0 3em;">
+    <div class="row">
+      <div class="column">
+        <span class="martian-mono-medium">Hefties</span>
+        <br />
+        20k+ twitter followers
+        <br />
+        learned the dark arts of X algorithm
+        <br />
+        buying APs, driving Lambos, bonking, floking
+        <br />
+        life is a movie
+      </div>
+      <div class="column">
+        <img class="w-48" src={Hefties} alt="fat coin" />
+      </div>
     </div>
-    <div class="w-48"><img src={Hefties} alt="fat coin" /></div>
-  </div>
 
-  <div class="playable-character">
-    <div class="w-48"><img src={Normies} alt="normal coin" /></div>
-    <div>
-      ☺️ <span class="martian-mono-medium">Normies</span>
-      <br />
-      we are just normal bruh
-      <br />
-      nothing else to say
-      <br />
-      takes a loan on the house and gets a SOL bag
-      <br />
-      bets on hamster races
+    <div class="row">
+      <div class="column">
+        <div><img class="w-48" src={Normies} alt="normal coin" /></div>
+      </div>
+      <div class="column">
+        <span class="martian-mono-medium">Normies</span>
+        <br />
+        we are just normal bruh
+        <br />
+        nothing else to say
+        <br />
+        takes a loan on the house and gets a SOL bag
+        <br />
+        bets on hamster races
+      </div>
     </div>
-  </div>
 
-  <div class="playable-character">
-    <div>
-      🧟 <span class="martian-mono-medium">Zombies</span>
-      <br />
-      they will find a way to game the system
-      <br />
-      props for trying
-      <br />
-      we embrace you, and you will get your slice of the pie
+    <div class="row">
+      <div class="column">
+        <span class="martian-mono-medium">Zombies</span>
+        <br />
+        bots will find a way into the system
+        <br />
+        props for trying
+        <br />
+        we embrace you, and you will get your slice of the pie
+        <br />
+        good bots, of course (wink wink)
+      </div>
+      <div class="column">
+        <img class="w-48" src={Zombies} alt="zombie coin" />
+      </div>
     </div>
-    <div class="w-48"><img src={Zombies} alt="zombie coin" /></div>
-  </div>
 
-  <div class="playable-character">
-    <div class="w-48"><img src={Chads} alt="sunglasses coin" /></div>
-    <div>
-      😎 <span class="martian-mono-medium">Chads</span>
-      🫰🤑
-      <br />
-      coining and printing memes on coin.fun app
-      <br />
-      coin.fun's lifeblood
-      <br />
+    <div class="row">
+      <div class="column">
+        <img class="w-48" src={Chads} alt="sunglasses coin" />
+      </div>
+      <div class="column">
+        <span class="martian-mono-medium">Chads</span>
+        <br />
+        coining and printing memes on coin.fun app
+        <br />
+        coin.fun's lifeblood
+        <br />
+      </div>
     </div>
   </div>
 
@@ -103,12 +114,6 @@
 </div>
 
 <style>
-  div {
-    padding-left: 2em;
-    padding-right: 2em;
-    margin: 0 auto;
-  }
-
   p {
     max-width: 64em;
     padding-left: 2em;
@@ -116,9 +121,27 @@
     margin: 0 auto;
   }
 
+  .row {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
   .playable-character {
     display: flex;
     padding-top: 2em;
+    margin: 0 auto;
   }
 
   h1 {
