@@ -3,6 +3,8 @@
   import Normies from '$lib/assets/Normies.svg';
   import Zombies from '$lib/assets/Zombies.svg';
   import Chads from '$lib/assets/Chads.svg';
+
+  import * as Table from '$lib/components/ui/table';
 </script>
 
 <div style="padding-top: 2em;">
@@ -100,6 +102,61 @@
 
   <p>80% of all points will go to players</p>
   <p>the rest will go to coin.fun dev team</p>
+
+  <br />
+
+  <div class="w-[400px]" style="margin: 0 auto;">
+    <Table.Root>
+      <Table.Caption
+        >Total Percentage Points Allocation Each Season</Table.Caption
+      >
+      <Table.Header>
+        <Table.Row>
+          <Table.Head class="w-[100px]">Season Number</Table.Head>
+          <Table.Head>Points Allocation</Table.Head>
+        </Table.Row>
+      </Table.Header>
+      <Table.Body>
+        <Table.Row>
+          <Table.Cell>1</Table.Cell>
+          <Table.Cell>30%</Table.Cell>
+        </Table.Row>
+
+        <Table.Row>
+          <Table.Cell>2</Table.Cell>
+          <Table.Cell>20%</Table.Cell>
+        </Table.Row>
+
+        <Table.Row>
+          <Table.Cell>3</Table.Cell>
+          <Table.Cell>20%</Table.Cell>
+        </Table.Row>
+
+        <Table.Row>
+          <Table.Cell>4</Table.Cell>
+          <Table.Cell>20%</Table.Cell>
+        </Table.Row>
+
+        <Table.Row>
+          <Table.Cell>5</Table.Cell>
+          <Table.Cell>10%</Table.Cell>
+        </Table.Row>
+      </Table.Body>
+    </Table.Root>
+  </div>
+
+  <br />
+
+  <p>
+    Seasons will be of varying lengths. Season 1 will last for 4 weeks and
+    starts at v2 launch
+  </p>
+
+  <p>
+    During Season 1 there will be questing system in place. On top of earning
+    points, hefties, normies, chads and zombies are entitled to 100% of the fee
+    revenue made from bonding curve trading.
+  </p>
 
   <br />
 
