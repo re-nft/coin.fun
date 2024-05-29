@@ -173,6 +173,9 @@
     The earlier you claim and register on coin.fun, the higher multiplier on the
     fees earned.
   </p>
+
+  <br />
+  <br />
 </div>
 
 <style>

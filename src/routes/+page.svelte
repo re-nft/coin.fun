@@ -97,19 +97,12 @@
   <h1 class="martian-mono-extrabold">Community Owned Memetoken Printer</h1>
   <div bind:this={container} style="width: 100%; height: 300px;" />
 
-  <div class="progress-container">
+  <div class="progress-container" style="margin-top: 2em;">
     <h1 class="martian-mono-medium">Launch Progress</h1>
     <Progress value={progressValue} max={100} />
-  </div>
-
-  <div class="milestones">
-    <h1 class="martian-mono-medium">v1 Milestones</h1>
-    <p>- Landing Page</p>
-    <p>- Pointonomics v1 introduced</p>
-    <!-- <p>- Referral leaderboard</p> -->
-    <!-- <p>- Waitlist</p> -->
-    <p>- Twitter authentication</p>
-    <p>- Social wallet creation</p>
+    <br />
+    <h2>v1 launched on 30/05/2024</h2>
+    <h2>v2 loading...</h2>
   </div>
 
   <br />
