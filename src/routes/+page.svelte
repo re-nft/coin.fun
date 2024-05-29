@@ -92,7 +92,6 @@
 <div class="landing-page">
   <br />
 
-  <!-- <h1 class="martian-mono-extrabold">Coin.fun</h1> -->
   <img src={CoinfunWordmark} alt="coin.fun text" />
   <h1 class="martian-mono-extrabold">Community Owned Memetoken Printer</h1>
   <div bind:this={container} style="width: 100%; height: 300px;" />
@@ -107,21 +106,21 @@
 
   <br />
 
-  <div class="steps">
-    <h1>1/ Earn 100% of the memetoken trading fees</h1>
-    <h1>2/ Invite your friends and earn their fees</h1>
-    <h1>3/ Complete quests and earn $COIN points</h1>
-    <h1>4/ Share on Twitter and earn more $COIN</h1>
-  </div>
+  <p>
+    <span style="font-size: 3em;">GET READY FOR SEASON 1</span>
+    <br />
+    CREATE MEMECOINS
+    <br />
+    EARN POINTS
+    <br />
+    <span class="earn-all-fees">EARN <strong style="font-size: 2em;">ALL</strong> TRADING FEES</span>
+    <br />
+    CREATE AND SHARE COIN.FUN MEMES ON TWITTER
+    <br />
+    CLICKITY CLICK THE COIN
+  </p>
 
   <br />
-
-  <div>
-    <h1>Philosophy</h1>
-    <p>anyone can create a memetoken, including your grandma</p>
-    <p>we are ruthless autocrats - community takes 90% of all points</p>
-    <p>empower big and small twitter accounts</p>
-  </div>
 </div>
 
 <style>
@@ -146,24 +145,6 @@
 
   .progress-container {
     margin: 20px 0;
-  }
-
-  .milestones,
-  .steps {
-    text-align: left;
-    margin: 20px 0;
-  }
-
-  .milestones h1,
-  .steps h1 {
-    font-size: 1.5em;
-    margin: 10px 0;
-    animation: fadeInUp 1s ease-in-out;
-  }
-
-  .milestones p {
-    margin: 10px 0;
-    animation: fadeInUp 1s ease-in-out;
   }
 
   @keyframes fadeIn {

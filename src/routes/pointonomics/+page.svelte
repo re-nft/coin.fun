@@ -9,7 +9,9 @@
 
 <div style="padding-top: 2em;">
   <p>
-    There will be a total supply of 420,690,000,000 tokens (cough cough points).
+    There will be a total of <span class="martian-mono-medium"
+      >420,690,000,000</span
+    > tokens (cough cough points)
   </p>
 
   <br />
@@ -18,7 +20,7 @@
     There are four groups of peeps who are very <b class="super-bold"
       >important</b
     > to us, who we shall uplift through this one of a kind kombucha, chakra unlocking,
-    third eye awakening, degenerate trading experience.
+    third eye awakening, degenerate trading experience
   </p>
 
   <br />
@@ -151,6 +153,8 @@
     Seasons will be of varying lengths. Season 1 will last for 4 weeks and
     starts at v2 launch
   </p>
+
+  <h1 class="martian-mono-extrabold">season 1 rundown</h1>
 
   <p>
     During Season 1 there will be questing system in place. On top of earning
