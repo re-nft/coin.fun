@@ -179,6 +179,46 @@
   </p>
 
   <br />
+  <p>
+    Season 1 revolves around the battle between the players. The starting split
+    between the 4 player groups is 30% hefties, 20% normies, 40% chads and 10%
+    zombies. These are the percentages for fee share. The final split depends on
+    how many points each player group earns towards the end of the season 1. If
+    hefties aren't earning any points, then the other groups will make their
+    fees.
+
+    <br />
+    Do not forget that each app user may be in more than one player group. Main objectives
+    of each group for season 1 will be:
+
+    <br />
+
+    1/ Hefties - register with coin.fun app, authorize their twitter account and
+    DM us that they wish to participate. The more engaging your tweets about
+    coin.fun the higher share of points you will be assigned. This then
+    increases the chances that all hefties stay at 40% of all trading fees for
+    that month. Moreover, you will be competing with other hefties for a share
+    of those 40%. In this way, you are competing together with you fellow
+    hefties versus zombies, chads and normies, whilst also at the same time you
+    compete against them within your player category.
+
+    <br />
+
+    2/ Normies - ..
+
+    <br />
+
+    3/ Chads - ..
+
+    <br />
+
+    4/ Zombies - ..
+  </p>
+
+  <br />
+  <p>Points estimates will be computed periodically throughout the day.</p>
+
+  <br />
   <br />
 </div>
 
