@@ -118,7 +118,7 @@
     💸<span class="earn-all-fees"
       >EARN <strong style="font-size: 2em; text-decoration: underline;"
         >ALL</strong
-      > TRADING FEES</span
+      > THE TRADING FEES</span
     >💸
     <br />
     🤤 CREATE AND SHARE COIN.FUN MEMES ON TWITTER 🤤

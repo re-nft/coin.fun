@@ -35,13 +35,13 @@
     <div class="row">
       <div class="column-left">
         <span class="martian-mono-medium playable-character">Hefties</span>
-        20k+ twitter followers
+        - 20k+ twitter followers
         <br />
-        learned the dark arts of X algorithm
+        - learned the dark arts of X algorithm
         <br />
-        buying APs, driving Lambos, bonking, floking
+        - buying APs, driving Lambos, bonking, floking
         <br />
-        life is a movie
+        - life is a movie
       </div>
       <div class="column">
         <img class="w-48" src={Hefties} alt="fat coin" />
@@ -51,9 +51,10 @@
     <div class="row">
       <div class="column-left">
         <span class="martian-mono-medium playable-character">Normies</span>
-        sells their kids and one kidney to load up on latest shills they read about on twitter
+        - sells their kids and one kidney to load up on latest shills they read about
+        on twitter
         <br />
-        bets on hamster races
+        - bets on hamster races
       </div>
       <div class="column">
         <div><img class="w-48" src={Normies} alt="normal coin" /></div>
@@ -63,15 +64,15 @@
     <div class="row">
       <div class="column-left">
         <span class="martian-mono-medium playable-character">Zombies</span>
-        whips out a split keyboard on hackathos to assert intellectual dominance
-        <br/>
-        uses arch btw
-        <br/>
-        uses nvim btw
+        - whips out a split keyboard on hackathos to assert intellectual dominance
         <br />
-        c02 monitor snug on the desk
+        - uses arch btw
         <br />
-        milady
+        - uses nvim btw
+        <br />
+        - c02 monitor snug on the desk
+        <br />
+        - milady
       </div>
       <div class="column">
         <img class="w-48" src={Zombies} alt="zombie coin" />
@@ -81,27 +82,28 @@
     <div class="row">
       <div class="column-left">
         <span class="martian-mono-medium playable-character">Chads</span>
-        coining and printing memes on coin.fun app
-        <br />
-        coin.fun's lifeblood
         <br />
       </div>
       <div class="column">
         <img class="w-48" src={Chads} alt="sunglasses coin" />
       </div>
     </div>
+
+    You naturally fall into one or more of these groups, depending on your
+    actions. Read on to learn more.
   </div>
 
-  <br />
   <!-- <p> -->
   <!--   Think of coin.fun as GTA V. You can play more than one character at the same -->
   <!--   time. You can be zombying and chading at the same time, for example. -->
   <!-- </p> -->
 
-  <br />
+  <h1 class="martian-mono-extrabold glow" style="font-size: 1.5em;">
+    <span style="text-decoration: line-through;">Token</span> Points Breakdown
+  </h1>
 
-  <p>80% of all points will go to players</p>
-  <p>the rest will go to coin.fun dev team</p>
+  <p>80% of all the points will go to players. The rest will go to coin.fun team.</p>
+  <p>There will be a total of 5 seasons. Points breakdown for each season is as follows.</p>
 
   <br />
 
@@ -148,8 +150,7 @@
   <br />
 
   <p>
-    Seasons will be of varying lengths. Season 1 will last for 4 weeks and
-    starts at v2 launch
+    Seasons will be of varying lengths. Season 1 will last for 4 weeks.
   </p>
 
   <h1 class="martian-mono-extrabold glow">season 1 mission debrief</h1>
@@ -259,7 +260,7 @@
     margin-bottom: 1em;
     font-size: 2em;
   }
-  
+
   .playable-character {
     font-size: 1.15em;
     text-decoration: underline;
