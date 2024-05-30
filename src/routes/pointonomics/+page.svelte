@@ -7,27 +7,31 @@
   import * as Table from '$lib/components/ui/table';
 </script>
 
-<div style="padding-top: 2em;">
+<div class="pointonomics">
   <p>
-    There will be a total of <span class="martian-mono-medium"
-      >420,690,000,000</span
+    There will be a total of <span
+      class="martian-mono-medium"
+      style="font-size: 1.5em;">420,690,000,000</span
     > tokens (cough cough points)
   </p>
 
   <br />
 
   <p>
-    There are four groups of peeps who are very <b class="super-bold"
-      >important</b
-    > to us, who we shall uplift through this one of a kind kombucha, chakra unlocking,
-    third eye awakening, degenerate trading experience
+    There are four playable characters who we shall uplift through this one of a <strong
+      style="font-weight: 800;"
+      >kind kombucha chakra unlocking third eye awakening degenerate trading
+      experience</strong
+    >
   </p>
 
   <br />
 
-  <h1 class="martian-mono-extrabold">playable characters</h1>
+  <h1 class="martian-mono-extrabold" style="font-size: 1.5em;">
+    playable characters
+  </h1>
 
-  <div style="margin: 0 3em;">
+  <div>
     <div class="row">
       <div class="column-left">
         <span class="martian-mono-medium">Hefties</span>
@@ -48,12 +52,7 @@
     <div class="row">
       <div class="column-left">
         <span class="martian-mono-medium">Normies</span>
-        <br />
-        we are just normal bruh
-        <br />
-        nothing else to say
-        <br />
-        takes a loan on the house and gets a SOL bag
+        sells their kids and one kidney to load up on latest shills they read about on twitter
         <br />
         bets on hamster races
       </div>
@@ -95,10 +94,10 @@
   </div>
 
   <br />
-  <p>
-    Think of coin.fun as GTA V. You can play more than one character at the same
-    time. You can be zombying and chading at the same time, for example.
-  </p>
+  <!-- <p> -->
+  <!--   Think of coin.fun as GTA V. You can play more than one character at the same -->
+  <!--   time. You can be zombying and chading at the same time, for example. -->
+  <!-- </p> -->
 
   <br />
 
@@ -154,7 +153,7 @@
     starts at v2 launch
   </p>
 
-  <h1 class="martian-mono-extrabold">season 1 rundown</h1>
+  <h1 class="martian-mono-extrabold">season 1 mission debrief</h1>
 
   <p>
     During Season 1 there will be questing system in place. On top of earning
@@ -224,18 +223,12 @@
 </div>
 
 <style>
-  p {
+  .pointonomics {
     max-width: 64em;
-    padding-left: 2em;
-    padding-right: 2em;
     margin: 0 auto;
   }
 
   .row {
-    max-width: 64em;
-    padding-left: 2em;
-    padding-right: 2em;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -262,11 +255,9 @@
   }
 
   h1 {
-    margin: 2em;
     text-align: center;
-  }
-
-  .super-bold {
-    font-weight: 600;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 2em;
   }
 </style>

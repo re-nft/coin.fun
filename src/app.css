@@ -32,6 +32,11 @@
     --destructive-foreground: 0 0% 98%;
 
     --ring: 240 4.9% 83.9%;
+
+    --martian-mono-font-family: 'Martian Mono', monospace;
+    --martian-mono-optical-sizing: auto;
+    --martian-mono-font-style: normal;
+    --martian-mono-variation-settings: 'wdth' 100;
   }
 
   .light {
@@ -68,43 +73,35 @@
   }
 }
 
+/* Base class for Martian Mono */
+.martian-mono {
+  font-family: var(--martian-mono-font-family);
+  font-optical-sizing: var(--martian-mono-optical-sizing);
+  font-style: var(--martian-mono-font-style);
+  font-variation-settings: var(--martian-mono-variation-settings);
+}
+
+/* Specific classes for font weights */
+.martian-mono-light {
+  @extend .martian-mono;
+  font-weight: 300;
+}
+
+.martian-mono-medium {
+  @extend .martian-mono;
+  font-weight: 500;
+}
+
+.martian-mono-extrabold {
+  @extend .martian-mono;
+  font-weight: 800;
+}
+
 @layer base {
   * {
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground martian-mono;
   }
-}
-
-body {
-  font-family: 'Martian Mono', monospace;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-variation-settings: 'wdth' 100;
-}
-
-.martian-mono-light {
-  font-family: 'Martian Mono', monospace;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-variation-settings: 'wdth' 100;
-}
-
-.martian-mono-medium {
-  font-family: 'Martian Mono', monospace;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-  font-variation-settings: 'wdth' 100;
-}
-
-.martian-mono-extrabold {
-  font-family: 'Martian Mono', monospace;
-  font-optical-sizing: auto;
-  font-weight: 800;
-  font-style: normal;
-  font-variation-settings: 'wdth' 100;
 }
