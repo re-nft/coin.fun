@@ -93,7 +93,9 @@
   <br />
 
   <img src={CoinfunWordmark} alt="coin.fun text" />
-  <h1 class="martian-mono-extrabold glow" style="color: var(--color-orange);">Community Owned Memetoken Printer</h1>
+  <h1 class="martian-mono-extrabold glow" style="color: var(--color-orange);">
+    Community Owned Memetoken Printer
+  </h1>
   <div bind:this={container} style="width: 100%; height: 300px;" />
 
   <div class="progress-container" style="margin-top: 2em;">
@@ -105,17 +107,23 @@
   <br />
 
   <p>
-    <span style="font-size: 3em;">GET READY FOR SEASON 1</span>
+    <span style="font-size: 2em; font-weight: 800;"
+      >GET READY FOR <span class="highlight">SEASON 1</span></span
+    >
     <br />
-    CREATE MEMECOINS
+    🪙 CREATE MEMECOINS 🪙
     <br />
-    EARN POINTS
+    ✨ EARN POINTS ✨
     <br />
-    <span class="earn-all-fees">EARN <strong style="font-size: 2em;">ALL</strong> TRADING FEES</span>
+    💸<span class="earn-all-fees"
+      >EARN <strong style="font-size: 2em; text-decoration: underline;"
+        >ALL</strong
+      > TRADING FEES</span
+    >💸
     <br />
-    CREATE AND SHARE COIN.FUN MEMES ON TWITTER
+    🤤 CREATE AND SHARE COIN.FUN MEMES ON TWITTER 🤤
     <br />
-    CLICKITY CLICK THE COIN
+    ⁉️ CLICKITY CLICK THE COIN ⁉️
   </p>
 
   <br />
