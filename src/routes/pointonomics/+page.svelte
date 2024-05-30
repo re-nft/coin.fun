@@ -46,9 +46,6 @@
     </div>
 
     <div class="row">
-      <div class="column">
-        <div><img class="w-48" src={Normies} alt="normal coin" /></div>
-      </div>
       <div class="column-left">
         <span class="martian-mono-medium">Normies</span>
         <br />
@@ -59,6 +56,9 @@
         takes a loan on the house and gets a SOL bag
         <br />
         bets on hamster races
+      </div>
+      <div class="column">
+        <div><img class="w-48" src={Normies} alt="normal coin" /></div>
       </div>
     </div>
 
@@ -80,9 +80,6 @@
     </div>
 
     <div class="row">
-      <div class="column">
-        <img class="w-48" src={Chads} alt="sunglasses coin" />
-      </div>
       <div class="column-left">
         <span class="martian-mono-medium">Chads</span>
         <br />
@@ -90,6 +87,9 @@
         <br />
         coin.fun's lifeblood
         <br />
+      </div>
+      <div class="column">
+        <img class="w-48" src={Chads} alt="sunglasses coin" />
       </div>
     </div>
   </div>
