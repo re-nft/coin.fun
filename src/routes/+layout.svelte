@@ -22,7 +22,7 @@
   let hidden = true;
 </script>
 
-<nav class="martian-mono-light">
+<nav>
   <a href="/">home</a>
   {#if !hidden}
     <a href="/leaderboard">leaderboard</a>
@@ -59,15 +59,15 @@
 <!-- shadcn/ui for svelte does not have the nav component -->
 <style>
   nav {
-    background-color: #111111;
-    padding: 10px;
+    background-color: var(--color-orange);
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
   }
 
   nav a,
   span {
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 10px 20px;
     font-size: 16px;

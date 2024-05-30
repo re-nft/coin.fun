@@ -27,7 +27,7 @@
 
   <br />
 
-  <h1 class="martian-mono-extrabold" style="font-size: 1.5em;">
+  <h1 class="martian-mono-extrabold glow" style="font-size: 1.5em;">
     playable characters
   </h1>
 
@@ -150,7 +150,7 @@
     starts at v2 launch
   </p>
 
-  <h1 class="martian-mono-extrabold">season 1 mission debrief</h1>
+  <h1 class="martian-mono-extrabold glow">season 1 mission debrief</h1>
 
   <p>
     During Season 1 there will be questing system in place. On top of earning
@@ -222,7 +222,7 @@
 <style>
   .pointonomics {
     max-width: 64em;
-    margin: 0 auto;
+    margin: 2em auto;
   }
 
   .row {
