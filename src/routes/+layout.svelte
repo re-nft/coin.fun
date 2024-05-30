@@ -38,7 +38,7 @@
       id: Date.now(),
       character: emojis[Math.floor(Math.random() * emojis.length)],
       left: Math.random() * 100 + 'vw',
-      duration: 5 + Math.random() * 10 + 's',
+      duration: 15 + Math.random() * 10 + 's',
       size: 16 + Math.random() * 32 + 'px',
       opacity: Math.random()
     };
@@ -148,7 +148,7 @@
   .emoji {
     position: absolute;
     will-change: transform;
-    animation: fly 10s linear infinite;
+    animation: fly 20s linear infinite;
   }
 
   @keyframes fly {
@@ -157,7 +157,7 @@
       opacity: 1;
     }
     100% {
-      transform: translateY(-100vh) rotate(720deg);
+      transform: translateY(0vh) rotate(360deg);
       opacity: 0;
     }
   }
