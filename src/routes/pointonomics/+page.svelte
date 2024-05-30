@@ -35,7 +35,6 @@
     <div class="row">
       <div class="column-left">
         <span class="martian-mono-medium">Hefties</span>
-        <br />
         20k+ twitter followers
         <br />
         learned the dark arts of X algorithm
@@ -64,7 +63,6 @@
     <div class="row">
       <div class="column-left">
         <span class="martian-mono-medium">Zombies</span>
-        <br />
         bots will find a way into the system
         <br />
         props for trying
@@ -81,7 +79,6 @@
     <div class="row">
       <div class="column-left">
         <span class="martian-mono-medium">Chads</span>
-        <br />
         coining and printing memes on coin.fun app
         <br />
         coin.fun's lifeblood

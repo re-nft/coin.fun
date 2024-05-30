@@ -5,7 +5,7 @@
 @layer base {
   :root {
     --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    --foreground: 73 96% 73%;
 
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
@@ -37,6 +37,15 @@
     --martian-mono-optical-sizing: auto;
     --martian-mono-font-style: normal;
     --martian-mono-variation-settings: 'wdth' 100;
+
+    /* these are leonor's brand colors */
+    --color-orange: #ffb533;
+    --color-light-green: #e0fc7a;
+    --color-beige: #fffbdd;
+    --color-green: #02ad64;
+    --color-black: #111111;
+    --color-red-orange: #ff4e0a;
+    --color-light-orange: #ff8a33;
   }
 
   .light {
@@ -73,6 +82,17 @@
   }
 }
 
+.glow {
+  text-shadow:
+    0 0 5px var(--color-green),
+    0 0 10px var(--color-green),
+    0 0 15px var(--color-green),
+    0 0 20px var(--color-green),
+    0 0 25px var(--color-green),
+    0 0 30px var(--color-green),
+    0 0 35px var(--color-green);
+}
+
 /* Base class for Martian Mono */
 .martian-mono {
   font-family: var(--martian-mono-font-family);
@@ -102,6 +122,6 @@
     @apply border-border;
   }
   body {
-    @apply bg-background text-foreground martian-mono;
+    @apply martian-mono bg-background text-foreground;
   }
 }
