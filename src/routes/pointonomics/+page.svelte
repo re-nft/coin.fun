@@ -10,7 +10,7 @@
 <div class="pointonomics">
   <p>
     There will be a total of <span
-      class="martian-mono-medium"
+      class="martian-mono-medium glow"
       style="font-size: 1.5em;">420,690,000,000</span
     > tokens (cough cough points)
   </p>
@@ -34,7 +34,7 @@
   <div>
     <div class="row">
       <div class="column-left">
-        <span class="martian-mono-medium">Hefties</span>
+        <span class="martian-mono-medium playable-character">Hefties</span>
         20k+ twitter followers
         <br />
         learned the dark arts of X algorithm
@@ -50,7 +50,7 @@
 
     <div class="row">
       <div class="column-left">
-        <span class="martian-mono-medium">Normies</span>
+        <span class="martian-mono-medium playable-character">Normies</span>
         sells their kids and one kidney to load up on latest shills they read about on twitter
         <br />
         bets on hamster races
@@ -62,14 +62,16 @@
 
     <div class="row">
       <div class="column-left">
-        <span class="martian-mono-medium">Zombies</span>
-        bots will find a way into the system
+        <span class="martian-mono-medium playable-character">Zombies</span>
+        whips out a split keyboard on hackathos to assert intellectual dominance
+        <br/>
+        uses arch btw
+        <br/>
+        uses nvim btw
         <br />
-        props for trying
+        c02 monitor snug on the desk
         <br />
-        we embrace you, and you will get your slice of the pie
-        <br />
-        good bots, of course (wink wink)
+        milady
       </div>
       <div class="column">
         <img class="w-48" src={Zombies} alt="zombie coin" />
@@ -78,7 +80,7 @@
 
     <div class="row">
       <div class="column-left">
-        <span class="martian-mono-medium">Chads</span>
+        <span class="martian-mono-medium playable-character">Chads</span>
         coining and printing memes on coin.fun app
         <br />
         coin.fun's lifeblood
@@ -256,5 +258,11 @@
     margin-top: 2em;
     margin-bottom: 1em;
     font-size: 2em;
+  }
+  
+  .playable-character {
+    font-size: 1.15em;
+    text-decoration: underline;
+    font-weight: 800;
   }
 </style>
