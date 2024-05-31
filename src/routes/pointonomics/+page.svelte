@@ -203,10 +203,6 @@
       and Zombies rewards. For Hefties and Normies, you must perform an extra
       step of connecting your Twitter account with coin.fun.
     </p>
-    <p>
-      The earlier you claim and register on coin.fun, the higher multiplier on
-      the fees earned.
-    </p>
 
     <br />
     <p>
