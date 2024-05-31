@@ -94,7 +94,7 @@
 
   <img src={CoinfunWordmark} alt="coin.fun text" />
   <h1 class="martian-mono-extrabold glow" style="color: var(--color-orange);">
-    Community Owned Memetoken Printer
+    Community Owned Memecoin Printer
   </h1>
   <div bind:this={container} style="width: 100%; height: 300px;" />
 
