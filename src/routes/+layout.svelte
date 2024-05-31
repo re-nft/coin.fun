@@ -7,6 +7,8 @@
   import { createStore as createUserStore } from '$lib/user';
   import * as DropdownMenu from '$lib/components/ui/dropdown-menu';
   import { goto } from '$app/navigation';
+  // do not remove this import. we use it for vercel analytics
+  import { inject } from '@vercel/analytics';
 
   export let data;
 
