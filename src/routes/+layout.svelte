@@ -30,7 +30,7 @@
     opacity: number;
   };
 
-  const emojis = ['🚀', '🌟', '🔥', '🎉', '✨', '🍀', '💎'];
+  const emojis = ['🚀', '🔥', '✨', '💎'];
   let emojiList: Emoji[] = [];
 
   function createEmoji() {
@@ -39,7 +39,7 @@
       character: emojis[Math.floor(Math.random() * emojis.length)],
       left: Math.random() * 100 + 'vw',
       duration: 15 + Math.random() * 10 + 's',
-      size: 16 + Math.random() * 32 + 'px',
+      size: 16 + Math.random() * 16 + 'px',
       opacity: Math.random()
     };
 

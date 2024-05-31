@@ -64,15 +64,13 @@
     <div class="row">
       <div class="column-left">
         <span class="martian-mono-medium playable-character">Zombies</span>
-        - whips out a split keyboard on hackathos to assert intellectual dominance
+        - whips out a split keyboard on hackathons to assert intellectual dominance
         <br />
         - uses arch btw
         <br />
         - uses nvim btw
         <br />
         - c02 monitor snug on the desk
-        <br />
-        - milady
       </div>
       <div class="column">
         <img class="w-48" src={Zombies} alt="zombie coin" />
@@ -82,6 +80,9 @@
     <div class="row">
       <div class="column-left">
         <span class="martian-mono-medium playable-character">Chads</span>
+        - create memetokens on coin.fun
+        <br />
+        - trade on coin.fun
         <br />
       </div>
       <div class="column">
@@ -102,8 +103,13 @@
     <span style="text-decoration: line-through;">Token</span> Points Breakdown
   </h1>
 
-  <p>80% of all the points will go to players. The rest will go to coin.fun team.</p>
-  <p>There will be a total of 5 seasons. Points breakdown for each season is as follows.</p>
+  <p>
+    80% of all the points will go to players. The rest will go to coin.fun team.
+  </p>
+  <p>
+    There will be a total of 5 seasons. Points breakdown for each season is as
+    follows.
+  </p>
 
   <br />
 
@@ -150,7 +156,8 @@
   <br />
 
   <p>
-    Seasons will be of varying lengths. Season 1 will last for 4 weeks.
+    Seasons will be of varying lengths. Season 1 will last for 4 weeks. There
+    will be mid-season windows during which no points can be earned.
   </p>
 
   <h1 class="martian-mono-extrabold glow">season 1 mission debrief</h1>
@@ -167,9 +174,8 @@
 
   <p>
     Those that register with coin.fun prior to Season 1 are eligible for trading
-    fee share. If you join during Season 1 you will not share in the trading
-    fees, but you are still able to earn points. Registering will be introduced
-    some time before Season 1 begins.
+    fee share during Season 1. If you join during Season 1 you will not share in
+    the trading fees, but you are still able to earn points.
   </p>
   <br />
 
@@ -192,24 +198,28 @@
     of each group for season 1 will be:
 
     <br />
+    <br />
 
     1/ Hefties - register with coin.fun app, authorize their twitter account and
     DM us that they wish to participate. The more engaging your tweets about
     coin.fun the higher share of points you will be assigned. This then
     increases the chances that all hefties stay at 40% of all trading fees for
     that month. Moreover, you will be competing with other hefties for a share
-    of those 40%. In this way, you are competing together with you fellow
+    of those 40%. In this way, you are competing together with your fellow
     hefties versus zombies, chads and normies, whilst also at the same time you
     compete against them within your player category.
 
+    <br />
     <br />
 
     2/ Normies - ..
 
     <br />
+    <br />
 
     3/ Chads - ..
 
+    <br />
     <br />
 
     4/ Zombies - ..
