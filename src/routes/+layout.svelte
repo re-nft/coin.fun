@@ -21,6 +21,8 @@
     goto('/');
   }
 
+  inject();
+
   let hidden = true;
 
   type Emoji = {
