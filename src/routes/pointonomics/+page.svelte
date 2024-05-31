@@ -12,7 +12,8 @@
     There will be a total of <span
       class="martian-mono-medium glow"
       style="font-size: 1.5em;">420,690,000,000</span
-    > tokens (cough cough points)
+    > tokens, which shall be distributed via points system. Points do not map 1:1
+    to tokens.
   </p>
 
   <br />
@@ -235,25 +236,29 @@
       <br />
       <br />
 
-      2/ Normies - ..
+      2/ Normies - there will be an allocation of points that accumulates at a
+      constant rate until end of Season 1. All you have to do is to simply
+      connect your twiter account in the "My Account". The earlier you do this
+      the more points you will collect.
 
       <br />
       <br />
 
-      3/ Chads - ..
+      3/ Chads - keep trading the coins. Make new coins.
 
       <br />
       <br />
 
-      4/ Zombies - ..
+      4/ Zombies - there will be development bounties. Contribute to the
+      ecosystem with code. Create analytics boards and share for claim of the
+      points.
     </p>
   </section>
 
   <br />
-  <p>Points estimates will be computed periodically throughout the day.</p>
 
-  <br />
-  <br />
+  This doc might get updated from time to time. We will keep reference of all
+  past versions. You are reading v1.0 of the doc.
 </div>
 
 <style>
@@ -321,6 +326,5 @@
 
   section {
     position: relative;
-    padding: 50px 0;
   }
 </style>
