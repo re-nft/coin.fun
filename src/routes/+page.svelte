@@ -1,92 +1,6 @@
 <script lang="ts">
-  import { browser } from '$app/environment';
-  import { onMount } from 'svelte';
-  import { Progress } from '$lib/components/ui/progress/index.js';
-  import * as THREE from 'three';
-  import Coin from '$lib/assets/coinsvg.svg';
   import CoinfunWordmark from '$lib/assets/coinfunwordmark.svg';
-
-  let progressValue = 0;
-  let container: HTMLElement;
-
-  class CoinAnimation {
-    camera: THREE.PerspectiveCamera;
-    scene: THREE.Scene;
-    renderer: THREE.WebGLRenderer;
-    coin: THREE.Mesh;
-
-    constructor(container: HTMLElement) {
-      // if (!container) {
-      //   console.error('Container element is not defined');
-      //   return;
-      // }
-
-      this.scene = new THREE.Scene();
-      this.camera = new THREE.PerspectiveCamera(
-        75,
-        container.clientWidth / container.clientHeight,
-        0.1,
-        1000
-      );
-      this.renderer = new THREE.WebGLRenderer({ alpha: true });
-      this.renderer.setSize(container.clientWidth, container.clientHeight);
-      container.appendChild(this.renderer.domElement);
-
-      const textureLoader = new THREE.TextureLoader();
-      const texture = textureLoader.load(Coin, (texture) => {
-        texture.minFilter = THREE.LinearFilter;
-        texture.magFilter = THREE.LinearFilter;
-      });
-
-      const geometry = new THREE.CylinderGeometry(5, 5, 1, 64);
-      texture.colorSpace = THREE.SRGBColorSpace;
-      const materials = [
-        new THREE.MeshBasicMaterial({ color: '#ff8a33' }),
-        new THREE.MeshBasicMaterial({ map: texture }),
-        new THREE.MeshBasicMaterial({ map: texture })
-      ];
-      this.coin = new THREE.Mesh(geometry, materials);
-      this.scene.add(this.coin);
-      this.camera.position.z = 9;
-
-      this.animate();
-    }
-
-    animate = () => {
-      requestAnimationFrame(this.animate);
-      this.coin.rotation.x += 0.01;
-      this.coin.rotation.y += 0.01;
-      this.renderer.render(this.scene, this.camera);
-    };
-
-    dispose = () => {
-      if (this.renderer) {
-        this.renderer.dispose();
-        this.scene.remove(this.coin);
-        this.coin.geometry.dispose();
-        if (this.renderer.domElement.parentElement) {
-          this.renderer.domElement.parentElement.removeChild(
-            this.renderer.domElement
-          );
-        }
-      }
-    };
-  }
-
-  let coinAnimation: CoinAnimation;
-
-  onMount(() => {
-    // const timer = setTimeout(() => (progressValue = 30), 500);
-    if (browser) {
-      coinAnimation = new CoinAnimation(container);
-    }
-    return () => {
-      // clearTimeout(timer);
-      if (coinAnimation) {
-        coinAnimation.dispose();
-      }
-    };
-  });
+  import CoinAnimation from '$lib/components/CoinAnimation.svelte';
 </script>
 
 <div class="landing-page">
@@ -96,7 +10,8 @@
   <h1 class="martian-mono-extrabold glow" style="color: var(--color-orange);">
     Community Owned Memecoin Printer
   </h1>
-  <div bind:this={container} style="width: 100%; height: 300px;" />
+
+  <CoinAnimation />
 
   <div class="progress-container" style="margin-top: 2em;">
     <!-- <h1 class="martian-mono-medium">Launch Progress</h1> -->
