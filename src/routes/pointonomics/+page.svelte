@@ -1,7 +1,7 @@
 <script lang="ts">
   import Hefties from '$lib/assets/Hefties.svg';
   import Normies from '$lib/assets/Normies.svg';
-  import Zombies from '$lib/assets/Zombies.svg';
+  // import Zombies from '$lib/assets/Zombies.svg';
   import Chads from '$lib/assets/Chads.svg';
 
   import * as Table from '$lib/components/ui/table';
@@ -188,8 +188,8 @@
 
     <p>
       During Season 1 there will be questing system in place. On top of earning
-      points, hefties, normies, chads and zombies are entitled to 100% of the
-      fee revenue made from bonding curve trading.
+      points, hefties, normies and chads are entitled to 100% of the fee revenue
+      made from bonding curve trading.
     </p>
 
     <br />
@@ -202,18 +202,18 @@
       join, you need to go to "My Account". Here you can either connect your
       existing wallet, or simply use socials to register. This will
       automatically create a wallet for you. This is how to register for Chads
-      and Zombies rewards. For Hefties and Normies, you must perform an extra
-      step of connecting your Twitter account with coin.fun.
+      rewards. For Hefties and Normies, you must perform an extra step of
+      connecting your Twitter account with coin.fun.
     </p>
 
     <br />
     <p>
       Season 1 revolves around the battle between the players. The starting
-      split between the 4 player groups is 30% hefties, 20% normies, 40% chads
-      and 10% zombies. These are the percentages for fee share. The final split
-      depends on how many points each player group earns towards the end of the
-      season 1. If hefties aren't earning any points, then the other groups will
-      make their fees.
+      split between the 4 player groups is 35% hefties, 25% normies and 40%
+      chads. These are the percentages for fee share. The final split depends on
+      how many points each player group earns towards the end of the season 1.
+      If hefties aren't earning any points, then the other groups will make
+      their fees.
 
       <br />
       Do not forget that each app user may be in more than one player group. Main
@@ -228,8 +228,8 @@
       increases the chances that all hefties stay at 40% of all trading fees for
       that month. Moreover, you will be competing with other hefties for a share
       of those 40%. In this way, you are competing together with your fellow
-      hefties versus zombies, chads and normies, whilst also at the same time
-      you compete against them within your player category.
+      hefties versus chads and normies, whilst also at the same time you compete
+      against individual hefties within your player category.
 
       <br />
       <br />
