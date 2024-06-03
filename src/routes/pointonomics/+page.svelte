@@ -66,21 +66,24 @@
         </div>
       </div>
 
-      <div class="row">
-        <div class="column-left">
-          <span class="martian-mono-medium playable-character">Zombies</span>
-          - whips out a split keyboard on hackathons to assert intellectual dominance
-          <br />
-          - uses arch btw
-          <br />
-          - uses nvim btw
-          <br />
-          - c02 monitor snug on the desk
-        </div>
-        <div class="column">
-          <img class="w-48" src={Zombies} alt="zombie coin" />
-        </div>
-      </div>
+      <!-- not sure if we want this class yet, this is a lot of work -->
+      <!-- for us. might introduce it in later seasons. thus commenting out -->
+      <!-- and not complete delete -->
+      <!-- <div class="row"> -->
+      <!--   <div class="column-left"> -->
+      <!--     <span class="martian-mono-medium playable-character">Zombies</span> -->
+      <!--     - whips out a split keyboard on hackathons to assert intellectual dominance -->
+      <!--     <br /> -->
+      <!--     - uses arch btw -->
+      <!--     <br /> -->
+      <!--     - uses nvim btw -->
+      <!--     <br /> -->
+      <!--     - c02 monitor snug on the desk -->
+      <!--   </div> -->
+      <!--   <div class="column"> -->
+      <!--     <img class="w-48" src={Zombies} alt="zombie coin" /> -->
+      <!--   </div> -->
+      <!-- </div> -->
 
       <div class="row">
         <div class="column-left">
@@ -190,7 +193,6 @@
     </p>
 
     <br />
-
     <br />
 
     <p>
@@ -241,13 +243,6 @@
       <br />
 
       3/ Chads - keep trading the coins. Make new coins.
-
-      <br />
-      <br />
-
-      4/ Zombies - there will be development bounties. Contribute to the
-      ecosystem with code. Create analytics boards and share for claim of the
-      points.
     </p>
   </section>
 
