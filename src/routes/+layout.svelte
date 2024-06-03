@@ -1,14 +1,13 @@
 <script lang="ts">
   import '../app.css';
 
-  import { setContext, onMount } from 'svelte';
-
-  import { createStore as createSolanaStore } from '$lib/solana';
-  import { createStore as createUserStore } from '$lib/user';
-  import * as DropdownMenu from '$lib/components/ui/dropdown-menu';
-  import { goto } from '$app/navigation';
   // do not remove this import. we use it for vercel analytics
   import { inject } from '@vercel/analytics';
+  import { onMount, setContext } from 'svelte';
+
+  import Navigation from '$lib/components/Navigation.svelte';
+  import { createStore as createSolanaStore } from '$lib/solana';
+  import { createStore as createUserStore } from '$lib/user';
 
   export let data;
 
@@ -16,14 +15,7 @@
   let user = createUserStore();
   setContext('user', user);
 
-  async function handleSignOut() {
-    await $user.disconnect?.();
-    goto('/');
-  }
-
   inject();
-
-  let hidden = true;
 
   type Emoji = {
     id: number;
@@ -66,37 +58,7 @@
   });
 </script>
 
-<nav>
-  <a href="/">home</a>
-  {#if !hidden}
-    <a href="/leaderboard">leaderboard</a>
-  {/if}
-  <a href="/pointonomics">pointonomics</a>
-  {#if !hidden}
-    <span style="cursor: pointer;">
-      <DropdownMenu.Root>
-        <!-- if user is not connected, will show "sign in" and on click will invoke web3auth-->
-        <!-- if user is connected, will show "my account" and will act as a dropdown -->
-        <DropdownMenu.Trigger>my account</DropdownMenu.Trigger>
-        <DropdownMenu.Content>
-          <DropdownMenu.Group>
-            {#if $user.isConnected}
-              <DropdownMenu.Item href="/myprofile">settings</DropdownMenu.Item>
-              <DropdownMenu.Item on:click={handleSignOut}
-                >sign out</DropdownMenu.Item
-              >
-            {:else}
-              <DropdownMenu.Item
-                on:click={() => $user.connect?.()}
-                type="button">sign in</DropdownMenu.Item
-              >
-            {/if}
-          </DropdownMenu.Group>
-        </DropdownMenu.Content>
-      </DropdownMenu.Root>
-    </span>
-  {/if}
-</nav>
+<Navigation />
 
 <slot />
 <div id="emoji-container" class="emoji-container">
@@ -117,28 +79,6 @@
 
 <!-- shadcn/ui for svelte does not have the nav component -->
 <style>
-  nav {
-    background-color: var(--color-orange);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: underline dotted;
-  }
-
-  nav a,
-  span {
-    color: black;
-    text-decoration: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-  }
-
-  nav a:hover,
-  span:hover {
-    background-color: #02ad64;
-  }
-
   .emoji-container {
     position: fixed;
     top: 0;
