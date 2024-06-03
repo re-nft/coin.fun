@@ -60,7 +60,10 @@
 
 <Navigation />
 
-<slot />
+<main class="container">
+  <slot />
+</main>
+
 <div id="emoji-container" class="emoji-container">
   {#each emojiList as emoji (emoji.id)}
     <div
