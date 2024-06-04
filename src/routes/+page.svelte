@@ -17,7 +17,7 @@
   GET READY FOR <span class="highlight">SEASON 1</span>
 </p>
 
-<ul class="text-center">
+<ul class="mb-20 text-center">
   <li>🪙 CREATE MEMECOINS 🪙</li>
   <li>✨ EARN POINTS ✨</li>
   <li>

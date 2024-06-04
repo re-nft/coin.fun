@@ -22,7 +22,7 @@
 
 <Navigation />
 
-<main class="container">
+<main class="container flow-root">
   <slot />
 </main>
 
