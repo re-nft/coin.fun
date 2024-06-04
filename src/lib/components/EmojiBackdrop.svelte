@@ -43,7 +43,11 @@
   });
 </script>
 
-<div id="emoji-container" class="pointer-events-none fixed inset-0 z-[-1]">
+<div
+  id="emoji-container"
+  class="pointer-events-none fixed inset-0 z-[-1]"
+  role="presentation"
+>
   {#each emojiList as emoji (emoji.id)}
     <div
       class="emoji absolute will-change-transform"
