@@ -11,6 +11,7 @@
     "dev:db": "node --env-file=.env scripts/db",
     "dev:lint": "npm run check -- --watch",
     "build": "vite build",
+    "postbuild": "npm run db:migrate",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "lint": "prettier --check . && eslint . && npm run check",
