@@ -3,8 +3,13 @@
   import * as THREE from 'three';
 
   import Coin from '$lib/assets/coinsvg.svg';
+  import { cn } from '$lib/utils/ui';
+
+  let className: string | undefined = undefined;
+  export { className as class };
 
   let container: HTMLElement;
+  let instance: CoinAnimation | undefined;
 
   class CoinAnimation {
     camera: THREE.PerspectiveCamera;
@@ -13,11 +18,6 @@
     coin: THREE.Mesh;
 
     constructor(container: HTMLElement) {
-      // if (!container) {
-      //   console.error('Container element is not defined');
-      //   return;
-      // }
-
       this.scene = new THREE.Scene();
       this.camera = new THREE.PerspectiveCamera(
         75,
@@ -49,14 +49,14 @@
       this.animate();
     }
 
-    animate = () => {
-      requestAnimationFrame(this.animate);
+    animate() {
+      requestAnimationFrame(() => this.animate());
       this.coin.rotation.x += 0.01;
       this.coin.rotation.y += 0.01;
       this.renderer.render(this.scene, this.camera);
-    };
+    }
 
-    dispose = () => {
+    dispose() {
       if (this.renderer) {
         this.renderer.dispose();
         this.scene.remove(this.coin);
@@ -67,16 +67,24 @@
           );
         }
       }
-    };
+    }
+
+    resize() {
+      this.renderer.setSize(
+        container.clientWidth,
+        Math.round((container.clientWidth / 16) * 9)
+      );
+    }
   }
 
   onMount(() => {
-    let coinAnimation = new CoinAnimation(container);
+    instance = new CoinAnimation(container);
 
     return () => {
-      coinAnimation.dispose();
+      instance?.dispose();
     };
   });
 </script>
 
-<div bind:this={container} style="width: 100%; height: 300px;" />
+<svelte:window on:resize={() => instance?.resize()} />
+<div class={cn('aspect-video', className)} bind:this={container} />

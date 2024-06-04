@@ -3,68 +3,39 @@
   import CoinAnimation from '$lib/components/CoinAnimation.svelte';
 </script>
 
-<div class="landing-page">
-  <br />
+<h1
+  class="martian-mono-extrabold glow mx-auto mt-20 max-w-screen-md text-center text-3xl uppercase"
+  style="color: var(--color-orange);"
+>
+  <img src={CoinfunWordmark} alt="coin.fun" />
+  Community Owned Memecoin Printer
+</h1>
 
-  <img src={CoinfunWordmark} alt="coin.fun text" />
-  <h1 class="martian-mono-extrabold glow" style="color: var(--color-orange);">
-    Community Owned Memecoin Printer
-  </h1>
+<CoinAnimation class="mx-auto my-20 w-full max-w-screen-sm" />
 
-  <CoinAnimation />
+<p class="mb-4 text-center text-3xl font-bold">
+  GET READY FOR <span class="highlight">SEASON 1</span>
+</p>
 
-  <div class="progress-container" style="margin-top: 2em;">
-    <!-- <h1 class="martian-mono-medium">Launch Progress</h1> -->
-    <!-- <Progress value={progressValue} max={100} /> -->
-    <br />
-  </div>
-
-  <br />
-
-  <p>
-    <span style="font-size: 2em; font-weight: 800;"
-      >GET READY FOR <span class="highlight">SEASON 1</span></span
-    >
-    <br />
-    🪙 CREATE MEMECOINS 🪙
-    <br />
-    ✨ EARN POINTS ✨
-    <br />
+<ul class="text-center">
+  <li>🪙 CREATE MEMECOINS 🪙</li>
+  <li>✨ EARN POINTS ✨</li>
+  <li>
     💸<span class="earn-all-fees"
       >EARN <strong style="font-size: 2em; text-decoration: underline;"
         >ALL</strong
       > THE TRADING FEES</span
     >💸
-    <br />
-    🤤 CREATE AND SHARE COIN.FUN MEMES ON TWITTER 🤤
-    <br />
-    ⁉️ CLICKITY CLICK THE COIN ⁉️
-  </p>
-
-  <br />
-</div>
+  </li>
+  <li>🤤 CREATE AND SHARE COIN.FUN MEMES ON TWITTER 🤤</li>
+  <li>⁉️ CLICKITY CLICK THE COIN ⁉️</li>
+</ul>
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-  .landing-page {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-    z-index: 1;
-  }
-
   h1 {
-    margin-bottom: 20px;
-    font-size: 2em;
-    text-transform: uppercase;
     animation: fadeIn 2s ease-in-out;
-  }
-
-  .progress-container {
-    margin: 20px 0;
   }
 
   @keyframes fadeIn {
@@ -73,17 +44,6 @@
     }
     to {
       opacity: 1;
-    }
-  }
-
-  @keyframes fadeInUp {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
     }
   }
 </style>
