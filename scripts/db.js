@@ -1,64 +1,66 @@
 import { spawn, spawnSync } from 'node:child_process';
 
-// if DB_URL contains "password" then it must be a local env
-// and so we don't need to spawn a docker container
-const dbUrlIsNotLocal = process.env.DB_URL.search("password")
+const LOCAL_HOSTNAMES = ['0.0.0.0', '127.0.0.1', 'localhost'];
+const MAX_32_SIGNED_INT = Math.pow(2, 31) - 1;
+const dbUrl = new URL(process.env.DB_URL);
 
-// if dev / prod environment
-if (dbUrlIsNotLocal) {
+// When we're not running against a local db we don't need to spin up docker.
+if (!LOCAL_HOSTNAMES.includes(dbUrl.hostname)) {
   const migrator = spawnSync('npx', ['drizzle-kit', 'migrate']);
   process.stdout.write(migrator.stdout);
-  // if developing locally
-} else {
-  const container = spawn(
-    'docker',
-    [
-      'run',
-      '--detach',
-      '--rm',
-      ['--name', 'drizzle'],
-      ['-e', 'POSTGRES_PASSWORD=password'],
-      ['-e', 'POSTGRES_DB=drizzle'],
-      ['-p', '5432:5432'],
-      'postgres'
-    ].flat()
-  );
-
-  container.stdout.pipe(process.stdout);
-  container.stderr.pipe(process.stderr);
-
-  function close() {
-    container.kill();
-    spawnSync('docker', ['stop', 'drizzle']);
-    process.exit(0);
-  }
-
-  async function migrate() {
-    let ready = false;
-
-    do {
-      const healthcheck = spawnSync('docker', ['exec', 'drizzle', 'pg_isready']);
-      process.stdout.write(healthcheck.stdout);
-      process.stderr.write(healthcheck.stderr);
-
-      if (healthcheck.status === 0) ready = true;
-
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-    } while (!ready);
-
-    const migrator = spawnSync('npx', ['drizzle-kit', 'migrate']);
-    process.stdout.write(migrator.stdout);
-  }
-
-  function wait() {
-    // NAZ: this is 12 days, what is the purpose of this?
-    setTimeout(close, 1 << 30);
-  }
-
-  process.on('SIGINT', close);
-  process.on('SIGTERM', close);
-  process.on('exit', close);
-
-  migrate();
-  wait();
+  process.exit(migrator.status);
 }
+
+const container = spawn(
+  'docker',
+  [
+    'run',
+    '--detach',
+    '--rm',
+    ['--name', 'drizzle'],
+    ['-e', `POSTGRES_PASSWORD=${dbUrl.password}`],
+    ['-e', `POSTGRES_DB=${dbUrl.pathname.replace('/', '')}`],
+    ['-p', '5432:5432'],
+    'postgres'
+  ].flat()
+);
+
+container.stdout.pipe(process.stdout);
+container.stderr.pipe(process.stderr);
+
+function close() {
+  container.kill();
+  spawnSync('docker', ['stop', 'drizzle']);
+  process.exit(0);
+}
+
+async function migrate() {
+  let ready = false;
+
+  do {
+    const healthcheck = spawnSync('docker', ['exec', 'drizzle', 'pg_isready']);
+    process.stdout.write(healthcheck.stdout);
+    process.stderr.write(healthcheck.stderr);
+
+    if (healthcheck.status === 0) ready = true;
+
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+  } while (!ready);
+
+  const migrator = spawnSync('npx', ['drizzle-kit', 'migrate']);
+  process.stdout.write(migrator.stdout);
+}
+
+// When the script has finished it will stop any child processes spawned.
+// Because we want to keep the container running we set a massive timeout so
+// this script keeps running.
+function wait() {
+  setTimeout(close, MAX_32_SIGNED_INT);
+}
+
+process.on('SIGINT', close);
+process.on('SIGTERM', close);
+process.on('exit', close);
+
+migrate();
+wait();
