@@ -5,7 +5,7 @@
   import * as DropdownMenu from '$lib/components/ui/dropdown-menu';
   import type { UserContext } from '$lib/user';
 
-  let hidden = false;
+  // let hidden = false;
   let user = getContext<UserContext>('user');
 
   async function handleSignOut() {
@@ -14,13 +14,15 @@
   }
 </script>
 
-<nav>
+<!-- TODO: We should probably move color definitions into the tailwind config. -->
+<nav
+  class="flex items-center justify-center bg-[--color-orange] underline decoration-dotted"
+>
   <a href="/">home</a>
-  {#if !hidden}
-    <a href="/leaderboard">leaderboard</a>
-  {/if}
   <a href="/pointonomics">pointonomics</a>
-  {#if !hidden}
+  <a href="/leaderboard">leaderboard</a>
+  <a href="/profile">profile</a>
+  {#if false}
     <span style="cursor: pointer;">
       <DropdownMenu.Root>
         <!-- if user is not connected, will show "sign in" and on click will invoke web3auth-->
@@ -29,7 +31,7 @@
         <DropdownMenu.Content>
           <DropdownMenu.Group>
             {#if $user.isConnected}
-              <DropdownMenu.Item href="/myprofile">settings</DropdownMenu.Item>
+              <DropdownMenu.Item href="/profile">settings</DropdownMenu.Item>
               <DropdownMenu.Item on:click={handleSignOut}
                 >sign out</DropdownMenu.Item
               >
@@ -47,11 +49,6 @@
 </nav>
 
 <style lang="postcss">
-  /* TODO: We should probably move color definitions into the tailwind config. */
-  nav {
-    @apply flex items-center justify-center bg-[--color-orange] underline decoration-dotted;
-  }
-
   a,
   span {
     @apply px-5 py-2.5 text-black transition;

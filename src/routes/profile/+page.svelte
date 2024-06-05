@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { Button } from '$lib/components/ui/button';
   import * as Card from '$lib/components/ui/card';
 
   export let data;
@@ -33,9 +34,9 @@
     <Card.Footer class="flex justify-between">
       <!-- TODO: replace with <form> -->
       {#if session}
-        <a href="/api/twitter/sign-out">Sign out</a>
+        <Button href="/api/twitter/sign-out">Sign out</Button>
       {:else}
-        <a href="/api/twitter/sign-in">Sign In</a>
+        <Button href="/api/twitter/sign-in">Sign In</Button>
       {/if}
     </Card.Footer>
   </Card.Root>
