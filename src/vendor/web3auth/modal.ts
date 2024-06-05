@@ -7,18 +7,16 @@ export type { SolanaWallet } from '@web3auth/solana-provider';
 
 import { getConfig } from './config';
 
-// TODO: SAPPHIRE_DEVNET -> SAPPHIRE_PROD for prod launch
-// so we need to abstract the Environment here
-// this can be tied up to DB_URL. the URL will contain 'password' if local env?
-
 export async function initModal({ clientId }: { clientId: string }) {
-  // TODO: why do we import like this?
+  // TODO: We import like this because the `@web3auth` modules are CommonJS
+  // and Vite does not like this very much. We can get their default exports
+  // with `await import()` and grab the relevant parts from there.
   const [
     { chainConfig, openLoginNetwork, web3AuthNetwork },
-    web3AuthModal,
-    web3AuthProvider,
-    web3AuthOpenLoginAdapter,
-    web3AuthPhantomAdapter
+    { Web3Auth },
+    { SolanaPrivateKeyProvider },
+    { OpenloginAdapter },
+    { PhantomAdapter }
   ] = await Promise.all([
     getConfig(),
     import('@web3auth/modal'),
@@ -26,11 +24,6 @@ export async function initModal({ clientId }: { clientId: string }) {
     import('@web3auth/openlogin-adapter'),
     import('@web3auth/phantom-adapter')
   ]);
-
-  const { SolanaPrivateKeyProvider } = web3AuthProvider;
-  const { Web3Auth } = web3AuthModal;
-  const { OpenloginAdapter } = web3AuthOpenLoginAdapter;
-  const { PhantomAdapter } = web3AuthPhantomAdapter;
 
   const privateKeyProvider = new SolanaPrivateKeyProvider({
     config: { chainConfig }
@@ -49,7 +42,7 @@ export async function initModal({ clientId }: { clientId: string }) {
       logoLight: 'https://web3auth.io/images/w3a-L-Favicon-1.svg',
       logoDark: 'https://web3auth.io/images/w3a-D-Favicon-1.svg',
       uxMode: 'popup',
-      mode: 'light'
+      mode: 'auto'
     },
     web3AuthNetwork,
     enableLogging: false
