@@ -1,19 +1,21 @@
 <script lang="ts">
-  import { getContext } from 'svelte';
-
   import * as Card from '$lib/components/ui/card';
-  import { type UserContext } from '$lib/user';
 
   export let data;
-  console.log('myprofile data', data);
-  const user = getContext<UserContext>('user');
+  $: ({ session, user } = data);
 </script>
 
 <div class="myprofile-root">
   <Card.Root class="w-[350px]">
     <Card.Header>
       <Card.Title>Quest 1</Card.Title>
-      <Card.Description>Prove your Xness. Connect to Twitter.</Card.Description>
+      <Card.Description>
+        {#if user}
+          Hi, {user?.user_metadata?.preferred_username}!
+        {:else}
+          Prove your Xness. Connect to Twitter.
+        {/if}
+      </Card.Description>
     </Card.Header>
     <Card.Content>
       <form>
@@ -29,7 +31,8 @@
       </form>
     </Card.Content>
     <Card.Footer class="flex justify-between">
-      {#if $user?.user}
+      <!-- TODO: replace with <form> -->
+      {#if session}
         <a href="/api/twitter/sign-out">Sign out</a>
       {:else}
         <a href="/api/twitter/sign-in">Sign In</a>

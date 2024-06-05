@@ -12,19 +12,20 @@ export const handle: Handle = async ({ event, resolve }) => {
     PUBLIC_SUPABASE_ANON_KEY,
     {
       cookies: {
-        get: (key) => event.cookies.get(key),
-        remove: (key, options) => {
+        get(key) {
+          return event.cookies.get(key);
+        },
+        remove(key, options) {
           event.cookies.delete(key, { ...options, path: '/' });
         },
-        set: (key, value, options) => {
+        set(key, value, options) {
           event.cookies.set(key, value, { ...options, path: '/' });
         }
       }
     }
   );
 
-  event.locals.supabase = supabase;
-  event.locals.safeGetSession = async function safeGetSession() {
+  async function safeGetSession() {
     const {
       data: { session }
     } = await supabase.auth.getSession();
@@ -39,7 +40,10 @@ export const handle: Handle = async ({ event, resolve }) => {
     if (error) return { session: null, user: null };
 
     return { session, user };
-  };
+  }
+
+  event.locals.supabase = supabase;
+  event.locals.safeGetSession = safeGetSession;
 
   return resolve(event, {
     filterSerializedResponseHeaders(name) {

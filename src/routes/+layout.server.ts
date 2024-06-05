@@ -1,4 +1,5 @@
-export async function load({ locals: { safeGetSession } }) {
-  const { user } = await safeGetSession();
-  return { user };
+export async function load({ depends, locals: { safeGetSession } }) {
+  depends('supabase:auth');
+  const { session, user } = await safeGetSession();
+  return { session, user };
 }
