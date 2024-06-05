@@ -1,66 +1,48 @@
-// import { } from '@solana/web3.js';
-import type { CustomChainConfig, IProvider } from '@web3auth/base';
+import type { IProvider } from '@web3auth/base';
 import type { Web3AuthOptions } from '@web3auth/modal';
 
 export type { UserAuthInfo } from '@web3auth/base';
 export type { Web3Auth } from '@web3auth/modal';
 export type { SolanaWallet } from '@web3auth/solana-provider';
 
+import { getConfig } from './config';
+
 // TODO: SAPPHIRE_DEVNET -> SAPPHIRE_PROD for prod launch
 // so we need to abstract the Environment here
 // this can be tied up to DB_URL. the URL will contain 'password' if local env?
 
-async function solana_devnet_chain_config() {
-  const web3AuthBase = await import('@web3auth/base');
-  let SOLANA_DEVNET_CHAIN_CONFIG: CustomChainConfig = {
-    blockExplorerUrl: 'https://explorer.solana.com',
-    chainNamespace: web3AuthBase.CHAIN_NAMESPACES.SOLANA,
-    rpcTarget: 'https://api.devnet.solana.com',
-    ticker: 'SOL',
-    tickerName: 'Solana',
-    chainId: '0x3', // Please use 0x1 for Mainnet, 0x2 for Testnet, 0x3 for Devnet
-    displayName: 'Solana Devnet',
-    logo: 'https://images.toruswallet.io/solana.svg'
-  };
-  return SOLANA_DEVNET_CHAIN_CONFIG;
-}
-
 export async function initModal({ clientId }: { clientId: string }) {
   // TODO: why do we import like this?
   const [
-    web3AuthBase,
+    { chainConfig, openLoginNetwork, web3AuthNetwork },
     web3AuthModal,
     web3AuthProvider,
     web3AuthOpenLoginAdapter,
     web3AuthPhantomAdapter
   ] = await Promise.all([
-    import('@web3auth/base'),
+    getConfig(),
     import('@web3auth/modal'),
     import('@web3auth/solana-provider'),
     import('@web3auth/openlogin-adapter'),
     import('@web3auth/phantom-adapter')
   ]);
 
-  const { WEB3AUTH_NETWORK } = web3AuthBase;
   const { SolanaPrivateKeyProvider } = web3AuthProvider;
   const { Web3Auth } = web3AuthModal;
-  const { OpenloginAdapter, OPENLOGIN_NETWORK } = web3AuthOpenLoginAdapter;
+  const { OpenloginAdapter } = web3AuthOpenLoginAdapter;
   const { PhantomAdapter } = web3AuthPhantomAdapter;
 
-  // Create Web3Auth Instance
-  const name = 'coindotfun';
-
   const privateKeyProvider = new SolanaPrivateKeyProvider({
-    config: { chainConfig: await solana_devnet_chain_config() }
+    config: { chainConfig }
   });
 
   const options: Web3AuthOptions = {
     clientId,
-    chainConfig: await solana_devnet_chain_config(),
+    chainConfig,
     storageKey: 'local',
     privateKeyProvider,
     uiConfig: {
-      appName: name,
+      appName: 'coindotfun',
       loginMethodsOrder: ['twitter', 'google', 'facebook', 'discord'],
       defaultLanguage: 'en',
       modalZIndex: '2147483647',
@@ -69,14 +51,14 @@ export async function initModal({ clientId }: { clientId: string }) {
       uxMode: 'popup',
       mode: 'light'
     },
-    web3AuthNetwork: WEB3AUTH_NETWORK.SAPPHIRE_DEVNET,
+    web3AuthNetwork,
     enableLogging: false
   };
 
   const openLoginAdapter = new OpenloginAdapter({
     adapterSettings: {
       clientId,
-      network: OPENLOGIN_NETWORK.SAPPHIRE_DEVNET,
+      network: openLoginNetwork,
       uxMode: 'popup'
     },
     privateKeyProvider
@@ -84,8 +66,8 @@ export async function initModal({ clientId }: { clientId: string }) {
 
   const phantomAdapter = new PhantomAdapter({
     clientId,
-    chainConfig: await solana_devnet_chain_config(),
-    web3AuthNetwork: WEB3AUTH_NETWORK.SAPPHIRE_DEVNET
+    chainConfig,
+    web3AuthNetwork
   });
 
   const web3AuthInstance = new Web3Auth(options);
