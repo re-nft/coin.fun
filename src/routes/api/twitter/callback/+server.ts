@@ -1,34 +1,14 @@
-import { redirect } from '@sveltejs/kit';
+import { error, redirect } from '@sveltejs/kit';
 
-export const GET = async (event) => {
-  const {
-    url,
-    locals: { supabase }
-  } = event;
-  const searchParams = new URLSearchParams(url.search);
-  const accessToken = searchParams.get('access_token');
-  const refreshToken = searchParams.get('refresh_token');
-  // const providerToken = searchParams.get('provider_token');
-  // const expiresIn = searchParams.get('expires_in');
-  // const tokenType = searchParams.get('token_type');
+export async function GET({ url, locals: { supabase } }) {
+  const code = url.searchParams.get('code');
+  const next = url.searchParams.get('next') ?? '/';
 
-  if (accessToken && refreshToken) {
-    const { data, error } = await supabase.auth.setSession({
-      access_token: accessToken,
-      refresh_token: refreshToken,
-    });
+  if (!code) throw error(401, 'Could not complete auth.');
 
-    if (error) {
-      // console.error('Error setting session:', error);
-      // TODO: we might want a custom page for this
-      throw redirect(303, '/');
-    }
+  const { error: authError } = await supabase.auth.exchangeCodeForSession(code);
 
-    // TODO: we might want a custom page for this
-    throw redirect(303, '/myprofile');
-  } else {
-    // TODO: we might want a custom page for this
-    // console.error('Missing access token or refresh token');
-    throw redirect(303, '/');
-  }
-};
+  if (authError) throw error(502, authError.message);
+
+  return redirect(303, next);
+}

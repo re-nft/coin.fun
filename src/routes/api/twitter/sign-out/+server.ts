@@ -1,12 +1,12 @@
-import { json } from '@sveltejs/kit';
+import { error, redirect } from '@sveltejs/kit';
 
-export const POST = async ({ locals: { supabase }, request }) => {
-  const { error } = await supabase.auth.signOut();
+export const GET = async ({ locals: { supabase }, url }) => {
+  const { error: authError } = await supabase.auth.signOut();
 
-  if (error) {
-    console.error('Error signing out:', error);
-    return json({ error: 'Failed to sign out' }, { status: 500 });
+  if (authError) {
+    console.error('Error signing out:', authError);
+    throw error(502, authError.message);
   }
 
-  return json({ message: 'Successfully signed out' });
+  return redirect(303, url.origin);
 };

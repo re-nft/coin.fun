@@ -1,7 +1,49 @@
+import { createServerClient } from '@supabase/ssr';
 import type { Handle } from '@sveltejs/kit';
-import { supabaseClient } from "$lib/supabase";
+
+import {
+  PUBLIC_SUPABASE_ANON_KEY,
+  PUBLIC_SUPABASE_URL
+} from '$env/static/public';
 
 export const handle: Handle = async ({ event, resolve }) => {
-  event.locals.supabase = supabaseClient;
-  return resolve(event);
+  const supabase = createServerClient(
+    PUBLIC_SUPABASE_URL,
+    PUBLIC_SUPABASE_ANON_KEY,
+    {
+      cookies: {
+        get: (key) => event.cookies.get(key),
+        remove: (key, options) => {
+          event.cookies.delete(key, { ...options, path: '/' });
+        },
+        set: (key, value, options) => {
+          event.cookies.set(key, value, { ...options, path: '/' });
+        }
+      }
+    }
+  );
+
+  event.locals.supabase = supabase;
+  event.locals.safeGetSession = async function safeGetSession() {
+    const {
+      data: { session }
+    } = await supabase.auth.getSession();
+
+    if (!session) return { session: null, user: null };
+
+    const {
+      data: { user },
+      error
+    } = await supabase.auth.getUser();
+
+    if (error) return { session: null, user: null };
+
+    return { session, user };
+  };
+
+  return resolve(event, {
+    filterSerializedResponseHeaders(name) {
+      return ['content-range', 'x-supabase-api-version'].includes(name);
+    }
+  });
 };

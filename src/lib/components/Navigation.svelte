@@ -5,7 +5,7 @@
   import * as DropdownMenu from '$lib/components/ui/dropdown-menu';
   import type { UserContext } from '$lib/user';
 
-  let hidden = true;
+  let hidden = false;
   let user = getContext<UserContext>('user');
 
   async function handleSignOut() {

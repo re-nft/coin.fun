@@ -1,3 +1,4 @@
+import type { User } from '@supabase/supabase-js';
 import { type Readable, readable, type Updater } from 'svelte/store';
 
 import { browser } from '$app/environment';
@@ -6,7 +7,7 @@ import {
   initModal,
   initWallet,
   type SolanaWallet,
-  type UserAuthInfo,
+  type UserAuthInfo
 } from '$vendor/web3auth';
 
 interface UserStore {
@@ -16,14 +17,20 @@ interface UserStore {
   isConnected: boolean;
   isReady: boolean;
   info?: Partial<UserAuthInfo>;
+  user?: User | undefined;
   wallet?: SolanaWallet | undefined;
 }
 
 export type UserContext = Readable<UserStore>;
 
-export function createStore() {
+export function createStore(user: User | null) {
+  const initial = {
+    isConnected: false,
+    isReady: false,
+    user: user ?? undefined
+  };
   return readable<UserStore>(undefined, (set, update) => {
-    set({ isConnected: false, isReady: false });
+    set(initial);
 
     // WARN: Svelte stores are shared on the server. See:
     // https://kit.svelte.dev/docs/state-management#avoid-shared-state-on-the-server
@@ -36,14 +43,16 @@ export function createStore() {
     // initialized on the client anyway. Not guarding this makes Svelte hurl.
     if (!browser) return;
 
-    init({ set, update });
+    init({ initial, set, update });
   });
 }
 
 async function init({
+  initial,
   set,
   update
 }: {
+  initial: UserStore;
   set: (value: UserStore) => void;
   update: (fn: Updater<UserStore>) => void;
 }) {
@@ -81,9 +90,9 @@ async function init({
       const response = await fetch('/api/user', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/json'
         },
-        body: JSON.stringify(info),
+        body: JSON.stringify(info)
       });
 
       if (!response.ok) {
@@ -117,6 +126,7 @@ async function init({
   }
 
   set({
+    ...initial,
     accounts,
     connect,
     disconnect,

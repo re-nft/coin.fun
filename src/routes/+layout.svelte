@@ -12,10 +12,8 @@
 
   export let data;
 
-  let user = createUserStore();
-
   setContext('solana', createSolanaStore(data.solana));
-  setContext('user', user);
+  setContext('user', createUserStore(data.user));
 
   inject();
 </script>
