@@ -1,24 +1,24 @@
 {
-  "id": "a5e6bd32-720a-492e-9390-11a54bd08a83",
+  "id": "1cd5fcbc-6fcf-4750-b368-a968bb923bf5",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "6",
   "dialect": "postgresql",
   "tables": {
-    "public.user": {
-      "name": "user",
+    "public.profiles": {
+      "name": "profiles",
       "schema": "",
       "columns": {
         "id": {
           "name": "id",
-          "type": "serial",
-          "primaryKey": false,
+          "type": "uuid",
+          "primaryKey": true,
           "notNull": true
         },
-        "name": {
-          "name": "name",
+        "avatar": {
+          "name": "avatar",
           "type": "text",
           "primaryKey": false,
-          "notNull": true
+          "notNull": false
         },
         "email": {
           "name": "email",
@@ -26,35 +26,17 @@
           "primaryKey": false,
           "notNull": true
         },
-        "profileImage": {
-          "name": "profileImage",
+        "user_name": {
+          "name": "user_name",
           "type": "text",
           "primaryKey": false,
           "notNull": true
         },
-        "typeOfLogin": {
-          "name": "typeOfLogin",
+        "display_name": {
+          "name": "display_name",
           "type": "text",
           "primaryKey": false,
-          "notNull": true
-        },
-        "aggregateVerifier": {
-          "name": "aggregateVerifier",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "verifier": {
-          "name": "verifier",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true
-        },
-        "verifierId": {
-          "name": "verifierId",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": true
+          "notNull": false
         },
         "created_at": {
           "name": "created_at",
@@ -72,7 +54,22 @@
         }
       },
       "indexes": {},
-      "foreignKeys": {},
+      "foreignKeys": {
+        "profiles_id_users_id_fk": {
+          "name": "profiles_id_users_id_fk",
+          "tableFrom": "profiles",
+          "tableTo": "users",
+          "schemaTo": "auth",
+          "columnsFrom": [
+            "id"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "cascade",
+          "onUpdate": "no action"
+        }
+      },
       "compositePrimaryKeys": {},
       "uniqueConstraints": {}
     }
