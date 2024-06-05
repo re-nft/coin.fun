@@ -35,7 +35,12 @@
   }
 
   onMount(() => {
-    const interval = setInterval(createEmoji, 500);
+    // NOTE: this is quite CPU intensive so we're making this effect less
+    // pronounced in dev envs
+    const interval = setInterval(
+      createEmoji,
+      import.meta.env.PROD ? 500 : 5_000
+    );
 
     return () => {
       clearInterval(interval);
