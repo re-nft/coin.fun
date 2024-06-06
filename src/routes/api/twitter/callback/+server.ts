@@ -2,7 +2,7 @@ import { error, redirect } from '@sveltejs/kit';
 
 export async function GET({ url, locals: { supabase } }) {
   const code = url.searchParams.get('code');
-  const next = url.searchParams.get('next') ?? '/';
+  const next = url.searchParams.get('next') ?? '/profile';
 
   if (!code) throw error(401, 'Could not complete auth.');
 
