@@ -7,7 +7,7 @@
   import * as Table from '$lib/components/ui/table';
 </script>
 
-<div class="pointonomics">
+<div class="tokenomics">
   <p>
     There will be a total of <span
       class="martian-mono-medium glow"
@@ -253,7 +253,7 @@
 </div>
 
 <style>
-  .pointonomics {
+  .tokenomics {
     max-width: 64em;
     margin: 2em auto;
   }

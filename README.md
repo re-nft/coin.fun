@@ -17,11 +17,11 @@ which it seems handles autorefresh by itself
 6/ fist few quests
 7/ waitlist
 8/ referrals
-9/ some form of pointonomics
+9/ some form of tokenomics
 10/ leaderboard as per points
 11/ how many cumulative users
 12/ design and copy
-13/ in pointonomics show how many $COIN points have been already claimed
+13/ in tokenomics show how many $COIN points have been already claimed
 14/ need urgency levers. the sooner you do quests - the more $COIN points you
 get. the later you do it, the less points you will get
 15/ moon math section. how much would you earn given pump.fun fees given
