@@ -178,6 +178,11 @@
     </p>
   </section>
 
+  TODO:
+  - charity (link vitalik and hayden)
+  - kong & rookie holders
+  - renft cat holders
+
   <section id="season-one-debrief">
     <a href="#season-one-debrief" class="heading-link">
       <h1 class="martian-mono-extrabold glow">
