@@ -86,19 +86,19 @@ async function init({
     // and by default stuff in lib is shared. so importing this module
     // in client-side code would not work.
     // therefore, we communicate with the api server code through post requests
-    if (info.verifierId) {
-      const response = await fetch('/api/user', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(info)
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to create user');
-      }
-    }
+    // if (info.verifierId) {
+    //   const response = await fetch('/api/user', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json'
+    //     },
+    //     body: JSON.stringify(info)
+    //   });
+    //
+    //   if (!response.ok) {
+    //     throw new Error('Failed to create user');
+    //   }
+    // }
     // TODO: set cookie for login so we can SSR.
     // const { idToken } = (await web3auth.authenticateUser());
 
