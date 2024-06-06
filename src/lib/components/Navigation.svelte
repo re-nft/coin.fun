@@ -20,7 +20,7 @@
 >
   <a href="/">home</a>
   <a href="/pointonomics">pointonomics</a>
-  <a href="/leaderboard">leaderboard</a>
+  <!-- <a href="/leaderboard">leaderboard</a> -->
   <a href="/profile">profile</a>
   {#if false}
     <span style="cursor: pointer;">
