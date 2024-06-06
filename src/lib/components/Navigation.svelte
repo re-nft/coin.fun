@@ -19,7 +19,7 @@
   {#if !hidden}
     <a href="/leaderboard">leaderboard</a>
   {/if}
-  <a href="/tokenomics">earn points</a>
+  <a href="/tokenomics">earn $COIN</a>
   {#if !hidden}
     <span style="cursor: pointer;">
       <DropdownMenu.Root>

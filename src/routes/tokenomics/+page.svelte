@@ -19,7 +19,7 @@
   <br />
 
   <p>
-    There are four playable characters who we shall uplift through this one of a <strong
+    There are three playable characters who we shall uplift through this one of a <strong
       style="font-weight: 800;"
       >kind kombucha chakra unlocking third eye awakening degenerate trading
       experience</strong
