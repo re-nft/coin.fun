@@ -8,7 +8,9 @@
 </script>
 
 <div class="myprofile-root">
-  <Points />
+  <div class="my-20 flex justify-center">
+    <Points />
+  </div>
 
   <Quest status={userData ? 'done' : 'unlocked'} title="Quest 1">
     <svelte:fragment slot="description">1000 points</svelte:fragment>
