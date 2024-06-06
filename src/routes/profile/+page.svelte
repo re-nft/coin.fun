@@ -1,57 +1,73 @@
 <script lang="ts">
+  import Quest from '$lib/components/Quest.svelte';
   import { Button } from '$lib/components/ui/button';
-  import * as Card from '$lib/components/ui/card';
 
   export let data;
-  $: ({ session, user } = data);
+  $: ({ session, userData } = data);
 </script>
 
 <div class="myprofile-root">
-  <Card.Root class="w-[350px]">
-    <Card.Header>
-      <Card.Title>Quest 1</Card.Title>
-      <Card.Description>
-        {#if user}
-          Hi, {user?.user_metadata?.preferred_username}!
-        {:else}
-          Prove your Xness. Connect to Twitter.
-        {/if}
-      </Card.Description>
-    </Card.Header>
-    <Card.Content>
-      <form>
-        <div class="grid w-full items-center gap-4">
-          <!-- <div class="flex flex-col space-y-1.5"> -->
-          <!--   <Label for="name">Name</Label> -->
-          <!--   <Input id="name" placeholder="Name of your project" /> -->
-          <!-- </div> -->
-          <!-- <div class="flex flex-col space-y-1.5"> -->
-          <!--   <Label for="framework">Framework</Label> -->
-          <!-- </div> -->
-        </div>
-      </form>
-    </Card.Content>
-    <Card.Footer class="flex justify-between">
-      <!-- TODO: replace with <form> -->
+  <Quest status={userData ? 'done' : 'unlocked'} title="Quest 1">
+    <svelte:fragment slot="description">1000 points</svelte:fragment>
+
+    <div class="flex flex-col gap-4" slot="content">
+      {#if userData}
+        <p>
+          Hi, <a href={`https://x.com/${userData.userName}`}>
+            <img
+              alt=""
+              class="inline size-8 rounded-full align-middle"
+              src={userData.avatar}
+            />
+            @{userData.userName}</a
+          >!
+        </p>
+        <p>Nice to see you connected.</p>
+      {:else}
+        Prove your Xness. Connect to Twitter.
+      {/if}
+    </div>
+
+    <svelte:fragment slot="footer">
       {#if session}
-        <Button href="/api/twitter/sign-out">Sign out</Button>
+        <Button href="/api/twitter/sign-out">Sign Out</Button>
       {:else}
         <Button href="/api/twitter/sign-in">Sign In</Button>
       {/if}
-    </Card.Footer>
-  </Card.Root>
+    </svelte:fragment>
+  </Quest>
+
+  <!-- <Quest status={userData ? 'unlocked' : 'locked'} title="Quest 2"> -->
+  <!--   <svelte:fragment slot="description">1000 points</svelte:fragment> -->
+  <!---->
+  <!--   <svelte:fragment slot="content"> -->
+  <!--     To join the fray you need a wallet. Either connect your Solana wallet or -->
+  <!--     create one using a social login. -->
+  <!--   </svelte:fragment> -->
+  <!---->
+  <!--   <svelte:fragment slot="footer"> -->
+  <!--     <Button -->
+  <!--       class={cn(!userData && 'disabled')} -->
+  <!--       on:click={() => $user?.connect?.()} -->
+  <!--       type="button" -->
+  <!--     > -->
+  <!--       Connect -->
+  <!--     </Button> -->
+  <!--   </svelte:fragment> -->
+  <!-- </Quest> -->
 </div>
 
-<!-- <h1>Quest 1: 1000 points</h1> -->
-<!-- {#if !session} -->
-<!--   <Button type="button" on:click={signInWithTwitterSupabaseSession} -->
-<!--     >Connect Twitter</Button -->
-<!--   > -->
-<!-- {:else} -->
-<!--   <Button type="button" on:click={signOutSupabaseSession} -->
-<!--     >Sign Out From Twitter</Button -->
-<!--   > -->
-<!-- {/if} -->
+<p class="glow text-center text-3xl">
+  .<br />
+  .<br />
+  .<br />
+  .<br />
+  .<br />
+  .<br />
+  .<br />
+  .<br /><br />
+  MORE QUESTS COMING SOON
+</p>
 
 <style>
   .myprofile-root {
