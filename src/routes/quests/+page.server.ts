@@ -1,7 +1,7 @@
 import { eq } from 'drizzle-orm';
 
 import { db } from '$lib/server/db';
-import { profiles } from '$lib/server/schema';
+import { profiles } from '$lib/server/db';
 
 export async function load({ locals: { safeGetSession } }) {
   const { user } = await safeGetSession();

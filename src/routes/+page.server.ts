@@ -1,5 +1,4 @@
-import { db } from '$lib/server/db';
-import { profiles } from '$lib/server/schema';
+import { db, profiles } from '$lib/server/db';
 
 export async function load() {
   // this is `export let data` on a +page.svelte

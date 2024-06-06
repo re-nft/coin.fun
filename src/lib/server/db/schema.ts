@@ -1,6 +1,4 @@
 import { pgSchema, pgTable, text, timestamp, uuid } from 'drizzle-orm/pg-core';
-import { createInsertSchema } from 'drizzle-valibot';
-import { minLength, parse, string } from 'valibot';
 
 const authSchema = pgSchema('auth');
 
@@ -33,11 +31,3 @@ export const profiles = pgTable('profiles', {
 });
 
 // export const quests = pgTable('quests', {});
-
-// TODO: either validate or remove
-// since this is coming from web3Auth directly we probably don't need to validate?
-export const profileInsertSchema = createInsertSchema(profiles, {
-  userName: string([minLength(2)])
-});
-export const profileParse = (value: unknown) =>
-  parse(profileInsertSchema, value);
