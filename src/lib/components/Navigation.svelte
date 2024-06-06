@@ -21,7 +21,7 @@
   <a href="/">home</a>
   <a href="/pointonomics">pointonomics</a>
   <!-- <a href="/leaderboard">leaderboard</a> -->
-  <a href="/profile">profile</a>
+  <a href="/quests">quests</a>
   {#if false}
     <span style="cursor: pointer;">
       <DropdownMenu.Root>

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Points from '$lib/components/Points.svelte';
   import Quest from '$lib/components/Quest.svelte';
   import { Button } from '$lib/components/ui/button';
 
@@ -7,6 +8,8 @@
 </script>
 
 <div class="myprofile-root">
+  <Points />
+
   <Quest status={userData ? 'done' : 'unlocked'} title="Quest 1">
     <svelte:fragment slot="description">1000 points</svelte:fragment>
 
