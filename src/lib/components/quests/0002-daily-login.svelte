@@ -5,14 +5,18 @@
   export let status: QuestStatus;
 </script>
 
-<Quest {...$$restProps} {status} title="Quest 2">
+<Quest {...$$restProps} {status}>
   <div class="flex flex-col gap-4" slot="content">
     {#if status === 'done'}
-      <p>Thanks for loging in, anon.</p>
-      <p>See you tomorrow.</p>
+      <p>Filled your bag.</p>
+      <p>
+        <img
+          alt="Fuck you and I'll see you tomorrow."
+          src="https://media1.tenor.com/m/zxgvSk50wXIAAAAC/see-you-tomorrow-fuck-you.gif"
+        />
+      </p>
     {:else}
-      <p>Welcome, anon.</p>
-      <p>Log in daily to earn.</p>
+      <p>Check in daily to earn, anon.</p>
     {/if}
   </div>
 </Quest>

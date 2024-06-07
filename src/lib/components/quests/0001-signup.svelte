@@ -9,7 +9,7 @@
   export let session: Session | null = null;
 </script>
 
-<Quest {...$$restProps} title="Quest 1">
+<Quest {...$$restProps}>
   <div class="flex flex-col gap-4" slot="content">
     {#if userData}
       <p>
@@ -20,9 +20,8 @@
             src={userData.avatar}
           />
           @{userData.userName}</a
-        >!
+        >! You are ready to ligma.
       </p>
-      <p>Nice to see you connected.</p>
     {:else}
       Prove your Xness. Connect to Twitter.
     {/if}

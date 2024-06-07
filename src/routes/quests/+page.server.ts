@@ -29,6 +29,7 @@ export async function load({ locals: { safeGetSession } }) {
         component: quest.component,
         points: quest.points,
         status: await quest.getStatus(user?.id),
+        title: quest.title,
         session,
         userData
       };
