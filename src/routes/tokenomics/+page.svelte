@@ -29,6 +29,14 @@
 
   <br />
 
+  <p>
+    There is some big brain shit in here. But you don't need to read this whole
+    manuscript to earn $COIN. You can just trade and create memecoins here and
+    you will be good. Don't sweat it.
+  </p>
+
+  <br />
+
   <section id="playable-characters">
     <a href="#playable-characters" class="heading-link">
       <h1 class="martian-mono-extrabold glow" style="font-size: 1.5em;">
@@ -93,6 +101,7 @@
           <br />
           - trade on coin.fun
           <br />
+          - really ran out of ideas on this one. it is what it is
         </div>
         <div class="column">
           <img class="w-48" src={Chads} alt="sunglasses coin" />
@@ -128,6 +137,40 @@
         <source src={PieChart} type="video/mp4" />
       </video>
     </div>
+    <p>Holders of the following collections get 50% boost to their points:</p>
+    <p style="text-align: center;">
+      <br />
+      <span>
+        <strong
+          ><a
+            href="https://opensea.io/collection/renftlabs"
+            target="_blank"
+            style="cursor: pointer;">021 cats</a
+          ></strong
+        >
+        <br />
+        <strong
+          ><a
+            href="https://opensea.io/collection/rumble-kong-league"
+            style="cursor: pointer;"
+            target="_blank">rumble kongs</a
+          ></strong
+        >
+      </span>
+    </p>
+    <p>
+      <br />
+      If you hold NFTs from both of the above, you get 100% boost to your points.
+      The more NFTs you hold the higher the boost. TODO: provide a formula. To qualify,
+      write a message in #nft-multiplier-verification on discord (TODO: invite link
+      here).
+
+      <strong
+        >You will have to hold the NFT for the duration of the season to be
+        eligible for your boost.</strong
+      >
+    </p>
+    <br />
     <p>
       There will be a total of 5 seasons. Points breakdown for each season is as
       follows.
@@ -181,8 +224,7 @@
       Seasons will be of varying lengths. There will be mid-season windows
       during which no points can be earned. This time will also be used to
       analyse the season and slash points if someone was playing unfairly.
-      Slashed players might get banned from further games. The slashed points
-      will be equally distributed amongst all other players.
+      Slashed players might get banned from further games.
     </p>
   </section>
 
