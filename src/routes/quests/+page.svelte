@@ -18,7 +18,7 @@
         this={quest.component in QuestComponents ?
           QuestComponents[quest.component]
         : Quest}
-        class=""
+        class="min-w-[240px] flex-1"
         {...quest}
       />
     {/each}
