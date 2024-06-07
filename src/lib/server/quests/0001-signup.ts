@@ -40,5 +40,10 @@ export const quest1 = makeQuest({
     });
 
     return Boolean(result);
+  },
+
+  async onLoad(userId) {
+    if (!userId) return;
+    await this.complete(userId);
   }
 });
