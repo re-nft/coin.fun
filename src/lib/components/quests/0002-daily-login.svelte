@@ -34,7 +34,12 @@
         }}
       >
         <input name="questId" type="hidden" value={id} />
-        <Button disabled={submitting} type="submit">
+        <Button
+          class="text-2xl font-bold"
+          disabled={submitting}
+          size="lg"
+          type="submit"
+        >
           {#if submitting}
             <span class="animate-spin">🥳</span>
           {:else}Gib{/if}
