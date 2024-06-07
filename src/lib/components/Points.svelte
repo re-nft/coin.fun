@@ -9,9 +9,10 @@
 </script>
 
 <div class={cn('inline-block', className)}>
-  <div class="monospace text-4xl font-bold">
+  <div class="monospace points font-bold">
     {#each characters.split('') as char, index}
       <span
+        class="char"
         data-char={char}
         style="
           animation-delay: {Math.round(Math.random() * (index * 200))}ms;
@@ -20,11 +21,15 @@
       >
     {/each}
   </div>
-  <div class="glow px-1 text-right">points</div>
+  <div class="glow text-center">points</div>
 </div>
 
 <style lang="postcss">
-  span {
+  .points {
+    font-size: clamp(2rem, 10vw, 8rem);
+  }
+
+  .char {
     letter-spacing: 0.125em;
     display: inline-block;
     color: transparent;
