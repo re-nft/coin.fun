@@ -1,3 +1,4 @@
+import type { User } from '@supabase/supabase-js';
 import { type Readable, readable, type Updater } from 'svelte/store';
 
 import { browser } from '$app/environment';
@@ -6,7 +7,7 @@ import {
   initModal,
   initWallet,
   type SolanaWallet,
-  type UserAuthInfo,
+  type UserAuthInfo
 } from '$vendor/web3auth';
 
 interface UserStore {
@@ -16,14 +17,20 @@ interface UserStore {
   isConnected: boolean;
   isReady: boolean;
   info?: Partial<UserAuthInfo>;
+  user?: User | undefined;
   wallet?: SolanaWallet | undefined;
 }
 
 export type UserContext = Readable<UserStore>;
 
-export function createStore() {
+export function createStore(user: User | null) {
+  const initial = {
+    isConnected: false,
+    isReady: false,
+    user: user ?? undefined
+  };
   return readable<UserStore>(undefined, (set, update) => {
-    set({ isConnected: false, isReady: false });
+    set(initial);
 
     // WARN: Svelte stores are shared on the server. See:
     // https://kit.svelte.dev/docs/state-management#avoid-shared-state-on-the-server
@@ -36,14 +43,16 @@ export function createStore() {
     // initialized on the client anyway. Not guarding this makes Svelte hurl.
     if (!browser) return;
 
-    init({ set, update });
+    init({ initial, set, update });
   });
 }
 
 async function init({
+  initial,
   set,
   update
 }: {
+  initial: UserStore;
   set: (value: UserStore) => void;
   update: (fn: Updater<UserStore>) => void;
 }) {
@@ -77,19 +86,19 @@ async function init({
     // and by default stuff in lib is shared. so importing this module
     // in client-side code would not work.
     // therefore, we communicate with the api server code through post requests
-    if (info.verifierId) {
-      const response = await fetch('/api/user', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(info),
-      });
-
-      if (!response.ok) {
-        throw new Error('Failed to create user');
-      }
-    }
+    // if (info.verifierId) {
+    //   const response = await fetch('/api/user', {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json'
+    //     },
+    //     body: JSON.stringify(info)
+    //   });
+    //
+    //   if (!response.ok) {
+    //     throw new Error('Failed to create user');
+    //   }
+    // }
     // TODO: set cookie for login so we can SSR.
     // const { idToken } = (await web3auth.authenticateUser());
 
@@ -117,6 +126,7 @@ async function init({
   }
 
   set({
+    ...initial,
     accounts,
     connect,
     disconnect,
