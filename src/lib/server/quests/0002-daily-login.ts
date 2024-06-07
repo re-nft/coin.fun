@@ -7,7 +7,7 @@ export const quest2 = makeQuest({
   id: '0002-daily-login',
   component: 'Quest2',
   points: 1000,
-  title: 'Quest 2',
+  title: 'Quest 2: daily check-in',
 
   async complete(userId: string) {
     if (await this.isCompleted?.(userId)) {

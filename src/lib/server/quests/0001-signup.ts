@@ -7,7 +7,7 @@ export const quest1 = makeQuest({
   id: '0001-signup',
   component: 'Quest1',
   points: 1000,
-  title: 'Quest 1',
+  title: 'Quest 1: sign up',
 
   async complete(userId: string) {
     if (await this.isCompleted?.(userId)) {

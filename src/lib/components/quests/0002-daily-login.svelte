@@ -11,7 +11,8 @@
       <p>Thanks for loging in, anon.</p>
       <p>See you tomorrow.</p>
     {:else}
-      <p>Log in daily to earn, anon.</p>
+      <p>Welcome, anon.</p>
+      <p>Log in daily to earn.</p>
     {/if}
   </div>
 </Quest>
