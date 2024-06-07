@@ -1,3 +1,10 @@
+CREATE TABLE IF NOT EXISTS "points" (
+	"user_id" uuid NOT NULL,
+	"quest_id" varchar NOT NULL,
+	"points" bigint,
+	CONSTRAINT "points_user_id_quest_id_pk" PRIMARY KEY("user_id","quest_id")
+);
+--> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "profiles" (
 	"id" uuid PRIMARY KEY NOT NULL,
 	"avatar" text,
@@ -7,6 +14,12 @@ CREATE TABLE IF NOT EXISTS "profiles" (
 	"created_at" timestamp DEFAULT now() NOT NULL,
 	"updated_at" timestamp DEFAULT now() NOT NULL
 );
+--> statement-breakpoint
+DO $$ BEGIN
+ ALTER TABLE "points" ADD CONSTRAINT "points_user_id_users_id_fk" FOREIGN KEY ("user_id") REFERENCES "auth"."users"("id") ON DELETE cascade ON UPDATE no action;
+EXCEPTION
+ WHEN duplicate_object THEN null;
+END $$;
 --> statement-breakpoint
 DO $$ BEGIN
  ALTER TABLE "profiles" ADD CONSTRAINT "profiles_id_users_id_fk" FOREIGN KEY ("id") REFERENCES "auth"."users"("id") ON DELETE cascade ON UPDATE no action;

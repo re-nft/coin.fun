@@ -1,4 +1,13 @@
-import { pgSchema, pgTable, text, timestamp, uuid } from 'drizzle-orm/pg-core';
+import {
+  bigint,
+  pgSchema,
+  pgTable,
+  primaryKey,
+  text,
+  timestamp,
+  uuid,
+  varchar
+} from 'drizzle-orm/pg-core';
 
 const authSchema = pgSchema('auth');
 
@@ -30,4 +39,18 @@ export const profiles = pgTable('profiles', {
     .$onUpdate(() => new Date())
 });
 
-// export const quests = pgTable('quests', {});
+export const points = pgTable(
+  'points',
+  {
+    userId: uuid('user_id')
+      .references(() => users.id, { onDelete: 'cascade' })
+      .notNull(),
+    questId: varchar('quest_id').notNull(),
+    points: bigint('points', { mode: 'number' })
+  },
+  (table) => {
+    return {
+      pk: primaryKey({ columns: [table.userId, table.questId] })
+    };
+  }
+);
