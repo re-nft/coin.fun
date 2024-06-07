@@ -123,6 +123,7 @@
     </p>
     <div style="display: flex; justify-content: center; margin: 2em;">
       <video autoplay controls width="500">
+        <track kind="captions" />
         <!-- <source src="/media/cc0-videos/flower.webm" type="video/webm" /> -->
         <source src={PieChart} type="video/mp4" />
       </video>
