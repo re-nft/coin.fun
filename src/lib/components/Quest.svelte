@@ -2,6 +2,7 @@
   import * as Card from '$lib/components/ui/card';
   import type { QuestStatus } from '$lib/quests';
 
+  let className: string | undefined = undefined;
   export { className as class };
   export let title: string | undefined = undefined;
   export let status: QuestStatus = 'locked';
@@ -14,7 +15,7 @@
   }[status];
 </script>
 
-<Card.Root class="w-[350px]">
+<Card.Root class={className}>
   <Card.Header>
     <Card.Title>{statusIcon} {title}</Card.Title>
     <Card.Description>{points} points</Card.Description>

@@ -7,17 +7,18 @@
   $: ({ quests, userData: _, userPoints } = data);
 </script>
 
-<div class="myprofile-root">
-  <div class="my-20 flex justify-center">
-    <Points points={userPoints} />
-  </div>
+<div class="my-20 flex justify-center">
+  <Points points={userPoints} />
+</div>
 
+<div class="flex flex-wrap justify-center gap-8">
   {#if quests}
     {#each quests as quest (quest.id)}
       <svelte:component
         this={quest.component in QuestComponents ?
           QuestComponents[quest.component]
         : Quest}
+        class=""
         {...quest}
       />
     {/each}
@@ -35,9 +36,3 @@
   .<br /><br />
   MORE QUESTS COMING SOON
 </p>
-
-<style>
-  .myprofile-root {
-    padding: 2em;
-  }
-</style>
