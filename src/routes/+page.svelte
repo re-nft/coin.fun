@@ -1,6 +1,7 @@
 <script lang="ts">
   import CoinfunWordmark from '$lib/assets/coinfunwordmark.svg';
   import CoinAnimation from '$lib/components/CoinAnimation.svelte';
+  import { Button } from '$lib/components/ui/button';
 </script>
 
 <h1
@@ -30,6 +31,10 @@
   <li>🤤 CREATE AND SHARE COIN.FUN MEMES ON TWITTER 🤤</li>
   <li>⁉️ CLICKITY CLICK THE COIN ⁉️</li>
 </ul>
+
+<p class="text-center">
+  <Button href="/quests">Do quests. Get points.</Button>
+</p>
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
