@@ -4,12 +4,12 @@
   import { Button } from '$lib/components/ui/button';
 
   export let data;
-  $: ({ session, userData } = data);
+  $: ({ session, userData, userPoints } = data);
 </script>
 
 <div class="myprofile-root">
   <div class="my-20 flex justify-center">
-    <Points />
+    <Points points={userPoints} />
   </div>
 
   <Quest status={userData ? 'done' : 'unlocked'} title="Quest 1">

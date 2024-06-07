@@ -1,5 +1,5 @@
 {
-  "id": "ff75fea3-67ff-43e8-9707-789b3653df8f",
+  "id": "2859c4a5-39f0-4358-aa2a-a2e3e1456ecd",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "6",
   "dialect": "postgresql",
@@ -8,6 +8,12 @@
       "name": "points",
       "schema": "",
       "columns": {
+        "id": {
+          "name": "id",
+          "type": "serial",
+          "primaryKey": true,
+          "notNull": true
+        },
         "user_id": {
           "name": "user_id",
           "type": "uuid",
@@ -27,7 +33,22 @@
           "notNull": false
         }
       },
-      "indexes": {},
+      "indexes": {
+        "user_idx": {
+          "name": "user_idx",
+          "columns": [
+            "user_id"
+          ],
+          "isUnique": false
+        },
+        "quest_idx": {
+          "name": "quest_idx",
+          "columns": [
+            "quest_id"
+          ],
+          "isUnique": false
+        }
+      },
       "foreignKeys": {
         "points_user_id_users_id_fk": {
           "name": "points_user_id_users_id_fk",
@@ -44,15 +65,7 @@
           "onUpdate": "no action"
         }
       },
-      "compositePrimaryKeys": {
-        "points_user_id_quest_id_pk": {
-          "name": "points_user_id_quest_id_pk",
-          "columns": [
-            "user_id",
-            "quest_id"
-          ]
-        }
-      },
+      "compositePrimaryKeys": {},
       "uniqueConstraints": {}
     },
     "public.profiles": {

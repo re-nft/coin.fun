@@ -1,8 +1,9 @@
 import {
   bigint,
+  index,
   pgSchema,
   pgTable,
-  primaryKey,
+  serial,
   text,
   timestamp,
   uuid,
@@ -42,6 +43,7 @@ export const profiles = pgTable('profiles', {
 export const points = pgTable(
   'points',
   {
+    id: serial('id').primaryKey().notNull(),
     userId: uuid('user_id')
       .references(() => users.id, { onDelete: 'cascade' })
       .notNull(),
@@ -50,7 +52,8 @@ export const points = pgTable(
   },
   (table) => {
     return {
-      pk: primaryKey({ columns: [table.userId, table.questId] })
+      userIdx: index('user_idx').on(table.userId),
+      questIdx: index('quest_idx').on(table.questId)
     };
   }
 );
