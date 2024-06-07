@@ -9,7 +9,7 @@ export interface Quest<
   points: number;
   title: string;
 
-  complete: (userId: string) => Promise<boolean | void>;
+  complete: (userId: string) => Promise<boolean>;
   getStatus: (userId?: string) => Promise<QuestStatus>;
   isAvailable?: (userId: string) => Promise<boolean>;
   isCompleted?: (userId: string) => Promise<boolean>;

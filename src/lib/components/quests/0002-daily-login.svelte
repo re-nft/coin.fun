@@ -1,8 +1,13 @@
 <script lang="ts">
+  import { enhance } from '$app/forms';
   import Quest from '$lib/components/Quest.svelte';
+  import { Button } from '$lib/components/ui/button';
   import type { QuestStatus } from '$lib/quests';
 
+  export let id: string;
   export let status: QuestStatus;
+
+  let submitting = false;
 </script>
 
 <Quest {...$$restProps} {status}>
@@ -15,6 +20,26 @@
           src="https://media1.tenor.com/m/zxgvSk50wXIAAAAC/see-you-tomorrow-fuck-you.gif"
         />
       </p>
+    {:else if status === 'available'}
+      <p>Gib points?</p>
+      <form
+        action="/api/quests?/complete"
+        method="POST"
+        use:enhance={() => {
+          submitting = true;
+          return async ({ update }) => {
+            await update();
+            submitting = false;
+          };
+        }}
+      >
+        <input name="questId" type="hidden" value={id} />
+        <Button disabled={submitting} type="submit">
+          {#if submitting}
+            <span class="animate-spin">🥳</span>
+          {:else}Gib{/if}
+        </Button>
+      </form>
     {:else}
       <p>Check in daily to earn, anon.</p>
     {/if}

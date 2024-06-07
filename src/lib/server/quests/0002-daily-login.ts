@@ -12,7 +12,7 @@ export const quest2 = makeQuest({
   async complete(userId: string) {
     if (await this.isCompleted?.(userId)) {
       console.log(`Quest (${this.id}): already completed.`);
-      return;
+      return false;
     }
 
     const [result] = await db
@@ -40,7 +40,7 @@ export const quest2 = makeQuest({
         and(
           eq(points.userId, userId),
           eq(points.questId, this.id),
-          sql`${points.acquiredAt} < now() - INTERVAL '24 hours'`
+          sql`${points.acquiredAt} > now() - INTERVAL '24 hours'`
         )
     });
 
@@ -58,10 +58,5 @@ export const quest2 = makeQuest({
     });
 
     return Boolean(result);
-  },
-
-  async onLoad(userId?: string) {
-    if (!userId) return;
-    await this.complete(userId);
   }
 });

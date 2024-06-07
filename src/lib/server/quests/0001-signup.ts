@@ -12,7 +12,7 @@ export const quest1 = makeQuest({
   async complete(userId: string) {
     if (await this.isCompleted?.(userId)) {
       console.log(`Quest (${this.id}): already completed.`);
-      return;
+      return false;
     }
 
     const [result] = await db
