@@ -1,8 +1,9 @@
 CREATE TABLE IF NOT EXISTS "points" (
-	"id" serial PRIMARY KEY NOT NULL,
 	"user_id" uuid NOT NULL,
 	"quest_id" varchar NOT NULL,
-	"points" bigint
+	"points" bigint,
+	"acquired_at" timestamp DEFAULT now() NOT NULL,
+	CONSTRAINT "points_user_id_quest_id_acquired_at_pk" PRIMARY KEY("user_id","quest_id","acquired_at")
 );
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "profiles" (
@@ -28,7 +29,8 @@ EXCEPTION
 END $$;
 --> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "user_idx" ON "points" ("user_id");--> statement-breakpoint
-CREATE INDEX IF NOT EXISTS "quest_idx" ON "points" ("quest_id");
+CREATE INDEX IF NOT EXISTS "quest_idx" ON "points" ("quest_id");--> statement-breakpoint
+CREATE INDEX IF NOT EXISTS "acquired_at_idx" ON "points" ("acquired_at");
 --> statement-breakpoint
 create function public.handle_new_user()
 returns trigger

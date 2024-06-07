@@ -1,13 +1,15 @@
 <script lang="ts">
   import * as Card from '$lib/components/ui/card';
+  import type { QuestStatus } from '$lib/quests';
 
   export { className as class };
   export let title: string | undefined = undefined;
-  export let status: 'locked' | 'unlocked' | 'done' = 'locked';
+  export let status: QuestStatus = 'locked';
+  export let points: number = 0;
 
   const statusIcon = {
+    available: '❗',
     locked: '🔒',
-    unlocked: '❗',
     done: '✅'
   }[status];
 </script>
@@ -15,11 +17,7 @@
 <Card.Root class="w-[350px]">
   <Card.Header>
     <Card.Title>{statusIcon} {title}</Card.Title>
-    {#if $$slots.description}
-      <Card.Description>
-        <slot name="description" />
-      </Card.Description>
-    {/if}
+    <Card.Description>{points} points</Card.Description>
   </Card.Header>
   {#if $$slots.content}
     <Card.Content>

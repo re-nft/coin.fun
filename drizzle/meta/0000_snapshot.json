@@ -1,5 +1,5 @@
 {
-  "id": "2859c4a5-39f0-4358-aa2a-a2e3e1456ecd",
+  "id": "c735c078-8cba-4b22-a5fd-939b20afb2b0",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "6",
   "dialect": "postgresql",
@@ -8,12 +8,6 @@
       "name": "points",
       "schema": "",
       "columns": {
-        "id": {
-          "name": "id",
-          "type": "serial",
-          "primaryKey": true,
-          "notNull": true
-        },
         "user_id": {
           "name": "user_id",
           "type": "uuid",
@@ -31,6 +25,13 @@
           "type": "bigint",
           "primaryKey": false,
           "notNull": false
+        },
+        "acquired_at": {
+          "name": "acquired_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
         }
       },
       "indexes": {
@@ -45,6 +46,13 @@
           "name": "quest_idx",
           "columns": [
             "quest_id"
+          ],
+          "isUnique": false
+        },
+        "acquired_at_idx": {
+          "name": "acquired_at_idx",
+          "columns": [
+            "acquired_at"
           ],
           "isUnique": false
         }
@@ -65,7 +73,16 @@
           "onUpdate": "no action"
         }
       },
-      "compositePrimaryKeys": {},
+      "compositePrimaryKeys": {
+        "points_user_id_quest_id_acquired_at_pk": {
+          "name": "points_user_id_quest_id_acquired_at_pk",
+          "columns": [
+            "user_id",
+            "quest_id",
+            "acquired_at"
+          ]
+        }
+      },
       "uniqueConstraints": {}
     },
     "public.profiles": {

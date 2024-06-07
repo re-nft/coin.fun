@@ -3,7 +3,7 @@ import {
   index,
   pgSchema,
   pgTable,
-  serial,
+  primaryKey,
   text,
   timestamp,
   uuid,
@@ -43,17 +43,21 @@ export const profiles = pgTable('profiles', {
 export const points = pgTable(
   'points',
   {
-    id: serial('id').primaryKey().notNull(),
     userId: uuid('user_id')
       .references(() => users.id, { onDelete: 'cascade' })
       .notNull(),
     questId: varchar('quest_id').notNull(),
-    points: bigint('points', { mode: 'number' })
+    points: bigint('points', { mode: 'number' }),
+    acquiredAt: timestamp('acquired_at').notNull().defaultNow()
   },
   (table) => {
     return {
       userIdx: index('user_idx').on(table.userId),
-      questIdx: index('quest_idx').on(table.questId)
+      questIdx: index('quest_idx').on(table.questId),
+      acquiredAtIdx: index('acquired_at_idx').on(table.acquiredAt),
+      pk: primaryKey({
+        columns: [table.userId, table.questId, table.acquiredAt]
+      })
     };
   }
 );
