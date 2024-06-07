@@ -3,6 +3,7 @@
   import Normies from '$lib/assets/Normies.svg';
   // import Zombies from '$lib/assets/Zombies.svg';
   import Chads from '$lib/assets/Chads.svg';
+  import PieChart from '$lib/assets/coin-fun-pie-chart.mp4';
 
   import * as Table from '$lib/components/ui/table';
 </script>
@@ -19,8 +20,8 @@
   <br />
 
   <p>
-    There are three playable characters who we shall uplift through this one of a <strong
-      style="font-weight: 800;"
+    There are three playable characters who we shall uplift through this one of
+    a <strong style="font-weight: 800;"
       >kind kombucha chakra unlocking third eye awakening degenerate trading
       experience</strong
     >
@@ -120,6 +121,12 @@
       80% of all the points will go to players. The rest will go to coin.fun
       team.
     </p>
+    <div style="display: flex; justify-content: center; margin: 2em;">
+      <video autoplay controls width="500">
+        <!-- <source src="/media/cc0-videos/flower.webm" type="video/webm" /> -->
+        <source src={PieChart} type="video/mp4" />
+      </video>
+    </div>
     <p>
       There will be a total of 5 seasons. Points breakdown for each season is as
       follows.
@@ -178,10 +185,8 @@
     </p>
   </section>
 
-  TODO:
-  - charity (link vitalik and hayden)
-  - kong & rookie holders
-  - renft cat holders
+  TODO: - charity (link vitalik and hayden) - kong & rookie holders - renft cat
+  holders
 
   <section id="season-one-debrief">
     <a href="#season-one-debrief" class="heading-link">
