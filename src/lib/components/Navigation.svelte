@@ -2,7 +2,7 @@
   class="flex items-center justify-center bg-[--color-orange] underline decoration-dotted"
 >
   <a href="/">home</a>
-  <a href="/pointonomics">pointonomics</a>
+  <a href="/tokenomics">earn $COIN</a>
   <!-- <a href="/leaderboard">leaderboard</a> -->
   <a href="/quests">quests</a>
 </nav>
