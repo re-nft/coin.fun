@@ -8,7 +8,7 @@ export type { SolanaWallet } from '@web3auth/solana-provider';
 import { getConfig } from './config';
 
 export async function initModal({ clientId }: { clientId: string }) {
-  // TODO: We import like this because the `@web3auth` modules are CommonJS
+  // NOTE: We import like this because the `@web3auth` modules are CommonJS
   // and Vite does not like this very much. We can get their default exports
   // with `await import()` and grab the relevant parts from there.
   const [

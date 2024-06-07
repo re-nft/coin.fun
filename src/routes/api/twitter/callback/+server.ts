@@ -1,34 +1,30 @@
-import { redirect } from '@sveltejs/kit';
+import { error, redirect } from '@sveltejs/kit';
 
-export const GET = async (event) => {
+import { quest1 } from '$lib/server/quests';
+
+export async function GET({ url, locals: { supabase } }) {
+  const code = url.searchParams.get('code');
+  const next = url.searchParams.get('next') ?? '/quests';
+
+  if (!code) throw error(401, 'Could not complete auth.');
+
   const {
-    url,
-    locals: { supabase }
-  } = event;
-  const searchParams = new URLSearchParams(url.search);
-  const accessToken = searchParams.get('access_token');
-  const refreshToken = searchParams.get('refresh_token');
-  // const providerToken = searchParams.get('provider_token');
-  // const expiresIn = searchParams.get('expires_in');
-  // const tokenType = searchParams.get('token_type');
+    data: { user },
+    error: authError
+  } = await supabase.auth.exchangeCodeForSession(code);
 
-  if (accessToken && refreshToken) {
-    const { data, error } = await supabase.auth.setSession({
-      access_token: accessToken,
-      refresh_token: refreshToken,
-    });
-
-    if (error) {
-      // console.error('Error setting session:', error);
-      // TODO: we might want a custom page for this
-      throw redirect(303, '/');
-    }
-
-    // TODO: we might want a custom page for this
-    throw redirect(303, '/myprofile');
-  } else {
-    // TODO: we might want a custom page for this
-    // console.error('Missing access token or refresh token');
-    throw redirect(303, '/');
+  if (authError) {
+    console.error(authError);
+    throw error(502, authError.message);
   }
-};
+
+  if (!user) {
+    const message = 'Did not receive a user profile.';
+    console.error(message);
+    throw error(502, message);
+  }
+
+  await quest1.complete(user.id);
+
+  return redirect(303, next);
+}
