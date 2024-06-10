@@ -1,4 +1,4 @@
-export type QuestStatus = 'available' | 'done' | 'locked';
+export type QuestStatus = 'available' | 'done' | 'error' | 'locked';
 
 export interface Quest<
   Id extends string = string,
