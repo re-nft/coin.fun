@@ -77,9 +77,6 @@
           <img class="w-48" src={Chads} alt="sunglasses coin" />
         </div>
       </div>
-
-      You naturally fall into one or more of these groups, depending on your
-      actions. Read on to learn more.
     </div>
   </section>
 
@@ -102,40 +99,39 @@
         <source src={PieChart} type="video/mp4" />
       </video>
     </div>
-    <p>Holders of the following collections get 50% boost to their points:</p>
-    <p style="text-align: center;">
-      <br />
-      <span>
-        <strong
-          ><a
-            href="https://opensea.io/collection/renftlabs"
-            target="_blank"
-            style="cursor: pointer;">021 cats</a
-          ></strong
-        >
-        <br />
-        <strong
-          ><a
-            href="https://opensea.io/collection/rumble-kong-league"
-            style="cursor: pointer;"
-            target="_blank">rumble kongs</a
-          ></strong
-        >
-      </span>
-    </p>
-    <p>
-      <br />
-      If you hold NFTs from both of the above, you get 100% boost to your points.
-      The more NFTs you hold the higher the boost. TODO: provide a formula. To qualify,
-      write a message in #nft-multiplier-verification on discord (TODO: invite link
-      here).
-
-      <strong
-        >You will have to hold the NFT for the duration of the season to be
-        eligible for your boost.</strong
-      >
-    </p>
-    <br />
+    <!-- <p>Holders of the following collections get 50% boost to their points:</p> -->
+    <!-- <p style="text-align: center;"> -->
+    <!--   <br /> -->
+    <!--   <span> -->
+    <!--     <strong -->
+    <!--       ><a -->
+    <!--         href="https://opensea.io/collection/renftlabs" -->
+    <!--         target="_blank" -->
+    <!--         style="cursor: pointer;">021 cats</a -->
+    <!--       ></strong -->
+    <!--     > -->
+    <!--     <br /> -->
+    <!--     <strong -->
+    <!--       ><a -->
+    <!--         href="https://opensea.io/collection/rumble-kong-league" -->
+    <!--         style="cursor: pointer;" -->
+    <!--         target="_blank">rumble kongs</a -->
+    <!--       ></strong -->
+    <!--     > -->
+    <!--   </span> -->
+    <!-- </p> -->
+    <!-- <p> -->
+    <!--   <br /> -->
+    <!--   If you hold NFTs from both of the above, you get 100% boost to your points. -->
+    <!--   The more NFTs you hold the higher the boost. TODO: provide a formula. To qualify, -->
+    <!--   write a message in #nft-multiplier-verification on discord (TODO: invite link -->
+    <!--   here). -->
+    <!---->
+    <!--   <strong -->
+    <!--     >You will have to hold the NFT for the duration of the season to be -->
+    <!--     eligible for your boost.</strong -->
+    <!--   > -->
+    <!-- </p> -->
   </section>
 
   <section id="how-to-earn-points">
