@@ -24,7 +24,7 @@
     return () => typeof rafId === 'number' && cancelAnimationFrame(rafId);
   });
 
-  $: characters = String(virtualPoints).padStart(8, '0');
+  $: characters = String(virtualPoints).padStart(12, '0');
 </script>
 
 <div class={cn('inline-block', className)}>
@@ -45,7 +45,7 @@
 
 <style lang="postcss">
   .points {
-    font-size: clamp(2rem, 10vw, 8rem);
+    font-size: clamp(1.5rem, 8vw, 8rem);
   }
 
   .char {
