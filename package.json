@@ -30,7 +30,7 @@
     "@web3auth/openlogin-adapter": "8.5.0",
     "@web3auth/phantom-adapter": "8.5.0",
     "@web3auth/solana-provider": "8.5.0",
-    "bits-ui": "^0.21.9",
+    "bits-ui": "^0.21.10",
     "clsx": "2.1.1",
     "drizzle-orm": "0.30.10",
     "drizzle-valibot": "0.2.0",

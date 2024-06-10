@@ -1,10 +1,18 @@
+<script lang="ts">
+  const pages = {
+    'home': '/',
+    'earn $COIN': '/tokenomics',
+    'quests': '/quests',
+    'leaderboard': '/leaderboard'
+  };
+</script>
+
 <nav
   class="flex items-center justify-center bg-[--color-orange] underline decoration-dotted"
 >
-  <a href="/">home</a>
-  <a href="/tokenomics">earn $COIN</a>
-  <!-- <a href="/leaderboard">leaderboard</a> -->
-  <a href="/quests">quests</a>
+  {#each Object.entries(pages) as [label, href]}
+    <a {href}>{label}</a>
+  {/each}
 </nav>
 
 <style lang="postcss">
