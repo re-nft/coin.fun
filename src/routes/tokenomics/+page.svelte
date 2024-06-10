@@ -40,11 +40,7 @@
           <span class="martian-mono-medium playable-character">Hefties</span>
           - 20k+ twitter followers
           <br />
-          - learned the dark arts of X algorithm
-          <br />
-          - buying APs, driving Lambos, bonking, floking
-          <br />
-          - life is a movie
+          - retweet / quote tweet coin.fun memes
         </div>
         <div class="column">
           <img class="w-48" src={Hefties} alt="fat coin" />
@@ -54,10 +50,8 @@
       <div class="row">
         <div class="column-left">
           <span class="martian-mono-medium playable-character">Normies</span>
-          - sells their kids and one kidney to load up on latest shills they read
-          about on twitter
+          - make coin.fun memes
           <br />
-          - bets on hamster races
         </div>
         <div class="column">
           <div><img class="w-48" src={Normies} alt="normal coin" /></div>
@@ -70,8 +64,6 @@
           - create memecoins on coin.fun
           <br />
           - trade on coin.fun
-          <br />
-          - really ran out of ideas on this one. it is what it is
         </div>
         <div class="column">
           <img class="w-48" src={Chads} alt="sunglasses coin" />
