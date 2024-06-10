@@ -32,7 +32,7 @@ CREATE INDEX IF NOT EXISTS "user_idx" ON "points" ("user_id");--> statement-brea
 CREATE INDEX IF NOT EXISTS "quest_idx" ON "points" ("quest_id");--> statement-breakpoint
 CREATE INDEX IF NOT EXISTS "acquired_at_idx" ON "points" ("acquired_at");
 --> statement-breakpoint
-create function public.handle_new_user()
+create or replace function public.handle_new_user()
 returns trigger
 language plpgsql
 security definer set search_path = ''

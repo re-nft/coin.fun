@@ -1,11 +1,28 @@
 <script lang="ts">
+  import { onMount } from 'svelte';
+
   import { cn } from '$lib/utils/ui';
 
   let className: string | undefined = undefined;
   export { className as class };
   export let points = 0;
 
-  $: characters = String(points).padStart(8, '0');
+  let virtualPoints = points;
+
+  onMount(() => {
+    let rafId: number | undefined;
+
+    function updateEachSecond(time: number) {
+      const seconds = Math.floor(time / 1000);
+      virtualPoints = points + seconds;
+      rafId = requestAnimationFrame(updateEachSecond);
+    }
+
+    rafId = requestAnimationFrame(updateEachSecond);
+    return () => typeof rafId === 'number' && cancelAnimationFrame(rafId);
+  });
+
+  $: characters = String(virtualPoints).padStart(8, '0');
 </script>
 
 <div class={cn('inline-block', className)}>

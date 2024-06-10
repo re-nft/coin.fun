@@ -3,6 +3,7 @@ import { eq, sum } from 'drizzle-orm';
 import type { QuestStatus } from '$lib/quests';
 import { db, points } from '$lib/server/db';
 import * as Quests from '$lib/server/quests';
+import { getUTCDate, getUTCDayStart } from '$lib/utils/date';
 
 export async function load({ locals: { safeGetSession } }) {
   const { session, user } = await safeGetSession();
@@ -50,5 +51,12 @@ export async function load({ locals: { safeGetSession } }) {
     })
   );
 
-  return { quests, userData, userPoints: Number(userPoints) };
+  // Constant flow points. IG this is actually a part of quest 1?
+  const virtualPoints =
+    userPoints ?
+      Number(userPoints) +
+      Math.floor((getUTCDate().getTime() - getUTCDayStart().getTime()) / 1000)
+    : 0;
+
+  return { quests, userData, userPoints: virtualPoints };
 }
