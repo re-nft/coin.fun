@@ -5,7 +5,7 @@
   export { className as class };
   export let points = 0;
 
-  $: characters = new Intl.NumberFormat('en').format(points).padStart(8, '0');
+  $: characters = String(points).padStart(8, '0');
 </script>
 
 <div class={cn('inline-block', className)}>
