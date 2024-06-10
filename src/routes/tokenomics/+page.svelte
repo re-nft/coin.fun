@@ -162,9 +162,6 @@
     </p>
 
     <br />
-    <br />
-
-    <br />
     <p>
       The starting split between the 3 player groups is 35% hefties, 25% normies
       and 40% chads.
@@ -175,28 +172,29 @@
       <br />
       <br />
 
-      1/ Hefties - sign in with twitter on coin.fun app . The more engaging your
-      tweets about coin.fun the higher share of points you will be assigned.
+      1/ Hefties - sign in with twitter on coin.fun app.
+      <a
+        href="https://x.com/coindotfun"
+        target="_blank"
+        style="text-decoration: underline;">DM us on Twitter</a
+      >
+      so that we know to check your tweets. The more engaging your tweets about coin.fun
+      the higher share of points you will be assigned. We will assess likes, retweets
+      and comments. Include the links to your tweets in your questing dashboard.
 
       <br />
       <br />
 
-      2/ Normies - there will be an allocation of points that accumulates at a
-      constant rate until end of Season 1. All you have to do is to simply
-      connect your twiter account in the "My Account". The earlier you do this
-      the more points you will collect.
-
+      2/ Normies - connect your twiter account in the "My Account". Include
+      links to your memes in the questing system.
       <br />
       <br />
 
-      3/ Chads - keep trading the coins. Make new coins.
+      3/ Chads - when trading goes live: trade the coins. Make new coins.
     </p>
   </section>
 
   <br />
-
-  This doc might get updated from time to time. We will keep reference of all
-  past versions. You are reading v1.0 of the doc.
 </div>
 
 <style>

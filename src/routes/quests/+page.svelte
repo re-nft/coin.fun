@@ -34,5 +34,4 @@
   .<br />
   .<br />
   .<br /><br />
-  MORE QUESTS COMING SOON
 </p>

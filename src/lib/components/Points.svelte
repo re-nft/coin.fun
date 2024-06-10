@@ -21,7 +21,7 @@
       >
     {/each}
   </div>
-  <div class="glow text-center">points</div>
+  <div class="glow text-center">your points</div>
 </div>
 
 <style lang="postcss">
