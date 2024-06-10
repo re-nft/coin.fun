@@ -11,7 +11,8 @@
   const statusIcon = {
     available: '❗',
     locked: '🔒',
-    done: '✅'
+    done: '✅',
+    error: '💀'
   }[status];
 </script>
 
@@ -20,14 +21,20 @@
     <Card.Title>{statusIcon} {title}</Card.Title>
     <Card.Description>{points} points</Card.Description>
   </Card.Header>
-  {#if $$slots.content}
-    <Card.Content>
-      <slot name="content" />
-    </Card.Content>
-  {/if}
-  {#if $$slots.footer}
-    <Card.Footer class="flex justify-between">
-      <slot name="footer" />
-    </Card.Footer>
+  {#if status === 'error'}
+    <Card.Content
+      >Our server borked serving this quest. Quest rugged.</Card.Content
+    >
+  {:else}
+    {#if $$slots.content}
+      <Card.Content>
+        <slot name="content" />
+      </Card.Content>
+    {/if}
+    {#if $$slots.footer}
+      <Card.Footer class="flex justify-between">
+        <slot name="footer" />
+      </Card.Footer>
+    {/if}
   {/if}
 </Card.Root>

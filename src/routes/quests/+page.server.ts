@@ -1,5 +1,6 @@
 import { eq, sum } from 'drizzle-orm';
 
+import type { QuestStatus } from '$lib/quests';
 import { db, points } from '$lib/server/db';
 import * as Quests from '$lib/server/quests';
 
@@ -23,12 +24,25 @@ export async function load({ locals: { safeGetSession } }) {
 
   const quests = await Promise.all(
     Array.from(Object.values(Quests)).map(async (quest) => {
-      if (quest?.onLoad) await quest.onLoad(user?.id);
+      try {
+        if (quest?.onLoad) await quest.onLoad(user?.id);
+      } catch (error) {
+        console.error(`Error in Quest(${quest.id}).onLoad:`, error);
+      }
+
+      let status: QuestStatus | undefined;
+      try {
+        status = await quest.getStatus(user?.id);
+      } catch (error) {
+        status = 'error';
+        console.error(`Error in Quest(${quest.id}).getStatus:`, error);
+      }
+
       return {
         id: quest.id,
         component: quest.component,
         points: quest.points,
-        status: await quest.getStatus(user?.id),
+        status,
         title: quest.title,
         session,
         userData
