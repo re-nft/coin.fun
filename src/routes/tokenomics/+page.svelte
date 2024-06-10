@@ -26,14 +26,6 @@
 
   <br />
 
-  <p>
-    There is some big brain shit in here. But you don't need to read this whole
-    manuscript to earn $COIN. You can just trade and create memecoins here and
-    you will be good. Don't sweat it.
-  </p>
-
-  <br />
-
   <section id="playable-characters">
     <a href="#playable-characters" class="heading-link">
       <h1 class="martian-mono-extrabold glow" style="font-size: 1.5em;">
