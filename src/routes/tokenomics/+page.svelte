@@ -1,11 +1,8 @@
 <script lang="ts">
   import Hefties from '$lib/assets/Hefties.svg';
   import Normies from '$lib/assets/Normies.svg';
-  // import Zombies from '$lib/assets/Zombies.svg';
   import Chads from '$lib/assets/Chads.svg';
   import PieChart from '$lib/assets/coin-fun-pie-chart.mp4';
-
-  import * as Table from '$lib/components/ui/table';
 </script>
 
 <div class="tokenomics">
@@ -75,25 +72,6 @@
         </div>
       </div>
 
-      <!-- not sure if we want this class yet, this is a lot of work -->
-      <!-- for us. might introduce it in later seasons. thus commenting out -->
-      <!-- and not complete delete -->
-      <!-- <div class="row"> -->
-      <!--   <div class="column-left"> -->
-      <!--     <span class="martian-mono-medium playable-character">Zombies</span> -->
-      <!--     - whips out a split keyboard on hackathons to assert intellectual dominance -->
-      <!--     <br /> -->
-      <!--     - uses arch btw -->
-      <!--     <br /> -->
-      <!--     - uses nvim btw -->
-      <!--     <br /> -->
-      <!--     - c02 monitor snug on the desk -->
-      <!--   </div> -->
-      <!--   <div class="column"> -->
-      <!--     <img class="w-48" src={Zombies} alt="zombie coin" /> -->
-      <!--   </div> -->
-      <!-- </div> -->
-
       <div class="row">
         <div class="column-left">
           <span class="martian-mono-medium playable-character">Chads</span>
@@ -113,16 +91,11 @@
     </div>
   </section>
 
-  <!-- <p> -->
-  <!--   Think of coin.fun as GTA V. You can play more than one character at the same -->
-  <!--   time. You can be zombying and chading at the same time, for example. -->
-  <!-- </p> -->
-
-  <section id="points-breakdown">
-    <a href="#points-breakdown" class="heading-link">
+  <section id="points-distribution">
+    <a href="#points-distribution" class="heading-link">
       <h1 class="martian-mono-extrabold glow" style="font-size: 1.5em;">
         <span class="anchor-link"> # </span>
-        <span style="text-decoration: line-through;">Token</span> Points Breakdown
+        <span style="text-decoration: line-through;">Token</span> Points Distribution
       </h1>
     </a>
 
@@ -131,7 +104,7 @@
       team.
     </p>
     <div style="display: flex; justify-content: center; margin: 2em;">
-      <video autoplay controls width="500">
+      <video autoplay muted controls width="500">
         <track kind="captions" />
         <!-- <source src="/media/cc0-videos/flower.webm" type="video/webm" /> -->
         <source src={PieChart} type="video/mp4" />
@@ -171,71 +144,13 @@
       >
     </p>
     <br />
-    <p>
-      There will be a total of 5 seasons. Points breakdown for each season is as
-      follows.
-    </p>
-
-    <br />
-
-    <div class="w-[400px]" style="margin: 0 auto;">
-      <Table.Root>
-        <Table.Caption
-          >Total Percentage Points Allocation Each Season</Table.Caption
-        >
-        <Table.Header>
-          <Table.Row>
-            <Table.Head class="w-[100px]">Season Number</Table.Head>
-            <Table.Head>Points Allocation</Table.Head>
-          </Table.Row>
-        </Table.Header>
-        <Table.Body>
-          <Table.Row>
-            <Table.Cell>1</Table.Cell>
-            <Table.Cell>30%</Table.Cell>
-          </Table.Row>
-
-          <Table.Row>
-            <Table.Cell>2</Table.Cell>
-            <Table.Cell>20%</Table.Cell>
-          </Table.Row>
-
-          <Table.Row>
-            <Table.Cell>3</Table.Cell>
-            <Table.Cell>20%</Table.Cell>
-          </Table.Row>
-
-          <Table.Row>
-            <Table.Cell>4</Table.Cell>
-            <Table.Cell>20%</Table.Cell>
-          </Table.Row>
-
-          <Table.Row>
-            <Table.Cell>5</Table.Cell>
-            <Table.Cell>10%</Table.Cell>
-          </Table.Row>
-        </Table.Body>
-      </Table.Root>
-    </div>
-
-    <br />
-
-    <p>
-      Seasons will be of varying lengths. There will be mid-season windows
-      during which no points can be earned. This time will also be used to
-      analyse the season and slash points if someone was playing unfairly.
-      Slashed players might get banned from further games.
-    </p>
   </section>
 
-  TODO: - charity (link vitalik and hayden) - kong & rookie holders - renft cat
-  holders
-
-  <section id="season-one-debrief">
-    <a href="#season-one-debrief" class="heading-link">
+  <section id="how-to-earn-points">
+    <a href="#how-to-earn-points" class="heading-link">
       <h1 class="martian-mono-extrabold glow">
         <span class="anchor-link">#</span>
-        season 1 mission debrief
+        how to earn points
       </h1>
     </a>
 
