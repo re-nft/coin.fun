@@ -40,7 +40,7 @@
           <span class="martian-mono-medium playable-character">Hefties</span>
           - 20k+ twitter followers
           <br />
-          - retweet / quote tweet coin.fun memes
+          - retweet / quote tweet coin.fun memes or content about coin.fun
         </div>
         <div class="column">
           <img class="w-48" src={Hefties} alt="fat coin" />
@@ -50,7 +50,7 @@
       <div class="row">
         <div class="column-left">
           <span class="martian-mono-medium playable-character">Normies</span>
-          - make coin.fun memes
+          - make coin.fun memes / content
           <br />
         </div>
         <div class="column">
@@ -136,18 +136,14 @@
 
     <p>
       Anyone is able to earn points through quests. Outside of quests, normies
-      will create memes and hefites pick which ones they like and retweet /
-      quote tweet. A meme must contain "$COIN" and "coin.fun" keywords. Tagging
-      a heftie in a meme disqualifies it.
+      will create memes / content and hefites pick which ones they like and
+      retweet / quote tweet. A meme / content piece must tag @coindotfun.
+      Tagging a heftie in a meme disqualifies it.
     </p>
 
     <br />
     <p>
-      The starting split between the 3 player groups is 35% hefties, 25% normies
-      and 40% chads.
-      <br />
-      Do not forget that each app user may be in more than one player group. Main
-      objectives of each group are:
+      This is how each playable character can earn points:
 
       <br />
       <br />
@@ -172,6 +168,23 @@
 
       3/ Chads - when trading goes live: trade the coins. Make new coins.
     </p>
+  </section>
+
+  <section id="caution">
+    <a href="#caution" class="heading-link">
+      <h1 class="martian-mono-extrabold glow">
+        <span class="anchor-link">#</span>
+        caution
+      </h1>
+    </a>
+
+    <p>
+      All tweets will be checked for authenticity. If a tweet is authentic, all
+      points made on the tweet aren't affected. However, we might apply an
+      adjustment factor to a tweet that will dampen all points made on it.
+    </p>
+
+    <p>We will perform such analysis in between checkpoints</p>
   </section>
 
   <br />
