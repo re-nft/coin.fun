@@ -155,24 +155,14 @@
     </a>
 
     <p>
-      During Season 1 there will be questing system in place. On top of earning
-      points, hefties, normies and chads are entitled to 100% of the fee revenue
-      made from bonding curve trading.
+      Anyone is able to earn points through quests. Outside of quests, normies
+      will create memes and hefites pick which ones they like and retweet /
+      quote tweet. A meme must contain "$COIN" and "coin.fun" keywords. Tagging
+      a heftie in a meme disqualifies it.
     </p>
 
     <br />
     <br />
-
-    <p>
-      Those that register with coin.fun prior to Season 1 are eligible for
-      trading fee share during Season 1. If you join during Season 1 you will
-      not share in the trading fees, but you are still able to earn points. To
-      join, you need to go to "My Account". Here you can either connect your
-      existing wallet, or simply use socials to register. This will
-      automatically create a wallet for you. This is how to register for Chads
-      rewards. For Hefties and Normies, you must perform an extra step of
-      connecting your Twitter account with coin.fun.
-    </p>
 
     <br />
     <p>
