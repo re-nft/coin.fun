@@ -166,15 +166,15 @@
         target="_blank"
         style="text-decoration: underline;">DM us on Twitter</a
       >
-      so that we know to check your tweets. The more engaging your tweets about coin.fun
+      so that we know to check your tweets. The more engaging the tweet about coin.fun
       the higher share of points you will be assigned. We will assess likes, retweets
       and comments. Include the links to your tweets in your questing dashboard.
 
       <br />
       <br />
 
-      2/ Normies - connect your twiter account in the "My Account". Include
-      links to your memes in the questing system.
+      2/ Normies - connect your twiter account in the "My Account", make memes
+      and post on twitter.
       <br />
       <br />
 
