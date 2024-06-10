@@ -1,8 +1,8 @@
 <script lang="ts">
-  import Hefties from '$lib/assets/Hefties.svg';
-  import Normies from '$lib/assets/Normies.svg';
   import Chads from '$lib/assets/Chads.svg';
   import PieChart from '$lib/assets/coin-fun-pie-chart.mp4';
+  import Hefties from '$lib/assets/Hefties.svg';
+  import Normies from '$lib/assets/Normies.svg';
 </script>
 
 <div class="tokenomics">
@@ -93,7 +93,7 @@
       team.
     </p>
     <div style="display: flex; justify-content: center; margin: 2em;">
-      <video autoplay muted controls width="500">
+      <video autoplay muted={import.meta.env.DEV} controls width="500">
         <track kind="captions" />
         <!-- <source src="/media/cc0-videos/flower.webm" type="video/webm" /> -->
         <source src={PieChart} type="video/mp4" />
