@@ -10,6 +10,8 @@
   let virtualPoints = points;
 
   onMount(() => {
+    if (!points) return;
+
     let rafId: number | undefined;
 
     function updateEachSecond(time: number) {
