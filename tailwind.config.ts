@@ -35,9 +35,21 @@ const config: Config = {
     },
     extend: {
       animation: {
+        nutty: 'nutty 300ms ease-in-out infinite',
         wiggle: 'wiggle 300ms ease-in-out infinite'
       },
       keyframes: {
+        nutty: {
+          '0%, 100%': { transform: 'rotate(-10deg) scale(1)' },
+          '25%, 75%': {
+            backgroundColor: 'hsl(var(--color-yellow))',
+            transform: 'scale(1.25)'
+          },
+          '50%': {
+            backgroundColor: 'hsl(var(--color-green-light))',
+            transform: 'rotate(10deg) scale(1)'
+          }
+        },
         wiggle: {
           '0%, 100%': { transform: 'rotate(-10deg)' },
           '50%': { transform: 'rotate(10deg)' }
