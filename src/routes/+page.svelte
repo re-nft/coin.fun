@@ -1,7 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte';
 
-  import CoinfunWordmark from '$lib/assets/coinfunwordmark.svg';
   import CoinAnimation from '$lib/components/CoinAnimation.svelte';
   import { Button } from '$lib/components/ui/button';
 
@@ -21,11 +20,15 @@
 </script>
 
 <h1
-  class="text-glow mx-auto my-20 max-w-screen-md text-center font-mono text-3xl font-extrabold uppercase"
-  style="color: var(--color-orange);"
+  class="mx-auto my-20 max-w-screen-md text-center font-mono text-3xl font-extrabold"
 >
-  <img src={CoinfunWordmark} alt="coin.fun" />
-  Community Owned Memecoin Printer
+  <span
+    class="text-glow block text-[clamp(3rem,12vw,8rem)] lowercase leading-normal text-primary"
+    >coin.fun</span
+  >
+  <span class="text-glow block uppercase">
+    Community Owned Memecoin Printer
+  </span>
 </h1>
 
 <p class="group mx-auto max-w-min text-center">
