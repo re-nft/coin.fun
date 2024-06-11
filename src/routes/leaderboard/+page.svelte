@@ -2,9 +2,7 @@
   import * as Table from '$lib/components/ui/table';
 
   export let data;
-
   $: ({ rankings } = data);
-  console.log({ data });
 </script>
 
 <h1
