@@ -25,7 +25,7 @@
   {/if}
 </div>
 
-<p class="glow text-center text-3xl">
+<p class="text-glow text-center text-3xl">
   .<br />
   .<br />
   .<br />
