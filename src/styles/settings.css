@@ -5,9 +5,9 @@
     --color-black: 0 0% 6.67%;
     --color-green-light: 72.92 95.59% 73.33%;
     --color-green: 154.39 97.71% 34.31%;
-    --color-orange-light: 25.59 100% 60%;
-    --color-orange: 38.24 100% 60%;
-    --color-red-light: 16.65 100% 51.96%;
+    --color-orange: 25.59 100% 60%;
+    --color-red: 16.65 100% 51.96%;
+    --color-yellow: 38.24 100% 60%;
 
     /* Brand fonts */
     --font-mono: 'Martian Mono';

@@ -16,6 +16,15 @@ const config: Config = {
       }
     },
     extend: {
+      animation: {
+        wiggle: 'wiggle 300ms ease-in-out infinite'
+      },
+      keyframes: {
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-10deg)' },
+          '50%': { transform: 'rotate(10deg)' }
+        }
+      },
       colors: {
         border: 'hsl(var(--border) / <alpha-value>)',
         input: 'hsl(var(--input) / <alpha-value>)',
@@ -55,9 +64,9 @@ const config: Config = {
           'black': 'hsl(var(--color-black) / <alpha-value>)',
           'green-light': 'hsl(var(--color-green-light) / <alpha-value>)',
           'green': 'hsl(var(--color-green) / <alpha-value>)',
-          'orange-light': 'hsl(var(--color-orange-light) / <alpha-value>)',
           'orange': 'hsl(var(--color-orange) / <alpha-value>)',
-          'red-light': 'hsl(var(--color-red-light) / <alpha-value>)'
+          'red': 'hsl(var(--color-red) / <alpha-value>)',
+          'yellow': 'hsl(var(--color-yellow) / <alpha-value>)'
         }
       },
       borderRadius: {
