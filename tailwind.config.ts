@@ -1,12 +1,30 @@
 import forms from '@tailwindcss/forms';
 import type { Config } from 'tailwindcss';
 import { fontFamily } from 'tailwindcss/defaultTheme';
+import plugin from 'tailwindcss/plugin';
 
 const config: Config = {
   darkMode: ['class'],
   content: ['./src/**/*.{html,js,svelte,ts}'],
   safelist: ['dark'],
-  plugins: [forms],
+  plugins: [
+    forms,
+    plugin(({ addComponents }) => {
+      addComponents({
+        '.text-glow': {
+          textShadow: `
+            0 0 5px hsl(var(--color-green)),
+            0 0 10px hsl(var(--color-green)),
+            0 0 15px hsl(var(--color-green)),
+            0 0 20px hsl(var(--color-green)),
+            0 0 25px hsl(var(--color-green)),
+            0 0 30px hsl(var(--color-green)),
+            0 0 35px hsl(var(--color-green));
+          `
+        }
+      });
+    })
+  ],
   theme: {
     container: {
       center: true,

@@ -8,7 +8,7 @@
 </script>
 
 <h1
-  class="glow mx-auto my-20 max-w-screen-md text-center font-mono text-3xl font-extrabold uppercase text-primary"
+  class="text-glow mx-auto my-20 max-w-screen-md text-center font-mono text-3xl font-extrabold uppercase text-primary"
 >
   Leaderboard
 </h1>

@@ -1,8 +1,9 @@
 @import 'styles/settings.css';
 
+@import 'tailwindcss/base';
 @import 'styles/base.css';
-@import 'styles/utils.css';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/components';
+
+@import 'tailwindcss/utilities';
+@import 'styles/utils.css';

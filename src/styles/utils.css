@@ -1,15 +1,4 @@
 @layer utilities {
-  .glow {
-    text-shadow:
-      0 0 5px hsl(var(--color-green)),
-      0 0 10px hsl(var(--color-green)),
-      0 0 15px hsl(var(--color-green)),
-      0 0 20px hsl(var(--color-green)),
-      0 0 25px hsl(var(--color-green)),
-      0 0 30px hsl(var(--color-green)),
-      0 0 35px hsl(var(--color-green));
-  }
-
   .highlight {
     position: relative;
     display: inline-block;
