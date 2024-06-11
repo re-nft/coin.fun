@@ -1,0 +1,5 @@
+@layer base {
+  body {
+    @apply bg-background font-mono text-foreground;
+  }
+}

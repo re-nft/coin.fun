@@ -8,7 +8,7 @@
 <div class="tokenomics">
   <p>
     There will be a total of <span
-      class="martian-mono-medium glow"
+      class="glow font-mono"
       style="font-size: 1.5em;">420,690,000,000</span
     > tokens, which shall be distributed via points system. Points do not map 1:1
     to tokens.
@@ -28,7 +28,7 @@
 
   <section id="playable-characters">
     <a href="#playable-characters" class="heading-link">
-      <h1 class="martian-mono-extrabold glow" style="font-size: 1.5em;">
+      <h1 class="glow font-mono font-bold" style="font-size: 1.5em;">
         <span class="anchor-link"> # </span>
         playable characters
       </h1>
@@ -37,7 +37,7 @@
     <div>
       <div class="row">
         <div class="column-left">
-          <span class="martian-mono-medium playable-character">Hefties</span>
+          <span class="playable-character font-mono">Hefties</span>
           - 20k+ twitter followers
           <br />
           - learned the dark arts of X algorithm
@@ -53,7 +53,7 @@
 
       <div class="row">
         <div class="column-left">
-          <span class="martian-mono-medium playable-character">Normies</span>
+          <span class="playable-character font-mono">Normies</span>
           - sells their kids and one kidney to load up on latest shills they read
           about on twitter
           <br />
@@ -66,7 +66,7 @@
 
       <div class="row">
         <div class="column-left">
-          <span class="martian-mono-medium playable-character">Chads</span>
+          <span class="playable-character font-mono">Chads</span>
           - create memecoins on coin.fun
           <br />
           - trade on coin.fun
@@ -82,7 +82,7 @@
 
   <section id="points-distribution">
     <a href="#points-distribution" class="heading-link">
-      <h1 class="martian-mono-extrabold glow" style="font-size: 1.5em;">
+      <h1 class="glow font-mono font-extrabold" style="font-size: 1.5em;">
         <span class="anchor-link"> # </span>
         <span style="text-decoration: line-through;">Token</span> Points Distribution
       </h1>
@@ -136,7 +136,7 @@
 
   <section id="how-to-earn-points">
     <a href="#how-to-earn-points" class="heading-link">
-      <h1 class="martian-mono-extrabold glow">
+      <h1 class="glow font-mono font-extrabold">
         <span class="anchor-link">#</span>
         how to earn points
       </h1>

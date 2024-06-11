@@ -49,6 +49,15 @@ const config: Config = {
         card: {
           DEFAULT: 'hsl(var(--card) / <alpha-value>)',
           foreground: 'hsl(var(--card-foreground) / <alpha-value>)'
+        },
+        brand: {
+          'beige': 'hsl(var(--color-beige) / <alpha-value>)',
+          'black': 'hsl(var(--color-black) / <alpha-value>)',
+          'green-light': 'hsl(var(--color-green-light) / <alpha-value>)',
+          'green': 'hsl(var(--color-green) / <alpha-value>)',
+          'orange-light': 'hsl(var(--color-orange-light) / <alpha-value>)',
+          'orange': 'hsl(var(--color-orange) / <alpha-value>)',
+          'red-light': 'hsl(var(--color-red-light) / <alpha-value>)'
         }
       },
       borderRadius: {
@@ -57,7 +66,9 @@ const config: Config = {
         sm: 'calc(var(--radius) - 4px)'
       },
       fontFamily: {
-        sans: [...fontFamily.sans]
+        mono: ['var(--font-mono)', ...fontFamily.mono],
+        sans: ['var(--font-sans)', ...fontFamily.sans],
+        serif: ['var(--font-serif)', ...fontFamily.serif]
       }
     }
   }

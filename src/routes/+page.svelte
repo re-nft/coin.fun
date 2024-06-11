@@ -5,7 +5,7 @@
 </script>
 
 <h1
-  class="martian-mono-extrabold glow mx-auto mt-20 max-w-screen-md text-center text-3xl uppercase"
+  class="glow mx-auto mt-20 max-w-screen-md text-center font-mono text-3xl font-extrabold uppercase"
   style="color: var(--color-orange);"
 >
   <img src={CoinfunWordmark} alt="coin.fun" />
