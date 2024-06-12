@@ -17,6 +17,7 @@
 
   <meta property="og:description" content={description} />
   <meta property="og:title" content={title} />
+  <meta property="og:site_name" content={TITLE} />
   <meta property="og:url" content={$page.url.href} />
 
   <meta name="twitter:card" content="summary_large_image" />

@@ -1,3 +1,4 @@
+import { Resvg } from '@resvg/resvg-js';
 import satori from 'satori';
 
 import { read } from '$app/server';
@@ -91,9 +92,11 @@ export async function GET({ url }) {
     }
   );
 
-  return new Response(svg, {
+  const png = new Resvg(svg).render().asPng();
+
+  return new Response(png, {
     headers: {
-      'Content-Type': 'image/svg+xml',
+      'Content-Type': 'image/png',
       'Cache-Control': 'no-store'
     }
   });
