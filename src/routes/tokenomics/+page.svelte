@@ -7,8 +7,8 @@
 </script>
 
 <PageMeta
-  title="Tokenomics - Degenerate Profits on Coin.fun"
-  description="Our tokenomics. Stack $COIN like a boss on Coin.fun. Flip tokens, print memecoins, and ride the degen rollercoaster to the moon. WAGMI or get rekt!"
+  title="Tokenomics - Ape to earn"
+  description="Our tokenomics. Stack $COIN like a boss. Flip tokens, print memecoins, and ride the degen rollercoaster to the moon. WAGMI or get rekt!"
   keywords="tokenomics, earn $COIN, degen profits, flip tokens, print memecoins, crypto riches, community owned crypto"
 />
 

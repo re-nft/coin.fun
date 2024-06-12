@@ -22,8 +22,8 @@
 
 <PageMeta
   title="Coin.fun - Community Owned Memecoin Printer"
-  description="Degens unite! Coin.fun is the place to print memecoins, flip tokens, and YOLO with $COIN. Get in, loser, we’re going mooning!"
-  keywords="memecoin printer, community owned crypto, degenerate crypto, flip tokens, $COIN, crypto fun, crypto DJN"
+  description="Welcome to the $COIN jungle, ape! YOLO into the memecoin casino where degens moon or get REKT. Gib gains or cry harder!"
+  keywords="memecoin, ape, degen, moon, REKT, YOLO, Lambo, gains, pump, dump, $COIN, cry harder"
 />
 
 <h1

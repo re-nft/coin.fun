@@ -9,8 +9,8 @@
 </script>
 
 <PageMeta
-  title="Quests - Complete Challenges and Print Memecoins on Coin.fun"
-  description="Ready to get rekt or go to the moon? Take on degen quests, crush challenges, and print memecoins like a true mad lad. Only on Coin.fun!"
+  title="Quests - Moon missions & reketed adventures!"
+  description="Ready to get rekt or go to the moon? Take on degen quests, crush challenges, and print memecoins like a madlad."
   keywords="degen quests, print memecoins, crypto challenges, $COIN rewards, community owned crypto fun"
 />
 

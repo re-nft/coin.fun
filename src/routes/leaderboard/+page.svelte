@@ -7,9 +7,9 @@
 </script>
 
 <PageMeta
-  title="Leaderboard - Top Degens on Coin.fun"
-  description="Who’s the biggest degen? Check the leaderboard on Coin.fun and see who’s mooning and who’s rekt. Flex those $COIN gains, ape in!"
-  keywords="degen leaderboard, top memecoin printers, $COIN flex, crypto degen, community crypto kings"
+  title="Leaderboard - Top degens and rekt regards on Coin.fun"
+  description="Check out the apex degens! Who’s mooning and who’s crying? Wen Lambo? Wen REKT? Get on the board or stay poored!"
+  keywords="top degens, high rollers, bag holders, mooning, crying, Lambo, REKT, leaderboard, stay poor, $COIN"
 />
 
 <h1
