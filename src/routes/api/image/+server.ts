@@ -1,4 +1,5 @@
 import { Resvg } from '@resvg/resvg-js';
+import { LRUCache } from 'lru-cache';
 import satori from 'satori';
 
 import { read } from '$app/server';
@@ -6,15 +7,29 @@ import { read } from '$app/server';
 import backgroundImage from './Background_2.png';
 import martianMono from './martian-mono-instance.ttf';
 
+const SEPARATOR = ' - ';
+const CACHE = new LRUCache<string, Buffer>({ max: 100 });
+
 const backgroundImageData = Buffer.from(
   await read(backgroundImage).arrayBuffer()
 ).toString('base64');
 const martianMonoData = await read(martianMono).arrayBuffer();
 
-const SEPARATOR = ' - ';
+function res(buffer: Buffer) {
+  return new Response(buffer, {
+    headers: {
+      'Content-Type': 'image/png',
+      'Cache-Control': 'no-store'
+    }
+  });
+}
 
 export async function GET({ url }) {
   const fullTitle = url.searchParams.get('title') ?? 'coin.fun';
+  const cached = CACHE.get(fullTitle);
+
+  if (cached) return res(cached);
+
   const [title, ...parts] = fullTitle.split(SEPARATOR);
   const rest = parts.join(SEPARATOR);
 
@@ -93,11 +108,7 @@ export async function GET({ url }) {
   );
 
   const png = new Resvg(svg).render().asPng();
+  CACHE.set(fullTitle, png);
 
-  return new Response(png, {
-    headers: {
-      'Content-Type': 'image/png',
-      'Cache-Control': 'no-store'
-    }
-  });
+  return res(png);
 }

@@ -36,6 +36,7 @@
     "clsx": "2.1.1",
     "drizzle-orm": "0.30.10",
     "drizzle-valibot": "0.2.0",
+    "lru-cache": "10.2.2",
     "lucide-svelte": "^0.378.0",
     "postgres": "3.4.4",
     "satori": "^0.10.13",
