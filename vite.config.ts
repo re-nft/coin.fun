@@ -5,13 +5,12 @@ import { defineConfig } from 'vitest/config';
 export default defineConfig({
   plugins: [
     nodePolyfills({
-      exclude: ['fs'],
       globals: {
         Buffer: true,
         global: true,
         process: true
       },
-      protocolImports: true
+      protocolImports: false
     }),
     sveltekit()
   ],

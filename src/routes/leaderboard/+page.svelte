@@ -1,9 +1,16 @@
 <script lang="ts">
+  import PageMeta from '$lib/components/PageMeta.svelte';
   import * as Table from '$lib/components/ui/table';
 
   export let data;
   $: ({ rankings } = data);
 </script>
+
+<PageMeta
+  title="Leaderboard - Top Degens on Coin.fun"
+  description="Who’s the biggest degen? Check the leaderboard on Coin.fun and see who’s mooning and who’s rekt. Flex those $COIN gains, ape in!"
+  keywords="degen leaderboard, top memecoin printers, $COIN flex, crypto degen, community crypto kings"
+/>
 
 <h1
   class="text-glow mx-auto my-20 max-w-screen-md text-center font-mono text-3xl font-extrabold uppercase text-primary"

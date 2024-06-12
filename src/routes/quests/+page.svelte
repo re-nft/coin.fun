@@ -1,4 +1,5 @@
 <script lang="ts">
+  import PageMeta from '$lib/components/PageMeta.svelte';
   import Points from '$lib/components/Points.svelte';
   import Quest from '$lib/components/Quest.svelte';
   import * as QuestComponents from '$lib/components/quests';
@@ -6,6 +7,12 @@
   export let data;
   $: ({ quests, userData: _, userPoints } = data);
 </script>
+
+<PageMeta
+  title="Quests - Complete Challenges and Print Memecoins on Coin.fun"
+  description="Ready to get rekt or go to the moon? Take on degen quests, crush challenges, and print memecoins like a true mad lad. Only on Coin.fun!"
+  keywords="degen quests, print memecoins, crypto challenges, $COIN rewards, community owned crypto fun"
+/>
 
 <div class="my-20 flex justify-center">
   <Points points={userPoints} />

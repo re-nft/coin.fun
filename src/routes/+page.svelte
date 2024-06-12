@@ -2,6 +2,7 @@
   import { onMount } from 'svelte';
 
   import CoinAnimation from '$lib/components/CoinAnimation.svelte';
+  import PageMeta from '$lib/components/PageMeta.svelte';
   import { Button } from '$lib/components/ui/button';
 
   const LABEL_QUESTS = '- Do quests -';
@@ -18,6 +19,12 @@
     return () => clearInterval(intervalId);
   });
 </script>
+
+<PageMeta
+  title="Coin.fun - Community Owned Memecoin Printer"
+  description="Degens unite! Coin.fun is the place to print memecoins, flip tokens, and YOLO with $COIN. Get in, loser, we’re going mooning!"
+  keywords="memecoin printer, community owned crypto, degenerate crypto, flip tokens, $COIN, crypto fun, crypto DJN"
+/>
 
 <h1
   class="mx-auto my-20 max-w-screen-md text-center font-mono text-3xl font-extrabold"
