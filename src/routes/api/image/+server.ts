@@ -3,35 +3,37 @@ import { LRUCache } from 'lru-cache';
 import satori from 'satori';
 
 import { read } from '$app/server';
+import { etag } from '$lib/server/utils';
 
 import backgroundImage from './Background_2.png';
 import martianMono from './martian-mono-instance.ttf';
 
+// TODO: we might want to hardcode the separator in a config somewhere?
 const SEPARATOR = ' - ';
 const CACHE = new LRUCache<string, Buffer>({ max: 100 });
 
 const backgroundImageData = Buffer.from(
   await read(backgroundImage).arrayBuffer()
 ).toString('base64');
+
 const martianMonoData = await read(martianMono).arrayBuffer();
 
-function res(buffer: Buffer) {
-  return new Response(buffer, {
-    headers: {
-      'Content-Type': 'image/png',
-      'Cache-Control': 'no-store'
-    }
-  });
+function res(buffer: Buffer, request: Request) {
+  const ETag = etag(buffer);
+
+  return request.headers.get('if-none-match') !== ETag ?
+      new Response(buffer, { headers: { 'Content-Type': 'image/png', ETag } })
+    : new Response(null, { status: 304 });
 }
 
-export async function GET({ url }) {
+export async function GET({ request, url }) {
   const fullTitle = url.searchParams.get('title') ?? 'coin.fun';
   const cached = CACHE.get(fullTitle);
 
-  if (cached) return res(cached);
+  if (cached) return res(cached, request);
 
   const [title, ...parts] = fullTitle.split(SEPARATOR);
-  const rest = parts.join(SEPARATOR);
+  const subtitle = parts.join(SEPARATOR);
 
   const svg = await satori(
     {
@@ -66,7 +68,7 @@ export async function GET({ url }) {
                     }
                   }
                 },
-                rest
+                subtitle
               ],
               style: {
                 display: 'flex',
@@ -110,5 +112,5 @@ export async function GET({ url }) {
   const png = new Resvg(svg).render().asPng();
   CACHE.set(fullTitle, png);
 
-  return res(png);
+  return res(png, request);
 }
