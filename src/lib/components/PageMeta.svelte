@@ -8,7 +8,7 @@
   export let description = DESCRIPTION;
   export let keywords = '';
 
-  $: image = `${$page.url.host}/api/image?title=${encodeURIComponent(title)}`;
+  $: image = `${$page.url.origin}/api/image?title=${encodeURIComponent(title)}`;
 </script>
 
 <svelte:head>
