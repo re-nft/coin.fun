@@ -37,6 +37,7 @@
     "drizzle-valibot": "0.2.0",
     "lucide-svelte": "^0.378.0",
     "postgres": "3.4.4",
+    "satori": "^0.10.13",
     "tailwind-merge": "2.3.0",
     "tailwind-variants": "0.2.1",
     "three": "^0.164.1",
@@ -45,6 +46,7 @@
   "devDependencies": {
     "@playwright/test": "1.44.0",
     "@sveltejs/adapter-auto": "3.2.0",
+    "@sveltejs/adapter-vercel": "^5.3.1",
     "@sveltejs/kit": "^2.5.10",
     "@sveltejs/vite-plugin-svelte": "3.1.0",
     "@tailwindcss/forms": "0.5.7",

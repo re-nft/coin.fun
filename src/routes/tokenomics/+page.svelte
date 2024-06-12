@@ -3,7 +3,14 @@
   import PieChart from '$lib/assets/coin-fun-pie-chart.mp4';
   import Hefties from '$lib/assets/Hefties.svg';
   import Normies from '$lib/assets/Normies.svg';
+  import PageMeta from '$lib/components/PageMeta.svelte';
 </script>
+
+<PageMeta
+  title="Tokenomics - Degenerate Profits on Coin.fun"
+  description="Our tokenomics. Stack $COIN like a boss on Coin.fun. Flip tokens, print memecoins, and ride the degen rollercoaster to the moon. WAGMI or get rekt!"
+  keywords="tokenomics, earn $COIN, degen profits, flip tokens, print memecoins, crypto riches, community owned crypto"
+/>
 
 <div class="tokenomics">
   <p>
