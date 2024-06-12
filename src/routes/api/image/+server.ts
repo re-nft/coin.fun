@@ -21,9 +21,11 @@ const martianMonoData = await read(martianMono).arrayBuffer();
 function res(buffer: Buffer, request: Request) {
   const ETag = etag(buffer);
 
+  const headers = { 'Content-Type': 'image/png', ETag };
+
   return request.headers.get('if-none-match') !== ETag ?
-      new Response(buffer, { headers: { 'Content-Type': 'image/png', ETag } })
-    : new Response(null, { status: 304 });
+      new Response(buffer, { headers })
+    : new Response(null, { headers, status: 304 });
 }
 
 export async function GET({ request, url }) {
