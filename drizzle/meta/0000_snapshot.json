@@ -1,7 +1,5 @@
 {
-  "id": "c735c078-8cba-4b22-a5fd-939b20afb2b0",
-  "prevId": "00000000-0000-0000-0000-000000000000",
-  "version": "6",
+  "version": "7",
   "dialect": "postgresql",
   "tables": {
     "public.points": {
@@ -36,41 +34,65 @@
       },
       "indexes": {
         "user_idx": {
-          "name": "user_idx",
           "columns": [
-            "user_id"
+            {
+              "expression": "user_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
           ],
-          "isUnique": false
+          "with": {},
+          "name": "user_idx",
+          "isUnique": false,
+          "method": "btree",
+          "concurrently": false
         },
         "quest_idx": {
-          "name": "quest_idx",
           "columns": [
-            "quest_id"
+            {
+              "expression": "quest_id",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
           ],
-          "isUnique": false
+          "with": {},
+          "name": "quest_idx",
+          "isUnique": false,
+          "method": "btree",
+          "concurrently": false
         },
         "acquired_at_idx": {
-          "name": "acquired_at_idx",
           "columns": [
-            "acquired_at"
+            {
+              "expression": "acquired_at",
+              "isExpression": false,
+              "asc": true,
+              "nulls": "last"
+            }
           ],
-          "isUnique": false
+          "with": {},
+          "name": "acquired_at_idx",
+          "isUnique": false,
+          "method": "btree",
+          "concurrently": false
         }
       },
       "foreignKeys": {
         "points_user_id_users_id_fk": {
           "name": "points_user_id_users_id_fk",
           "tableFrom": "points",
-          "tableTo": "users",
-          "schemaTo": "auth",
           "columnsFrom": [
             "user_id"
           ],
+          "tableTo": "users",
+          "schemaTo": "auth",
           "columnsTo": [
             "id"
           ],
-          "onDelete": "cascade",
-          "onUpdate": "no action"
+          "onUpdate": "no action",
+          "onDelete": "cascade"
         }
       },
       "compositePrimaryKeys": {
@@ -139,16 +161,16 @@
         "profiles_id_users_id_fk": {
           "name": "profiles_id_users_id_fk",
           "tableFrom": "profiles",
-          "tableTo": "users",
-          "schemaTo": "auth",
           "columnsFrom": [
             "id"
           ],
+          "tableTo": "users",
+          "schemaTo": "auth",
           "columnsTo": [
             "id"
           ],
-          "onDelete": "cascade",
-          "onUpdate": "no action"
+          "onUpdate": "no action",
+          "onDelete": "cascade"
         }
       },
       "compositePrimaryKeys": {},
@@ -158,8 +180,10 @@
   "enums": {},
   "schemas": {},
   "_meta": {
-    "columns": {},
     "schemas": {},
-    "tables": {}
-  }
+    "tables": {},
+    "columns": {}
+  },
+  "id": "c735c078-8cba-4b22-a5fd-939b20afb2b0",
+  "prevId": "00000000-0000-0000-0000-000000000000"
 }
