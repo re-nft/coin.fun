@@ -8,21 +8,15 @@ import { getUTCDate, getUTCDayStart } from '$lib/utils/date';
 export async function load({ locals: { safeGetSession } }) {
   const { session, user } = await safeGetSession();
 
-  const [userData, [{ userPoints }]] = await Promise.all(
+  const userData =
     user?.id ?
-      [
-        db.query.profiles.findFirst({
-          where: (profiles) => eq(profiles.id, user.id)
-        }) ?? undefined,
-        db
-          .select({ userPoints: sum(points.points) })
-          .from(points)
-          .where(eq(points.userId, user.id))
-          .limit(1)
-      ]
-    : [undefined, [{ userPoints: 0 }]]
-  );
+      await db.query.profiles.findFirst({
+        where: (profiles) => eq(profiles.id, user.id)
+      })
+    : undefined;
 
+  // NOTE: in some cases `Quest.onLoad()` contains DB writes so we want to make
+  // sure these are resolved before we read the user's points.
   const quests = await Promise.all(
     Array.from(Object.values(Quests)).map(async (quest) => {
       try {
@@ -50,6 +44,15 @@ export async function load({ locals: { safeGetSession } }) {
       };
     })
   );
+
+  const [{ userPoints }] =
+    user?.id ?
+      await db
+        .select({ userPoints: sum(points.points) })
+        .from(points)
+        .where(eq(points.userId, user.id))
+        .limit(1)
+    : [{ userPoints: undefined }];
 
   // Constant flow points. IG this is actually a part of quest 1?
   const virtualPoints =

@@ -1,0 +1,51 @@
+@layer base {
+  :root {
+    /* Brand colors */
+    --color-beige: 52.94 100% 93.33%;
+    --color-black: 0 0% 6.67%;
+    --color-green-light: 72.92 95.59% 73.33%;
+    --color-green: 154.39 97.71% 34.31%;
+    --color-orange: 25.59 100% 60%;
+    --color-red: 16.65 100% 51.96%;
+    --color-yellow: 38.24 100% 60%;
+
+    /* Brand fonts */
+    --font-mono: 'Martian Mono';
+    --font-sans: 'Inter';
+
+    /* Shadcn settings */
+    --background: var(--color-black);
+    --foreground: var(--color-green-light);
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --ring: 240 4.9% 83.9%;
+
+    /* these are leonor's brand colors */
+
+    --highlight-background: #fffbdd; /* Beige background */
+    --highlight-color: #ff4e0a; /* Dark text color */
+  }
+}

@@ -1,12 +1,30 @@
 import forms from '@tailwindcss/forms';
 import type { Config } from 'tailwindcss';
 import { fontFamily } from 'tailwindcss/defaultTheme';
+import plugin from 'tailwindcss/plugin';
 
 const config: Config = {
   darkMode: ['class'],
   content: ['./src/**/*.{html,js,svelte,ts}'],
   safelist: ['dark'],
-  plugins: [forms],
+  plugins: [
+    forms,
+    plugin(({ addComponents }) => {
+      addComponents({
+        '.text-glow': {
+          textShadow: `
+            0 0 5px hsl(var(--color-green)),
+            0 0 10px hsl(var(--color-green)),
+            0 0 15px hsl(var(--color-green)),
+            0 0 20px hsl(var(--color-green)),
+            0 0 25px hsl(var(--color-green)),
+            0 0 30px hsl(var(--color-green)),
+            0 0 35px hsl(var(--color-green));
+          `
+        }
+      });
+    })
+  ],
   theme: {
     container: {
       center: true,
@@ -16,6 +34,27 @@ const config: Config = {
       }
     },
     extend: {
+      animation: {
+        nutty: 'nutty 300ms ease-in-out infinite',
+        wiggle: 'wiggle 300ms ease-in-out infinite'
+      },
+      keyframes: {
+        nutty: {
+          '0%, 100%': { transform: 'rotate(-10deg) scale(1)' },
+          '25%, 75%': {
+            backgroundColor: 'hsl(var(--color-yellow))',
+            transform: 'scale(1.25)'
+          },
+          '50%': {
+            backgroundColor: 'hsl(var(--color-green-light))',
+            transform: 'rotate(10deg) scale(1)'
+          }
+        },
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-10deg)' },
+          '50%': { transform: 'rotate(10deg)' }
+        }
+      },
       colors: {
         border: 'hsl(var(--border) / <alpha-value>)',
         input: 'hsl(var(--input) / <alpha-value>)',
@@ -49,6 +88,15 @@ const config: Config = {
         card: {
           DEFAULT: 'hsl(var(--card) / <alpha-value>)',
           foreground: 'hsl(var(--card-foreground) / <alpha-value>)'
+        },
+        brand: {
+          'beige': 'hsl(var(--color-beige) / <alpha-value>)',
+          'black': 'hsl(var(--color-black) / <alpha-value>)',
+          'green-light': 'hsl(var(--color-green-light) / <alpha-value>)',
+          'green': 'hsl(var(--color-green) / <alpha-value>)',
+          'orange': 'hsl(var(--color-orange) / <alpha-value>)',
+          'red': 'hsl(var(--color-red) / <alpha-value>)',
+          'yellow': 'hsl(var(--color-yellow) / <alpha-value>)'
         }
       },
       borderRadius: {
@@ -57,7 +105,9 @@ const config: Config = {
         sm: 'calc(var(--radius) - 4px)'
       },
       fontFamily: {
-        sans: [...fontFamily.sans]
+        mono: ['var(--font-mono)', ...fontFamily.mono],
+        sans: ['var(--font-sans)', ...fontFamily.sans],
+        serif: ['var(--font-serif)', ...fontFamily.serif]
       }
     }
   }

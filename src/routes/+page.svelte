@@ -1,16 +1,52 @@
 <script lang="ts">
-  import CoinfunWordmark from '$lib/assets/coinfunwordmark.svg';
+  import { onMount } from 'svelte';
+
   import CoinAnimation from '$lib/components/CoinAnimation.svelte';
+  import PageMeta from '$lib/components/PageMeta.svelte';
   import { Button } from '$lib/components/ui/button';
+
+  const LABEL_QUESTS = '- Do quests -';
+  const LABEL_POINTS = '- Get points -';
+
+  let label = LABEL_QUESTS;
+
+  onMount(() => {
+    function changeLabel() {
+      label = label === LABEL_POINTS ? LABEL_QUESTS : LABEL_POINTS;
+    }
+
+    const intervalId = setInterval(changeLabel, 750);
+    return () => clearInterval(intervalId);
+  });
 </script>
 
+<PageMeta
+  title="Coin.fun - Community Owned Memecoin Printer"
+  description="Welcome to the $COIN jungle, ape! YOLO into the memecoin casino where degens moon or get REKT. Gib gains or cry harder!"
+  keywords="memecoin, ape, degen, moon, REKT, YOLO, Lambo, gains, pump, dump, $COIN, cry harder"
+/>
+
 <h1
-  class="martian-mono-extrabold glow mx-auto mt-20 max-w-screen-md text-center text-3xl uppercase"
-  style="color: var(--color-orange);"
+  class="mx-auto my-20 max-w-screen-md text-center font-mono text-3xl font-extrabold"
 >
-  <img src={CoinfunWordmark} alt="coin.fun" />
-  Community Owned Memecoin Printer
+  <span
+    class="text-glow block text-[clamp(3rem,12vw,8rem)] lowercase leading-normal text-primary"
+    >coin.fun</span
+  >
+  <span class="text-glow block uppercase">
+    Community Owned Memecoin Printer
+  </span>
 </h1>
+
+<p class="group mx-auto max-w-min text-center">
+  <Button
+    class="font-bold uppercase group-hover:animate-nutty"
+    size="lg"
+    href="/quests"
+  >
+    {label}
+  </Button>
+</p>
 
 <CoinAnimation class="mx-auto my-20 w-full max-w-screen-sm" />
 
@@ -32,13 +68,7 @@
   <li>⁉️ CLICKITY CLICK THE COIN ⁉️</li>
 </ul>
 
-<p class="text-center">
-  <Button href="/quests">Do quests. Get points.</Button>
-</p>
-
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-
   h1 {
     animation: fadeIn 2s ease-in-out;
   }
