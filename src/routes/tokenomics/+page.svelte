@@ -226,10 +226,17 @@
     <p>
       All tweets will be checked for authenticity. If a tweet is authentic, all
       points made on the tweet aren't affected. However, we might apply an
-      adjustment factor to a tweet that will dampen all points made on it.
+      adjustment factor to a tweet that will dampen all points made on it. We
+      will perform such analysis in between checkpoints.
     </p>
 
-    <p>We will perform such analysis in between checkpoints</p>
+    <br />
+    <p>
+      Everyone will need to produce at least one meme / content piece on twitter
+      (unless you are a heftie) to qualify for points. This is to weed out bots
+      from allocation. We reserve the right to analyse the activity and remove
+      bots from token drop.
+    </p>
   </section>
 
   <br />
