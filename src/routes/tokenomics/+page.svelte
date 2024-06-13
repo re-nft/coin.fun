@@ -181,9 +181,44 @@
     </p>
   </section>
 
+  <section id="token-distribution-example">
+    <a href="#token-distribution-example" class="heading-link">
+      <h1 class="text-glow font-mono font-extrabold">
+        <span class="anchor-link">#</span>
+        token distribution example
+      </h1>
+    </a>
+
+    <p>
+      Let's contrive a hypothetical example where only 4 users took part in
+      token farming. Let's also assume that their points at checkpoint 1 are: 4m
+      points, 2m points, 1m points and 1m points.
+    </p>
+    <p>
+      Let's also assume that 20% of the total token supply was distributed at
+      checkpoint 1. Then that means the user with 4m points gets:
+      <br />
+      <br />
+      4m points out of 4m + 2m + 1m + 1m total points accumulated by everyone at
+      checkpoint 1 * 20% of total token supply * 420bn tokens 
+      <br />
+      or
+      <br />
+      0.5 * 20% of total
+
+      token supply * 420 bn tokens 
+      <br />
+
+      or
+      <br />
+      10% of total token supply * 420 bn tokens =
+      42bn tokens
+    </p>
+  </section>
+
   <section id="caution">
     <a href="#caution" class="heading-link">
-      <h1 class="martian-mono-extrabold glow">
+      <h1 class="text-glow font-mono font-extrabold">
         <span class="anchor-link">#</span>
         caution
       </h1>
