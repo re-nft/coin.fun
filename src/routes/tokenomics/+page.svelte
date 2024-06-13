@@ -143,9 +143,13 @@
 
     <p>
       Anyone is able to earn points through quests. Outside of quests, normies
-      will create memes / content and hefites pick which ones they like and
-      retweet / quote tweet. A meme / content piece must tag @coindotfun.
-      Tagging a heftie in a meme disqualifies it.
+      will create memes / content (see <a
+        href="https://zer0-to-one.notion.site/Coin-fun-Creator-Handbook-ee08377a9ec24fd19a2b3b0be29c33ac?pvs=4"
+        target="_blank"
+        style="text-decoration: underline;">here</a
+      > for guidelines) and hefites pick which ones they like and retweet / quote
+      tweet. A meme / content piece must tag @coindotfun. Tagging a heftie in a meme
+      disqualifies it.
     </p>
 
     <br />
