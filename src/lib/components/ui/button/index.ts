@@ -8,7 +8,7 @@ const buttonVariants = tv({
   variants: {
     variant: {
       default:
-        'bg-brand-green-light shadow-[0.1875rem_0.1875rem_0_0.0625rem_hsl(var(--color-green))] text-primary-foreground hover:bg-brand-green-light/90 active:shadow-[0.0625rem_0.0625rem_0_0_hsl(var(--color-green))] active:translate-x-[0.1875rem] active:translate-y-[0.1875rem] active:top-[0.1875rem] active:left-[0.1875rem]',
+        'bg-brand-green-light shadow-[0.1875rem_0.1875rem_0_0.0625rem_hsl(var(--color-green))] hover:translate-x-[0.0625rem] hover:translate-y-[0.0625rem] hover:shadow-[0.125rem_0.125rem_0_0.0625rem_hsl(var(--color-green))] text-primary-foreground hover:bg-brand-beige active:shadow-[0_0_0_0.0625rem_hsl(var(--color-green))] active:translate-x-[0.1875rem] active:translate-y-[0.1875rem] active:top-[0.1875rem] active:left-[0.1875rem]',
       destructive:
         'bg-destructive text-destructive-foreground hover:bg-destructive/90',
       outline:

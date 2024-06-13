@@ -1,5 +1,4 @@
 <script lang="ts">
-  import * as Card from '$lib/components/ui/card';
   import type { QuestStatus } from '$lib/quests';
   import { cn } from '$lib/utils/ui';
 
@@ -24,8 +23,8 @@
     className
   )}
   style="
-  --color-bottom: hsl(var(--color-orange));
-  --color-right: hsl(var(--color-yellow));
+    --color-bottom: hsl(var(--color-orange));
+    --color-right: hsl(var(--color-yellow));
   "
 >
   <header class="px-12 pb-8 pt-16">
