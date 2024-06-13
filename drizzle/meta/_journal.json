@@ -15,6 +15,13 @@
       "when": 1718024570180,
       "tag": "0001_regular_hairball",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1718314869342,
+      "tag": "0002_worried_vermin",
+      "breakpoints": true
     }
   ]
 }

@@ -6,7 +6,7 @@ import { db, points } from '$lib/server/db';
 export const quest2 = makeQuest({
   id: '0002-daily-login',
   component: 'Quest2',
-  points: 1000,
+  points: 100000,
   title: 'Quest 2: daily check-in',
 
   async complete(userId: string) {
