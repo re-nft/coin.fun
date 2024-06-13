@@ -159,22 +159,24 @@
       <br />
       <br />
 
-      1/ Hefties - sign in with twitter on coin.fun app.
+      1/ Hefties - sign in with twitter on coin.fun app. The more engaging the
+      tweet about coin.fun the higher share of points you will be assigned. We
+      will analyse retweets, quote tweets and replies. Include the links to your
+      tweets in your questing dashboard.
+
+      <br />
+      <br />
+
+      2/ Normies - connect your twiter account in the
+      <a href="/quests">quests</a>
+      tab, make memes / content about coin.fun and post on twitter (make sure you
+      tag us @coindotfun). See
       <a
-        href="https://x.com/coindotfun"
+        href="https://zer0-to-one.notion.site/Coin-fun-Creator-Handbook-ee08377a9ec24fd19a2b3b0be29c33ac?pvs=4"
         target="_blank"
-        style="text-decoration: underline;">DM us on Twitter</a
+        style="text-decoration: underline;">here</a
       >
-      so that we know to check your tweets. The more engaging the tweet about coin.fun
-      the higher share of points you will be assigned. We will assess likes, retweets
-      and comments. Include the links to your tweets in your questing dashboard.
-
-      <br />
-      <br />
-
-      2/ Normies - connect your twiter account in the "My Account", make memes
-      and post on twitter.
-      <br />
+      for guidelines<br />
       <br />
 
       3/ Chads - when trading goes live: trade the coins. Make new coins.
@@ -200,19 +202,16 @@
       <br />
       <br />
       4m points out of 4m + 2m + 1m + 1m total points accumulated by everyone at
-      checkpoint 1 * 20% of total token supply * 420bn tokens 
+      checkpoint 1 * 20% of total token supply * 420bn tokens
       <br />
       or
       <br />
-      0.5 * 20% of total
-
-      token supply * 420 bn tokens 
+      0.5 * 20% of total token supply * 420 bn tokens
       <br />
 
       or
       <br />
-      10% of total token supply * 420 bn tokens =
-      42bn tokens
+      10% of total token supply * 420 bn tokens = 42bn tokens
     </p>
   </section>
 
