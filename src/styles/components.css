@@ -1,0 +1,37 @@
+@layer components {
+  .three-d {
+    --_border-width: var(--border-width, 1px);
+    --_size: var(--size, 2rem);
+    --_color: var(--color, hotpink);
+    --_color-bottom: var(--color-bottom, var(--_color));
+    --_color-right: var(--color-right, var(--_color));
+
+    box-shadow: var(--_size) var(--_size) 0 0 var(--_color-bottom);
+    position: relative;
+
+    &::before,
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+    }
+
+    &::before {
+      background-color: var(--_color-bottom);
+      left: calc(var(--_size) * 0.5 - var(--_border-width));
+      top: calc(100% + var(--_border-width));
+      height: var(--_size);
+      width: calc(100% + var(--_border-width) * 2);
+      transform: skewX(45deg);
+    }
+
+    &::after {
+      background-color: var(--_color-right);
+      left: calc(100% + var(--_border-width));
+      top: calc(var(--_size) * 0.5 - var(--_border-width));
+      height: calc(100% + var(--_border-width) * 2);
+      width: var(--_size);
+      transform: skewY(45deg);
+    }
+  }
+}

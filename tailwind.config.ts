@@ -100,9 +100,12 @@ const config: Config = {
         }
       },
       borderRadius: {
-        lg: 'var(--radius)',
-        md: 'calc(var(--radius) - 2px)',
-        sm: 'calc(var(--radius) - 4px)'
+        DEFAULT: 'var(--radius)',
+        lg: 'calc(var(--radius) * 2)',
+        md: 'calc(var(--radius) * 1.25)',
+        sm: 'calc(var(--radius) * 0.75)',
+        xl: 'calc(var(--radius) * 3.25)',
+        xs: 'calc(var(--radius) * 0.5)'
       },
       fontFamily: {
         mono: ['var(--font-mono)', ...fontFamily.mono],

@@ -18,7 +18,7 @@
   <Points points={userPoints} />
 </div>
 
-<div class="flex flex-wrap justify-center gap-8">
+<div class="flex flex-wrap justify-center gap-16">
   {#if quests}
     {#each quests as quest (quest.id)}
       <svelte:component
@@ -31,14 +31,3 @@
     {/each}
   {/if}
 </div>
-
-<p class="text-glow text-center text-3xl">
-  .<br />
-  .<br />
-  .<br />
-  .<br />
-  .<br />
-  .<br />
-  .<br />
-  .<br /><br />
-</p>

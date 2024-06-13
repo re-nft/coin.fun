@@ -29,8 +29,8 @@
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
 
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
+    --primary: var(--color-beige);
+    --primary-foreground: var(--color-black);
 
     --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
@@ -43,9 +43,9 @@
 
     --ring: 240 4.9% 83.9%;
 
-    /* these are leonor's brand colors */
-
     --highlight-background: #fffbdd; /* Beige background */
     --highlight-color: #ff4e0a; /* Dark text color */
+
+    --radius: 0.5rem;
   }
 }

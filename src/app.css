@@ -4,6 +4,7 @@
 @import 'styles/base.css';
 
 @import 'tailwindcss/components';
+@import 'styles/components.css';
 
 @import 'tailwindcss/utilities';
 @import 'styles/utils.css';
