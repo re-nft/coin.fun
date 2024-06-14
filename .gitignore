@@ -9,3 +9,6 @@
 /package
 /test-results
 .vercel
+
+# Sentry Config File
+.sentryclirc
