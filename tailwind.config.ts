@@ -9,20 +9,24 @@ const config: Config = {
   safelist: ['dark'],
   plugins: [
     forms,
-    plugin(({ addComponents }) => {
-      addComponents({
-        '.text-glow': {
-          textShadow: `
-            0 0 5px hsl(var(--color-green)),
-            0 0 10px hsl(var(--color-green)),
-            0 0 15px hsl(var(--color-green)),
-            0 0 20px hsl(var(--color-green)),
-            0 0 25px hsl(var(--color-green)),
-            0 0 30px hsl(var(--color-green)),
-            0 0 35px hsl(var(--color-green));
+    plugin(({ addComponents, theme }) => {
+      const colors = theme('colors.brand');
+      if (!colors) return;
+      addComponents(
+        Object.keys(colors).map((name) => ({
+          [`.text-glow-${name}`]: {
+            textShadow: `
+            0 0 5px hsl(var(--color-${name})),
+            0 0 10px hsl(var(--color-${name})),
+            0 0 15px hsl(var(--color-${name})),
+            0 0 20px hsl(var(--color-${name})),
+            0 0 25px hsl(var(--color-${name})),
+            0 0 30px hsl(var(--color-${name})),
+            0 0 35px hsl(var(--color-${name}));
           `
-        }
-      });
+          }
+        }))
+      );
     })
   ],
   theme: {
@@ -92,6 +96,7 @@ const config: Config = {
         brand: {
           'beige': 'hsl(var(--color-beige) / <alpha-value>)',
           'black': 'hsl(var(--color-black) / <alpha-value>)',
+          'brown': 'hsl(var(--color-brown) / <alpha-value>)',
           'green-light': 'hsl(var(--color-green-light) / <alpha-value>)',
           'green': 'hsl(var(--color-green) / <alpha-value>)',
           'orange': 'hsl(var(--color-orange) / <alpha-value>)',

@@ -30,10 +30,10 @@
   class="mx-auto my-20 max-w-screen-md text-center font-mono text-3xl font-extrabold"
 >
   <span
-    class="text-glow block text-[clamp(3rem,12vw,8rem)] lowercase leading-normal text-primary"
+    class="text-glow-green block text-[clamp(3rem,12vw,8rem)] lowercase leading-normal text-primary"
     >coin.fun</span
   >
-  <span class="text-glow block uppercase">
+  <span class="text-glow-green block uppercase">
     Community Owned Memecoin Printer
   </span>
 </h1>

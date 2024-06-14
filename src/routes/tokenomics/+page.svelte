@@ -15,7 +15,7 @@
 <div class="tokenomics">
   <p>
     There will be a total of <span
-      class="text-glow font-mono"
+      class="text-glow-green font-mono"
       style="font-size: 1.5em;">420,690,000,000</span
     > tokens, which shall be distributed via points system. Points do not map 1:1
     to tokens.
@@ -35,7 +35,7 @@
 
   <section id="playable-characters">
     <a href="#playable-characters" class="heading-link">
-      <h1 class="text-glow font-mono font-bold" style="font-size: 1.5em;">
+      <h1 class="text-glow-green font-mono font-bold" style="font-size: 1.5em;">
         <span class="anchor-link"> # </span>
         playable characters
       </h1>
@@ -89,7 +89,10 @@
 
   <section id="points-distribution">
     <a href="#points-distribution" class="heading-link">
-      <h1 class="text-glow font-mono font-extrabold" style="font-size: 1.5em;">
+      <h1
+        class="text-glow-green font-mono font-extrabold"
+        style="font-size: 1.5em;"
+      >
         <span class="anchor-link"> # </span>
         <span style="text-decoration: line-through;">Token</span> Points Distribution
       </h1>
@@ -143,7 +146,7 @@
 
   <section id="how-to-earn-points">
     <a href="#how-to-earn-points" class="heading-link">
-      <h1 class="text-glow font-mono font-extrabold">
+      <h1 class="text-glow-green font-mono font-extrabold">
         <span class="anchor-link">#</span>
         how to earn points
       </h1>

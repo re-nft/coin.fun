@@ -1,13 +1,14 @@
 @layer base {
   :root {
     /* Brand colors */
-    --color-beige: 52.94 100% 93.33%;
-    --color-black: 0 0% 6.67%;
-    --color-green-light: 72.92 95.59% 73.33%;
-    --color-green: 154.39 97.71% 34.31%;
-    --color-orange: 25.59 100% 60%;
-    --color-red: 16.65 100% 51.96%;
-    --color-yellow: 38.24 100% 60%;
+    --color-beige: 52.94 100% 93.33%; /* #FFFBDD */
+    --color-black: 0 0% 6.67%; /* #111111 */
+    --color-brown: 25.5 99.01% 39.61%; /* #C95601 */
+    --color-green-light: 72.92 95.59% 73.33%; /* #E0FC7A */
+    --color-green: 154.39 97.71% 34.31%; /* #02AD64 */
+    --color-orange: 25.59 100% 60%; /* #FF8A33 */
+    --color-red: 16.65 100% 51.96%; /* #FF4E0A */
+    --color-yellow: 38.24 100% 60%; /* #FFB533 */
 
     /* Brand fonts */
     --font-mono: 'Martian Mono';

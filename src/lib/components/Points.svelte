@@ -40,7 +40,7 @@
       >
     {/each}
   </div>
-  <div class="text-glow text-center">your points</div>
+  <div class="text-glow-green text-center">your points</div>
 </div>
 
 <style lang="postcss">
@@ -56,7 +56,7 @@
     position: relative;
 
     &::before {
-      @apply text-glow;
+      @apply text-glow-green;
 
       position: absolute;
       height: 100%;

@@ -5,15 +5,18 @@
     --_color: var(--color, hotpink);
     --_color-bottom: var(--color-bottom, var(--_color));
     --_color-right: var(--color-right, var(--_color));
+    --_transition: all 150ms ease-in-out;
 
     box-shadow: var(--_size) var(--_size) 0 0 var(--_color-bottom);
     position: relative;
+    transition: var(--_transition);
 
     &::before,
     &::after {
       content: '';
       display: block;
       position: absolute;
+      transition: var(--_transition);
     }
 
     &::before {
@@ -32,6 +35,12 @@
       height: calc(100% + var(--_border-width) * 2);
       width: var(--_size);
       transform: skewY(45deg);
+    }
+
+    &:hover {
+      --_size: calc(var(--size, 2rem) * 0.75);
+      --_translate: calc(var(--size, 2rem) * 0.25);
+      transform: translate(var(--_translate), var(--_translate));
     }
   }
 }
