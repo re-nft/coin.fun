@@ -2,9 +2,15 @@ import { text } from '@sveltejs/kit';
 
 import { PUBLIC_SENTRY_DSN } from '$env/static/public';
 
-const sentryUrl = new URL(PUBLIC_SENTRY_DSN);
+const sentryUrl = PUBLIC_SENTRY_DSN ? new URL(PUBLIC_SENTRY_DSN) : undefined;
 
 export async function POST({ request }) {
+  if (!sentryUrl) {
+    return text('No PUBLIC_SENTRY_DSN configured.', {
+      status: 500
+    });
+  }
+
   try {
     const envelope = await request.text();
 
