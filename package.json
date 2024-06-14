@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "@resvg/resvg-js": "2.6.2",
+    "@sentry/sveltekit": "8.9.2",
     "@solana/web3.js": "1.92.3",
     "@supabase/ssr": "0.3.0",
     "@supabase/supabase-js": "2.43.4",

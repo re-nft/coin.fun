@@ -1,9 +1,16 @@
+import { sentrySvelteKit } from '@sentry/sveltekit';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { nodePolyfills } from 'vite-plugin-node-polyfills';
 import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
   plugins: [
+    sentrySvelteKit({
+      sourceMapsUploadOptions: {
+        org: 'zero-2-one',
+        project: 'coin-fun'
+      }
+    }),
     nodePolyfills({
       globals: {
         Buffer: true,
