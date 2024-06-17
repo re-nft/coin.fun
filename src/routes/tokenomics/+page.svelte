@@ -51,7 +51,7 @@
       <div class="row">
         <div class="column-left">
           <span class="playable-character font-mono">Hefties</span>
-          - 20k+ twitter followers
+          - 5k+ twitter followers
           <br />
           - retweet / quote tweet coin.fun memes or content about coin.fun
         </div>
