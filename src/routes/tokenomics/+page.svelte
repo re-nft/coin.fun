@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Chads from '$lib/assets/Chads.svg';
   import PieChart from '$lib/assets/coin-fun-pie-chart.mp4';
   import Hefties from '$lib/assets/Hefties.svg';
   import Normies from '$lib/assets/Normies.svg';
@@ -11,6 +10,13 @@
   description="Our tokenomics. Stack $COIN like a boss. Flip tokens, print memecoins, and ride the degen rollercoaster to the moon. WAGMI or get rekt!"
   keywords="tokenomics, earn $COIN, degen profits, flip tokens, print memecoins, crypto riches, community owned crypto"
 />
+
+<h1
+  class="text-glow mx-auto my-20 max-w-screen-md text-center font-mono text-3xl font-extrabold uppercase text-primary"
+>
+  Earn $COIN
+</h1>
+ 
 
 <div class="tokenomics">
   <p>
