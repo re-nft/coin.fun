@@ -1,5 +1,4 @@
 <script lang="ts">
-  import Chads from '$lib/assets/Chads.svg';
   import PieChart from '$lib/assets/coin-fun-pie-chart.mp4';
   import Hefties from '$lib/assets/Hefties.svg';
   import Normies from '$lib/assets/Normies.svg';
@@ -12,19 +11,26 @@
   keywords="tokenomics, earn $COIN, degen profits, flip tokens, print memecoins, crypto riches, community owned crypto"
 />
 
+<h1
+  class="text-glow mx-auto my-20 max-w-screen-md text-center font-mono text-3xl font-extrabold uppercase text-primary"
+>
+  Earn $COIN
+</h1>
+ 
+
 <div class="tokenomics">
   <p>
     There will be a total of <span
       class="text-glow-green font-mono"
       style="font-size: 1.5em;">420,690,000,000</span
-    > tokens, which shall be distributed via points system. Points do not map 1:1
+    > $COIN tokens, which shall be distributed via points system. Points do not map 1:1
     to tokens.
   </p>
 
   <br />
 
   <p>
-    There are three playable characters who we shall uplift through this one of
+    There are two playable characters in first season who we shall uplift through this one of
     a <strong style="font-weight: 800;"
       >kind kombucha chakra unlocking third eye awakening degenerate trading
       experience</strong
@@ -47,11 +53,7 @@
           <span class="playable-character font-mono">Hefties</span>
           - 20k+ twitter followers
           <br />
-          - learned the dark arts of X algorithm
-          <br />
-          - buying APs, driving Lambos, bonking, floking
-          <br />
-          - life is a movie
+          - retweet / quote tweet coin.fun memes or content about coin.fun
         </div>
         <div class="column">
           <img class="w-48" src={Hefties} alt="fat coin" />
@@ -60,28 +62,12 @@
 
       <div class="row">
         <div class="column-left">
-          <span class="playable-character font-mono">Normies</span>
-          - sells their kids and one kidney to load up on latest shills they read
-          about on twitter
+          <span class="martian-mono-medium playable-character">Normies</span>
+          - make coin.fun memes / content
           <br />
-          - bets on hamster races
         </div>
         <div class="column">
           <div><img class="w-48" src={Normies} alt="normal coin" /></div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="column-left">
-          <span class="playable-character font-mono">Chads</span>
-          - create memecoins on coin.fun
-          <br />
-          - trade on coin.fun
-          <br />
-          - really ran out of ideas on this one. it is what it is
-        </div>
-        <div class="column">
-          <img class="w-48" src={Chads} alt="sunglasses coin" />
         </div>
       </div>
     </div>
@@ -105,44 +91,12 @@
     <div style="display: flex; justify-content: center; margin: 2em;">
       <video autoplay muted={import.meta.env.DEV} controls width="500">
         <track kind="captions" />
-        <!-- <source src="/media/cc0-videos/flower.webm" type="video/webm" /> -->
         <source src={PieChart} type="video/mp4" />
       </video>
     </div>
-    <!-- <p>Holders of the following collections get 50% boost to their points:</p> -->
-    <!-- <p style="text-align: center;"> -->
-    <!--   <br /> -->
-    <!--   <span> -->
-    <!--     <strong -->
-    <!--       ><a -->
-    <!--         href="https://opensea.io/collection/renftlabs" -->
-    <!--         target="_blank" -->
-    <!--         style="cursor: pointer;">021 cats</a -->
-    <!--       ></strong -->
-    <!--     > -->
-    <!--     <br /> -->
-    <!--     <strong -->
-    <!--       ><a -->
-    <!--         href="https://opensea.io/collection/rumble-kong-league" -->
-    <!--         style="cursor: pointer;" -->
-    <!--         target="_blank">rumble kongs</a -->
-    <!--       ></strong -->
-    <!--     > -->
-    <!--   </span> -->
-    <!-- </p> -->
-    <!-- <p> -->
-    <!--   <br /> -->
-    <!--   If you hold NFTs from both of the above, you get 100% boost to your points. -->
-    <!--   The more NFTs you hold the higher the boost. TODO: provide a formula. To qualify, -->
-    <!--   write a message in #nft-multiplier-verification on discord (TODO: invite link -->
-    <!--   here). -->
-    <!---->
-    <!--   <strong -->
-    <!--     >You will have to hold the NFT for the duration of the season to be -->
-    <!--     eligible for your boost.</strong -->
-    <!--   > -->
-    <!-- </p> -->
   </section>
+
+  <h1 class="text-glow font-mono font-extrabold">Checkpoint 1</h1>
 
   <section id="how-to-earn-points">
     <a href="#how-to-earn-points" class="heading-link">
@@ -154,42 +108,116 @@
 
     <p>
       Anyone is able to earn points through quests. Outside of quests, normies
-      will create memes and hefites pick which ones they like and retweet /
-      quote tweet. A meme must contain "$COIN" and "coin.fun" keywords. Tagging
-      a heftie in a meme disqualifies it.
+      will create memes / content (see <a
+        href="https://zer0-to-one.notion.site/Coin-fun-Creator-Handbook-ee08377a9ec24fd19a2b3b0be29c33ac?pvs=4"
+        target="_blank"
+        style="text-decoration: underline;">here</a
+      > for guidelines) and hefties pick which ones they like and retweet / quote
+      tweet. A meme / content piece must tag @coindotfun. Tagging a heftie in a meme
+      disqualifies it.
     </p>
 
     <br />
     <p>
-      The starting split between the 3 player groups is 35% hefties, 25% normies
-      and 40% chads.
-      <br />
-      Do not forget that each app user may be in more than one player group. Main
-      objectives of each group are:
+      This is how each playable character can earn points:
 
       <br />
       <br />
 
-      1/ Hefties - sign in with twitter on coin.fun app.
+      1/ Hefties - sign up with twitter on coin.fun app.
+      Quote tweet / retweet content / memes where @coindotfun is tagged.
+      You get one of:
+      <br />
+      <br />
+      200k points if it's a quote tweet
+      <br />
+      OR
+      <br />
+      100k points if it's a tweet.
+      <br />
+      <br />
+      You can retweet / quote tweet as many tweets as you want. We will pick your top tweet only.
+      That means yo can only earn 100k or 200k points per day. If you have retweeted and quote tweeted, we will always pick your best quote tweet that day.
+      Read <a href="#caution">caution</a> section to learn about how your points will be scaled at checkpoint 1 (this is how we call end of season 1).
+
+      <br />
+      <br />
+
+      2/ Normies - connect your twiter account in the
+      <a href="/quests" style="text-decoration: underline;">quests
+      tab</a>, make memes / content about coin.fun and post on twitter (make sure you
+      tag us @coindotfun). See
       <a
-        href="https://x.com/coindotfun"
+        href="https://zer0-to-one.notion.site/Coin-fun-Creator-Handbook-ee08377a9ec24fd19a2b3b0be29c33ac?pvs=4"
         target="_blank"
-        style="text-decoration: underline;">DM us on Twitter</a
+        style="text-decoration: underline;">here</a
       >
-      so that we know to check your tweets. The more engaging the tweet about coin.fun
-      the higher share of points you will be assigned. We will assess likes, retweets
-      and comments. Include the links to your tweets in your questing dashboard.
-
-      <br />
-      <br />
-
-      2/ Normies - connect your twiter account in the "My Account", make memes
-      and post on twitter.
-      <br />
-      <br />
-
-      3/ Chads - when trading goes live: trade the coins. Make new coins.
+      for guidelines. You have a daily cap of 150k points flat per meme / piece of content.
+      You are free to post as many tweets as you like, but we will pick your top tweet only.
+      Read <a href="#caution" style="text-decoration: underline;">caution</a> section to learn about how your points will be scaled at checkpoint 1.
     </p>
+  </section>
+
+  <section id="token-distribution-example">
+    <a href="#token-distribution-example" class="heading-link">
+      <h1 class="text-glow font-mono font-extrabold">
+        <span class="anchor-link">#</span>
+        token distribution example
+      </h1>
+    </a>
+
+    <p>
+      Let's contrive a hypothetical example where only 4 users took part in
+      token farming. Let's also assume that their points at checkpoint 1 are: 4m
+      points, 2m points, 1m points and 1m points.
+    </p>
+    <p>
+      Let's also assume that 20% of the total token supply was distributed at
+      checkpoint 1. Then that means the user with 4m points gets:
+      <br />
+      <br />
+      4m / 8m total points * 20% of total token supply * 420bn tokens
+      <br />
+      or
+      <br />
+      0.5 * 20% of total token supply * 420 bn tokens
+      <br />
+
+      or
+      <br />
+      10% of total token supply * 420 bn tokens = 42bn tokens
+    </p>
+  </section>
+
+  <section id="caution">
+    <a href="#caution" class="heading-link">
+      <h1 class="text-glow font-mono font-extrabold">
+        <span class="anchor-link">#</span>
+        caution
+      </h1>
+    </a>
+
+    <p>
+      All tweets will be checked for authenticity. If a tweet is authentic, all
+      points made on the tweet aren't affected. However, we might apply an
+      adjustment factor to a tweet that will dampen all points made on it. We
+      will perform such analysis in between checkpoints.
+    </p>
+
+    <br />
+    <p>
+      Everyone will need to produce at least one meme / content piece on twitter
+      (unless you are a heftie) to qualify for points. This is to weed out bots
+      from allocation. We reserve the right to analyse the activity and remove
+      bots from token drop.
+    </p>
+
+    <br />
+    <strong>
+      Bonus multiplier / dampening factor will get applied to each tweet's points at checkpoint 1.
+      We will use a function that is the lifeblood of AI: <a href="https://en.wikipedia.org/wiki/Sigmoid_function" target="_blank" style="text-decoration: underline;">sigmoid function</a>. Each day, each normie / heftie will have posted their top tweet that we have picked.
+      Provided tweet is not botted, we apply a sigmoid function to all the tweets. Average performing tweets will get a factor of 1: no bonus, no dampening. The very top tweets will get bonus points, the very worst tweets will get dampened.
+    </strong>
   </section>
 
   <br />
