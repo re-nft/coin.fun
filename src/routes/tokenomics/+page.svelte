@@ -178,6 +178,7 @@
         <Table.Row>
           <Table.Head>Player #</Table.Head>
           <Table.Head>Points</Table.Head>
+          <Table.Head>% out of total points</Table.Head>
           <Table.Head>Tokens Earned</Table.Head>
         </Table.Row>
       </Table.Header>
@@ -187,6 +188,7 @@
           >
             <Table.Cell>1</Table.Cell>
             <Table.Cell>4m</Table.Cell>
+            <Table.Cell>50%</Table.Cell>
             <Table.Cell>21bn</Table.Cell>
           </Table.Row>
           <Table.Row
@@ -194,6 +196,7 @@
           >
             <Table.Cell>2</Table.Cell>
             <Table.Cell>2m</Table.Cell>
+            <Table.Cell>25%</Table.Cell>
             <Table.Cell>10.5bn</Table.Cell>
           </Table.Row>
           <Table.Row
@@ -201,6 +204,7 @@
           >
             <Table.Cell>3</Table.Cell>
             <Table.Cell>1m</Table.Cell>
+            <Table.Cell>12.5%</Table.Cell>
             <Table.Cell>5.25bn</Table.Cell>
           </Table.Row>
           <Table.Row
@@ -208,6 +212,7 @@
           >
             <Table.Cell>4</Table.Cell>
             <Table.Cell>1m</Table.Cell>
+            <Table.Cell>12.5%</Table.Cell>
             <Table.Cell>5.25bn</Table.Cell>
           </Table.Row>
       </Table.Body>
