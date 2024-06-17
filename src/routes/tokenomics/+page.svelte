@@ -64,18 +64,6 @@
           <div><img class="w-48" src={Normies} alt="normal coin" /></div>
         </div>
       </div>
-
-      <div class="row">
-        <div class="column-left">
-          <span class="playable-character font-mono">Chads</span>
-          - create memecoins on coin.fun
-          <br />
-          - trade on coin.fun
-        </div>
-        <div class="column">
-          <img class="w-48" src={Chads} alt="sunglasses coin" />
-        </div>
-      </div>
     </div>
   </section>
 
@@ -94,44 +82,12 @@
     <div style="display: flex; justify-content: center; margin: 2em;">
       <video autoplay muted={import.meta.env.DEV} controls width="500">
         <track kind="captions" />
-        <!-- <source src="/media/cc0-videos/flower.webm" type="video/webm" /> -->
         <source src={PieChart} type="video/mp4" />
       </video>
     </div>
-    <!-- <p>Holders of the following collections get 50% boost to their points:</p> -->
-    <!-- <p style="text-align: center;"> -->
-    <!--   <br /> -->
-    <!--   <span> -->
-    <!--     <strong -->
-    <!--       ><a -->
-    <!--         href="https://opensea.io/collection/renftlabs" -->
-    <!--         target="_blank" -->
-    <!--         style="cursor: pointer;">021 cats</a -->
-    <!--       ></strong -->
-    <!--     > -->
-    <!--     <br /> -->
-    <!--     <strong -->
-    <!--       ><a -->
-    <!--         href="https://opensea.io/collection/rumble-kong-league" -->
-    <!--         style="cursor: pointer;" -->
-    <!--         target="_blank">rumble kongs</a -->
-    <!--       ></strong -->
-    <!--     > -->
-    <!--   </span> -->
-    <!-- </p> -->
-    <!-- <p> -->
-    <!--   <br /> -->
-    <!--   If you hold NFTs from both of the above, you get 100% boost to your points. -->
-    <!--   The more NFTs you hold the higher the boost. TODO: provide a formula. To qualify, -->
-    <!--   write a message in #nft-multiplier-verification on discord (TODO: invite link -->
-    <!--   here). -->
-    <!---->
-    <!--   <strong -->
-    <!--     >You will have to hold the NFT for the duration of the season to be -->
-    <!--     eligible for your boost.</strong -->
-    <!--   > -->
-    <!-- </p> -->
   </section>
+
+  <h1 class="text-glow font-mono font-extrabold">Checkpoint 1</h1>
 
   <section id="how-to-earn-points">
     <a href="#how-to-earn-points" class="heading-link">
@@ -147,7 +103,7 @@
         href="https://zer0-to-one.notion.site/Coin-fun-Creator-Handbook-ee08377a9ec24fd19a2b3b0be29c33ac?pvs=4"
         target="_blank"
         style="text-decoration: underline;">here</a
-      > for guidelines) and hefites pick which ones they like and retweet / quote
+      > for guidelines) and hefties pick which ones they like and retweet / quote
       tweet. A meme / content piece must tag @coindotfun. Tagging a heftie in a meme
       disqualifies it.
     </p>
@@ -161,8 +117,9 @@
 
       1/ Hefties - sign in with twitter on coin.fun app. The more engaging the
       tweet about coin.fun the higher share of points you will be assigned. We
-      will analyse retweets, quote tweets and replies. Include the links to your
-      tweets in your questing dashboard.
+      will analyse retweets, quote tweets and replies. You get one of: 200k points if it's a quote tweet OR 100k points if it's a tweet. At checkpoint 1, bonus multipliers / adjustments might be applied.
+      This is your daily cap. You can retweet / quote tweet as many tweets as you want. We will pick your top tweet only.
+      Note that at checkpoint 1, we can apply a bonus multiplier to each tweet's points. If it's a popular quote tweet then you might get more points than if it's a retweet.
 
       <br />
       <br />
@@ -176,10 +133,7 @@
         target="_blank"
         style="text-decoration: underline;">here</a
       >
-      for guidelines<br />
-      <br />
-
-      3/ Chads - when trading goes live: trade the coins. Make new coins.
+      for guidelines. You have a daily cap of 150k points flat per meme / piece of content. You are free to post as many tweets as you like, but we will pick your top tweet only.
     </p>
   </section>
 
