@@ -40,5 +40,7 @@ export async function load() {
     })
   );
 
+  rankings.sort((a, b) => b.total - a.total);
+
   return { rankings };
 }
