@@ -117,9 +117,11 @@
 
       1/ Hefties - sign in with twitter on coin.fun app. The more engaging the
       tweet about coin.fun the higher share of points you will be assigned. We
-      will analyse retweets, quote tweets and replies. You get one of: 200k points if it's a quote tweet OR 100k points if it's a tweet. At checkpoint 1, bonus multipliers / adjustments might be applied.
-      This is your daily cap. You can retweet / quote tweet as many tweets as you want. We will pick your top tweet only.
-      Note that at checkpoint 1, we can apply a bonus multiplier to each tweet's points. If it's a popular quote tweet then you might get more points than if it's a retweet.
+      will analyse retweets, quote tweets and replies. You get one of: 200k points if it's a quote tweet OR 100k points if it's a tweet.
+      This is your daily cap. 
+      At checkpoint 1, bonus multipliers / adjustments might be applied.
+      You can retweet / quote tweet as many tweets as you want. We will pick your top tweet only.
+      Note that at checkpoint 1, we can apply a bonus multiplier to each tweet's points. If it's a popular quote tweet then you might get more points than if it's a retweet (since it's easier to contribute engagement of a quote tweet to you).
 
       <br />
       <br />
