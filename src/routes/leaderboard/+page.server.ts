@@ -7,6 +7,7 @@ export async function load() {
   const rows = await db
     .select({
       avatar: profiles.avatar,
+      createdAt: profiles.createdAt,
       displayName: profiles.displayName,
       total: sum(points.points),
       userId: points.userId,
@@ -17,6 +18,7 @@ export async function load() {
     .groupBy(
       points.userId,
       profiles.avatar,
+      profiles.createdAt,
       profiles.displayName,
       profiles.userName
     )
@@ -27,7 +29,14 @@ export async function load() {
     Object.assign(user, {
       total:
         Number(user.total) +
-        Math.floor((getUTCDate().getTime() - getUTCDayStart().getTime()) / 1000)
+        Math.floor(
+          (getUTCDate().getTime() -
+            Math.max(
+              user.createdAt?.getTime() ?? 0,
+              getUTCDayStart().getTime()
+            )) /
+            1000
+        )
     })
   );
 
