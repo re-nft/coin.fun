@@ -1,62 +1,96 @@
 import { and, eq, sql } from 'drizzle-orm';
 
-import { makeQuest } from '$lib/quests';
+import { Memoize, QuestV2 } from '$lib/quests';
 import { db, points } from '$lib/server/db';
 
-export const quest2 = makeQuest({
-  id: '0002-daily-login',
-  component: 'Quest2',
-  points: 100000,
-  title: 'Quest 2: daily check-in',
+export class Quest0002DailyLogin extends QuestV2 {
+  id = '0002-daily-login';
+  component = 'Quest2';
+  points = 100000;
+  title = 'Quest 2: daily check-in';
 
-  async complete(userId: string) {
-    if (await this.isCompleted?.(userId)) {
+  override async complete() {
+    if (!this.user?.id) return false;
+    if (await this.isCompleted()) {
       console.log(`Quest (${this.id}): already completed.`);
       return false;
     }
 
-    const [result] = await db
-      .insert(points)
-      .values({
-        points: this.points,
-        questId: this.id,
-        userId
-      })
-      .returning();
+    try {
+      const [result] = await db
+        .insert(points)
+        .values({
+          points: this.points,
+          questId: this.id,
+          userId: this.user.id
+        })
+        .returning();
 
-    return Boolean(result);
-  },
-
-  async getStatus(userId?: string) {
-    if (!userId) return 'locked';
-    if (await this.isCompleted?.(userId)) return 'done';
-    if (await this.isAvailable?.(userId)) return 'available';
-    return 'locked';
-  },
-
-  async isAvailable(userId: string) {
-    const result = await db.query.points.findFirst({
-      where: (points) =>
-        and(
-          eq(points.userId, userId),
-          eq(points.questId, this.id),
-          sql`${points.acquiredAt} > now() - INTERVAL '24 hours'`
-        )
-    });
-
-    return !result;
-  },
-
-  async isCompleted(userId: string) {
-    const result = await db.query.points.findFirst({
-      where: (points) =>
-        and(
-          eq(points.userId, userId),
-          eq(points.questId, this.id),
-          sql`${points.acquiredAt} > now() - INTERVAL '24 hours'`
-        )
-    });
-
-    return Boolean(result);
+      return Boolean(result);
+    } catch (error) {
+      console.error(`Could complete Quest "${this.id}":`, error);
+      return false;
+    }
   }
-});
+
+  override async getStatus() {
+    if (!this.user?.id) return 'locked';
+    if (await this.isCompleted()) return 'done';
+    if (await this.isAvailable()) return 'available';
+    return 'locked';
+  }
+
+  @Memoize
+  override async isAvailable() {
+    if (!this.user?.id) return false;
+
+    try {
+      const [result] = await db
+        .select()
+        .from(points)
+        .where(
+          and(
+            eq(points.userId, this.user.id),
+            eq(points.questId, this.id),
+            sql`${points.acquiredAt} > now() - INTERVAL '24 hours'`
+          )
+        )
+        .limit(1);
+
+      return !result;
+    } catch (error) {
+      console.error(
+        `Could determine availability for Quest "${this.id}":`,
+        error
+      );
+      return false;
+    }
+  }
+
+  @Memoize
+  override async isCompleted() {
+    if (!this.user?.id) return false;
+
+    try {
+      const [result] = await db
+        .select()
+        .from(points)
+        .where(
+          and(
+            eq(points.userId, this.user.id),
+            eq(points.questId, this.id),
+            sql`${points.acquiredAt} > now() - INTERVAL '24 hours'`
+          )
+        )
+        .limit(1);
+
+      return Boolean(result);
+    } catch (error) {
+      console.error(
+        `Could determine completion for Quest "${this.id}":`,
+        error
+      );
+      return false;
+    }
+  }
+}

@@ -1,49 +1,68 @@
 import { and, eq } from 'drizzle-orm';
 
-import { makeQuest } from '$lib/quests';
+import { Memoize, QuestV2 } from '$lib/quests';
 import { db, points } from '$lib/server/db';
 
-export const quest1 = makeQuest({
-  id: '0001-signup',
-  component: 'Quest1',
-  points: 100000,
-  title: 'Quest 1: sign up',
+export class Quest0001Signup extends QuestV2 {
+  id = '0001-signup';
+  component = 'Quest1';
+  points = 100000;
+  title = 'Quest 1: sign up';
 
-  async complete(userId: string) {
-    if (await this.isCompleted?.(userId)) {
+  override async init() {
+    await this.complete();
+  }
+
+  override async complete() {
+    if (!this.user?.id) return false;
+    if (await this.isCompleted()) {
       console.log(`Quest (${this.id}): already completed.`);
       return false;
     }
 
-    const [result] = await db
-      .insert(points)
-      .values({
-        points: this.points,
-        questId: this.id,
-        userId
-      })
-      .returning();
+    try {
+      const [result] = await db
+        .insert(points)
+        .values({
+          points: this.points,
+          questId: this.id,
+          userId: this.user.id
+        })
+        .returning();
 
-    return Boolean(result);
-  },
-
-  async getStatus(userId?: string) {
-    if (!userId) return 'available';
-    if (await this.isCompleted?.(userId)) return 'done';
-    return 'available';
-  },
-
-  async isCompleted(userId: string) {
-    const result = await db.query.points.findFirst({
-      where: (points) =>
-        and(eq(points.userId, userId), eq(points.questId, this.id))
-    });
-
-    return Boolean(result);
-  },
-
-  async onLoad(userId) {
-    if (!userId) return;
-    await this.complete(userId);
+      return Boolean(result);
+    } catch (error) {
+      console.error(`Could complete Quest "${this.id}":`, error);
+      return false;
+    }
   }
-});
+
+  override async getStatus() {
+    if (!this.user?.id) return 'available';
+    if (await this.isCompleted()) return 'done';
+    return 'available';
+  }
+
+  @Memoize
+  override async isCompleted() {
+    if (!this.user?.id) return false;
+
+    try {
+      const [result] = await db
+        .select()
+        .from(points)
+        .where(
+          and(eq(points.userId, this.user.id), eq(points.questId, this.id))
+        )
+        .limit(1);
+
+      return Boolean(result);
+    } catch (error) {
+      console.error(
+        `Could determine completion for Quest "${this.id}":`,
+        error
+      );
+      return false;
+    }
+  }
+}

@@ -5,7 +5,7 @@
   import * as QuestComponents from '$lib/components/quests';
 
   export let data;
-  $: ({ quests, userData: _, userPoints } = data);
+  $: ({ profile, profilePoints, quests } = data);
 </script>
 
 <PageMeta
@@ -15,7 +15,7 @@
 />
 
 <div class="my-20 flex justify-center">
-  <Points points={userPoints} />
+  <Points points={profilePoints} />
 </div>
 
 <div class="flex flex-wrap justify-center gap-16">
@@ -23,10 +23,13 @@
     {#each quests as quest (quest.id)}
       <svelte:component
         this={quest.component in QuestComponents ?
+          // @ts-expect-error We're checking whether this string is a key of
+          // our QuestComponents import. This shouldn't fail.
           QuestComponents[quest.component]
         : Quest}
         class="min-w-[240px] flex-1"
         {...quest}
+        {profile}
       />
     {/each}
   {/if}
