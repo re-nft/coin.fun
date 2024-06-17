@@ -218,7 +218,7 @@
       </Table.Body>
     </Table.Root>
     <p>
-      TLDR; % of points = share of token airdrop
+      TLDR; points = a % of token airdrop
     </p>
   </section>
 
