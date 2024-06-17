@@ -9,7 +9,7 @@
   export let status: QuestStatus = 'locked';
   export let points: number = 0;
 
-  const statusIcon = {
+  $: statusIcon = {
     available: '❗',
     locked: '🔒',
     done: '✅',
