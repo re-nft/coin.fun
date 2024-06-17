@@ -17,7 +17,7 @@
     There will be a total of <span
       class="text-glow font-mono"
       style="font-size: 1.5em;">420,690,000,000</span
-    > tokens, which shall be distributed via points system. Points do not map 1:1
+    > $COIN tokens, which shall be distributed via points system. Points do not map 1:1
     to tokens.
   </p>
 
@@ -116,14 +116,21 @@
       <br />
 
       1/ Hefties - sign in with twitter on coin.fun app.
-      Quote tweet / retweet content / memes produced by normies.
-      The more engaging the
-      tweet about coin.fun the higher share of points you will be assigned. We
-      will analyse retweets, quote tweets and replies.
-      You get one of: 200k points if it's a quote tweet OR 100k points if it's a tweet.
+      Quote tweet / retweet content / memes where @coindotfun is tagged.
+      You get one of:
+      <br />
+      <br />
+      200k points if it's a quote tweet
+      <br />
+      OR
+      <br />
+      100k points if it's a tweet.
+      <br />
+      <br />
       This is your daily cap. 
       You can retweet / quote tweet as many tweets as you want. We will pick your top tweet only.
-      Note that at checkpoint 1, we can apply a bonus multiplier to each tweet's points. If it's a popular quote tweet then you might get more points than if it's a retweet (since it's easier to contribute engagement of a quote tweet to you).
+      Read <a href="#caution">caution</a> section to learn about how your points will be scaled at checkpoint 1.
+
 
       <br />
       <br />
@@ -138,7 +145,7 @@
         style="text-decoration: underline;">here</a
       >
       for guidelines. You have a daily cap of 150k points flat per meme / piece of content. You are free to post as many tweets as you like, but we will pick your top tweet only.
-      We can apply bonus multiplier / dampening factor depending on the engagement of your tweet versus other normies.
+      Read <a href="#caution">caution</a> section to learn about how your points will be scaled at checkpoint 1.
     </p>
   </section>
 
@@ -160,8 +167,7 @@
       checkpoint 1. Then that means the user with 4m points gets:
       <br />
       <br />
-      4m points out of 4m + 2m + 1m + 1m total points accumulated by everyone at
-      checkpoint 1 * 20% of total token supply * 420bn tokens
+      4m / 8m total points * 20% of total token supply * 420bn tokens
       <br />
       or
       <br />
@@ -198,11 +204,11 @@
     </p>
 
     <br />
-    <p>
+    <strong>
       Bonus multiplier / dampening factor will get applied to each tweet's points at checkpoint 1.
-      We will use a function that is lifeblood of AI: sigmoid function. Each day, each normie / heftie will have posted their top tweet that we have picked.
+      We will use a function that is lifeblood of AI: <a href="https://en.wikipedia.org/wiki/Sigmoid_function" target="_blank">sigmoid function</a>. Each day, each normie / heftie will have posted their top tweet that we have picked.
       Provided tweet is not botted, we apply a sigmoid function to all the tweets. Average performing tweets will get a factor of 1: no bonus, no dampening. The very top tweets will get bonus points, the very worst tweets will get dampened.
-    </p>
+    </strong>
   </section>
 
   <br />
