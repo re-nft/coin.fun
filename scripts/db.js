@@ -6,9 +6,7 @@ const dbUrl = new URL(process.env.DB_URL);
 
 // When we're not running against a local db we don't need to spin up docker.
 if (!LOCAL_HOSTNAMES.includes(dbUrl.hostname)) {
-  const migrator = spawnSync('npx', ['drizzle-kit', 'migrate']);
-  process.stdout.write(migrator.stdout);
-  process.exit(migrator.status);
+  process.exit(0);
 }
 
 const container = spawn(
