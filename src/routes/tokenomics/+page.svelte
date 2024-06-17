@@ -17,22 +17,21 @@
 >
   Earn $COIN
 </h1>
- 
 
 <div class="tokenomics">
   <p>
     There will be a total of <span
       class="text-glow-green font-mono"
       style="font-size: 1.5em;">420,690,000,000</span
-    > $COIN tokens, which shall be distributed via points system. Points do not map 1:1
-    to tokens.
+    > $COIN tokens, which shall be distributed via points system. Points do not map
+    1:1 to tokens.
   </p>
 
   <br />
 
   <p>
-    There are two playable characters in first season who we shall uplift through this one of
-    a <strong style="font-weight: 800;"
+    There are two playable characters in first season who we shall uplift
+    through this one of a <strong style="font-weight: 800;"
       >kind kombucha chakra unlocking third eye awakening degenerate trading
       experience</strong
     >
@@ -52,7 +51,7 @@
       <div class="row">
         <div class="column-left">
           <span class="playable-character font-mono">Hefties</span>
-          - 20k+ twitter followers
+          - 5k+ twitter followers
           <br />
           - retweet / quote tweet coin.fun memes or content about coin.fun
         </div>
@@ -125,9 +124,8 @@
       <br />
       <br />
 
-      1/ Hefties - sign up with twitter on coin.fun app.
-      Quote tweet / retweet content / memes where @coindotfun is tagged.
-      You get one of:
+      1/ Hefties - sign up with twitter on coin.fun app. Quote tweet / retweet
+      content / memes where @coindotfun is tagged. You get one of:
       <br />
       <br />
       200k points if it's a quote tweet
@@ -137,25 +135,31 @@
       100k points if it's a retweet.
       <br />
       <br />
-      You can retweet / quote tweet as many tweets as you want. We will pick your top tweet only by analysing its engagement: replies, retweets and quote tweets.
-      That means you can only earn 100k or 200k points per day. If you have retweeted and quote tweeted, we will always pick your best quote tweet that day.
-      Read <a href="#caution">caution</a> section to learn about how your points will be scaled at checkpoint 1 (this is how we call end of season 1).
+      You can retweet / quote tweet as many tweets as you want. We will pick your
+      top tweet only by analysing its engagement: replies, retweets and quote tweets.
+      That means you can only earn 100k or 200k points per day. If you have retweeted
+      and quote tweeted, we will always pick your best quote tweet that day. Read
+      <a href="#caution">caution</a>
+      section to learn about how your points will be scaled at checkpoint 1 (this
+      is how we call end of season 1).
 
       <br />
       <br />
 
       2/ Normies - connect your twiter account in the
-      <a href="/quests" style="text-decoration: underline;">quests
-      tab</a>, make memes / content about coin.fun and post on twitter (make sure you
-      tag us @coindotfun). See
+      <a href="/quests" style="text-decoration: underline;">quests tab</a>, make
+      memes / content about coin.fun and post on twitter (make sure you tag us
+      @coindotfun). See
       <a
         href="https://zer0-to-one.notion.site/Coin-fun-Creator-Handbook-ee08377a9ec24fd19a2b3b0be29c33ac?pvs=4"
         target="_blank"
         style="text-decoration: underline;">here</a
       >
-      for guidelines. You have a daily cap of 150k points flat per meme / piece of content.
-      You are free to post as many tweets as you like, but we will pick your top tweet only.
-      Read <a href="#caution" style="text-decoration: underline;">caution</a> section to learn about how your points will be scaled at checkpoint 1.
+      for guidelines. You have a daily cap of 150k points flat per meme / piece of
+      content. You are free to post as many tweets as you like, but we will pick
+      your top tweet only. Read
+      <a href="#caution" style="text-decoration: underline;">caution</a> section
+      to learn about how your points will be scaled at checkpoint 1.
     </p>
   </section>
 
@@ -169,8 +173,10 @@
 
     <p>
       Let's contrive a hypothetical example where only 4 players took part in
-      token farming during season 1. Let's also assume that their points at checkpoint 1 (end of season 1) are: 4m
-      points, 2m points, 1m points and 1m points. Let's also assume that 10% of total token supply (42bn tokens) is airdropped end of season 1.
+      token farming during season 1. Let's also assume that their points at
+      checkpoint 1 (end of season 1) are: 4m points, 2m points, 1m points and 1m
+      points. Let's also assume that 10% of total token supply (42bn tokens) is
+      airdropped end of season 1.
     </p>
     <p>Then their token allocation will look like so:</p>
     <Table.Root class="caption-top">
@@ -183,42 +189,37 @@
         </Table.Row>
       </Table.Header>
       <Table.Body>
-          <Table.Row
-            class="row"
-          >
-            <Table.Cell>1</Table.Cell>
-            <Table.Cell>4m</Table.Cell>
-            <Table.Cell>50%</Table.Cell>
-            <Table.Cell>21bn</Table.Cell>
-          </Table.Row>
-          <Table.Row
-            class="row"
-          >
-            <Table.Cell>2</Table.Cell>
-            <Table.Cell>2m</Table.Cell>
-            <Table.Cell>25%</Table.Cell>
-            <Table.Cell>10.5bn</Table.Cell>
-          </Table.Row>
-          <Table.Row
-            class="row"
-          >
-            <Table.Cell>3</Table.Cell>
-            <Table.Cell>1m</Table.Cell>
-            <Table.Cell>12.5%</Table.Cell>
-            <Table.Cell>5.25bn</Table.Cell>
-          </Table.Row>
-          <Table.Row
-            class="row"
-          >
-            <Table.Cell>4</Table.Cell>
-            <Table.Cell>1m</Table.Cell>
-            <Table.Cell>12.5%</Table.Cell>
-            <Table.Cell>5.25bn</Table.Cell>
-          </Table.Row>
+        <Table.Row class="row">
+          <Table.Cell>1</Table.Cell>
+          <Table.Cell>4m</Table.Cell>
+          <Table.Cell>50%</Table.Cell>
+          <Table.Cell>21bn</Table.Cell>
+        </Table.Row>
+        <Table.Row class="row">
+          <Table.Cell>2</Table.Cell>
+          <Table.Cell>2m</Table.Cell>
+          <Table.Cell>25%</Table.Cell>
+          <Table.Cell>10.5bn</Table.Cell>
+        </Table.Row>
+        <Table.Row class="row">
+          <Table.Cell>3</Table.Cell>
+          <Table.Cell>1m</Table.Cell>
+          <Table.Cell>12.5%</Table.Cell>
+          <Table.Cell>5.25bn</Table.Cell>
+        </Table.Row>
+        <Table.Row class="row">
+          <Table.Cell>4</Table.Cell>
+          <Table.Cell>1m</Table.Cell>
+          <Table.Cell>12.5%</Table.Cell>
+          <Table.Cell>5.25bn</Table.Cell>
+        </Table.Row>
       </Table.Body>
     </Table.Root>
+    <p>TLDR; points = a % of token airdrop</p>
     <p>
-      TLDR; points = a % of token airdrop
+      To make example simple to understand we have ommitted the coin.fun team's
+      points share. 20% of all points will go to coin.fun team. In other words,
+      if 8m of points were earned in total, 1.6m points would go to coin.fun.
     </p>
   </section>
 
@@ -247,9 +248,17 @@
 
     <br />
     <strong>
-      Bonus multiplier / dampening factor will get applied to each tweet's points at checkpoint 1.
-      We will use a function that is the lifeblood of AI: <a href="https://en.wikipedia.org/wiki/Sigmoid_function" target="_blank" style="text-decoration: underline;">sigmoid function</a>. Each day, each normie / heftie will have posted their top tweet that we have picked.
-      Provided tweet is not botted, we apply a sigmoid function to all the tweets. Average performing tweets will get a factor of 1: no bonus, no dampening. The very top tweets will get bonus points, the very worst tweets will get dampened.
+      Bonus multiplier / dampening factor will get applied to each tweet's
+      points at checkpoint 1. We will use a function that is the lifeblood of
+      AI: <a
+        href="https://en.wikipedia.org/wiki/Sigmoid_function"
+        target="_blank"
+        style="text-decoration: underline;">sigmoid function</a
+      >. Each day, each normie / heftie will have posted their top tweet that we
+      have picked. Provided tweet is not botted, we apply a sigmoid function to
+      all the tweets. Average performing tweets will get a factor of 1: no
+      bonus, no dampening. The very top tweets will get bonus points, the very
+      worst tweets will get dampened.
     </strong>
   </section>
 
