@@ -115,7 +115,7 @@
       <br />
       <br />
 
-      1/ Hefties - sign in with twitter on coin.fun app.
+      1/ Hefties - sign up with twitter on coin.fun app.
       Quote tweet / retweet content / memes where @coindotfun is tagged.
       You get one of:
       <br />
@@ -127,25 +127,25 @@
       100k points if it's a tweet.
       <br />
       <br />
-      This is your daily cap. 
       You can retweet / quote tweet as many tweets as you want. We will pick your top tweet only.
-      Read <a href="#caution">caution</a> section to learn about how your points will be scaled at checkpoint 1.
-
+      That means yo can only earn 100k or 200k points per day. If you have retweeted and quote tweeted, we will always pick your best quote tweet that day.
+      Read <a href="#caution">caution</a> section to learn about how your points will be scaled at checkpoint 1 (this is how we call end of season 1).
 
       <br />
       <br />
 
       2/ Normies - connect your twiter account in the
-      <a href="/quests">quests</a>
-      tab, make memes / content about coin.fun and post on twitter (make sure you
+      <a href="/quests" style="text-decoration: underline;">quests
+      tab</a>, make memes / content about coin.fun and post on twitter (make sure you
       tag us @coindotfun). See
       <a
         href="https://zer0-to-one.notion.site/Coin-fun-Creator-Handbook-ee08377a9ec24fd19a2b3b0be29c33ac?pvs=4"
         target="_blank"
         style="text-decoration: underline;">here</a
       >
-      for guidelines. You have a daily cap of 150k points flat per meme / piece of content. You are free to post as many tweets as you like, but we will pick your top tweet only.
-      Read <a href="#caution">caution</a> section to learn about how your points will be scaled at checkpoint 1.
+      for guidelines. You have a daily cap of 150k points flat per meme / piece of content.
+      You are free to post as many tweets as you like, but we will pick your top tweet only.
+      Read <a href="#caution" style="text-decoration: underline;">caution</a> section to learn about how your points will be scaled at checkpoint 1.
     </p>
   </section>
 
@@ -206,7 +206,7 @@
     <br />
     <strong>
       Bonus multiplier / dampening factor will get applied to each tweet's points at checkpoint 1.
-      We will use a function that is lifeblood of AI: <a href="https://en.wikipedia.org/wiki/Sigmoid_function" target="_blank">sigmoid function</a>. Each day, each normie / heftie will have posted their top tweet that we have picked.
+      We will use a function that is the lifeblood of AI: <a href="https://en.wikipedia.org/wiki/Sigmoid_function" target="_blank" style="text-decoration: underline;">sigmoid function</a>. Each day, each normie / heftie will have posted their top tweet that we have picked.
       Provided tweet is not botted, we apply a sigmoid function to all the tweets. Average performing tweets will get a factor of 1: no bonus, no dampening. The very top tweets will get bonus points, the very worst tweets will get dampened.
     </strong>
   </section>
