@@ -12,7 +12,7 @@
 />
 
 <h1
-  class="text-glow mx-auto my-20 max-w-screen-md text-center font-mono text-3xl font-extrabold uppercase text-primary"
+  class="text-glow-green mx-auto my-20 max-w-screen-md text-center font-mono text-3xl font-extrabold uppercase text-primary"
 >
   Earn $COIN
 </h1>
@@ -160,7 +160,7 @@
 
   <section id="token-distribution-example">
     <a href="#token-distribution-example" class="heading-link">
-      <h1 class="text-glow font-mono font-extrabold">
+      <h1 class="text-glow-green font-mono font-extrabold">
         <span class="anchor-link">#</span>
         token distribution example
       </h1>
@@ -181,7 +181,7 @@
 
   <section id="caution">
     <a href="#caution" class="heading-link">
-      <h1 class="text-glow font-mono font-extrabold">
+      <h1 class="text-glow-green font-mono font-extrabold">
         <span class="anchor-link">#</span>
         caution
       </h1>
