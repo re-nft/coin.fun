@@ -10,7 +10,11 @@
   <div class="flex flex-col gap-4" slot="content">
     {#if profile}
       <p>
-        Hi, <a href={`https://x.com/${profile.userName}`}>
+        Hi, <a
+          href={`https://x.com/${profile.userName}`}
+          rel="noopener nofollow noreferrer"
+          target="_blank"
+        >
           <img
             alt=""
             class="inline size-8 rounded-full align-middle"
