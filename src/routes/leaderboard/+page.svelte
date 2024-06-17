@@ -35,7 +35,11 @@
         <Table.Cell
           class="overflow-hidden text-ellipsis whitespace-nowrap font-medium"
         >
-          <a href={`https://x.com/${user.userName}`}>
+          <a
+            href={`https://x.com/${user.userName}`}
+            rel="noopener nofollow noreferrer"
+            target="_blank"
+          >
             <img
               alt={user.userName?.slice(0, 2)}
               class="avatar inline-block size-10 rounded-full bg-slate-700 p-1 text-center align-middle uppercase leading-[2.5]"
