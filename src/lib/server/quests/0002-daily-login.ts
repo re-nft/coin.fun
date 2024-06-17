@@ -36,35 +36,7 @@ export class Quest0002DailyLogin extends QuestV2 {
   override async getStatus() {
     if (!this.user?.id) return 'locked';
     if (await this.isCompleted()) return 'done';
-    if (await this.isAvailable()) return 'available';
-    return 'locked';
-  }
-
-  @Memoize
-  override async isAvailable() {
-    if (!this.user?.id) return false;
-
-    try {
-      const [result] = await db
-        .select()
-        .from(points)
-        .where(
-          and(
-            eq(points.userId, this.user.id),
-            eq(points.questId, this.id),
-            sql`${points.acquiredAt} > now() - INTERVAL '24 hours'`
-          )
-        )
-        .limit(1);
-
-      return !result;
-    } catch (error) {
-      console.error(
-        `Could determine availability for Quest "${this.id}":`,
-        error
-      );
-      return false;
-    }
+    return 'available';
   }
 
   @Memoize
