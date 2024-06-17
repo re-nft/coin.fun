@@ -115,9 +115,12 @@
       <br />
       <br />
 
-      1/ Hefties - sign in with twitter on coin.fun app. The more engaging the
+      1/ Hefties - sign in with twitter on coin.fun app.
+      Quote tweet / retweet content / memes produced by normies.
+      The more engaging the
       tweet about coin.fun the higher share of points you will be assigned. We
-      will analyse retweets, quote tweets and replies. You get one of: 200k points if it's a quote tweet OR 100k points if it's a tweet.
+      will analyse retweets, quote tweets and replies.
+      You get one of: 200k points if it's a quote tweet OR 100k points if it's a tweet.
       This is your daily cap. 
       At checkpoint 1, bonus multipliers / adjustments might be applied.
       You can retweet / quote tweet as many tweets as you want. We will pick your top tweet only.
