@@ -3,6 +3,7 @@
   import Hefties from '$lib/assets/Hefties.svg';
   import Normies from '$lib/assets/Normies.svg';
   import PageMeta from '$lib/components/PageMeta.svelte';
+  import * as Table from '$lib/components/ui/table';
 </script>
 
 <PageMeta
@@ -167,15 +168,52 @@
     </a>
 
     <p>
-      Let's contrive a hypothetical example where only 4 users took part in
-      token farming. Let's also assume that their points at checkpoint 1 are: 4m
-      points, 2m points, 1m points and 1m points.
+      Let's contrive a hypothetical example where only 4 players took part in
+      token farming during season 1. Let's also assume that their points at checkpoint 1 (end of season 1) are: 4m
+      points, 2m points, 1m points and 1m points. Let's also assume that 10% of total token supply (42bn tokens) is airdropped end of season 1.
     </p>
+    <p>Then their token allocation will look like so:</p>
+    <Table.Root class="caption-top">
+      <Table.Header>
+        <Table.Row>
+          <Table.Head>Player #</Table.Head>
+          <Table.Head>Points</Table.Head>
+          <Table.Head>Tokens Earned</Table.Head>
+        </Table.Row>
+      </Table.Header>
+      <Table.Body>
+          <Table.Row
+            class="row"
+          >
+            <Table.Cell>1</Table.Cell>
+            <Table.Cell>4m</Table.Cell>
+            <Table.Cell>21bn</Table.Cell>
+          </Table.Row>
+          <Table.Row
+            class="row"
+          >
+            <Table.Cell>2</Table.Cell>
+            <Table.Cell>2m</Table.Cell>
+            <Table.Cell>10.5bn</Table.Cell>
+          </Table.Row>
+          <Table.Row
+            class="row"
+          >
+            <Table.Cell>3</Table.Cell>
+            <Table.Cell>1m</Table.Cell>
+            <Table.Cell>5.25bn</Table.Cell>
+          </Table.Row>
+          <Table.Row
+            class="row"
+          >
+            <Table.Cell>4</Table.Cell>
+            <Table.Cell>1m</Table.Cell>
+            <Table.Cell>5.25bn</Table.Cell>
+          </Table.Row>
+      </Table.Body>
+    </Table.Root>
     <p>
-      Let's also assume that 10% of the total token supply was distributed at
-      checkpoint 1. Let's compute how many tokens user with 4m points will get.
-      Since they have earned half of all the points earned during that season, they will
-      get half of the total token allocation for that season. Since 10% of 420bn tokens is allocated, which is 42bn tokens, they will get 21bn tokens.
+      In other words, each player receives the amount of tokens that is proportional to the number of points they have earned during that season out of total points earned by everyone.
     </p>
   </section>
 
