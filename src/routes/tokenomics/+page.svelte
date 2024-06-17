@@ -122,7 +122,6 @@
       will analyse retweets, quote tweets and replies.
       You get one of: 200k points if it's a quote tweet OR 100k points if it's a tweet.
       This is your daily cap. 
-      At checkpoint 1, bonus multipliers / adjustments might be applied.
       You can retweet / quote tweet as many tweets as you want. We will pick your top tweet only.
       Note that at checkpoint 1, we can apply a bonus multiplier to each tweet's points. If it's a popular quote tweet then you might get more points than if it's a retweet (since it's easier to contribute engagement of a quote tweet to you).
 
@@ -139,6 +138,7 @@
         style="text-decoration: underline;">here</a
       >
       for guidelines. You have a daily cap of 150k points flat per meme / piece of content. You are free to post as many tweets as you like, but we will pick your top tweet only.
+      We can apply bonus multiplier / dampening factor depending on the engagement of your tweet versus other normies.
     </p>
   </section>
 
@@ -195,6 +195,13 @@
       (unless you are a heftie) to qualify for points. This is to weed out bots
       from allocation. We reserve the right to analyse the activity and remove
       bots from token drop.
+    </p>
+
+    <br />
+    <p>
+      Bonus multiplier / dampening factor will get applied to each tweet's points at checkpoint 1.
+      We will use a function that is lifeblood of AI: sigmoid function. Each day, each normie / heftie will have posted their top tweet that we have picked.
+      Provided tweet is not botted, we apply a sigmoid function to all the tweets. Average performing tweets will get a factor of 1: no bonus, no dampening. The very top tweets will get bonus points, the very worst tweets will get dampened.
     </p>
   </section>
 
