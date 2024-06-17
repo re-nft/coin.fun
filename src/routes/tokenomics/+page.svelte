@@ -90,7 +90,7 @@
       team.
     </p>
     <div style="display: flex; justify-content: center; margin: 2em;">
-      <video autoplay muted={import.meta.env.DEV} controls width="500">
+      <video autoplay muted={import.meta.env.DEV} controls width="1000">
         <track kind="captions" />
         <source src={PieChart} type="video/mp4" />
       </video>
@@ -134,7 +134,7 @@
       <br />
       OR
       <br />
-      100k points if it's a tweet.
+      100k points if it's a retweet.
       <br />
       <br />
       You can retweet / quote tweet as many tweets as you want. We will pick your top tweet only by analysing its engagement: replies, retweets and quote tweets.
@@ -218,7 +218,7 @@
       </Table.Body>
     </Table.Root>
     <p>
-      In other words, each player receives the amount of tokens that is proportional to the number of points they have earned during that season out of total points earned by everyone.
+      TLDR; % of points = share of token airdrop
     </p>
   </section>
 
