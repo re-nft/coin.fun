@@ -19,7 +19,6 @@
 </h1>
 
 <Table.Root class="caption-top">
-  <Table.Caption>Top Gs</Table.Caption>
   <Table.Header>
     <Table.Row>
       <Table.Head>#</Table.Head>
