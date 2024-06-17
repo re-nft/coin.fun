@@ -136,8 +136,8 @@
       100k points if it's a tweet.
       <br />
       <br />
-      You can retweet / quote tweet as many tweets as you want. We will pick your top tweet only.
-      That means yo can only earn 100k or 200k points per day. If you have retweeted and quote tweeted, we will always pick your best quote tweet that day.
+      You can retweet / quote tweet as many tweets as you want. We will pick your top tweet only by analysing its engagement: replies, retweets and quote tweets.
+      That means you can only earn 100k or 200k points per day. If you have retweeted and quote tweeted, we will always pick your best quote tweet that day.
       Read <a href="#caution">caution</a> section to learn about how your points will be scaled at checkpoint 1 (this is how we call end of season 1).
 
       <br />
@@ -172,20 +172,10 @@
       points, 2m points, 1m points and 1m points.
     </p>
     <p>
-      Let's also assume that 20% of the total token supply was distributed at
-      checkpoint 1. Then that means the user with 4m points gets:
-      <br />
-      <br />
-      4m / 8m total points * 20% of total token supply * 420bn tokens
-      <br />
-      or
-      <br />
-      0.5 * 20% of total token supply * 420 bn tokens
-      <br />
-
-      or
-      <br />
-      10% of total token supply * 420 bn tokens = 42bn tokens
+      Let's also assume that 10% of the total token supply was distributed at
+      checkpoint 1. Let's compute how many tokens user with 4m points will get.
+      Since they have earned half of all the points earned during that season, they will
+      get half of the total token allocation for that season. Since 10% of 420bn tokens is allocated, which is 42bn tokens, they will get 21bn tokens.
     </p>
   </section>
 
