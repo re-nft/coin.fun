@@ -140,8 +140,8 @@
       That means you can only earn 100k or 200k points per day. If you have retweeted
       and quote tweeted, we will always pick your best quote tweet that day. Read
       <a href="#caution">caution</a>
-      section to learn about how your points will be scaled at checkpoint 1
-      (this is how we call end of season 1).
+      section to learn about how your points will be scaled at checkpoint 1 (this
+      is how we call end of season 1).
 
       <br />
       <br />
@@ -216,6 +216,10 @@
       </Table.Body>
     </Table.Root>
     <p>TLDR; points = a % of token airdrop</p>
+    <p>
+      To make example simple to understand we have ommitted the coin.fun team's
+      points share. 20% of all points will go to coin.fun team. In other words, if 8m of points were earned in total, 1.6m points would go to coin.fun.
+    </p>
   </section>
 
   <section id="caution">
