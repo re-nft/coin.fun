@@ -56,9 +56,13 @@ export async function load({ locals: { safeGetSession } }) {
 
   // Constant flow points. IG this is actually a part of quest 1?
   const virtualPoints =
-    userPoints ?
+    userPoints && userData ?
       Number(userPoints) +
-      Math.floor((getUTCDate().getTime() - getUTCDayStart().getTime()) / 1000)
+      Math.floor(
+        (getUTCDate().getTime() -
+          Math.max(userData.createdAt.getTime(), getUTCDayStart().getTime())) /
+          1000
+      )
     : 0;
 
   return { quests, userData, userPoints: virtualPoints };
