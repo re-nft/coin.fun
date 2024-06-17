@@ -218,7 +218,8 @@
     <p>TLDR; points = a % of token airdrop</p>
     <p>
       To make example simple to understand we have ommitted the coin.fun team's
-      points share. 20% of all points will go to coin.fun team. In other words, if 8m of points were earned in total, 1.6m points would go to coin.fun.
+      points share. 20% of all points will go to coin.fun team. In other words,
+      if 8m of points were earned in total, 1.6m points would go to coin.fun.
     </p>
   </section>
 
