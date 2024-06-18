@@ -89,7 +89,13 @@
       team.
     </p>
     <div style="display: flex; justify-content: center; margin: 2em;">
-      <video autoplay muted={import.meta.env.DEV} controls width="1000">
+      <video
+        autoplay
+        muted={import.meta.env.DEV}
+        controls
+        playsinline
+        width="1000"
+      >
         <track kind="captions" />
         <source src={PieChart} type="video/mp4" />
       </video>
