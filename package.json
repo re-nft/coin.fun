@@ -18,7 +18,7 @@
     "postbuild": "[[ -n \"$VERCEL_ENV\" ]] && npm run db:migrate",
     "preview": "vite preview",
     "test": "concurrently -k npm:test:*",
-    "test:integration": "playwright test",
+    "test:e2e": "playwright test",
     "test:unit": "vitest"
   },
   "dependencies": {
