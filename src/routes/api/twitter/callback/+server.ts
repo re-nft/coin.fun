@@ -1,7 +1,5 @@
 import { error, redirect } from '@sveltejs/kit';
 
-import { quest1 } from '$lib/server/quests';
-
 export async function GET({ url, locals: { supabase } }) {
   const code = url.searchParams.get('code');
   const next = url.searchParams.get('next') ?? '/quests';
@@ -23,8 +21,6 @@ export async function GET({ url, locals: { supabase } }) {
     console.error(message);
     throw error(502, message);
   }
-
-  await quest1.complete(user.id);
 
   return redirect(303, next);
 }

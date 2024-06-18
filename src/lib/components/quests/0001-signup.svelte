@@ -1,25 +1,26 @@
 <script lang="ts">
-  import type { Session } from '@supabase/supabase-js';
-
   import Quest from '$lib/components/Quest.svelte';
   import { Button } from '$lib/components/ui/button';
+  import type { Profile } from '$lib/server/db';
 
-  export let userData: { avatar: string | null; userName: string } | undefined =
-    undefined;
-  export let session: Session | null = null;
+  export let profile: Profile | undefined = undefined;
 </script>
 
 <Quest {...$$restProps}>
   <div class="flex flex-col gap-4" slot="content">
-    {#if userData}
+    {#if profile}
       <p>
-        Hi, <a href={`https://x.com/${userData.userName}`}>
+        Hi, <a
+          href={`https://x.com/${profile.userName}`}
+          rel="noopener nofollow noreferrer"
+          target="_blank"
+        >
           <img
             alt=""
             class="inline size-8 rounded-full align-middle"
-            src={userData.avatar}
+            src={profile.avatar}
           />
-          @{userData.userName}</a
+          @{profile.userName}</a
         >! You are ready to ligma.
       </p>
     {:else}
@@ -28,7 +29,7 @@
   </div>
 
   <svelte:fragment slot="footer">
-    {#if session}
+    {#if profile}
       <Button href="/api/twitter/sign-out">Sign Out</Button>
     {:else}
       <Button href="/api/twitter/sign-in">Sign In</Button>
