@@ -11,8 +11,7 @@ import {
   text,
   timestamp,
   uniqueIndex,
-  uuid,
-  varchar
+  uuid
 } from 'drizzle-orm/pg-core';
 
 const authSchema = pgSchema('auth');
@@ -36,8 +35,9 @@ export const profiles = pgTable(
     userName: text('user_name').unique().notNull(),
     displayName: text('display_name'),
 
-    // TODO notNull()
-    twitterUserId: varchar('twitter_user_id').unique().notNull(),
+    twitterUserId: bigint('twitter_user_id', { mode: 'bigint' })
+      .unique()
+      .notNull(),
 
     // Lets just add columns here for each season?
     characterS1: characterS1('character_s1'),
@@ -71,7 +71,7 @@ export const points = pgTable(
     userId: uuid('user_id')
       .references(() => users.id, { onDelete: 'cascade' })
       .notNull(),
-    questId: varchar('quest_id').notNull(),
+    questId: text('quest_id').notNull(),
     points: bigint('points', { mode: 'number' }),
     acquiredAt: timestamp('acquired_at').notNull().defaultNow()
   },

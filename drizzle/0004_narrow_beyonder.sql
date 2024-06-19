@@ -1,3 +1,9 @@
+DO $$ BEGIN
+ CREATE TYPE "public"."character_s1" AS ENUM('normie', 'heftie');
+EXCEPTION
+ WHEN duplicate_object THEN null;
+END $$;
+--> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "tweets" (
 	"id" bigint PRIMARY KEY NOT NULL,
 	"user_id" uuid NOT NULL,
@@ -16,7 +22,9 @@ CREATE TABLE IF NOT EXISTS "tweets" (
 DROP INDEX IF EXISTS "user_idx";--> statement-breakpoint
 DROP INDEX IF EXISTS "quest_idx";--> statement-breakpoint
 DROP INDEX IF EXISTS "acquired_at_idx";--> statement-breakpoint
-ALTER TABLE "profiles" ADD COLUMN "twitter_user_id" varchar;--> statement-breakpoint
+ALTER TABLE "points" ALTER COLUMN "quest_id" SET DATA TYPE text;--> statement-breakpoint
+ALTER TABLE "profiles" ADD COLUMN "twitter_user_id" bigint;--> statement-breakpoint
+ALTER TABLE "profiles" ADD COLUMN "character_s1" "character_s1";--> statement-breakpoint
 DO $$ BEGIN
  ALTER TABLE "tweets" ADD CONSTRAINT "tweets_user_id_users_id_fk" FOREIGN KEY ("user_id") REFERENCES "auth"."users"("id") ON DELETE cascade ON UPDATE no action;
 EXCEPTION
@@ -55,18 +63,10 @@ CREATE UNIQUE INDEX IF NOT EXISTS "profiles_user_name_idx" ON "profiles" USING b
 ALTER TABLE "profiles" ADD CONSTRAINT "profiles_email_unique" UNIQUE("email");--> statement-breakpoint
 ALTER TABLE "profiles" ADD CONSTRAINT "profiles_user_name_unique" UNIQUE("user_name");--> statement-breakpoint
 ALTER TABLE "profiles" ADD CONSTRAINT "profiles_twitter_user_id_unique" UNIQUE("twitter_user_id");
---> statement-breakpoint
-DO $$ BEGIN
- CREATE TYPE "public"."character_s1" AS ENUM('normie', 'heftie');
-EXCEPTION
- WHEN duplicate_object THEN null;
-END $$;
---> statement-breakpoint
-ALTER TABLE "profiles" ADD COLUMN "character_s1" "character_s1";
 
 -- Backfill twitter_user_id
 UPDATE public.profiles AS profiles
-  SET twitter_user_id = users.raw_user_meta_data ->> 'provider_id'
+  SET twitter_user_id = cast(users.raw_user_meta_data ->> 'provider_id' as bigint)
   FROM auth.users AS users
   WHERE profiles.id = users.id;
 
@@ -91,7 +91,7 @@ begin
     new.raw_user_meta_data ->> 'avatar_url',
     new.raw_user_meta_data ->> 'full_name',
     new.raw_user_meta_data ->> 'email',
-    new.raw_user_meta_data ->> 'provider_id',
+    cast(new.raw_user_meta_data ->> 'provider_id' as bigint),
     new.raw_user_meta_data ->> 'user_name'
   );
   return new;

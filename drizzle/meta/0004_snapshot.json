@@ -1,5 +1,5 @@
 {
-  "id": "3032c699-0e9f-41b4-92fa-08900bd7e02c",
+  "id": "4a4186dd-195d-4cc7-a8c4-186a0a1bb6c0",
   "prevId": "92e71dfa-3ba1-4287-b505-6ae4c5df74b7",
   "version": "7",
   "dialect": "postgresql",
@@ -16,7 +16,7 @@
         },
         "quest_id": {
           "name": "quest_id",
-          "type": "varchar",
+          "type": "text",
           "primaryKey": false,
           "notNull": true
         },
@@ -145,7 +145,14 @@
         },
         "twitter_user_id": {
           "name": "twitter_user_id",
-          "type": "varchar",
+          "type": "bigint",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "character_s1": {
+          "name": "character_s1",
+          "type": "character_s1",
+          "typeSchema": "public",
           "primaryKey": false,
           "notNull": false
         },
@@ -465,7 +472,16 @@
       "uniqueConstraints": {}
     }
   },
-  "enums": {},
+  "enums": {
+    "public.character_s1": {
+      "name": "character_s1",
+      "schema": "public",
+      "values": [
+        "normie",
+        "heftie"
+      ]
+    }
+  },
   "schemas": {},
   "_meta": {
     "columns": {},

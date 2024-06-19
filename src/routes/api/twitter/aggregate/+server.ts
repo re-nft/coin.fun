@@ -1,13 +1,11 @@
-import { desc, or } from 'drizzle-orm';
+import { desc, eq, or } from 'drizzle-orm';
 
 import { env } from '$env/dynamic/private';
-import { db, profiles, tweets } from '$lib/server/db';
-import { fetchSocialData, type TwitterStatus } from '$lib/server/twitter';
+import { db, profiles, type TweetInsert, tweets } from '$lib/server/db';
+import { getQuoted, getSearch } from '$lib/server/twitter';
 
 // Our launching tweet: https://x.com/coindotfun/status/1791164388579119340
 const FIRST_COINDOTFUN_TWEET_ID = 1791164388579119340n;
-const TWEETS_QUERY = '(@coindotfun) -from:coindotfun include:nativeretweets';
-const QUOTE_TWEETS_MAX_QUERY_CHARS = 456;
 
 export async function POST({ request }) {
   if (!env.SOCIALDATA_API_KEY)
@@ -21,10 +19,7 @@ export async function POST({ request }) {
     .orderBy(desc(tweets.createdAt))
     .limit(1);
 
-  const untilTweetId =
-    tweetsIndexed.length ? tweetsIndexed[0].id : FIRST_COINDOTFUN_TWEET_ID;
-
-  const tweetsToIndex: TwitterStatus[] = [];
+  const minId = tweetsIndexed.at(0)?.id ?? FIRST_COINDOTFUN_TWEET_ID;
 
   // 1. First pass gets all tweets mentioning @coindotfun, but not from
   //    @coindotfun. We include replies because tweets starting with
@@ -37,77 +32,63 @@ export async function POST({ request }) {
   //    What we should end up with is a list of newly generated memes
   //    and retweeted memes. Quoted tweets are still missing which is
   //    why we need a second pass.
-
-  const searchUrl = new URL('https://api.socialdata.tools/twitter/search');
-  searchUrl.searchParams.set('type', 'Latest');
-  searchUrl.searchParams.set(
-    'query',
-    `${TWEETS_QUERY} since_id:${untilTweetId}`
+  const tweetsToIndex = await getSearch(
+    '(@coindotfun) -from:coindotfun include:nativeretweets',
+    { minId }
   );
-
-  // eslint-disable-next-line no-constant-condition
-  while (true) {
-    const res = await fetchSocialData<{
-      next_cursor: string;
-      tweets: TwitterStatus[];
-    }>(searchUrl);
-
-    // We're assuming that paging through results is done after we
-    // stop
-    if (!res.tweets.length) break;
-
-    const maxTweetId = res.tweets.at(-1)?.id ?? untilTweetId;
-    searchUrl.searchParams.set(
-      'query',
-      `${TWEETS_QUERY} since_id:${untilTweetId} max_id:${maxTweetId}`
-    );
-
-    for (const status of res.tweets) tweetsToIndex.push(status);
-  }
 
   // 2. Second pass is grabbing all retweeted and quoted tweets from
   //    the batch retrieved in #1, filtered by accounts with >5k followers.
   //
   //    What we need to do here is end up with a list of tweet ids we need
   //    to loop over to check whether they've been quoted by a heftie.
-  const quotedTweetIds = tweetsToIndex.reduce<bigint[]>(
-    (quotedTweetIds, status) => {
-      // Only add a pointer when we have a tweet that's been quoted.
-      if (status.quote_count) {
-        quotedTweetIds.push(BigInt(status.id));
-      }
-      return quotedTweetIds;
-    },
-    []
-  );
+  for (const status of await getQuoted(tweetsToIndex, { minId }))
+    tweetsToIndex.push(status);
 
-  // Create batches of search requests for quoted_tweet_id:[id] so
-  // it doens't make the query parameter larger than 457 chars which
-  // equates to `512 - ' since_id:[id] max_id:[id]'.length. See:
-  // https://developer.x.com/en/docs/twitter-api/tweets/search/integrate/build-a-query#limits
-  // This should allow us to process 12 tweets per request while
-  // still being able to tack on the poor-man's pagination.
-  const batchedQuoteSearches = quotedTweetIds.reduce<string[]>(
-    (batchedQuoteSearches, id) => {
-      const prevStr = batchedQuoteSearches.at(-1) ?? '';
-      const currStr = `quoted_tweet_id:${id}`;
-      const nextStr = `${prevStr} ${currStr}`;
+  const profilesInTweets = await db
+    .select({ id: profiles.id, twitterUserId: profiles.twitterUserId })
+    .from(profiles)
+    .where(
+      or(
+        ...tweetsToIndex.map((status) =>
+          eq(profiles.twitterUserId, BigInt(status.user.id))
+        )
+      )
+    );
 
-      if (nextStr.length > QUOTE_TWEETS_MAX_QUERY_CHARS) {
-        batchedQuoteSearches.push(currStr);
-      } else {
-        batchedQuoteSearches[batchedQuoteSearches.length - 1] = nextStr;
-      }
+  const values = tweetsToIndex.reduce<TweetInsert[]>((values, status) => {
+    const profile = profilesInTweets.find(
+      (profile) => profile.twitterUserId === BigInt(status.user.id)
+    );
 
-      return batchedQuoteSearches;
-    },
-    []
-  );
+    if (profile) {
+      values.push({
+        createdAt: new Date(status.tweet_created_at),
+        entities: status.entities,
+        fullText: status.full_text,
+        id: BigInt(status.id),
+        userId: profile.id,
+        favoriteCount: status.favourite_count,
+        quoteCount: status.quote_count,
+        quotedId:
+          status.quoted_status?.id ? BigInt(status.quoted_status.id) : null,
+        repliedToId:
+          status.in_reply_to_status_id ?
+            BigInt(status.in_reply_to_status_id)
+          : null,
+        replyCount: status.reply_count,
+        retweetCount: status.retweet_count,
+        retweetedId:
+          status.retweeted_status?.id ?
+            BigInt(status.retweeted_status.id)
+          : null
+      });
+    }
 
-  for (const query of batchedQuoteSearches) {
-    searchUrl.searchParams.set('query', `${query} since_id:${sinceTweetId}`);
-    const res = await fetchSocialData;
-  }
+    return values;
+  }, []);
+
+  await db.insert(tweets).values(values);
 
   return new Response(null, { status: 204 });
 }
