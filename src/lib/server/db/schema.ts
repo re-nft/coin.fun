@@ -4,6 +4,7 @@ import {
   index,
   integer,
   json,
+  pgEnum,
   pgSchema,
   pgTable,
   primaryKey,
@@ -20,6 +21,8 @@ const users = authSchema.table('users', {
   id: uuid('id').primaryKey()
 });
 
+export const characterS1 = pgEnum('character_s1', ['normie', 'heftie']);
+
 export const profiles = pgTable(
   'profiles',
   {
@@ -34,7 +37,10 @@ export const profiles = pgTable(
     displayName: text('display_name'),
 
     // TODO notNull()
-    twitterUserId: varchar('twitter_user_id').unique(),
+    twitterUserId: varchar('twitter_user_id').unique().notNull(),
+
+    // Lets just add columns here for each season?
+    characterS1: characterS1('character_s1'),
 
     // name: text('name').notNull(),
     // typeOfLogin: text('typeOfLogin').notNull(),

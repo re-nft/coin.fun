@@ -34,9 +34,6 @@ export abstract class QuestV2 {
   abstract complete(): Promise<boolean>;
   abstract getStatus(): Promise<QuestStatus>;
 
-  protected isAvailable?(): Promise<boolean>;
-  protected isCompleted?(): Promise<boolean>;
-
   protected session: Session | null;
   protected user: User | null;
 
@@ -72,6 +69,8 @@ export abstract class QuestV2 {
   }
 }
 
+const cacheProp = Symbol.for('__memoize_cache__');
+
 /**
  * Memoizes a class method.
  */
@@ -80,7 +79,6 @@ export function Memoize(
   propertyKey: string,
   descriptor: PropertyDescriptor
 ) {
-  const cacheProp = Symbol.for('__memoize_cache__');
   const originalMethod = descriptor.value;
 
   descriptor.value = function (...args: unknown[]) {
@@ -102,8 +100,44 @@ export function Memoize(
     }
 
     console.debug(`Cache MISS: ${name}:${key}`);
-    const result = originalMethod.apply(this, ...args);
+    const result = originalMethod.apply(context, ...args);
     cache.set(key, result);
     return result;
+  };
+}
+
+export function Evict(keyOrKeys: string | string[]) {
+  const keys = Array.isArray(keyOrKeys) ? keyOrKeys : [keyOrKeys];
+  const keysRe = new RegExp(`^(${keys.join('|')})`);
+
+  return function EvictDecorator(
+    _: unknown,
+    _propertyKey: string,
+    descriptor: PropertyDescriptor
+  ) {
+    const originalMethod = descriptor.value;
+
+    descriptor.value = function (...args: unknown[]) {
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-this-alias
+      const context: any = this;
+      const name = this.constructor.name;
+
+      const result = originalMethod.apply(this, ...args);
+
+      if (!context[cacheProp]) {
+        console.debug(`Cache NOEVICT: no cache for ${name}`);
+        return result;
+      }
+
+      const cache: Map<string, unknown> = context[cacheProp];
+
+      cache.forEach((_, key, cache) => {
+        if (!keysRe.test(key)) return;
+        console.debug(`Cache EVICT: ${name}:${key}`);
+        cache.delete(key);
+      });
+
+      return result;
+    };
   };
 }

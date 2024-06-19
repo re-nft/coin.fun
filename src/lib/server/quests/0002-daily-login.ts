@@ -40,7 +40,7 @@ export class Quest0002DailyLogin extends QuestV2 {
   }
 
   @Memoize
-  override async isCompleted() {
+  async isCompleted() {
     if (!this.user?.id) return false;
 
     try {

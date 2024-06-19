@@ -55,6 +55,14 @@ CREATE UNIQUE INDEX IF NOT EXISTS "profiles_user_name_idx" ON "profiles" USING b
 ALTER TABLE "profiles" ADD CONSTRAINT "profiles_email_unique" UNIQUE("email");--> statement-breakpoint
 ALTER TABLE "profiles" ADD CONSTRAINT "profiles_user_name_unique" UNIQUE("user_name");--> statement-breakpoint
 ALTER TABLE "profiles" ADD CONSTRAINT "profiles_twitter_user_id_unique" UNIQUE("twitter_user_id");
+--> statement-breakpoint
+DO $$ BEGIN
+ CREATE TYPE "public"."character_s1" AS ENUM('normie', 'heftie');
+EXCEPTION
+ WHEN duplicate_object THEN null;
+END $$;
+--> statement-breakpoint
+ALTER TABLE "profiles" ADD COLUMN "character_s1" "character_s1";
 
 -- Backfill twitter_user_id
 UPDATE public.profiles AS profiles
@@ -89,3 +97,6 @@ begin
   return new;
 end;
 $$;
+
+-- After updating our current profiles we make this non nullable.
+ALTER TABLE "profiles" ALTER COLUMN "twitter_user_id" SET NOT NULL;--> statement-breakpoint
