@@ -54,7 +54,7 @@ export async function load() {
     new Coin({
       name: 'Kata Inu',
       symbol: '$katainu',
-      media: 'https://pump.mypinata.cloud/ipfs/QmbkoesHRQFaarNaHqv5w74oxTiBuy3MjPnNgLtuebrA2A?img-width=128&img-dpr=2&img-onerror=redirect',
+      media: 'https://pump.mypinata.cloud/ipfs/QmaKDPDip7baK3PDYXYWr82TRxWZoenwFSXph3UzZ2VUxS?img-width=128&img-dpr=2&img-onerror=redirect',
       createdBy: '0x1234567890abcdef',
       marketCap: 1000000,
       replies: 100,

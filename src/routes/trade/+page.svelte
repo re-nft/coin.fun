@@ -50,27 +50,28 @@
     display: flex;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition:
-      transform 0.2s,
-      box-shadow 0.2s;
-    border: 2px solid transparent; /* Add a border with a transparent color */
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: 2px solid transparent;
   }
 
   .card:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    border: 2px solid #e0fc7a; /* fake-trading-TODO: is it possible to slap tailwind class here? */
+    border: 2px solid #e0fc7a;
   }
 
   .image-container {
     flex: 0 0 150px;
     height: 150px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .image-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
   }
 
   .content {
