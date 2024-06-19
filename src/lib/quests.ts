@@ -2,30 +2,7 @@ import type { Session, User } from '@supabase/supabase-js';
 
 export type QuestStatus = 'available' | 'done' | 'error' | 'locked';
 
-export interface Quest<
-  Id extends string = string,
-  Component extends string = string
-> {
-  id: Id;
-  component: Component;
-  points: number;
-  title: string;
-
-  complete: (userId: string) => Promise<boolean>;
-  getStatus: (userId?: string) => Promise<QuestStatus>;
-  isAvailable?: (userId: string) => Promise<boolean>;
-  isCompleted?: (userId: string) => Promise<boolean>;
-
-  onLoad?: (userId?: string) => Promise<void>;
-}
-
-export function makeQuest<Id extends string, Component extends string>(
-  quest: Quest<Id, Component>
-) {
-  return quest;
-}
-
-export abstract class QuestV2 {
+export abstract class Quest {
   abstract id: string;
   abstract component: string;
   abstract points: number;
@@ -113,7 +90,7 @@ export function OnError<T>(
   // wtf why can't this be a T | ((error: unknown) => T) union
   returnOrFn?: T extends (error: unknown) => T ? (error: unknown) => T : T
 ) {
-  return function LogErrorDecorator<C extends QuestV2>(
+  return function LogErrorDecorator<C extends Quest>(
     _: C,
     propertyKey: string,
     descriptor: PropertyDescriptor

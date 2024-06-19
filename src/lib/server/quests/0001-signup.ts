@@ -1,10 +1,10 @@
 import { and, eq } from 'drizzle-orm';
 
-import { Memoize, OnError, QuestV2 } from '$lib/quests';
+import { Memoize, OnError, Quest } from '$lib/quests';
 import { db, points, type Profile, profiles } from '$lib/server/db';
 import { getProfile } from '$lib/server/twitter';
 
-export class Quest0001Signup extends QuestV2 {
+export class Quest0001Signup extends Quest {
   id = '0001-signup';
   component = 'Quest1';
   points = 100000;

@@ -1,9 +1,9 @@
 import { and, eq, sql } from 'drizzle-orm';
 
-import { Memoize, OnError, QuestV2 } from '$lib/quests';
+import { Memoize, OnError, Quest } from '$lib/quests';
 import { db, points } from '$lib/server/db';
 
-export class Quest0002DailyLogin extends QuestV2 {
+export class Quest0002DailyLogin extends Quest {
   id = '0002-daily-login';
   component = 'Quest2';
   points = 100000;
