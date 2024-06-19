@@ -6,8 +6,6 @@
   }
 </script>
 
-<div>Make Coin Modal</div>
-
 <form method="POST" action="?/create">
   <label>name<input type="text" name="name" autocomplete="off" /></label>
   <label>ticker<input type="text" name="ticker" autocomplete="off" /></label>
@@ -15,7 +13,9 @@
     >description<input type="text" name="ticker" autocomplete="off" /></label
   >
   <label>image<input type="file" name="image" /></label>
-  <button class="showmore" on:click={toggleShowMore}>show more options</button>
+  <button type="button" class="showmore" on:click={toggleShowMore}
+    >show more options</button
+  >
   {#if showMore}
     <div class="more-options">
       <label
