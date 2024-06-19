@@ -8,7 +8,13 @@
   {#each coins as coin}
     <div>
       <h3>{coin.name}</h3>
-      <p>{coin.price}</p>
+      <p>{coin.marketCap}</p>
+      <p><img src={coin.media} alt={coin.name} /></p>
+      <p>{coin.description}</p>
+      <!-- <p><a href={coin.website} target="_blank">Website</a></p> -->
+      <p>Created by: {coin.createdBy}</p>
+      <p>Replies: {coin.replies}</p>
+      <p>Description: {coin.description}</p>
     </div>
   {/each}
 </div>
