@@ -4,6 +4,10 @@
   let { coins } = data;
 </script>
 
+<div>
+  <a href="/makecoin" class="makecoin">Make a coin</a>
+</div>
+
 <div class="grid">
   {#each coins as coin}
     <div class="card">
