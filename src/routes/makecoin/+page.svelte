@@ -9,23 +9,39 @@
 <div>Make Coin Modal</div>
 
 <form method="POST" action="?/create">
-  <p>name</p>
-  <input type="text" />
-  <p>ticker</p>
-  <input type="text" />
-  <p>description</p>
-  <input type="text" />
-  <p>image</p>
-  <input type="file" />
+  <label>name<input type="text" name="name" autocomplete="off" /></label>
+  <label>ticker<input type="text" name="ticker" autocomplete="off" /></label>
+  <label
+    >description<input type="text" name="ticker" autocomplete="off" /></label
+  >
+  <label>image<input type="file" name="image" /></label>
   <button class="showmore" on:click={toggleShowMore}>show more options</button>
   {#if showMore}
     <div class="more-options">
-      <p>twitter link</p>
-      <input type="text" placeholder="(optional)" />
-      <p>telegram link</p>
-      <input type="text" placeholder="(optional)" />
-      <p>website</p>
-      <input type="text" placeholder="(optional)" />
+      <label
+        >twitter link<input
+          type="text"
+          placeholder="(optional)"
+          name="twitter"
+          autocomplete="off"
+        /></label
+      >
+      <label
+        >telegram link<input
+          type="text"
+          placeholder="(optional)"
+          name="telegram"
+          autocomplete="off"
+        /></label
+      >
+      <label
+        >website<input
+          type="text"
+          placeholder="(optional)"
+          name="website"
+          autocomplete="off"
+        /></label
+      >
     </div>
   {/if}
 
