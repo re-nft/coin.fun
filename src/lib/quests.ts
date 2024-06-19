@@ -37,6 +37,8 @@ export abstract class QuestV2 {
   protected session: Session | null;
   protected user: User | null;
 
+  userId?: string | null;
+
   constructor({
     session,
     user
@@ -46,6 +48,7 @@ export abstract class QuestV2 {
   }) {
     this.session = session;
     this.user = user;
+    this.userId = user?.id;
   }
 
   init?(): Promise<void>;
@@ -84,7 +87,7 @@ export function Memoize(
   descriptor.value = function (...args: unknown[]) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-this-alias
     const context: any = this;
-    const name = this.constructor.name;
+    const name = context.constructor.name;
 
     if (!context[cacheProp]) {
       context[cacheProp] = new Map<string, unknown>();
@@ -106,6 +109,37 @@ export function Memoize(
   };
 }
 
+export function OnError<T>(
+  // wtf why can't this be a T | ((error: unknown) => T) union
+  returnOrFn?: T extends (error: unknown) => T ? (error: unknown) => T : T
+) {
+  return function LogErrorDecorator<C extends QuestV2>(
+    _: C,
+    propertyKey: string,
+    descriptor: PropertyDescriptor
+  ) {
+    const originalMethod = descriptor.value;
+
+    descriptor.value = function (...args: unknown[]) {
+      const context = this as C;
+      const name = context.constructor.name;
+
+      try {
+        return originalMethod.apply(context, ...args);
+      } catch (error) {
+        console.error(`QuestError (${name}:${propertyKey}):`, {
+          id: context.id,
+          userId: context.userId
+        });
+
+        return typeof returnOrFn === 'function' ?
+            returnOrFn(error)
+          : returnOrFn;
+      }
+    };
+  };
+}
+
 export function Evict(keyOrKeys: string | string[]) {
   const keys = Array.isArray(keyOrKeys) ? keyOrKeys : [keyOrKeys];
   const keysRe = new RegExp(`^(${keys.join('|')})`);
@@ -120,9 +154,9 @@ export function Evict(keyOrKeys: string | string[]) {
     descriptor.value = function (...args: unknown[]) {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-this-alias
       const context: any = this;
-      const name = this.constructor.name;
+      const name = context.constructor.name;
 
-      const result = originalMethod.apply(this, ...args);
+      const result = originalMethod.apply(context, ...args);
 
       if (!context[cacheProp]) {
         console.debug(`Cache NOEVICT: no cache for ${name}`);

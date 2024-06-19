@@ -1,6 +1,6 @@
 import { and, eq, sql } from 'drizzle-orm';
 
-import { Memoize, QuestV2 } from '$lib/quests';
+import { Memoize, OnError, QuestV2 } from '$lib/quests';
 import { db, points } from '$lib/server/db';
 
 export class Quest0002DailyLogin extends QuestV2 {
@@ -9,60 +9,49 @@ export class Quest0002DailyLogin extends QuestV2 {
   points = 100000;
   title = 'Quest 2: daily check-in';
 
+  @OnError(false)
   override async complete() {
-    if (!this.user?.id) return false;
+    if (!this.userId) return false;
     if (await this.isCompleted()) {
       console.log(`Quest (${this.id}): already completed.`);
       return false;
     }
 
-    try {
-      const [result] = await db
-        .insert(points)
-        .values({
-          points: this.points,
-          questId: this.id,
-          userId: this.user.id
-        })
-        .returning();
+    const [result] = await db
+      .insert(points)
+      .values({
+        points: this.points,
+        questId: this.id,
+        userId: this.userId
+      })
+      .returning();
 
-      return Boolean(result);
-    } catch (error) {
-      console.error(`Could complete Quest "${this.id}":`, error);
-      return false;
-    }
+    return Boolean(result);
   }
 
   override async getStatus() {
-    if (!this.user?.id) return 'locked';
+    if (!this.userId) return 'locked';
     if (await this.isCompleted()) return 'done';
     return 'available';
   }
 
+  @OnError(false)
   @Memoize
   async isCompleted() {
-    if (!this.user?.id) return false;
+    if (!this.userId) return false;
 
-    try {
-      const [result] = await db
-        .select()
-        .from(points)
-        .where(
-          and(
-            eq(points.userId, this.user.id),
-            eq(points.questId, this.id),
-            sql`${points.acquiredAt} > now() - INTERVAL '24 hours'`
-          )
+    const [result] = await db
+      .select()
+      .from(points)
+      .where(
+        and(
+          eq(points.userId, this.userId),
+          eq(points.questId, this.id),
+          sql`${points.acquiredAt} > now() - INTERVAL '24 hours'`
         )
-        .limit(1);
+      )
+      .limit(1);
 
-      return Boolean(result);
-    } catch (error) {
-      console.error(
-        `Could determine completion for Quest "${this.id}":`,
-        error
-      );
-      return false;
-    }
+    return Boolean(result);
   }
 }
