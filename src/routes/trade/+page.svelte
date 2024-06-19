@@ -6,15 +6,17 @@
 
 <div class="grid">
   {#each coins as coin}
-    <div>
-      <h3>{coin.name}</h3>
-      <p>{coin.marketCap}</p>
-      <p><img src={coin.media} alt={coin.name} /></p>
-      <p>{coin.description}</p>
-      <!-- <p><a href={coin.website} target="_blank">Website</a></p> -->
-      <p>Created by: {coin.createdBy}</p>
-      <p>Replies: {coin.replies}</p>
-      <p>Description: {coin.description}</p>
+    <div class="card">
+      <div class="image-container">
+        <img src={coin.media} alt={coin.name} />
+      </div>
+      <div class="content">
+        <h3>{coin.name} (ticker: {coin.symbol})</h3>
+        <p>market cap: {coin.marketCap}</p>
+        <p>replies: {coin.replies}</p>
+        <p>{coin.description}</p>
+        <p>Created by: {coin.createdBy}</p>
+      </div>
     </div>
   {/each}
 </div>
@@ -23,6 +25,7 @@
   .grid {
     display: grid;
     gap: 1rem;
+    padding: 1rem;
   }
 
   @media (max-width: 767px) {
@@ -42,4 +45,53 @@
       grid-template-columns: repeat(3, 1fr);
     }
   }
+
+  .card {
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s;
+    border: 2px solid transparent; /* Add a border with a transparent color */
+  }
+
+  .card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 2px solid #e0fc7a; /* fake-trading-TODO: is it possible to slap tailwind class here? */
+  }
+
+  .image-container {
+    flex: 0 0 150px;
+    height: 150px;
+    overflow: hidden;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .content {
+    flex: 1;
+    padding: 1rem;
+  }
+
+  .content h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+    color: #fff;
+  }
+
+  .content p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    color: #ccc;
+  }
+
+  .content p:first-of-type {
+    margin-top: 0;
+  }
 </style>
+
