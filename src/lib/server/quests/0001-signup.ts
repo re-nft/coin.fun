@@ -1,8 +1,9 @@
 import { and, eq } from 'drizzle-orm';
 
-import { Memoize, OnError, Quest } from '$lib/quests';
+import { OnError, Quest } from '$lib/quests';
 import { db, points, type Profile, profiles } from '$lib/server/db';
 import { getProfile } from '$lib/server/twitter';
+import { Memoize } from '$lib/utils/decorators';
 
 export class Quest0001Signup extends Quest {
   id = '0001-signup';
