@@ -1,3 +1,5 @@
+import { getCoins } from '$lib/server/db';
+
 class Coin {
   name: string;
   symbol: string;
@@ -39,64 +41,6 @@ class Coin {
 }
 
 export async function load() {
-  // fake-trade-TODO: these are to be fetched from the db
-  // paginated of course
-  const coins: Coin[] = [
-    new Coin({
-      name: 'Kata Inu',
-      symbol: '$katainu',
-      media: 'https://pump.mypinata.cloud/ipfs/QmbkoesHRQFaarNaHqv5w74oxTiBuy3MjPnNgLtuebrA2A?img-width=128&img-dpr=2&img-onerror=redirect',
-      createdBy: '0x1234567890abcdef',
-      marketCap: 1000000,
-      replies: 100,
-      description: 'Kata Inu is a community-driven, fair launched DeFi Token. Three simple functions occur during each trade: Reflection, LP Acquisition, & Burn. And 3% of every transaction is redistributed to holders.'
-    }),
-    new Coin({
-      name: 'Kata Inu',
-      symbol: '$katainu',
-      media: 'https://pump.mypinata.cloud/ipfs/QmaKDPDip7baK3PDYXYWr82TRxWZoenwFSXph3UzZ2VUxS?img-width=128&img-dpr=2&img-onerror=redirect',
-      createdBy: '0x1234567890abcdef',
-      marketCap: 1000000,
-      replies: 100,
-      description: 'Kata Inu is a community-driven, fair launched DeFi Token. Three simple functions occur during each trade: Reflection, LP Acquisition, & Burn. And 3% of every transaction is redistributed to holders.'
-    }),
-    new Coin({
-      name: 'Kata Inu',
-      symbol: '$katainu',
-      media: 'https://pump.mypinata.cloud/ipfs/QmbkoesHRQFaarNaHqv5w74oxTiBuy3MjPnNgLtuebrA2A?img-width=128&img-dpr=2&img-onerror=redirect',
-      createdBy: '0x1234567890abcdef',
-      marketCap: 1000000,
-      replies: 100,
-      description: 'Kata Inu is a community-driven, fair launched DeFi Token. Three simple functions occur during each trade: Reflection, LP Acquisition, & Burn. And 3% of every transaction is redistributed to holders.'
-    }),
-    new Coin({
-      name: 'Kata Inu',
-      symbol: '$katainu',
-      media: 'https://pump.mypinata.cloud/ipfs/QmbkoesHRQFaarNaHqv5w74oxTiBuy3MjPnNgLtuebrA2A?img-width=128&img-dpr=2&img-onerror=redirect',
-      createdBy: '0x1234567890abcdef',
-      marketCap: 1000000,
-      replies: 100,
-      description: 'Kata Inu is a community-driven, fair launched DeFi Token. Three simple functions occur during each trade: Reflection, LP Acquisition, & Burn. And 3% of every transaction is redistributed to holders.'
-    }),
-    new Coin({
-      name: 'Kata Inu',
-      symbol: '$katainu',
-      media: 'https://pump.mypinata.cloud/ipfs/QmbkoesHRQFaarNaHqv5w74oxTiBuy3MjPnNgLtuebrA2A?img-width=128&img-dpr=2&img-onerror=redirect',
-      createdBy: '0x1234567890abcdef',
-      marketCap: 1000000,
-      replies: 100,
-      description: 'Kata Inu is a community-driven, fair launched DeFi Token. Three simple functions occur during each trade: Reflection, LP Acquisition, & Burn. And 3% of every transaction is redistributed to holders.'
-    }),
-    new Coin({
-      name: 'Kata Inu',
-      symbol: '$katainu',
-      media: 'https://pump.mypinata.cloud/ipfs/QmbkoesHRQFaarNaHqv5w74oxTiBuy3MjPnNgLtuebrA2A?img-width=128&img-dpr=2&img-onerror=redirect',
-      createdBy: '0x1234567890abcdef',
-      marketCap: 1000000,
-      replies: 100,
-      description: 'Kata Inu is a community-driven, fair launched DeFi Token. Three simple functions occur during each trade: Reflection, LP Acquisition, & Burn. And 3% of every transaction is redistributed to holders.'
-    }),
-  ]
-  const serializedCoins = coins.map(coin => coin.toJSON());
-  return { coins: serializedCoins };
+  const mockcoins = getCoins();
+  return { coins: mockcoins };
 }
