@@ -28,7 +28,7 @@ export const supabaseHandle: Handle = async ({ event, resolve }) => {
   async function safeGetSession() {
     const {
       data: { session }
-    } = await supabase.auth.getSession();
+    } = await supabase.auth.refreshSession();
 
     if (!session) return { session: null, user: null };
 
