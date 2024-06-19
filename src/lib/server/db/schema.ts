@@ -35,18 +35,10 @@ export const profiles = pgTable(
     userName: text('user_name').unique().notNull(),
     displayName: text('display_name'),
 
-    twitterUserId: bigint('twitter_user_id', { mode: 'bigint' })
-      .unique()
-      .notNull(),
+    twitterUserId: text('twitter_user_id').unique().notNull(),
 
     // Lets just add columns here for each season?
     characterS1: characterS1('character_s1'),
-
-    // name: text('name').notNull(),
-    // typeOfLogin: text('typeOfLogin').notNull(),
-    // aggregateVerifier: text('aggregateVerifier').notNull(),
-    // verifier: text('verifier').notNull(),
-    // verifierId: text('verifier_id'),
 
     createdAt: timestamp('created_at').notNull().defaultNow(),
     updatedAt: timestamp('updated_at')
@@ -90,7 +82,7 @@ export const points = pgTable(
 export const tweets = pgTable(
   'tweets',
   {
-    id: bigint('id', { mode: 'bigint' }).primaryKey(),
+    id: text('id').primaryKey(),
     userId: uuid('user_id')
       .references(() => users.id, { onDelete: 'cascade' })
       .notNull(),
@@ -98,15 +90,9 @@ export const tweets = pgTable(
     fullText: text('full_text').notNull(),
     entities: json('entities').notNull(),
 
-    quotedId: bigint('quoted_id', { mode: 'bigint' }).references(
-      (): AnyPgColumn => tweets.id
-    ),
-    repliedToId: bigint('reply_to_id', { mode: 'bigint' }).references(
-      (): AnyPgColumn => tweets.id
-    ),
-    retweetedId: bigint('retweeted_id', { mode: 'bigint' }).references(
-      (): AnyPgColumn => tweets.id
-    ),
+    quotedId: text('quoted_id').references((): AnyPgColumn => tweets.id),
+    repliedToId: text('reply_to_id').references((): AnyPgColumn => tweets.id),
+    retweetedId: text('retweeted_id').references((): AnyPgColumn => tweets.id),
 
     favoriteCount: integer('favorite_count'),
     quoteCount: integer('quote_count'),

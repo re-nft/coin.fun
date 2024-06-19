@@ -5,7 +5,7 @@ import { db, profiles, type TweetInsert, tweets } from '$lib/server/db';
 import { getQuoted, getSearch } from '$lib/server/twitter';
 
 // Our launching tweet: https://x.com/coindotfun/status/1791164388579119340
-const FIRST_COINDOTFUN_TWEET_ID = 1791164388579119340n;
+const FIRST_COINDOTFUN_TWEET_ID = '1791164388579119340';
 
 export async function POST({ request }) {
   if (!env.SOCIALDATA_API_KEY)
@@ -19,7 +19,11 @@ export async function POST({ request }) {
     .orderBy(desc(tweets.createdAt))
     .limit(1);
 
-  const minId = tweetsIndexed.at(0)?.id ?? FIRST_COINDOTFUN_TWEET_ID;
+  const minId = String(
+    BigInt(tweetsIndexed.at(0)?.id ?? FIRST_COINDOTFUN_TWEET_ID) + 1n
+  );
+
+  console.debug(`Twitter aggregation: starting from ${minId}`);
 
   // 1. First pass gets all tweets mentioning @coindotfun, but not from
   //    @coindotfun. We include replies because tweets starting with
@@ -37,6 +41,8 @@ export async function POST({ request }) {
     { minId }
   );
 
+  console.debug(`Twitter aggregation: found ${tweetsToIndex.length}`);
+
   // 2. Second pass is grabbing all retweeted and quoted tweets from
   //    the batch retrieved in #1, filtered by accounts with >5k followers.
   //
@@ -45,20 +51,24 @@ export async function POST({ request }) {
   for (const status of await getQuoted(tweetsToIndex, { minId }))
     tweetsToIndex.push(status);
 
+  console.debug(
+    `Twitter aggregation: found ${tweetsToIndex.length} including quoted`
+  );
+
   const profilesInTweets = await db
     .select({ id: profiles.id, twitterUserId: profiles.twitterUserId })
     .from(profiles)
     .where(
       or(
         ...tweetsToIndex.map((status) =>
-          eq(profiles.twitterUserId, BigInt(status.user.id))
+          eq(profiles.twitterUserId, status.user.id_str)
         )
       )
     );
 
   const values = tweetsToIndex.reduce<TweetInsert[]>((values, status) => {
     const profile = profilesInTweets.find(
-      (profile) => profile.twitterUserId === BigInt(status.user.id)
+      (profile) => profile.twitterUserId === status.user.id_str
     );
 
     if (profile) {
@@ -66,29 +76,27 @@ export async function POST({ request }) {
         createdAt: new Date(status.tweet_created_at),
         entities: status.entities,
         fullText: status.full_text,
-        id: BigInt(status.id),
+        id: status.id_str,
         userId: profile.id,
         favoriteCount: status.favourite_count,
         quoteCount: status.quote_count,
-        quotedId:
-          status.quoted_status?.id ? BigInt(status.quoted_status.id) : null,
-        repliedToId:
-          status.in_reply_to_status_id ?
-            BigInt(status.in_reply_to_status_id)
-          : null,
+        quotedId: status.quoted_status?.id_str,
+        repliedToId: status.in_reply_to_status_id_str,
         replyCount: status.reply_count,
         retweetCount: status.retweet_count,
-        retweetedId:
-          status.retweeted_status?.id ?
-            BigInt(status.retweeted_status.id)
-          : null
+        retweetedId: status.retweeted_status?.id_str
       });
     }
 
     return values;
   }, []);
 
-  await db.insert(tweets).values(values);
+  console.debug(`Twitter aggregation: found ${values.length} eligible`);
+
+  if (values.length)
+    await db.insert(tweets).values(values).onConflictDoNothing();
+
+  console.debug('Twitter aggregation: done');
 
   return new Response(null, { status: 204 });
 }

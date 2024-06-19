@@ -1,5 +1,5 @@
 {
-  "id": "4a4186dd-195d-4cc7-a8c4-186a0a1bb6c0",
+  "id": "2fd037f6-614f-4d7a-b537-ff025f6620a7",
   "prevId": "92e71dfa-3ba1-4287-b505-6ae4c5df74b7",
   "version": "7",
   "dialect": "postgresql",
@@ -145,7 +145,7 @@
         },
         "twitter_user_id": {
           "name": "twitter_user_id",
-          "type": "bigint",
+          "type": "text",
           "primaryKey": false,
           "notNull": false
         },
@@ -265,7 +265,7 @@
       "columns": {
         "id": {
           "name": "id",
-          "type": "bigint",
+          "type": "text",
           "primaryKey": true,
           "notNull": true
         },
@@ -289,19 +289,19 @@
         },
         "quoted_id": {
           "name": "quoted_id",
-          "type": "bigint",
+          "type": "text",
           "primaryKey": false,
           "notNull": false
         },
         "reply_to_id": {
           "name": "reply_to_id",
-          "type": "bigint",
+          "type": "text",
           "primaryKey": false,
           "notNull": false
         },
         "retweeted_id": {
           "name": "retweeted_id",
-          "type": "bigint",
+          "type": "text",
           "primaryKey": false,
           "notNull": false
         },

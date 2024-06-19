@@ -1,7 +1,6 @@
 import { env } from '$env/dynamic/private';
 
 export interface TwitterUser {
-  id: number;
   id_str: string;
   name: string;
   screen_name: string;
@@ -24,14 +23,14 @@ export interface TwitterUser {
 // WARN: This is a partial twitter status struct containing fields
 // which are relevant to us.
 export interface TwitterStatus {
-  id: number;
+  id_str: string;
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   entities: any;
   full_text: string;
   tweet_created_at: string;
 
-  in_reply_to_status_id: number | null;
+  in_reply_to_status_id_str: string | null;
   quoted_status: TwitterStatus | null;
   retweeted_status: TwitterStatus | null;
 
@@ -61,6 +60,7 @@ export async function fetchSocialData<T>(
   let res: Response;
 
   try {
+    console.debug(`SocialData: fetching ${input}`);
     res = await fetch(input, options);
   } catch (error) {
     // @ts-expect-error this is fine
@@ -89,7 +89,7 @@ export async function fetchSocialData<T>(
 
 export async function getSearch(
   search: string,
-  { maxId, minId }: { maxId?: bigint; minId?: bigint } = {}
+  { maxId, minId }: { maxId?: string; minId?: string } = {}
 ) {
   let maxQuery = maxId ? ` max_id:${maxId}` : '';
   const minQuery = minId ? ` since_id:${minId}` : '';
@@ -102,6 +102,7 @@ export async function getSearch(
 
   const result: TwitterStatus[] = [];
 
+  let prevMaxId = '';
   // eslint-disable-next-line no-constant-condition
   while (true) {
     const res = await fetchSocialData<{
@@ -109,16 +110,27 @@ export async function getSearch(
       tweets: TwitterStatus[];
     }>(searchUrl);
 
-    const nextMaxId = res.tweets.at(-1)?.id;
+    // We use two techniques to paginate over tweets because `cursor`
+    // is inconsistent at times, yielding no new pages while there are
+    // actually still relevant tweets.
+    if (res.next_cursor) searchUrl.searchParams.set('cursor', res.next_cursor);
+    // If there's no `next_cursor` we'll delete that parameter and grab
+    // the last returned tweet id and paginate using that.
+    else {
+      const nextMaxId = res.tweets.at(-1)?.id_str;
 
-    // We're assuming that paging through results is done after we stop
-    // receiving any tweets. In tihs case `nextMaxId` will be `undefined`.
-    if (!nextMaxId) break;
+      // We're assuming that paging through results is done after we stop
+      // receiving any tweets. In this case `nextMaxId` will be `undefined`.
+      // Another exit case is when we're using the same `max_id` again.
+      if (!nextMaxId || prevMaxId === nextMaxId) break;
 
-    maxQuery = nextMaxId ? ` max_id:${nextMaxId}` : '';
+      prevMaxId = nextMaxId;
+      maxQuery = nextMaxId ? ` max_id:${nextMaxId}` : '';
+      query = search + maxQuery + minQuery;
 
-    query = search + maxQuery + minQuery;
-    searchUrl.searchParams.set('query', query);
+      searchUrl.searchParams.delete('cursor');
+      searchUrl.searchParams.set('query', query);
+    }
 
     for (const status of res.tweets) result.push(status);
   }
@@ -128,12 +140,12 @@ export async function getSearch(
 
 export async function getQuoted(
   tweets: TwitterStatus[],
-  { maxId, minId }: { maxId?: bigint; minId?: bigint } = {}
+  { maxId, minId }: { maxId?: string; minId?: string } = {}
 ) {
-  const ids = tweets.reduce<bigint[]>((ids, status) => {
+  const ids = tweets.reduce<string[]>((ids, status) => {
     // Only add a pointer when we have a tweet that's been quoted.
     if (status.quote_count) {
-      ids.push(BigInt(status.id));
+      ids.push(status.id_str);
     }
     return ids;
   }, []);
@@ -168,7 +180,7 @@ export async function getQuoted(
   return result;
 }
 
-export async function getProfile(id: bigint) {
+export async function getProfile(id: string) {
   // For return type check
   // https://socialdata.gitbook.io/docs/twitter-users/retrieve-user-profile-details#example-response
   return fetchSocialData<TwitterUser>(

@@ -5,13 +5,13 @@ EXCEPTION
 END $$;
 --> statement-breakpoint
 CREATE TABLE IF NOT EXISTS "tweets" (
-	"id" bigint PRIMARY KEY NOT NULL,
+	"id" text PRIMARY KEY NOT NULL,
 	"user_id" uuid NOT NULL,
 	"full_text" text NOT NULL,
 	"entities" json NOT NULL,
-	"quoted_id" bigint,
-	"reply_to_id" bigint,
-	"retweeted_id" bigint,
+	"quoted_id" text,
+	"reply_to_id" text,
+	"retweeted_id" text,
 	"favorite_count" integer,
 	"quote_count" integer,
 	"reply_count" integer,
@@ -23,7 +23,7 @@ DROP INDEX IF EXISTS "user_idx";--> statement-breakpoint
 DROP INDEX IF EXISTS "quest_idx";--> statement-breakpoint
 DROP INDEX IF EXISTS "acquired_at_idx";--> statement-breakpoint
 ALTER TABLE "points" ALTER COLUMN "quest_id" SET DATA TYPE text;--> statement-breakpoint
-ALTER TABLE "profiles" ADD COLUMN "twitter_user_id" bigint;--> statement-breakpoint
+ALTER TABLE "profiles" ADD COLUMN "twitter_user_id" text;--> statement-breakpoint
 ALTER TABLE "profiles" ADD COLUMN "character_s1" "character_s1";--> statement-breakpoint
 DO $$ BEGIN
  ALTER TABLE "tweets" ADD CONSTRAINT "tweets_user_id_users_id_fk" FOREIGN KEY ("user_id") REFERENCES "auth"."users"("id") ON DELETE cascade ON UPDATE no action;
@@ -66,7 +66,7 @@ ALTER TABLE "profiles" ADD CONSTRAINT "profiles_twitter_user_id_unique" UNIQUE("
 
 -- Backfill twitter_user_id
 UPDATE public.profiles AS profiles
-  SET twitter_user_id = cast(users.raw_user_meta_data ->> 'provider_id' as bigint)
+  SET twitter_user_id = users.raw_user_meta_data ->> 'provider_id'
   FROM auth.users AS users
   WHERE profiles.id = users.id;
 
@@ -91,7 +91,7 @@ begin
     new.raw_user_meta_data ->> 'avatar_url',
     new.raw_user_meta_data ->> 'full_name',
     new.raw_user_meta_data ->> 'email',
-    cast(new.raw_user_meta_data ->> 'provider_id' as bigint),
+    new.raw_user_meta_data ->> 'provider_id',
     new.raw_user_meta_data ->> 'user_name'
   );
   return new;
