@@ -26,47 +26,59 @@
   keywords="memecoin, ape, degen, moon, REKT, YOLO, Lambo, gains, pump, dump, $COIN, cry harder"
 />
 
-<h1
-  class="mx-auto my-20 max-w-screen-md text-center font-mono text-3xl font-extrabold"
->
-  <span
-    class="text-glow-green block text-[clamp(3rem,12vw,8rem)] lowercase leading-normal text-primary"
-    >coin.fun</span
-  >
-  <span class="text-glow-green block uppercase">
-    Community Owned Memecoin Printer
-  </span>
-</h1>
+<div class="flex min-h-screen w-full flex-col md:flex-row">
+  <!-- Left column -->
+  <div class="md:w-1/2 flex flex-1 flex-col items-center justify-center p-4 md:p-8">
+    <div class="w-full max-w-2xl">
+      <h1 class="text-center font-mono">
+        <span
+          class="text-glow-green block text-center text-[clamp(3rem,8vw,6rem)] lowercase leading-tight text-primary"
+        >
+          coin.fun
+        </span>
+        <span
+          class="text-glow-green block text-center text-2xl uppercase md:text-3xl"
+        >
+          Community Owned Memecoin Printer
+        </span>
+      </h1>
 
-<p class="group mx-auto max-w-min text-center">
-  <Button
-    class="font-bold uppercase group-hover:animate-nutty"
-    size="lg"
-    href="/quests"
-  >
-    {label}
-  </Button>
-</p>
+      <div class="mt-8 flex justify-center">
+        <Button
+          class="font-bold uppercase hover:animate-nutty"
+          size="lg"
+          href="/quests"
+        >
+          EARN $COIN TOKEN
+        </Button>
+      </div>
 
-<CoinAnimation class="mx-auto my-20 w-full max-w-screen-sm" />
+      <CoinAnimation class="mx-auto mt-8 w-full" />
+    </div>
+  </div>
 
-<p class="mb-4 text-center text-3xl font-bold">
-  GET READY FOR <span class="highlight">SEASON 1</span>
-</p>
+  <!-- Right column -->
+  <div class="md:w-1/2 flex flex-1 flex-col items-center justify-center p-4 md:p-8">
+    <div class="w-full max-w-2xl">
+      <p class="text-center text-4xl font-bold md:text-left">
+        <span class="highlight">SEASON 1</span> is LIVE!
+      </p>
 
-<ul class="mb-20 text-center">
-  <li>🪙 CREATE MEMECOINS 🪙</li>
-  <li>✨ EARN POINTS ✨</li>
-  <li>
-    💸 <span class="earn-all-fees"
-      >EARN <strong style="font-size: 2em; text-decoration: underline;"
-        >ALL</strong
-      > THE TRADING FEES</span
-    > 💸
-  </li>
-  <li>🤤 CREATE AND SHARE COIN.FUN MEMES ON TWITTER 🤤</li>
-  <li>⁉️ CLICKITY CLICK THE COIN ⁉️</li>
-</ul>
+      <ul class="mt-8 space-y-6 text-center text-xl md:text-left">
+        <li>✨ EARN POINTS ✨</li>
+        <li>🪙 POINTS = $COIN token 🪙</li>
+        <li>
+          💸 <span class="earn-all-fees">
+            $COIN accrues <strong class="text-2xl underline"
+              >TRADING FEES</strong
+            >
+          </span> 💸
+        </li>
+        <li>🤤 CREATE AND SHARE COIN.FUN MEMES ON TWITTER 🤤</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 <style>
   h1 {
@@ -82,3 +94,4 @@
     }
   }
 </style>
+
