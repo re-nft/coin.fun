@@ -147,7 +147,7 @@
           "name": "twitter_user_id",
           "type": "text",
           "primaryKey": false,
-          "notNull": false
+          "notNull": true
         },
         "character_s1": {
           "name": "character_s1",
