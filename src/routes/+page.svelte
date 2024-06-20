@@ -28,7 +28,9 @@
 
 <div class="flex min-h-screen w-full flex-col md:flex-row">
   <!-- Left column -->
-  <div class="md:w-1/2 flex flex-1 flex-col items-center justify-center p-4 md:p-8">
+  <div
+    class="flex flex-1 flex-col items-center justify-center p-4 md:w-1/2 md:p-8"
+  >
     <div class="w-full max-w-2xl">
       <h1 class="text-center font-mono">
         <span
@@ -58,13 +60,20 @@
   </div>
 
   <!-- Right column -->
-  <div class="md:w-1/2 flex flex-1 flex-col items-center justify-center p-4 md:p-8">
+  <div
+    class="flex flex-1 flex-col items-center justify-center p-4 md:w-1/2 md:p-8"
+  >
     <div class="w-full max-w-2xl">
       <p class="text-center text-4xl font-bold md:text-left">
         <span class="highlight">SEASON 1</span> is LIVE!
       </p>
 
       <ul class="mt-8 space-y-6 text-center text-xl md:text-left">
+        <li>
+          <strong class="text-2xl underline"
+            >SIMPLY SIGN IN WITH TWITTER AND:</strong
+          >
+        </li>
         <li>✨ EARN POINTS ✨</li>
         <li>🪙 POINTS = $COIN token 🪙</li>
         <li>
