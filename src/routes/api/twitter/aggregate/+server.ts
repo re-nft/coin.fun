@@ -13,9 +13,16 @@ import { getQuoted, getSearch } from '$lib/server/twitter';
 // Our launching tweet: https://x.com/coindotfun/status/1791164388579119340
 const COINDOTFUN_FIRST_TWEET_DATE = new Date('2024-05-16T17:50:43.000Z');
 
-export async function POST({ request }) {
+export async function GET({ request }) {
   if (!env.SOCIALDATA_API_KEY)
     return new Response('No "SOCIALDATA_API_KEY" found.', { status: 401 });
+
+  const socialDataApiKey = request.headers
+    .get('Authorization')
+    ?.replace(/\s*bearer\s+(\S+)\s*/gi, '$1');
+
+  if (env.SOCIALDATA_API_KEY !== socialDataApiKey)
+    return new Response('Invalid "SOCIALDATA_API_KEY".', { status: 401 });
 
   const lastLog = await db
     .select()
@@ -49,9 +56,6 @@ export async function POST({ request }) {
 
   // 2. Second pass is grabbing all retweeted and quoted tweets from
   //    the batch retrieved in #1, filtered by accounts with >5k followers.
-  //
-  //    What we need to do here is end up with a list of tweet ids we need
-  //    to loop over to check whether they've been quoted by a heftie.
   const quotesToIndex = await getQuoted(tweetsToIndex, { sinceTime });
 
   console.debug(`Twitter aggregation: found ${quotesToIndex.length} quoted`);
