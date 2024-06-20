@@ -15,7 +15,7 @@ import { getQuoted, getSearch } from '$lib/server/twitter';
 const COINDOTFUN_FIRST_TWEET_DATE = new Date('2024-05-16T17:50:43.000Z');
 
 export const config: Config = {
-  runtime: 'nodejs20.x'
+  maxDuration: 300
 };
 
 export async function GET({ request }) {
