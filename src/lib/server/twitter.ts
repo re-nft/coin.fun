@@ -42,7 +42,14 @@ export interface TwitterStatus {
   user: TwitterUser;
 }
 
-const QUOTE_TWEETS_MAX_QUERY_CHARS = 456;
+export interface TwitterSearchParams {
+  maxId?: string;
+  minId?: string;
+  sinceTime?: number;
+}
+
+// This is roughly 512 - ` since_id:[id] max_id:[id] since_time:[time]`.length
+const QUOTE_TWEETS_MAX_QUERY_CHARS = 432;
 
 export async function fetchSocialData<T>(
   input: string | URL | Request,
@@ -89,12 +96,14 @@ export async function fetchSocialData<T>(
 
 export async function getSearch(
   search: string,
-  { maxId, minId }: { maxId?: string; minId?: string } = {}
+  { maxId, minId, sinceTime }: TwitterSearchParams = {}
 ) {
   let maxQuery = maxId ? ` max_id:${maxId}` : '';
   const minQuery = minId ? ` since_id:${minId}` : '';
+  const sinceQuery = sinceTime ? ` since_time:${sinceTime}` : '';
 
-  let query = search + maxQuery + minQuery;
+  // See WARN below. This query needs to be rebuilt completely every loop.
+  let query = search + maxQuery + minQuery + sinceQuery;
 
   const searchUrl = new URL('https://api.socialdata.tools/twitter/search');
   searchUrl.searchParams.set('type', 'Latest');
@@ -126,7 +135,9 @@ export async function getSearch(
 
       prevMaxId = nextMaxId;
       maxQuery = nextMaxId ? ` max_id:${nextMaxId}` : '';
-      query = search + maxQuery + minQuery;
+
+      // ! WARN ! be sure to rebuild the complete query
+      query = search + maxQuery + minQuery + sinceQuery;
 
       searchUrl.searchParams.delete('cursor');
       searchUrl.searchParams.set('query', query);
@@ -140,7 +151,7 @@ export async function getSearch(
 
 export async function getQuoted(
   tweets: TwitterStatus[],
-  { maxId, minId }: { maxId?: string; minId?: string } = {}
+  { maxId, minId, sinceTime }: TwitterSearchParams = {}
 ) {
   const ids = tweets.reduce<string[]>((ids, status) => {
     // Only add a pointer when we have a tweet that's been quoted.
@@ -154,7 +165,8 @@ export async function getQuoted(
   // it doens't make the query parameter larger than 457 chars which
   // equates to `512 - ' since_id:[id] max_id:[id]'.length. See:
   // https://developer.x.com/en/docs/twitter-api/tweets/search/integrate/build-a-query#limits
-  // This should allow us to process 12 tweets per request while
+  // This should allow us to process 12 tweets per request, adding up
+  // to while
   // still being able to tack on the poor-man's pagination.
   const queries = ids.reduce<string[]>((queries, id) => {
     const prevStr = queries.at(-1) ?? '';
@@ -173,7 +185,7 @@ export async function getQuoted(
   const result: TwitterStatus[] = [];
 
   for (const results of await Promise.all(
-    queries.map((query) => getSearch(query, { maxId, minId }))
+    queries.map((query) => getSearch(query, { maxId, minId, sinceTime }))
   ))
     for (const status of results) result.push(status);
 

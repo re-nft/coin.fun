@@ -1,29 +1,33 @@
 import { desc, eq, or } from 'drizzle-orm';
 
 import { env } from '$env/dynamic/private';
-import { db, profiles, type TweetInsert, tweets } from '$lib/server/db';
+import {
+  db,
+  profiles,
+  tweetIndexerLogs,
+  type TweetInsert,
+  tweets
+} from '$lib/server/db';
 import { getQuoted, getSearch } from '$lib/server/twitter';
 
 // Our launching tweet: https://x.com/coindotfun/status/1791164388579119340
-const FIRST_COINDOTFUN_TWEET_ID = '1791164388579119340';
+const COINDOTFUN_FIRST_TWEET_DATE = new Date('2024-05-16T17:50:43.000Z');
 
 export async function POST({ request }) {
   if (!env.SOCIALDATA_API_KEY)
     return new Response('No "SOCIALDATA_API_KEY" found.', { status: 401 });
 
-  const tweetsIndexed = await db
-    .select({
-      id: tweets.id
-    })
-    .from(tweets)
-    .orderBy(desc(tweets.createdAt))
+  const lastLog = await db
+    .select()
+    .from(tweetIndexerLogs)
+    .orderBy(desc(tweetIndexerLogs.completedAt))
     .limit(1);
 
-  const minId = String(
-    BigInt(tweetsIndexed.at(0)?.id ?? FIRST_COINDOTFUN_TWEET_ID) + 1n
+  const sinceTime = Math.floor(
+    (lastLog.at(0)?.completedAt ?? COINDOTFUN_FIRST_TWEET_DATE).getTime() / 1000
   );
 
-  console.debug(`Twitter aggregation: starting from ${minId}`);
+  console.debug(`Twitter aggregation: starting from epoch ${sinceTime}`);
 
   // 1. First pass gets all tweets mentioning @coindotfun, but not from
   //    @coindotfun. We include replies because tweets starting with
@@ -38,35 +42,36 @@ export async function POST({ request }) {
   //    why we need a second pass.
   const tweetsToIndex = await getSearch(
     '(@coindotfun) -from:coindotfun include:nativeretweets',
-    { minId }
+    { sinceTime }
   );
 
-  console.debug(`Twitter aggregation: found ${tweetsToIndex.length}`);
+  console.debug(`Twitter aggregation: found ${tweetsToIndex.length} tweets`);
 
   // 2. Second pass is grabbing all retweeted and quoted tweets from
   //    the batch retrieved in #1, filtered by accounts with >5k followers.
   //
   //    What we need to do here is end up with a list of tweet ids we need
   //    to loop over to check whether they've been quoted by a heftie.
-  for (const status of await getQuoted(tweetsToIndex, { minId }))
-    tweetsToIndex.push(status);
+  const quotesToIndex = await getQuoted(tweetsToIndex, { sinceTime });
 
-  console.debug(
-    `Twitter aggregation: found ${tweetsToIndex.length} including quoted`
-  );
+  console.debug(`Twitter aggregation: found ${quotesToIndex.length} quoted`);
+
+  const allToIndex = [tweetsToIndex, quotesToIndex].flat();
+
+  console.debug(`Twitter aggregation: found ${allToIndex.length} total`);
 
   const profilesInTweets = await db
     .select({ id: profiles.id, twitterUserId: profiles.twitterUserId })
     .from(profiles)
     .where(
       or(
-        ...tweetsToIndex.map((status) =>
+        ...allToIndex.map((status) =>
           eq(profiles.twitterUserId, status.user.id_str)
         )
       )
     );
 
-  const values = tweetsToIndex.reduce<TweetInsert[]>((values, status) => {
+  const values = allToIndex.reduce<TweetInsert[]>((values, status) => {
     const profile = profilesInTweets.find(
       (profile) => profile.twitterUserId === status.user.id_str
     );
@@ -95,6 +100,17 @@ export async function POST({ request }) {
 
   if (values.length)
     await db.insert(tweets).values(values).onConflictDoNothing();
+
+  if (allToIndex.length)
+    await db
+      .insert(tweetIndexerLogs)
+      .values({
+        data: allToIndex,
+        eligibleCount: values.length,
+        quoteCount: quotesToIndex.length,
+        tweetCount: tweetsToIndex.length
+      })
+      .onConflictDoNothing();
 
   console.debug('Twitter aggregation: done');
 
