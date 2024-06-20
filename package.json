@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "build": "vite build",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "codegen": "playwright codegen",
     "component": "npx shadcn-svelte@latest",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
@@ -10,15 +13,12 @@
     "dev:app": "vite dev",
     "dev:db": "node --env-file=.env scripts/db",
     "dev:lint": "npm run check -- --watch",
-    "build": "vite build",
+    "format": "prettier --write .",
+    "lint": "prettier --check . && eslint . && npm run check",
     "postbuild": "[[ -n \"$VERCEL_ENV\" ]] && npm run db:migrate",
     "preview": "vite preview",
-    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-    "lint": "prettier --check . && eslint . && npm run check",
-    "format": "prettier --write .",
     "test": "concurrently -k npm:test:*",
-    "test:integration": "playwright test",
-    "codegen": "playwright codegen",
+    "test:e2e": "playwright test",
     "test:unit": "vitest"
   },
   "dependencies": {

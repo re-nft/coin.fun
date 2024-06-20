@@ -1,5 +1,5 @@
-import { type InferSelectModel } from 'drizzle-orm';
+import { type profiles, type tweets } from './schema';
 
-import { type profiles } from './schema';
+export type Profile = typeof profiles.$inferSelect;
 
-export type Profile = InferSelectModel<typeof profiles>;
+export type TweetInsert = typeof tweets.$inferInsert;

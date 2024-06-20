@@ -1,0 +1,945 @@
+{
+  "tweets": [
+    {
+      "tweet_created_at": "2024-06-18T20:42:46.000000Z",
+      "id": 1803166488280572226,
+      "id_str": "1803166488280572226",
+      "text": null,
+      "full_text": "RT @AlgorithmicBot: want to own a token in a new memecoin launcher?\n\nwe at @zero_to_one_gg are trying something new and exciting\n\nfirst pro\u2026",
+      "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 1800565217115373572,
+        "id_str": "1800565217115373572",
+        "name": "WhaleOfLibya",
+        "screen_name": "LibyaWhale",
+        "location": "",
+        "url": null,
+        "description": "",
+        "protected": false,
+        "verified": false,
+        "followers_count": 6,
+        "friends_count": 3,
+        "listed_count": 0,
+        "favourites_count": 0,
+        "statuses_count": 26,
+        "created_at": "2024-06-11T16:26:26.000000Z",
+        "profile_banner_url": null,
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1800565517427539969/11XkUwqF_normal.jpg",
+        "can_dm": false
+      },
+      "quoted_status_id": null,
+      "quoted_status_id_str": null,
+      "is_quote_status": false,
+      "quoted_status": null,
+      "retweeted_status": {
+        "tweet_created_at": "2024-06-17T19:36:36.000000Z",
+        "id": 1802787449627926866,
+        "id_str": "1802787449627926866",
+        "text": null,
+        "full_text": "want to own a token in a new memecoin launcher?\n\nwe at @zero_to_one_gg are trying something new and exciting\n\nfirst project in our experimentation series is @coindotfun https://t.co/o3WWyK0QeM",
+        "source": "<a href=\"https://typefully.com/\" rel=\"nofollow\">Typefully</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 1004085896067670016,
+          "id_str": "1004085896067670016",
+          "name": "naz",
+          "screen_name": "AlgorithmicBot",
+          "location": "",
+          "url": null,
+          "description": "co-founder @zero_to_one_gg @021Endgame @rumblekongs\n\nquant developer in my past life",
+          "protected": false,
+          "verified": true,
+          "followers_count": 11355,
+          "friends_count": 2539,
+          "listed_count": 31,
+          "favourites_count": 17864,
+          "statuses_count": 5952,
+          "created_at": "2018-06-05T19:41:47.000000Z",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/1004085896067670016/1643581157",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/1771906981873266688/Z78lSyf3_normal.jpg",
+          "can_dm": true
+        },
+        "quoted_status_id": null,
+        "quoted_status_id_str": null,
+        "is_quote_status": false,
+        "quoted_status": null,
+        "retweeted_status": null,
+        "quote_count": 145,
+        "reply_count": 4,
+        "retweet_count": 117,
+        "favorite_count": 96,
+        "lang": "en",
+        "entities": {
+          "hashtags": [],
+          "media": [
+            {
+              "display_url": "pic.x.com/o3wwyk0qem",
+              "expanded_url": "https://twitter.com/AlgorithmicBot/status/1802787449627926866/video/1",
+              "id_str": "1802787374906454016",
+              "indices": [169, 192],
+              "media_key": "7_1802787374906454016",
+              "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1802787374906454016/pu/img/ROwbTpw0h6X9veCW.jpg",
+              "type": "video",
+              "url": "https://t.co/o3WWyK0QeM",
+              "additional_media_info": { "monetizable": false },
+              "ext_media_availability": { "status": "Available" },
+              "sizes": {
+                "large": { "h": 1080, "w": 1920, "resize": "fit" },
+                "medium": { "h": 675, "w": 1200, "resize": "fit" },
+                "small": { "h": 383, "w": 680, "resize": "fit" },
+                "thumb": { "h": 150, "w": 150, "resize": "crop" }
+              },
+              "original_info": {
+                "height": 1080,
+                "width": 1920,
+                "focus_rects": []
+              },
+              "video_info": {
+                "aspect_ratio": [16, 9],
+                "duration_millis": 23250,
+                "variants": [
+                  {
+                    "content_type": "application/x-mpegURL",
+                    "url": "https://video.twimg.com/ext_tw_video/1802787374906454016/pu/pl/pzlos1uA5NVOB3r9.m3u8?tag=12"
+                  },
+                  {
+                    "bitrate": 256000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/ext_tw_video/1802787374906454016/pu/vid/avc1/480x270/_nm2gaK5hrpg7Hgj.mp4?tag=12"
+                  },
+                  {
+                    "bitrate": 832000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/ext_tw_video/1802787374906454016/pu/vid/avc1/640x360/FbyJM6m1biWOF764.mp4?tag=12"
+                  },
+                  {
+                    "bitrate": 2176000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/ext_tw_video/1802787374906454016/pu/vid/avc1/1280x720/XgSgBounDQ5uJHLD.mp4?tag=12"
+                  }
+                ]
+              }
+            }
+          ],
+          "symbols": [],
+          "timestamps": [],
+          "urls": [],
+          "user_mentions": [
+            {
+              "id_str": "1310088791936233473",
+              "name": "zero to one",
+              "screen_name": "zero_to_one_gg",
+              "indices": [55, 70]
+            },
+            {
+              "id_str": "1791084641127976960",
+              "name": "coindotfun",
+              "screen_name": "coindotfun",
+              "indices": [157, 168]
+            }
+          ]
+        },
+        "views_count": 2645,
+        "bookmark_count": 0,
+        "is_pinned": false,
+        "articleDetailsArray": null,
+        "article": null
+      },
+      "quote_count": 0,
+      "reply_count": 0,
+      "retweet_count": 117,
+      "favorite_count": 0,
+      "lang": "en",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "timestamps": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "id_str": "1004085896067670016",
+            "name": "naz",
+            "screen_name": "AlgorithmicBot",
+            "indices": [3, 18]
+          },
+          {
+            "id_str": "1310088791936233473",
+            "name": "zero to one",
+            "screen_name": "zero_to_one_gg",
+            "indices": [75, 90]
+          }
+        ]
+      },
+      "views_count": null,
+      "bookmark_count": 0,
+      "is_pinned": false,
+      "articleDetailsArray": null,
+      "article": null
+    },
+    {
+      "tweet_created_at": "2024-06-18T18:17:06.000000Z",
+      "id": 1803129828440416278,
+      "id_str": "1803129828440416278",
+      "text": null,
+      "full_text": "RT @AlgorithmicBot: want to own a token in a new memecoin launcher?\n\nwe at @zero_to_one_gg are trying something new and exciting\n\nfirst pro\u2026",
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 1797746880123731968,
+        "id_str": "1797746880123731968",
+        "name": "(F) (i) (l)",
+        "screen_name": "Drakylll",
+        "location": "",
+        "url": null,
+        "description": "",
+        "protected": false,
+        "verified": false,
+        "followers_count": 3,
+        "friends_count": 34,
+        "listed_count": 0,
+        "favourites_count": 29,
+        "statuses_count": 33,
+        "created_at": "2024-06-03T21:47:32.000000Z",
+        "profile_banner_url": null,
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1802216379417870336/N8nKniDT_normal.jpg",
+        "can_dm": false
+      },
+      "quoted_status_id": null,
+      "quoted_status_id_str": null,
+      "is_quote_status": false,
+      "quoted_status": null,
+      "retweeted_status": {
+        "tweet_created_at": "2024-06-17T19:36:36.000000Z",
+        "id": 1802787449627926866,
+        "id_str": "1802787449627926866",
+        "text": null,
+        "full_text": "want to own a token in a new memecoin launcher?\n\nwe at @zero_to_one_gg are trying something new and exciting\n\nfirst project in our experimentation series is @coindotfun https://t.co/o3WWyK0QeM",
+        "source": "<a href=\"https://typefully.com/\" rel=\"nofollow\">Typefully</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 1004085896067670016,
+          "id_str": "1004085896067670016",
+          "name": "naz",
+          "screen_name": "AlgorithmicBot",
+          "location": "",
+          "url": null,
+          "description": "co-founder @zero_to_one_gg @021Endgame @rumblekongs\n\nquant developer in my past life",
+          "protected": false,
+          "verified": true,
+          "followers_count": 11355,
+          "friends_count": 2539,
+          "listed_count": 31,
+          "favourites_count": 17864,
+          "statuses_count": 5952,
+          "created_at": "2018-06-05T19:41:47.000000Z",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/1004085896067670016/1643581157",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/1771906981873266688/Z78lSyf3_normal.jpg",
+          "can_dm": true
+        },
+        "quoted_status_id": null,
+        "quoted_status_id_str": null,
+        "is_quote_status": false,
+        "quoted_status": null,
+        "retweeted_status": null,
+        "quote_count": 145,
+        "reply_count": 4,
+        "retweet_count": 117,
+        "favorite_count": 96,
+        "lang": "en",
+        "entities": {
+          "hashtags": [],
+          "media": [
+            {
+              "display_url": "pic.x.com/o3wwyk0qem",
+              "expanded_url": "https://twitter.com/AlgorithmicBot/status/1802787449627926866/video/1",
+              "id_str": "1802787374906454016",
+              "indices": [169, 192],
+              "media_key": "7_1802787374906454016",
+              "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1802787374906454016/pu/img/ROwbTpw0h6X9veCW.jpg",
+              "type": "video",
+              "url": "https://t.co/o3WWyK0QeM",
+              "additional_media_info": { "monetizable": false },
+              "ext_media_availability": { "status": "Available" },
+              "sizes": {
+                "large": { "h": 1080, "w": 1920, "resize": "fit" },
+                "medium": { "h": 675, "w": 1200, "resize": "fit" },
+                "small": { "h": 383, "w": 680, "resize": "fit" },
+                "thumb": { "h": 150, "w": 150, "resize": "crop" }
+              },
+              "original_info": {
+                "height": 1080,
+                "width": 1920,
+                "focus_rects": []
+              },
+              "video_info": {
+                "aspect_ratio": [16, 9],
+                "duration_millis": 23250,
+                "variants": [
+                  {
+                    "content_type": "application/x-mpegURL",
+                    "url": "https://video.twimg.com/ext_tw_video/1802787374906454016/pu/pl/pzlos1uA5NVOB3r9.m3u8?tag=12"
+                  },
+                  {
+                    "bitrate": 256000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/ext_tw_video/1802787374906454016/pu/vid/avc1/480x270/_nm2gaK5hrpg7Hgj.mp4?tag=12"
+                  },
+                  {
+                    "bitrate": 832000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/ext_tw_video/1802787374906454016/pu/vid/avc1/640x360/FbyJM6m1biWOF764.mp4?tag=12"
+                  },
+                  {
+                    "bitrate": 2176000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/ext_tw_video/1802787374906454016/pu/vid/avc1/1280x720/XgSgBounDQ5uJHLD.mp4?tag=12"
+                  }
+                ]
+              }
+            }
+          ],
+          "symbols": [],
+          "timestamps": [],
+          "urls": [],
+          "user_mentions": [
+            {
+              "id_str": "1310088791936233473",
+              "name": "zero to one",
+              "screen_name": "zero_to_one_gg",
+              "indices": [55, 70]
+            },
+            {
+              "id_str": "1791084641127976960",
+              "name": "coindotfun",
+              "screen_name": "coindotfun",
+              "indices": [157, 168]
+            }
+          ]
+        },
+        "views_count": 2645,
+        "bookmark_count": 0,
+        "is_pinned": false,
+        "articleDetailsArray": null,
+        "article": null
+      },
+      "quote_count": 0,
+      "reply_count": 0,
+      "retweet_count": 117,
+      "favorite_count": 0,
+      "lang": "en",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "timestamps": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "id_str": "1004085896067670016",
+            "name": "naz",
+            "screen_name": "AlgorithmicBot",
+            "indices": [3, 18]
+          },
+          {
+            "id_str": "1310088791936233473",
+            "name": "zero to one",
+            "screen_name": "zero_to_one_gg",
+            "indices": [75, 90]
+          }
+        ]
+      },
+      "views_count": null,
+      "bookmark_count": 0,
+      "is_pinned": false,
+      "articleDetailsArray": null,
+      "article": null
+    },
+    {
+      "tweet_created_at": "2024-06-18T16:12:08.000000Z",
+      "id": 1803098381876633715,
+      "id_str": "1803098381876633715",
+      "text": null,
+      "full_text": "RT @coindotfun: season 1 is live \ud83d\udc33\n\nearn $COIN now, launch memecoins after https://t.co/QPAbNzibCS",
+      "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 1237506426253324288,
+        "id_str": "1237506426253324288",
+        "name": "floyd $FAME",
+        "screen_name": "JefferyTezos",
+        "location": "England, United Kingdom",
+        "url": null,
+        "description": "",
+        "protected": false,
+        "verified": false,
+        "followers_count": 1936,
+        "friends_count": 4205,
+        "listed_count": 19,
+        "favourites_count": 28022,
+        "statuses_count": 11893,
+        "created_at": "2020-03-10T22:31:49.000000Z",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/1237506426253324288/1718086063",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1800409555467145216/uVqthSYD_normal.jpg",
+        "can_dm": false
+      },
+      "quoted_status_id": null,
+      "quoted_status_id_str": null,
+      "is_quote_status": false,
+      "quoted_status": null,
+      "retweeted_status": {
+        "tweet_created_at": "2024-06-18T13:40:11.000000Z",
+        "id": 1803060141102620726,
+        "id_str": "1803060141102620726",
+        "text": null,
+        "full_text": "season 1 is live \ud83d\udc33\n\nearn $COIN now, launch memecoins after https://t.co/QPAbNzibCS",
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 1791084641127976960,
+          "id_str": "1791084641127976960",
+          "name": "coindotfun",
+          "screen_name": "coindotfun",
+          "location": "",
+          "url": null,
+          "description": "https://t.co/NaxFbrTTcc |\n\nearn $COIN |\n\ncommunity owned https://t.co/TkKeySbygx killer",
+          "protected": false,
+          "verified": true,
+          "followers_count": 485,
+          "friends_count": 70,
+          "listed_count": 0,
+          "favourites_count": 84,
+          "statuses_count": 108,
+          "created_at": "2024-05-16T12:34:03.000000Z",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/1791084641127976960/1717181952",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/1796617437036556288/xKRt5izL_normal.jpg",
+          "can_dm": false
+        },
+        "quoted_status_id": null,
+        "quoted_status_id_str": null,
+        "is_quote_status": false,
+        "quoted_status": null,
+        "retweeted_status": null,
+        "quote_count": 2,
+        "reply_count": 0,
+        "retweet_count": 2,
+        "favorite_count": 6,
+        "lang": "en",
+        "entities": {
+          "hashtags": [],
+          "media": [
+            {
+              "display_url": "pic.x.com/qpabnzibcs",
+              "expanded_url": "https://twitter.com/coindotfun/status/1803060141102620726/photo/1",
+              "id_str": "1803059856049405952",
+              "indices": [59, 82],
+              "media_key": "3_1803059856049405952",
+              "media_url_https": "https://pbs.twimg.com/media/GQXBYtSXgAATyIh.jpg",
+              "type": "photo",
+              "url": "https://t.co/QPAbNzibCS",
+              "ext_media_availability": { "status": "Available" },
+              "features": {
+                "large": { "faces": [] },
+                "medium": { "faces": [] },
+                "small": { "faces": [] },
+                "orig": { "faces": [] }
+              },
+              "sizes": {
+                "large": { "h": 2048, "w": 2048, "resize": "fit" },
+                "medium": { "h": 1200, "w": 1200, "resize": "fit" },
+                "small": { "h": 680, "w": 680, "resize": "fit" },
+                "thumb": { "h": 150, "w": 150, "resize": "crop" }
+              },
+              "original_info": {
+                "height": 3334,
+                "width": 3334,
+                "focus_rects": [
+                  { "x": 0, "y": 1467, "w": 3334, "h": 1867 },
+                  { "x": 0, "y": 0, "w": 3334, "h": 3334 },
+                  { "x": 121, "y": 0, "w": 2925, "h": 3334 },
+                  { "x": 750, "y": 0, "w": 1667, "h": 3334 },
+                  { "x": 0, "y": 0, "w": 3334, "h": 3334 }
+                ]
+              }
+            }
+          ],
+          "symbols": [{ "indices": [25, 30], "text": "COIN" }],
+          "timestamps": [],
+          "urls": [],
+          "user_mentions": []
+        },
+        "views_count": 340,
+        "bookmark_count": 0,
+        "is_pinned": false,
+        "articleDetailsArray": null,
+        "article": null
+      },
+      "quote_count": 0,
+      "reply_count": 0,
+      "retweet_count": 2,
+      "favorite_count": 0,
+      "lang": "en",
+      "entities": {
+        "hashtags": [],
+        "media": [
+          {
+            "display_url": "pic.x.com/qpabnzibcs",
+            "expanded_url": "https://twitter.com/coindotfun/status/1803060141102620726/photo/1",
+            "id_str": "1803059856049405952",
+            "indices": [75, 98],
+            "media_key": "3_1803059856049405952",
+            "media_url_https": "https://pbs.twimg.com/media/GQXBYtSXgAATyIh.jpg",
+            "source_status_id_str": "1803060141102620726",
+            "source_user_id_str": "1791084641127976960",
+            "type": "photo",
+            "url": "https://t.co/QPAbNzibCS",
+            "ext_media_availability": { "status": "Available" },
+            "features": {
+              "large": { "faces": [] },
+              "medium": { "faces": [] },
+              "small": { "faces": [] },
+              "orig": { "faces": [] }
+            },
+            "sizes": {
+              "large": { "h": 2048, "w": 2048, "resize": "fit" },
+              "medium": { "h": 1200, "w": 1200, "resize": "fit" },
+              "small": { "h": 680, "w": 680, "resize": "fit" },
+              "thumb": { "h": 150, "w": 150, "resize": "crop" }
+            },
+            "original_info": {
+              "height": 3334,
+              "width": 3334,
+              "focus_rects": [
+                { "x": 0, "y": 1467, "w": 3334, "h": 1867 },
+                { "x": 0, "y": 0, "w": 3334, "h": 3334 },
+                { "x": 121, "y": 0, "w": 2925, "h": 3334 },
+                { "x": 750, "y": 0, "w": 1667, "h": 3334 },
+                { "x": 0, "y": 0, "w": 3334, "h": 3334 }
+              ]
+            }
+          }
+        ],
+        "symbols": [{ "indices": [41, 46], "text": "COIN" }],
+        "timestamps": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "id_str": "1791084641127976960",
+            "name": "coindotfun",
+            "screen_name": "coindotfun",
+            "indices": [3, 14]
+          }
+        ]
+      },
+      "views_count": null,
+      "bookmark_count": 0,
+      "is_pinned": false,
+      "articleDetailsArray": null,
+      "article": null
+    },
+    {
+      "tweet_created_at": "2024-06-18T15:11:17.000000Z",
+      "id": 1803083066551734752,
+      "id_str": "1803083066551734752",
+      "text": null,
+      "full_text": "RT @AlgorithmicBot: want to own a token in a new memecoin launcher?\n\nwe at @zero_to_one_gg are trying something new and exciting\n\nfirst pro\u2026",
+      "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 1470022456173895681,
+        "id_str": "1470022456173895681",
+        "name": "Cpektor",
+        "screen_name": "CpektorD",
+        "location": "",
+        "url": null,
+        "description": "List naoborot",
+        "protected": false,
+        "verified": false,
+        "followers_count": 113,
+        "friends_count": 1177,
+        "listed_count": 1,
+        "favourites_count": 550,
+        "statuses_count": 2622,
+        "created_at": "2021-12-12T13:27:28.000000Z",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/1470022456173895681/1639393057",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1776652367129100288/NP9hkm1x_normal.jpg",
+        "can_dm": false
+      },
+      "quoted_status_id": null,
+      "quoted_status_id_str": null,
+      "is_quote_status": false,
+      "quoted_status": null,
+      "retweeted_status": {
+        "tweet_created_at": "2024-06-17T19:36:36.000000Z",
+        "id": 1802787449627926866,
+        "id_str": "1802787449627926866",
+        "text": null,
+        "full_text": "want to own a token in a new memecoin launcher?\n\nwe at @zero_to_one_gg are trying something new and exciting\n\nfirst project in our experimentation series is @coindotfun https://t.co/o3WWyK0QeM",
+        "source": "<a href=\"https://typefully.com/\" rel=\"nofollow\">Typefully</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 1004085896067670016,
+          "id_str": "1004085896067670016",
+          "name": "naz",
+          "screen_name": "AlgorithmicBot",
+          "location": "",
+          "url": null,
+          "description": "co-founder @zero_to_one_gg @021Endgame @rumblekongs\n\nquant developer in my past life",
+          "protected": false,
+          "verified": true,
+          "followers_count": 11355,
+          "friends_count": 2539,
+          "listed_count": 31,
+          "favourites_count": 17864,
+          "statuses_count": 5952,
+          "created_at": "2018-06-05T19:41:47.000000Z",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/1004085896067670016/1643581157",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/1771906981873266688/Z78lSyf3_normal.jpg",
+          "can_dm": true
+        },
+        "quoted_status_id": null,
+        "quoted_status_id_str": null,
+        "is_quote_status": false,
+        "quoted_status": null,
+        "retweeted_status": null,
+        "quote_count": 145,
+        "reply_count": 4,
+        "retweet_count": 117,
+        "favorite_count": 96,
+        "lang": "en",
+        "entities": {
+          "hashtags": [],
+          "media": [
+            {
+              "display_url": "pic.x.com/o3wwyk0qem",
+              "expanded_url": "https://twitter.com/AlgorithmicBot/status/1802787449627926866/video/1",
+              "id_str": "1802787374906454016",
+              "indices": [169, 192],
+              "media_key": "7_1802787374906454016",
+              "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1802787374906454016/pu/img/ROwbTpw0h6X9veCW.jpg",
+              "type": "video",
+              "url": "https://t.co/o3WWyK0QeM",
+              "additional_media_info": { "monetizable": false },
+              "ext_media_availability": { "status": "Available" },
+              "sizes": {
+                "large": { "h": 1080, "w": 1920, "resize": "fit" },
+                "medium": { "h": 675, "w": 1200, "resize": "fit" },
+                "small": { "h": 383, "w": 680, "resize": "fit" },
+                "thumb": { "h": 150, "w": 150, "resize": "crop" }
+              },
+              "original_info": {
+                "height": 1080,
+                "width": 1920,
+                "focus_rects": []
+              },
+              "video_info": {
+                "aspect_ratio": [16, 9],
+                "duration_millis": 23250,
+                "variants": [
+                  {
+                    "content_type": "application/x-mpegURL",
+                    "url": "https://video.twimg.com/ext_tw_video/1802787374906454016/pu/pl/pzlos1uA5NVOB3r9.m3u8?tag=12"
+                  },
+                  {
+                    "bitrate": 256000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/ext_tw_video/1802787374906454016/pu/vid/avc1/480x270/_nm2gaK5hrpg7Hgj.mp4?tag=12"
+                  },
+                  {
+                    "bitrate": 832000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/ext_tw_video/1802787374906454016/pu/vid/avc1/640x360/FbyJM6m1biWOF764.mp4?tag=12"
+                  },
+                  {
+                    "bitrate": 2176000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/ext_tw_video/1802787374906454016/pu/vid/avc1/1280x720/XgSgBounDQ5uJHLD.mp4?tag=12"
+                  }
+                ]
+              }
+            }
+          ],
+          "symbols": [],
+          "timestamps": [],
+          "urls": [],
+          "user_mentions": [
+            {
+              "id_str": "1310088791936233473",
+              "name": "zero to one",
+              "screen_name": "zero_to_one_gg",
+              "indices": [55, 70]
+            },
+            {
+              "id_str": "1791084641127976960",
+              "name": "coindotfun",
+              "screen_name": "coindotfun",
+              "indices": [157, 168]
+            }
+          ]
+        },
+        "views_count": 2645,
+        "bookmark_count": 0,
+        "is_pinned": false,
+        "articleDetailsArray": null,
+        "article": null
+      },
+      "quote_count": 0,
+      "reply_count": 0,
+      "retweet_count": 117,
+      "favorite_count": 0,
+      "lang": "en",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "timestamps": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "id_str": "1004085896067670016",
+            "name": "naz",
+            "screen_name": "AlgorithmicBot",
+            "indices": [3, 18]
+          },
+          {
+            "id_str": "1310088791936233473",
+            "name": "zero to one",
+            "screen_name": "zero_to_one_gg",
+            "indices": [75, 90]
+          }
+        ]
+      },
+      "views_count": null,
+      "bookmark_count": 0,
+      "is_pinned": false,
+      "articleDetailsArray": null,
+      "article": null
+    },
+    {
+      "tweet_created_at": "2024-06-18T14:48:52.000000Z",
+      "id": 1803077425653481654,
+      "id_str": "1803077425653481654",
+      "text": null,
+      "full_text": "RT @AlgorithmicBot: want to own a token in a new memecoin launcher?\n\nwe at @zero_to_one_gg are trying something new and exciting\n\nfirst pro\u2026",
+      "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 1791056561764282368,
+        "id_str": "1791056561764282368",
+        "name": "Hayley Velma",
+        "screen_name": "hayley_vel95495",
+        "location": "",
+        "url": null,
+        "description": "",
+        "protected": false,
+        "verified": false,
+        "followers_count": 2,
+        "friends_count": 12,
+        "listed_count": 0,
+        "favourites_count": 0,
+        "statuses_count": 21,
+        "created_at": "2024-05-16T10:42:27.000000Z",
+        "profile_banner_url": null,
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1793823338739142657/QQPQWjN6_normal.jpg",
+        "can_dm": false
+      },
+      "quoted_status_id": null,
+      "quoted_status_id_str": null,
+      "is_quote_status": false,
+      "quoted_status": null,
+      "retweeted_status": {
+        "tweet_created_at": "2024-06-17T19:36:36.000000Z",
+        "id": 1802787449627926866,
+        "id_str": "1802787449627926866",
+        "text": null,
+        "full_text": "want to own a token in a new memecoin launcher?\n\nwe at @zero_to_one_gg are trying something new and exciting\n\nfirst project in our experimentation series is @coindotfun https://t.co/o3WWyK0QeM",
+        "source": "<a href=\"https://typefully.com/\" rel=\"nofollow\">Typefully</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 1004085896067670016,
+          "id_str": "1004085896067670016",
+          "name": "naz",
+          "screen_name": "AlgorithmicBot",
+          "location": "",
+          "url": null,
+          "description": "co-founder @zero_to_one_gg @021Endgame @rumblekongs\n\nquant developer in my past life",
+          "protected": false,
+          "verified": true,
+          "followers_count": 11355,
+          "friends_count": 2539,
+          "listed_count": 31,
+          "favourites_count": 17864,
+          "statuses_count": 5952,
+          "created_at": "2018-06-05T19:41:47.000000Z",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/1004085896067670016/1643581157",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/1771906981873266688/Z78lSyf3_normal.jpg",
+          "can_dm": true
+        },
+        "quoted_status_id": null,
+        "quoted_status_id_str": null,
+        "is_quote_status": false,
+        "quoted_status": null,
+        "retweeted_status": null,
+        "quote_count": 145,
+        "reply_count": 4,
+        "retweet_count": 117,
+        "favorite_count": 96,
+        "lang": "en",
+        "entities": {
+          "hashtags": [],
+          "media": [
+            {
+              "display_url": "pic.x.com/o3wwyk0qem",
+              "expanded_url": "https://twitter.com/AlgorithmicBot/status/1802787449627926866/video/1",
+              "id_str": "1802787374906454016",
+              "indices": [169, 192],
+              "media_key": "7_1802787374906454016",
+              "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1802787374906454016/pu/img/ROwbTpw0h6X9veCW.jpg",
+              "type": "video",
+              "url": "https://t.co/o3WWyK0QeM",
+              "additional_media_info": { "monetizable": false },
+              "ext_media_availability": { "status": "Available" },
+              "sizes": {
+                "large": { "h": 1080, "w": 1920, "resize": "fit" },
+                "medium": { "h": 675, "w": 1200, "resize": "fit" },
+                "small": { "h": 383, "w": 680, "resize": "fit" },
+                "thumb": { "h": 150, "w": 150, "resize": "crop" }
+              },
+              "original_info": {
+                "height": 1080,
+                "width": 1920,
+                "focus_rects": []
+              },
+              "video_info": {
+                "aspect_ratio": [16, 9],
+                "duration_millis": 23250,
+                "variants": [
+                  {
+                    "content_type": "application/x-mpegURL",
+                    "url": "https://video.twimg.com/ext_tw_video/1802787374906454016/pu/pl/pzlos1uA5NVOB3r9.m3u8?tag=12"
+                  },
+                  {
+                    "bitrate": 256000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/ext_tw_video/1802787374906454016/pu/vid/avc1/480x270/_nm2gaK5hrpg7Hgj.mp4?tag=12"
+                  },
+                  {
+                    "bitrate": 832000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/ext_tw_video/1802787374906454016/pu/vid/avc1/640x360/FbyJM6m1biWOF764.mp4?tag=12"
+                  },
+                  {
+                    "bitrate": 2176000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/ext_tw_video/1802787374906454016/pu/vid/avc1/1280x720/XgSgBounDQ5uJHLD.mp4?tag=12"
+                  }
+                ]
+              }
+            }
+          ],
+          "symbols": [],
+          "timestamps": [],
+          "urls": [],
+          "user_mentions": [
+            {
+              "id_str": "1310088791936233473",
+              "name": "zero to one",
+              "screen_name": "zero_to_one_gg",
+              "indices": [55, 70]
+            },
+            {
+              "id_str": "1791084641127976960",
+              "name": "coindotfun",
+              "screen_name": "coindotfun",
+              "indices": [157, 168]
+            }
+          ]
+        },
+        "views_count": 2645,
+        "bookmark_count": 0,
+        "is_pinned": false,
+        "articleDetailsArray": null,
+        "article": null
+      },
+      "quote_count": 0,
+      "reply_count": 0,
+      "retweet_count": 117,
+      "favorite_count": 0,
+      "lang": "en",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "timestamps": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "id_str": "1004085896067670016",
+            "name": "naz",
+            "screen_name": "AlgorithmicBot",
+            "indices": [3, 18]
+          },
+          {
+            "id_str": "1310088791936233473",
+            "name": "zero to one",
+            "screen_name": "zero_to_one_gg",
+            "indices": [75, 90]
+          }
+        ]
+      },
+      "views_count": null,
+      "bookmark_count": 0,
+      "is_pinned": false,
+      "articleDetailsArray": null,
+      "article": null
+    }
+  ],
+  "next_cursor": "DAADDAABCgABGQYiXhTaIUIKAAIZBdFdkpoAtgAIAAIAAAACCAADAAAAAAgABAAAAAAKAAUZBihtrYAnEAoABhkGKG2tf9jwAAA"
+}

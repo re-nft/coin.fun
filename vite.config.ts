@@ -29,5 +29,5 @@ export default defineConfig({
     ]
   },
   server: { host: '0.0.0.0', port: 3000 },
-  test: { include: ['src/**/*.{test,spec}.{js,ts}'] }
+  test: { include: ['{src,tests/unit}/**/*.{test,spec}.{js,ts}'] }
 });

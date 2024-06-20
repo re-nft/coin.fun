@@ -1,0 +1,898 @@
+{
+  "tweets": [
+    {
+      "tweet_created_at": "2024-06-18T02:32:00.000000Z",
+      "id": 1802891988964118800,
+      "id_str": "1802891988964118686",
+      "text": null,
+      "full_text": "@coindotfun #coindotfun #pumpdotfunkiller https://t.co/8kV2sSvpvC",
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": 1791084641127977000,
+      "in_reply_to_user_id_str": "1791084641127976960",
+      "in_reply_to_screen_name": "coindotfun",
+      "user": {
+        "id": 1801254839428743200,
+        "id_str": "1801254839428743168",
+        "name": "start",
+        "screen_name": "start5102987715",
+        "location": "",
+        "url": null,
+        "description": "",
+        "protected": false,
+        "verified": false,
+        "followers_count": 4,
+        "friends_count": 51,
+        "listed_count": 0,
+        "favourites_count": 29,
+        "statuses_count": 46,
+        "created_at": "2024-06-13T14:06:45.000000Z",
+        "profile_banner_url": null,
+        "profile_image_url_https": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+        "can_dm": false
+      },
+      "quoted_status_id": null,
+      "quoted_status_id_str": "1802787449627926866",
+      "is_quote_status": true,
+      "quoted_status": {
+        "tweet_created_at": "2024-06-17T19:36:36.000000Z",
+        "id": 1802787449627926800,
+        "id_str": "1802787449627926866",
+        "text": null,
+        "full_text": "want to own a token in a new memecoin launcher?\n\nwe at @zero_to_one_gg are trying something new and exciting\n\nfirst project in our experimentation series is @coindotfun https://t.co/o3WWyK0QeM",
+        "source": "<a href=\"https://typefully.com/\" rel=\"nofollow\">Typefully</a>",
+        "truncated": false,
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 1004085896067670000,
+          "id_str": "1004085896067670016",
+          "name": "naz",
+          "screen_name": "AlgorithmicBot",
+          "location": "",
+          "url": null,
+          "description": "co-founder @zero_to_one_gg @021Endgame @rumblekongs\n\nquant developer in my past life",
+          "protected": false,
+          "verified": true,
+          "followers_count": 10855,
+          "friends_count": 2532,
+          "listed_count": 31,
+          "favourites_count": 17856,
+          "statuses_count": 5947,
+          "created_at": "2018-06-05T19:41:47.000000Z",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/1004085896067670016/1643581157",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/1771906981873266688/Z78lSyf3_normal.jpg",
+          "can_dm": true
+        },
+        "quoted_status_id": null,
+        "quoted_status_id_str": null,
+        "is_quote_status": false,
+        "quoted_status": null,
+        "retweeted_status": null,
+        "quote_count": 88,
+        "reply_count": 4,
+        "retweet_count": 78,
+        "favorite_count": 67,
+        "lang": "en",
+        "entities": {
+          "hashtags": [],
+          "media": [
+            {
+              "display_url": "pic.x.com/o3wwyk0qem",
+              "expanded_url": "https://twitter.com/AlgorithmicBot/status/1802787449627926866/video/1",
+              "id_str": "1802787374906454016",
+              "indices": [169, 192],
+              "media_key": "7_1802787374906454016",
+              "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1802787374906454016/pu/img/ROwbTpw0h6X9veCW.jpg",
+              "type": "video",
+              "url": "https://t.co/o3WWyK0QeM",
+              "additional_media_info": { "monetizable": false },
+              "ext_media_availability": { "status": "Available" },
+              "sizes": {
+                "large": { "h": 1080, "w": 1920, "resize": "fit" },
+                "medium": { "h": 675, "w": 1200, "resize": "fit" },
+                "small": { "h": 383, "w": 680, "resize": "fit" },
+                "thumb": { "h": 150, "w": 150, "resize": "crop" }
+              },
+              "original_info": {
+                "height": 1080,
+                "width": 1920,
+                "focus_rects": []
+              },
+              "video_info": {
+                "aspect_ratio": [16, 9],
+                "duration_millis": 23250,
+                "variants": [
+                  {
+                    "content_type": "application/x-mpegURL",
+                    "url": "https://video.twimg.com/ext_tw_video/1802787374906454016/pu/pl/pzlos1uA5NVOB3r9.m3u8?tag=12"
+                  },
+                  {
+                    "bitrate": 256000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/ext_tw_video/1802787374906454016/pu/vid/avc1/480x270/_nm2gaK5hrpg7Hgj.mp4?tag=12"
+                  },
+                  {
+                    "bitrate": 832000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/ext_tw_video/1802787374906454016/pu/vid/avc1/640x360/FbyJM6m1biWOF764.mp4?tag=12"
+                  },
+                  {
+                    "bitrate": 2176000,
+                    "content_type": "video/mp4",
+                    "url": "https://video.twimg.com/ext_tw_video/1802787374906454016/pu/vid/avc1/1280x720/XgSgBounDQ5uJHLD.mp4?tag=12"
+                  }
+                ]
+              }
+            }
+          ],
+          "symbols": [],
+          "timestamps": [],
+          "urls": [],
+          "user_mentions": [
+            {
+              "id_str": "1310088791936233473",
+              "name": "zero to one",
+              "screen_name": "zero_to_one_gg",
+              "indices": [55, 70]
+            },
+            {
+              "id_str": "1791084641127976960",
+              "name": "coindotfun",
+              "screen_name": "coindotfun",
+              "indices": [157, 168]
+            }
+          ]
+        },
+        "views_count": 1802,
+        "bookmark_count": 0,
+        "is_pinned": false,
+        "articleDetailsArray": null,
+        "article": null
+      },
+      "retweeted_status": null,
+      "quote_count": 0,
+      "reply_count": 0,
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "lang": "qme",
+      "entities": {
+        "hashtags": [
+          { "indices": [12, 23], "text": "coindotfun" },
+          { "indices": [24, 41], "text": "pumpdotfunkiller" }
+        ],
+        "symbols": [],
+        "timestamps": [],
+        "urls": [
+          {
+            "display_url": "x.com/AlgorithmicBot...",
+            "expanded_url": "https://x.com/AlgorithmicBot/status/1802787449627926866",
+            "url": "https://t.co/8kV2sSvpvC",
+            "indices": [42, 65]
+          }
+        ],
+        "user_mentions": [
+          {
+            "id_str": "1791084641127976960",
+            "name": "coindotfun",
+            "screen_name": "coindotfun",
+            "indices": [0, 11]
+          }
+        ]
+      },
+      "views_count": 3,
+      "bookmark_count": 0,
+      "is_pinned": false,
+      "articleDetailsArray": null,
+      "article": null
+    },
+    {
+      "tweet_created_at": "2024-06-18T01:56:30.000000Z",
+      "id": 1802883053334991000,
+      "id_str": "1802883053334991217",
+      "text": null,
+      "full_text": "@AlgorithmicBot @zero_to_one_gg @coindotfun 👀👀👀",
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+      "truncated": false,
+      "in_reply_to_status_id": 1802787449627926800,
+      "in_reply_to_status_id_str": "1802787449627926866",
+      "in_reply_to_user_id": 1004085896067670000,
+      "in_reply_to_user_id_str": "1004085896067670016",
+      "in_reply_to_screen_name": "AlgorithmicBot",
+      "user": {
+        "id": 1456018531468804000,
+        "id_str": "1456018531468804097",
+        "name": "LX | $FAME",
+        "screen_name": "TraderLX",
+        "location": "",
+        "url": null,
+        "description": "💰Equities & Crypto Trader | 🤴🏼CEO | 🫱🏼‍🫲🏽 Entrepreneur | 🖌️Art Collector",
+        "protected": false,
+        "verified": true,
+        "followers_count": 1772,
+        "friends_count": 601,
+        "listed_count": 14,
+        "favourites_count": 9450,
+        "statuses_count": 7753,
+        "created_at": "2021-11-03T22:00:49.000000Z",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/1456018531468804097/1708066285",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1758383516818214912/F4PgV1hP_normal.jpg",
+        "can_dm": true
+      },
+      "quoted_status_id": null,
+      "quoted_status_id_str": null,
+      "is_quote_status": false,
+      "quoted_status": null,
+      "retweeted_status": null,
+      "quote_count": 0,
+      "reply_count": 0,
+      "retweet_count": 0,
+      "favorite_count": 1,
+      "lang": "qme",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "timestamps": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "id_str": "1004085896067670016",
+            "name": "naz",
+            "screen_name": "AlgorithmicBot",
+            "indices": [0, 15]
+          },
+          {
+            "id_str": "1310088791936233473",
+            "name": "zero to one",
+            "screen_name": "zero_to_one_gg",
+            "indices": [16, 31]
+          },
+          {
+            "id_str": "1791084641127976960",
+            "name": "coindotfun",
+            "screen_name": "coindotfun",
+            "indices": [32, 43]
+          }
+        ]
+      },
+      "views_count": 16,
+      "bookmark_count": 0,
+      "is_pinned": false,
+      "articleDetailsArray": null,
+      "article": null
+    },
+    {
+      "tweet_created_at": "2024-06-18T01:55:03.000000Z",
+      "id": 1802882687151317200,
+      "id_str": "1802882687151317156",
+      "text": null,
+      "full_text": "@AlgorithmicBot @coindotfun 👀",
+      "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+      "truncated": false,
+      "in_reply_to_status_id": 1802787478568657000,
+      "in_reply_to_status_id_str": "1802787478568656977",
+      "in_reply_to_user_id": 1004085896067670000,
+      "in_reply_to_user_id_str": "1004085896067670016",
+      "in_reply_to_screen_name": "AlgorithmicBot",
+      "user": {
+        "id": 1474516783285477400,
+        "id_str": "1474516783285477377",
+        "name": "Surf City Kongs 🌊🏀 RKL $FAME",
+        "screen_name": "SurfCityKongs",
+        "location": "California",
+        "url": "https://xn--qg8hmlv7l.y.at",
+        "description": "🤙Home of surf, sand, basketball, & nostalgic vibes 🏀 @RumbleKongs Club Team & Community Council Member",
+        "protected": false,
+        "verified": true,
+        "followers_count": 1753,
+        "friends_count": 2284,
+        "listed_count": 13,
+        "favourites_count": 34222,
+        "statuses_count": 6303,
+        "created_at": "2021-12-24T23:07:17.000000Z",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/1474516783285477377/1708486808",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1760147318865862656/wcf4CJnD_normal.jpg",
+        "can_dm": true
+      },
+      "quoted_status_id": null,
+      "quoted_status_id_str": null,
+      "is_quote_status": false,
+      "quoted_status": null,
+      "retweeted_status": null,
+      "quote_count": 0,
+      "reply_count": 0,
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "lang": "qme",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "timestamps": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "id_str": "1004085896067670016",
+            "name": "naz",
+            "screen_name": "AlgorithmicBot",
+            "indices": [0, 15]
+          },
+          {
+            "id_str": "1791084641127976960",
+            "name": "coindotfun",
+            "screen_name": "coindotfun",
+            "indices": [16, 27]
+          }
+        ]
+      },
+      "views_count": 16,
+      "bookmark_count": 0,
+      "is_pinned": false,
+      "articleDetailsArray": null,
+      "article": null
+    },
+    {
+      "tweet_created_at": "2024-06-17T23:53:41.000000Z",
+      "id": 1802852143562690800,
+      "id_str": "1802852143562690693",
+      "text": null,
+      "full_text": "@AlgorithmicBot @zero_to_one_gg @coindotfun COOKING 🫡",
+      "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+      "truncated": false,
+      "in_reply_to_status_id": 1802787449627926800,
+      "in_reply_to_status_id_str": "1802787449627926866",
+      "in_reply_to_user_id": 1004085896067670000,
+      "in_reply_to_user_id_str": "1004085896067670016",
+      "in_reply_to_screen_name": "AlgorithmicBot",
+      "user": {
+        "id": 104716775,
+        "id_str": "104716775",
+        "name": "Nickev",
+        "screen_name": "nickev123",
+        "location": "",
+        "url": null,
+        "description": "Co-Founder @RumbleKongs 🏀 and @zero_to_one_gg 👾                             \nPrev: The Sandbox, Total Miner: Forge, Miner of Duty 🎮",
+        "protected": false,
+        "verified": true,
+        "followers_count": 10331,
+        "friends_count": 1113,
+        "listed_count": 37,
+        "favourites_count": 9073,
+        "statuses_count": 1241,
+        "created_at": "2010-01-14T04:58:02.000000Z",
+        "profile_banner_url": null,
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1575200952847454209/SCYKQ36f_normal.jpg",
+        "can_dm": true
+      },
+      "quoted_status_id": null,
+      "quoted_status_id_str": null,
+      "is_quote_status": false,
+      "quoted_status": null,
+      "retweeted_status": null,
+      "quote_count": 0,
+      "reply_count": 0,
+      "retweet_count": 0,
+      "favorite_count": 4,
+      "lang": "en",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "timestamps": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "id_str": "1004085896067670016",
+            "name": "naz",
+            "screen_name": "AlgorithmicBot",
+            "indices": [0, 15]
+          },
+          {
+            "id_str": "1310088791936233473",
+            "name": "zero to one",
+            "screen_name": "zero_to_one_gg",
+            "indices": [16, 31]
+          },
+          {
+            "id_str": "1791084641127976960",
+            "name": "coindotfun",
+            "screen_name": "coindotfun",
+            "indices": [32, 43]
+          }
+        ]
+      },
+      "views_count": 89,
+      "bookmark_count": 0,
+      "is_pinned": false,
+      "articleDetailsArray": null,
+      "article": null
+    },
+    {
+      "tweet_created_at": "2024-06-17T19:36:43.000000Z",
+      "id": 1802787478568657000,
+      "id_str": "1802787478568656977",
+      "text": null,
+      "full_text": "what is @coindotfun? it's a communityowned pump dot fun killer\n\nin the best traditions of crypto we introduce a points system and farming mechanics to build distribution first\n\nsign up with yourtwitter on https://t.co/Bs8xFqREpM and start earning points today https://t.co/OLWlbXiIik",
+      "source": "<a href=\"https://typefully.com/\" rel=\"nofollow\">Typefully</a>",
+      "truncated": false,
+      "in_reply_to_status_id": 1802787449627926800,
+      "in_reply_to_status_id_str": "1802787449627926866",
+      "in_reply_to_user_id": 1004085896067670000,
+      "in_reply_to_user_id_str": "1004085896067670016",
+      "in_reply_to_screen_name": "AlgorithmicBot",
+      "user": {
+        "id": 1004085896067670000,
+        "id_str": "1004085896067670016",
+        "name": "naz",
+        "screen_name": "AlgorithmicBot",
+        "location": "",
+        "url": null,
+        "description": "co-founder @zero_to_one_gg @021Endgame @rumblekongs\n\nquant developer in my past life",
+        "protected": false,
+        "verified": true,
+        "followers_count": 10855,
+        "friends_count": 2532,
+        "listed_count": 31,
+        "favourites_count": 17856,
+        "statuses_count": 5947,
+        "created_at": "2018-06-05T19:41:47.000000Z",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/1004085896067670016/1643581157",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1771906981873266688/Z78lSyf3_normal.jpg",
+        "can_dm": true
+      },
+      "quoted_status_id": null,
+      "quoted_status_id_str": null,
+      "is_quote_status": false,
+      "quoted_status": null,
+      "retweeted_status": null,
+      "quote_count": 0,
+      "reply_count": 2,
+      "retweet_count": 0,
+      "favorite_count": 2,
+      "lang": "en",
+      "entities": {
+        "hashtags": [],
+        "media": [
+          {
+            "display_url": "pic.x.com/olwlbxiiik",
+            "expanded_url": "https://twitter.com/AlgorithmicBot/status/1802787478568656977/photo/1",
+            "id_str": "1802787474751795200",
+            "indices": [262, 285],
+            "media_key": "3_1802787474751795200",
+            "media_url_https": "https://pbs.twimg.com/media/GQTJqB4asAADBLU.jpg",
+            "type": "photo",
+            "url": "https://t.co/OLWlbXiIik",
+            "ext_media_availability": { "status": "Available" },
+            "features": {
+              "large": { "faces": [] },
+              "medium": { "faces": [] },
+              "small": { "faces": [] },
+              "orig": { "faces": [] }
+            },
+            "sizes": {
+              "large": { "h": 1667, "w": 1667, "resize": "fit" },
+              "medium": { "h": 1200, "w": 1200, "resize": "fit" },
+              "small": { "h": 680, "w": 680, "resize": "fit" },
+              "thumb": { "h": 150, "w": 150, "resize": "crop" }
+            },
+            "original_info": {
+              "height": 1667,
+              "width": 1667,
+              "focus_rects": [
+                { "x": 0, "y": 241, "w": 1667, "h": 934 },
+                { "x": 0, "y": 0, "w": 1667, "h": 1667 },
+                { "x": 102, "y": 0, "w": 1462, "h": 1667 },
+                { "x": 416, "y": 0, "w": 834, "h": 1667 },
+                { "x": 0, "y": 0, "w": 1667, "h": 1667 }
+              ]
+            }
+          }
+        ],
+        "symbols": [],
+        "timestamps": [],
+        "urls": [
+          {
+            "display_url": "coin.fun",
+            "expanded_url": "https://coin.fun",
+            "url": "https://t.co/Bs8xFqREpM",
+            "indices": [207, 230]
+          }
+        ],
+        "user_mentions": [
+          {
+            "id_str": "1791084641127976960",
+            "name": "coindotfun",
+            "screen_name": "coindotfun",
+            "indices": [8, 19]
+          }
+        ]
+      },
+      "views_count": 147,
+      "bookmark_count": 0,
+      "is_pinned": false,
+      "articleDetailsArray": null,
+      "article": null
+    },
+    {
+      "tweet_created_at": "2024-06-17T19:36:36.000000Z",
+      "id": 1802787449627926800,
+      "id_str": "1802787449627926866",
+      "text": null,
+      "full_text": "want to own a token in a new memecoin launcher?\n\nwe at @zero_to_one_gg are trying somethingnew and exciting\n\nfirst project in our experimentation series is @coindotfun https://t.co/o3WWyK0QeM",
+      "source": "<a href=\"https://typefully.com/\" rel=\"nofollow\">Typefully</a>",
+      "truncated": false,
+      "in_reply_to_status_id": null,
+      "in_reply_to_status_id_str": null,
+      "in_reply_to_user_id": null,
+      "in_reply_to_user_id_str": null,
+      "in_reply_to_screen_name": null,
+      "user": {
+        "id": 1004085896067670000,
+        "id_str": "1004085896067670016",
+        "name": "naz",
+        "screen_name": "AlgorithmicBot",
+        "location": "",
+        "url": null,
+        "description": "co-founder @zero_to_one_gg @021Endgame @rumblekongs\n\nquant developer in my past life",
+        "protected": false,
+        "verified": true,
+        "followers_count": 10855,
+        "friends_count": 2532,
+        "listed_count": 31,
+        "favourites_count": 17856,
+        "statuses_count": 5947,
+        "created_at": "2018-06-05T19:41:47.000000Z",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/1004085896067670016/1643581157",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1771906981873266688/Z78lSyf3_normal.jpg",
+        "can_dm": true
+      },
+      "quoted_status_id": null,
+      "quoted_status_id_str": null,
+      "is_quote_status": false,
+      "quoted_status": null,
+      "retweeted_status": null,
+      "quote_count": 88,
+      "reply_count": 4,
+      "retweet_count": 78,
+      "favorite_count": 67,
+      "lang": "en",
+      "entities": {
+        "hashtags": [],
+        "media": [
+          {
+            "display_url": "pic.x.com/o3wwyk0qem",
+            "expanded_url": "https://twitter.com/AlgorithmicBot/status/1802787449627926866/video/1",
+            "id_str": "1802787374906454016",
+            "indices": [169, 192],
+            "media_key": "7_1802787374906454016",
+            "media_url_https": "https://pbs.twimg.com/ext_tw_video_thumb/1802787374906454016/pu/img/ROwbTpw0h6X9veCW.jpg",
+            "type": "video",
+            "url": "https://t.co/o3WWyK0QeM",
+            "additional_media_info": { "monetizable": false },
+            "ext_media_availability": { "status": "Available" },
+            "sizes": {
+              "large": { "h": 1080, "w": 1920, "resize": "fit" },
+              "medium": { "h": 675, "w": 1200, "resize": "fit" },
+              "small": { "h": 383, "w": 680, "resize": "fit" },
+              "thumb": { "h": 150, "w": 150, "resize": "crop" }
+            },
+            "original_info": {
+              "height": 1080,
+              "width": 1920,
+              "focus_rects": []
+            },
+            "video_info": {
+              "aspect_ratio": [16, 9],
+              "duration_millis": 23250,
+              "variants": [
+                {
+                  "content_type": "application/x-mpegURL",
+                  "url": "https://video.twimg.com/ext_tw_video/1802787374906454016/pu/pl/pzlos1uA5NVOB3r9.m3u8?tag=12"
+                },
+                {
+                  "bitrate": 256000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/ext_tw_video/1802787374906454016/pu/vid/avc1/480x270/_nm2gaK5hrpg7Hgj.mp4?tag=12"
+                },
+                {
+                  "bitrate": 832000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/ext_tw_video/1802787374906454016/pu/vid/avc1/640x360/FbyJM6m1biWOF764.mp4?tag=12"
+                },
+                {
+                  "bitrate": 2176000,
+                  "content_type": "video/mp4",
+                  "url": "https://video.twimg.com/ext_tw_video/1802787374906454016/pu/vid/avc1/1280x720/XgSgBounDQ5uJHLD.mp4?tag=12"
+                }
+              ]
+            }
+          }
+        ],
+        "symbols": [],
+        "timestamps": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "id_str": "1310088791936233473",
+            "name": "zero to one",
+            "screen_name": "zero_to_one_gg",
+            "indices": [55, 70]
+          },
+          {
+            "id_str": "1791084641127976960",
+            "name": "coindotfun",
+            "screen_name": "coindotfun",
+            "indices": [157, 168]
+          }
+        ]
+      },
+      "views_count": 1802,
+      "bookmark_count": 0,
+      "is_pinned": false,
+      "articleDetailsArray": null,
+      "article": null
+    },
+    {
+      "tweet_created_at": "2024-05-17T13:58:24.000000Z",
+      "id": 1791468315233120800,
+      "id_str": "1791468315233120712",
+      "text": null,
+      "full_text": "@coindotfun @degendotfund do i have to hide my ticker?",
+      "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+      "truncated": false,
+      "in_reply_to_status_id": 1791467331752780000,
+      "in_reply_to_status_id_str": "1791467331752779924",
+      "in_reply_to_user_id": 1791084641127977000,
+      "in_reply_to_user_id_str": "1791084641127976960",
+      "in_reply_to_screen_name": "coindotfun",
+      "user": {
+        "id": 1791454070193963000,
+        "id_str": "1791454070193963008",
+        "name": "🍑",
+        "screen_name": "PeachEmojiSol",
+        "location": "",
+        "url": "https://t.me/PeachEmojiSol",
+        "description": "The Ticker is 🍑",
+        "protected": false,
+        "verified": false,
+        "followers_count": 2,
+        "friends_count": 3,
+        "listed_count": 0,
+        "favourites_count": 5,
+        "statuses_count": 76,
+        "created_at": "2024-05-17T13:01:54.000000Z",
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/1791454070193963008/1715951423",
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1791456227517460481/Me3FxIuK_normal.jpg",
+        "can_dm": false
+      },
+      "quoted_status_id": null,
+      "quoted_status_id_str": null,
+      "is_quote_status": false,
+      "quoted_status": null,
+      "retweeted_status": null,
+      "quote_count": 0,
+      "reply_count": 0,
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "lang": "en",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "timestamps": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "id_str": "1791084641127976960",
+            "name": "coindotfun",
+            "screen_name": "coindotfun",
+            "indices": [0, 11]
+          },
+          {
+            "id_str": "1524839354593595395",
+            "name": "Degen Fund",
+            "screen_name": "degendotfund",
+            "indices": [12, 25]
+          }
+        ]
+      },
+      "views_count": 18,
+      "bookmark_count": 0,
+      "is_pinned": false,
+      "articleDetailsArray": null,
+      "article": null
+    },
+    {
+      "tweet_created_at": "2024-05-17T09:56:17.000000Z",
+      "id": 1791407382779883500,
+      "id_str": "1791407382779883608",
+      "text": null,
+      "full_text": "@coindotfun dFasMxtcg4ULL3LzSRaCKTvgHnBwcG6SYhARvDSJR6e",
+      "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+      "truncated": false,
+      "in_reply_to_status_id": 1791167937648152600,
+      "in_reply_to_status_id_str": "1791167937648152579",
+      "in_reply_to_user_id": 1791084641127977000,
+      "in_reply_to_user_id_str": "1791084641127976960",
+      "in_reply_to_screen_name": "coindotfun",
+      "user": {
+        "id": 1771594514714828800,
+        "id_str": "1771594514714828800",
+        "name": "Sinta",
+        "screen_name": "Sinta2003748374",
+        "location": "",
+        "url": null,
+        "description": "Buat kamu",
+        "protected": false,
+        "verified": false,
+        "followers_count": 105,
+        "friends_count": 637,
+        "listed_count": 0,
+        "favourites_count": 827,
+        "statuses_count": 2220,
+        "created_at": "2024-03-23T17:47:21.000000Z",
+        "profile_banner_url": null,
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1771596970827939840/tGs3s7SD_normal.jpg",
+        "can_dm": false
+      },
+      "quoted_status_id": null,
+      "quoted_status_id_str": null,
+      "is_quote_status": false,
+      "quoted_status": null,
+      "retweeted_status": null,
+      "quote_count": 0,
+      "reply_count": 0,
+      "retweet_count": 0,
+      "favorite_count": 1,
+      "lang": "fi",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "timestamps": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "id_str": "1791084641127976960",
+            "name": "coindotfun",
+            "screen_name": "coindotfun",
+            "indices": [0, 11]
+          }
+        ]
+      },
+      "views_count": 9,
+      "bookmark_count": 0,
+      "is_pinned": false,
+      "articleDetailsArray": null,
+      "article": null
+    },
+    {
+      "tweet_created_at": "2024-05-16T18:23:36.000000Z",
+      "id": 1791172663857250600,
+      "id_str": "1791172663857250632",
+      "text": null,
+      "full_text": "@coindotfun ADVSQ3tLSH7SzSQCsLgt5uRUNWPnw6Qz7CcS22xA4wph",
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "truncated": false,
+      "in_reply_to_status_id": 1791167937648152600,
+      "in_reply_to_status_id_str": "1791167937648152579",
+      "in_reply_to_user_id": 1791084641127977000,
+      "in_reply_to_user_id_str": "1791084641127976960",
+      "in_reply_to_screen_name": "coindotfun",
+      "user": {
+        "id": 1784287895370756000,
+        "id_str": "1784287895370756096",
+        "name": "Mr.crypto",
+        "screen_name": "Mrcrypto59809",
+        "location": "",
+        "url": null,
+        "description": "",
+        "protected": false,
+        "verified": false,
+        "followers_count": 39,
+        "friends_count": 255,
+        "listed_count": 0,
+        "favourites_count": 230,
+        "statuses_count": 579,
+        "created_at": "2024-04-27T18:26:08.000000Z",
+        "profile_banner_url": null,
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1784288165072932864/XrpvXASE_normal.jpg",
+        "can_dm": false
+      },
+      "quoted_status_id": null,
+      "quoted_status_id_str": null,
+      "is_quote_status": false,
+      "quoted_status": null,
+      "retweeted_status": null,
+      "quote_count": 0,
+      "reply_count": 0,
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "lang": "in",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "timestamps": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "id_str": "1791084641127976960",
+            "name": "coindotfun",
+            "screen_name": "coindotfun",
+            "indices": [0, 11]
+          }
+        ]
+      },
+      "views_count": 22,
+      "bookmark_count": 0,
+      "is_pinned": false,
+      "articleDetailsArray": null,
+      "article": null
+    },
+    {
+      "tweet_created_at": "2024-05-16T18:20:19.000000Z",
+      "id": 1791171840116965600,
+      "id_str": "1791171840116965759",
+      "text": null,
+      "full_text": "@coindotfun 52BJG8CGE1BrBS3FW296MjYKZJJroteTZrBNPg5ZqkJ2",
+      "source": "<a href=\"http://twitter.com/download/android\" rel=\"nofollow\">Twitter for Android</a>",
+      "truncated": false,
+      "in_reply_to_status_id": 1791167937648152600,
+      "in_reply_to_status_id_str": "1791167937648152579",
+      "in_reply_to_user_id": 1791084641127977000,
+      "in_reply_to_user_id_str": "1791084641127976960",
+      "in_reply_to_screen_name": "coindotfun",
+      "user": {
+        "id": 1784311366935044000,
+        "id_str": "1784311366935044096",
+        "name": "BigBozzAirdrop",
+        "screen_name": "BAirdrop82997",
+        "location": "",
+        "url": null,
+        "description": "",
+        "protected": false,
+        "verified": false,
+        "followers_count": 49,
+        "friends_count": 236,
+        "listed_count": 0,
+        "favourites_count": 224,
+        "statuses_count": 560,
+        "created_at": "2024-04-27T19:59:25.000000Z",
+        "profile_banner_url": null,
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/1784311716609986560/-UAH3WYS_normal.jpg",
+        "can_dm": false
+      },
+      "quoted_status_id": null,
+      "quoted_status_id_str": null,
+      "is_quote_status": false,
+      "quoted_status": null,
+      "retweeted_status": null,
+      "quote_count": 0,
+      "reply_count": 0,
+      "retweet_count": 0,
+      "favorite_count": 0,
+      "lang": "tl",
+      "entities": {
+        "hashtags": [],
+        "symbols": [],
+        "timestamps": [],
+        "urls": [],
+        "user_mentions": [
+          {
+            "id_str": "1791084641127976960",
+            "name": "coindotfun",
+            "screen_name": "coindotfun",
+            "indices": [0, 11]
+          }
+        ]
+      },
+      "views_count": 7,
+      "bookmark_count": 0,
+      "is_pinned": false,
+      "articleDetailsArray": null,
+      "article": null
+    }
+  ],
+  "next_cursor": "DAADDAABCgABGQUotjqakJ4KAAIY24VMbdrBfwAIAAIAAAACCAADAAAAAAgABAAAAAAKAAUZBaSIK8AnEAoABhkFpIgrv9jwAAA"
+}
