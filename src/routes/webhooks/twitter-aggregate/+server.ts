@@ -32,6 +32,7 @@ export async function GET({ request }) {
   const lastLog = await db
     .select()
     .from(tweetIndexerLogs)
+    .where(eq(tweetIndexerLogs.status, 'succeeded'))
     .orderBy(desc(tweetIndexerLogs.completedAt))
     .limit(1);
 
@@ -107,8 +108,16 @@ export async function GET({ request }) {
 
   console.debug(`Twitter aggregation: found ${values.length} eligible`);
 
-  if (values.length)
-    await db.insert(tweets).values(values).onConflictDoNothing();
+  let status = 'none';
+
+  try {
+    if (values.length)
+      await db.insert(tweets).values(values).onConflictDoNothing();
+    status = 'succeeded';
+  } catch (error) {
+    console.error(`Twitter aggregation: failed`, error);
+    status = 'failed';
+  }
 
   if (allToIndex.length)
     await db
@@ -117,6 +126,7 @@ export async function GET({ request }) {
         data: allToIndex,
         eligibleCount: values.length,
         quoteCount: quotesToIndex.length,
+        status,
         tweetCount: tweetsToIndex.length
       })
       .onConflictDoNothing();

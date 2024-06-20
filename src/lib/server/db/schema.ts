@@ -122,6 +122,7 @@ export const tweetIndexerLogs = pgTable(
     data: jsonb('data'),
     eligibleCount: integer('eligible_count').default(0),
     quoteCount: integer('quote_count').default(0),
+    status: text('status'),
     tweetCount: integer('tweet_count').default(0)
   },
   (table) => {

@@ -87,12 +87,8 @@
           "tableFrom": "points",
           "tableTo": "users",
           "schemaTo": "auth",
-          "columnsFrom": [
-            "user_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["user_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -100,11 +96,7 @@
       "compositePrimaryKeys": {
         "points_user_id_quest_id_acquired_at_pk": {
           "name": "points_user_id_quest_id_acquired_at_pk",
-          "columns": [
-            "user_id",
-            "quest_id",
-            "acquired_at"
-          ]
+          "columns": ["user_id", "quest_id", "acquired_at"]
         }
       },
       "uniqueConstraints": {}
@@ -224,12 +216,8 @@
           "tableFrom": "profiles",
           "tableTo": "users",
           "schemaTo": "auth",
-          "columnsFrom": [
-            "id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -239,23 +227,17 @@
         "profiles_email_unique": {
           "name": "profiles_email_unique",
           "nullsNotDistinct": false,
-          "columns": [
-            "email"
-          ]
+          "columns": ["email"]
         },
         "profiles_user_name_unique": {
           "name": "profiles_user_name_unique",
           "nullsNotDistinct": false,
-          "columns": [
-            "user_name"
-          ]
+          "columns": ["user_name"]
         },
         "profiles_twitter_user_id_unique": {
           "name": "profiles_twitter_user_id_unique",
           "nullsNotDistinct": false,
-          "columns": [
-            "twitter_user_id"
-          ]
+          "columns": ["twitter_user_id"]
         }
       }
     },
@@ -295,6 +277,12 @@
           "primaryKey": false,
           "notNull": false,
           "default": 0
+        },
+        "status": {
+          "name": "status",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
         },
         "tweet_count": {
           "name": "tweet_count",
@@ -485,12 +473,8 @@
           "tableFrom": "tweets",
           "tableTo": "users",
           "schemaTo": "auth",
-          "columnsFrom": [
-            "user_id"
-          ],
-          "columnsTo": [
-            "id"
-          ],
+          "columnsFrom": ["user_id"],
+          "columnsTo": ["id"],
           "onDelete": "cascade",
           "onUpdate": "no action"
         }
@@ -503,10 +487,7 @@
     "public.character_s1": {
       "name": "character_s1",
       "schema": "public",
-      "values": [
-        "normie",
-        "heftie"
-      ]
+      "values": ["normie", "heftie"]
     }
   },
   "schemas": {},
