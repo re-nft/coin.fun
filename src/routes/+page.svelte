@@ -29,7 +29,7 @@
 <div class="flex min-h-screen w-full flex-col md:flex-row">
   <!-- Left column -->
   <div
-    class="flex flex-1 flex-col items-center justify-center p-4 md:w-1/2 md:p-8"
+    class="flex flex-1 flex-col items-center justify-center p-4 md:w-1/2 md:p-8 gap-8"
   >
     <div class="w-full max-w-2xl">
       <h1 class="text-center font-mono">
