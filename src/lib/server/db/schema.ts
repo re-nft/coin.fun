@@ -4,10 +4,12 @@ import {
   index,
   integer,
   json,
+  jsonb,
   pgEnum,
   pgSchema,
   pgTable,
   primaryKey,
+  serial,
   text,
   timestamp,
   uniqueIndex,
@@ -108,6 +110,25 @@ export const tweets = pgTable(
       repliedToIdIdx: index('tweets_replied_to_id_idx').on(table.repliedToId),
       retweetedIdIdx: index('tweets_retweeted_id_idx').on(table.retweetedId),
       createdAtIdx: index('tweets_created_at_idx').on(table.createdAt)
+    };
+  }
+);
+
+export const tweetIndexerLogs = pgTable(
+  'tweet_indexer_logs',
+  {
+    id: serial('id').primaryKey(),
+    completedAt: timestamp('completed_at').notNull().defaultNow(),
+    data: jsonb('data'),
+    eligibleCount: integer('eligible_count').default(0),
+    quoteCount: integer('quote_count').default(0),
+    tweetCount: integer('tweet_count').default(0)
+  },
+  (table) => {
+    return {
+      completedAtIdx: index('tweet_indexer_logs_completed_at_idx').on(
+        table.completedAt
+      )
     };
   }
 );

@@ -36,6 +36,13 @@
       "when": 1718832879945,
       "tag": "0004_public_bullseye",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1718884953875,
+      "tag": "0005_known_snowbird",
+      "breakpoints": true
     }
   ]
 }
