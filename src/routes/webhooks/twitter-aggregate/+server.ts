@@ -1,3 +1,4 @@
+import { type Config } from '@sveltejs/adapter-vercel';
 import { desc, eq, or } from 'drizzle-orm';
 
 import { env } from '$env/dynamic/private';
@@ -12,6 +13,10 @@ import { getQuoted, getSearch } from '$lib/server/twitter';
 
 // Our launching tweet: https://x.com/coindotfun/status/1791164388579119340
 const COINDOTFUN_FIRST_TWEET_DATE = new Date('2024-05-16T17:50:43.000Z');
+
+export const config: Config = {
+  runtime: 'nodejs20.x'
+};
 
 export async function GET({ request }) {
   if (!env.SOCIALDATA_API_KEY)
