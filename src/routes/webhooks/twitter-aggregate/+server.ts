@@ -93,7 +93,7 @@ export async function GET({ request }) {
         fullText: status.full_text,
         id: status.id_str,
         userId: profile.id,
-        favoriteCount: status.favourite_count,
+        favoriteCount: status.favorite_count,
         quoteCount: status.quote_count,
         quotedId: status.quoted_status?.id_str,
         repliedToId: status.in_reply_to_status_id_str,
