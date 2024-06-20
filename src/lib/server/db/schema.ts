@@ -92,9 +92,9 @@ export const tweets = pgTable(
     fullText: text('full_text').notNull(),
     entities: json('entities').notNull(),
 
-    quotedId: text('quoted_id').references((): AnyPgColumn => tweets.id),
-    repliedToId: text('reply_to_id').references((): AnyPgColumn => tweets.id),
-    retweetedId: text('retweeted_id').references((): AnyPgColumn => tweets.id),
+    quotedId: text('quoted_id'),
+    repliedToId: text('reply_to_id'),
+    retweetedId: text('retweeted_id'),
 
     favoriteCount: integer('favorite_count'),
     quoteCount: integer('quote_count'),
