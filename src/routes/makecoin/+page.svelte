@@ -1,4 +1,5 @@
 <script lang="ts">
+  import type { ActionResult } from '@sveltejs/kit';
   import { enhance } from '$app/forms';
 
   let showMore = false;
@@ -10,9 +11,14 @@
   }
 
   function handleSubmit() {
-    return async ({ result }) => {
-      formSuccess = result.data.success;
-      formMessage = result.data.message;
+    return async ({ result }: { result: ActionResult }) => {
+      if (result.type === 'success') {
+        formSuccess = result.data?.success;
+        formMessage = result.data?.message;
+      } else {
+        formSuccess = false;
+        formMessage = 'something unexpected happened';
+      }
     };
   }
 </script>
@@ -39,7 +45,7 @@
     </label>
     <label>
       Image
-      <input type="file" name="image" accept="image/*" />
+      <input type="file" name="image" accept="image/*" required />
     </label>
     <button type="button" class="showmore" on:click={toggleShowMore}>
       {showMore ? 'Hide' : 'Show'} more options

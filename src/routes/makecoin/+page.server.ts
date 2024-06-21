@@ -3,7 +3,7 @@ import { createCoin } from '$lib/server/db/mock';
 export const actions = {
   create: async ({ request, locals: { supabase } }) => {
     const data = await request.formData();
-    
+
     const name = data.get('name') as string;
     const ticker = data.get('ticker') as string;
     const description = data.get('description') as string;
@@ -16,7 +16,6 @@ export const actions = {
 
     if (image.size > 0) {
       const fileExt = image.name.split('.').pop();
-      // TODO: probably needs to be uuid
       const fileName = `${Date.now()}.${fileExt}`;
       const { error: uploadError } = await supabase.storage
         .from('coin-images')
@@ -32,6 +31,9 @@ export const actions = {
         .getPublicUrl(fileName);
 
       imageUrl = publicUrl;
+    } else {
+      console.error('No image provided');
+      return { success: false, message: 'No image provided' };
     }
 
     try {
