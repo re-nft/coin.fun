@@ -69,17 +69,20 @@ const mockCoins = [
   }
 ]
 
-
-// @ts-ignore
+// @ts-expect-error this is mock, I don't care about types
 export function createCoin(name, ticker, description, image, twitter, telegram, website) {
-  const coins = mockdb.get('coins');
+  const coins = getCoins();
   coins.push({
-    id: ticker,
     name,
+    symbol: ticker,
+    media: image,
+    createdBy: 'User',
+    marketCap: 0,
+    replies: 0,
     description,
-    image,
     twitter,
     telegram,
     website
   });
+  mockdb.set('coins', coins);
 }
