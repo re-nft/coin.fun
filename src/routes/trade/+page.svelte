@@ -4,8 +4,8 @@
   let { coins } = data;
 </script>
 
-<div>
-  <a href="/makecoin" class="makecoin">Make a coin</a>
+<div class="container">
+  <a href="/makecoin" class="makecoin-button">make a coin</a>
 </div>
 
 <div class="grid">
@@ -30,6 +30,33 @@
     display: grid;
     gap: 1rem;
     padding: 1rem;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+  }
+
+  .makecoin-button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+    background-color: #e0fc7a;
+    border: 2px solid #e0fc7a;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .makecoin-button:hover {
+    background-color: transparent;
+    color: #e0fc7a;
   }
 
   @media (max-width: 767px) {
