@@ -38,7 +38,7 @@ export abstract class Quest {
     return this.getStatus();
   }
 
-  private async toJSON() {
+  protected async toJSON() {
     return {
       id: this.id,
       component: this.component,
