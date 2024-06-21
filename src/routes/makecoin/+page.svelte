@@ -23,8 +23,106 @@
   }
 </script>
 
+<div class="mt-10 flex flex-col items-center justify-center">
+  <a
+    class="inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md px-4 py-2 text-2xl font-medium text-slate-50 ring-offset-white transition-colors hover:bg-transparent hover:font-bold hover:text-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:ring-offset-slate-950 dark:hover:bg-slate-800 dark:hover:text-slate-50 dark:focus-visible:ring-slate-300"
+    href="/board">[go back]</a
+  >
+  <div class="max-w-[420px] rounded-lg p-6 text-white">
+    <div class="flex flex-col gap-4">
+      <div class="flex flex-col">
+        <label class="mb-1 text-sm font-semibold text-blue-400" for="name"
+          >name</label
+        ><input
+          class="rounded-md border border-slate-200 bg-[#2a2a3b] p-2"
+          id="name"
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+      <div class="flex flex-col">
+        <label class="mb-1 text-sm font-semibold text-blue-400" for="ticker"
+          >ticker</label
+        ><input
+          class="rounded-md border border-slate-200 bg-[#2a2a3b] p-2"
+          id="ticker"
+          placeholder=""
+          type="text"
+          value=""
+        />
+      </div>
+      <div class="flex flex-col">
+        <label class="mb-1 text-sm font-semibold text-blue-400" for="text"
+          >description</label
+        ><textarea
+          class="h-24 rounded-md border border-slate-200 bg-[#2a2a3b] p-2"
+          id="text"
+          placeholder=""
+        ></textarea>
+      </div>
+      <div class="flex flex-col">
+        <label class="mb-1 text-sm font-semibold text-blue-400" for="image"
+          >image</label
+        ><input
+          class="w-full rounded-md border border-slate-200 bg-[#2a2a3b] p-2"
+          id="image"
+          accept="image/*"
+          type="file"
+        />
+      </div>
+      <div class="w-fit cursor-pointer text-blue-400 hover:underline">
+        Hide more options ↑
+      </div>
+      <div class="flex flex-col">
+        <label class="mb-1 text-sm font-semibold text-blue-400" for="twitter"
+          >twitter link</label
+        ><input
+          class="rounded-md border border-slate-200 bg-[#2a2a3b] p-2"
+          id="twitter"
+          placeholder="(optional)"
+          type="text"
+          value=""
+        />
+      </div>
+      <div class="flex flex-col">
+        <label class="mb-1 text-sm font-semibold text-blue-400" for="telegram"
+          >telegram link</label
+        ><input
+          class="rounded-md border border-slate-200 bg-[#2a2a3b] p-2"
+          id="telegram"
+          placeholder="(optional)"
+          type="text"
+          value=""
+        />
+      </div>
+      <div class="flex flex-col">
+        <label class="mb-1 text-sm font-semibold text-blue-400" for="website"
+          >website</label
+        ><input
+          class="rounded-md border border-slate-200 bg-[#2a2a3b] p-2"
+          id="website"
+          placeholder="(optional)"
+          type="text"
+          value=""
+        />
+      </div>
+      <button
+        class="inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-[#0d6efd] px-4 py-2 text-sm font-medium text-slate-50 ring-offset-white transition-colors hover:bg-slate-900/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:bg-slate-50 dark:text-slate-900 dark:ring-offset-slate-950 dark:hover:bg-slate-50/90 dark:focus-visible:ring-slate-300"
+        >Create coin</button
+      >
+      <div>Cost to deploy: ~0.02 SOL</div>
+    </div>
+  </div>
+</div>
+
 <div class="container">
-  <form method="POST" action="?/create" use:enhance={handleSubmit} enctype="multipart/form-data">
+  <form
+    method="POST"
+    action="?/create"
+    use:enhance={handleSubmit}
+    enctype="multipart/form-data"
+  >
     <h2>Create a New Coin</h2>
     {#if formMessage}
       <div class={formSuccess ? 'success' : 'error'}>
@@ -41,7 +139,8 @@
     </label>
     <label>
       Description
-      <textarea name="description" rows="3" autocomplete="off" required></textarea>
+      <textarea name="description" rows="3" autocomplete="off" required
+      ></textarea>
     </label>
     <label>
       Image
@@ -54,15 +153,30 @@
       <div class="more-options">
         <label>
           Twitter link
-          <input type="text" placeholder="(optional)" name="twitter" autocomplete="off" />
+          <input
+            type="text"
+            placeholder="(optional)"
+            name="twitter"
+            autocomplete="off"
+          />
         </label>
         <label>
           Telegram link
-          <input type="text" placeholder="(optional)" name="telegram" autocomplete="off" />
+          <input
+            type="text"
+            placeholder="(optional)"
+            name="telegram"
+            autocomplete="off"
+          />
         </label>
         <label>
           Website
-          <input type="text" placeholder="(optional)" name="website" autocomplete="off" />
+          <input
+            type="text"
+            placeholder="(optional)"
+            name="website"
+            autocomplete="off"
+          />
         </label>
       </div>
     {/if}
@@ -104,7 +218,8 @@
     color: #ffffff;
   }
 
-  input, textarea {
+  input,
+  textarea {
     margin-top: 0.5rem;
     padding: 0.5rem;
     border: 1px solid #444;
@@ -143,7 +258,7 @@
   }
 
   .success {
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: white;
     padding: 10px;
     margin-bottom: 15px;
