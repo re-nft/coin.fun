@@ -4,20 +4,6 @@
   import CoinAnimation from '$lib/components/CoinAnimation.svelte';
   import PageMeta from '$lib/components/PageMeta.svelte';
   import { Button } from '$lib/components/ui/button';
-
-  const LABEL_QUESTS = '- Do quests -';
-  const LABEL_POINTS = '- Get points -';
-
-  let label = LABEL_QUESTS;
-
-  onMount(() => {
-    function changeLabel() {
-      label = label === LABEL_POINTS ? LABEL_QUESTS : LABEL_POINTS;
-    }
-
-    const intervalId = setInterval(changeLabel, 750);
-    return () => clearInterval(intervalId);
-  });
 </script>
 
 <PageMeta
