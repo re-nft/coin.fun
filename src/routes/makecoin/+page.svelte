@@ -1,29 +1,45 @@
-<script>
+<script lang="ts">
+  import { enhance } from '$app/forms';
+
   let showMore = false;
+  let formMessage = '';
+  let formSuccess = false;
 
   function toggleShowMore() {
     showMore = !showMore;
   }
+
+  function handleSubmit() {
+    return async ({ result }) => {
+      formSuccess = result.data.success;
+      formMessage = result.data.message;
+    };
+  }
 </script>
 
 <div class="container">
-  <form method="POST" action="?/create">
+  <form method="POST" action="?/create" use:enhance={handleSubmit} enctype="multipart/form-data">
     <h2>Create a New Coin</h2>
+    {#if formMessage}
+      <div class={formSuccess ? 'success' : 'error'}>
+        {formMessage}
+      </div>
+    {/if}
     <label>
       Name
-      <input type="text" name="name" autocomplete="off" />
+      <input type="text" name="name" autocomplete="off" required />
     </label>
     <label>
       Ticker
-      <input type="text" name="ticker" autocomplete="off" />
+      <input type="text" name="ticker" autocomplete="off" required />
     </label>
     <label>
       Description
-      <textarea name="description" rows="3" autocomplete="off"></textarea>
+      <textarea name="description" rows="3" autocomplete="off" required></textarea>
     </label>
     <label>
       Image
-      <input type="file" name="image" />
+      <input type="file" name="image" accept="image/*" />
     </label>
     <button type="button" class="showmore" on:click={toggleShowMore}>
       {showMore ? 'Hide' : 'Show'} more options
@@ -118,5 +134,21 @@
 
   .submit-btn:hover {
     background-color: #d4f06e;
+  }
+
+  .success {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+  }
+
+  .error {
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
   }
 </style>

@@ -1,7 +1,7 @@
 import { createCoin } from '$lib/server/db/mock';
 
 export const actions = {
-  create: async ({ request }) => {
+  create: async ({ request, locals: { supabase } }) => {
     const data = await request.formData();
     
     const name = data.get('name') as string;
@@ -12,9 +12,27 @@ export const actions = {
     const telegram = data.get('telegram') as string;
     const website = data.get('website') as string;
 
-    // For now, we'll use a placeholder image URL
-    // TODO: handle file uploads properly
-    const imageUrl = 'https://via.placeholder.com/150';
+    let imageUrl = '';
+
+    if (image.size > 0) {
+      const fileExt = image.name.split('.').pop();
+      // TODO: probably needs to be uuid
+      const fileName = `${Date.now()}.${fileExt}`;
+      const { error: uploadError } = await supabase.storage
+        .from('coin-images')
+        .upload(fileName, image);
+
+      if (uploadError) {
+        console.error('Error uploading image:', uploadError);
+        return { success: false, message: 'Failed to upload image' };
+      }
+
+      const { data: { publicUrl } } = supabase.storage
+        .from('coin-images')
+        .getPublicUrl(fileName);
+
+      imageUrl = publicUrl;
+    }
 
     try {
       createCoin(name, ticker, description, imageUrl, twitter, telegram, website);
