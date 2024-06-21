@@ -10,18 +10,20 @@
 
 <div class="grid">
   {#each coins as coin}
-    <div class="card">
-      <div class="image-container">
-        <img src={coin.media} alt={coin.name} />
+    <a href="/{coin.id}" class="card-link">
+      <div class="card">
+        <div class="image-container">
+          <img src={coin.media} alt={coin.name} />
+        </div>
+        <div class="content">
+          <h3>{coin.name} (ticker: {coin.symbol})</h3>
+          <p>market cap: {coin.marketCap}</p>
+          <p>replies: {coin.replies}</p>
+          <p>{coin.description}</p>
+          <p>Created by: {coin.createdBy}</p>
+        </div>
       </div>
-      <div class="content">
-        <h3>{coin.name} (ticker: {coin.symbol})</h3>
-        <p>market cap: {coin.marketCap}</p>
-        <p>replies: {coin.replies}</p>
-        <p>{coin.description}</p>
-        <p>Created by: {coin.createdBy}</p>
-      </div>
-    </div>
+    </a>
   {/each}
 </div>
 

@@ -1,3 +1,5 @@
+import { v4 as uuidv4 } from 'uuid';
+
 // a solution for when we have different schemas
 // and can't all work on different db schemas
 // an in memory replacement for when your teammate is busy
@@ -14,6 +16,7 @@ export function getCoins() {
 
 const mockCoins = [
   {
+    id: uuidv4(),
     name: 'PUKI',
     symbol: 'PUKI',
     media: 'https://pump.mypinata.cloud/ipfs/QmUVTLaUNDVfioTHe5Q2s5ZzfscnDRGYU8bY7VFRiVQLrU',
@@ -23,6 +26,7 @@ const mockCoins = [
     description: 'PUKI IS CUTIE PATOOTIE CAT WHO WANT TO FIND NEW FRIENDS IN THIS WORLD. SHE IS REALLY WITH EVERYONE ONE OF HER FAVORITE FRIEND IS DOG BILLY I THINK YOU KNOW HIM'
   },
   {
+    id: uuidv4(),
     name: 'SOLCAPA',
     symbol: 'SOLCAPA',
     media: 'https://pump.mypinata.cloud/ipfs/QmYmge4MSSJj5qtkr7ejUuETXJn4QVfujf5gvLokcchBdx',
@@ -32,6 +36,7 @@ const mockCoins = [
     description: 'How does it work? $Solcapa is at the core of the MemeFi economy. You can use $Solcapa to mint new, unique $Solcapa NFTs permissionlessly, or burn $Solcapa NFTs to retrieve that sweet sweet $Solcapa back. Every time you burn a $Solcapa NFT, 100,000,000 $Solcapa is burnt forever. This demonstrates how deflation works in our system. The max supply of $Solcapa is 10,000,000,000. NFT mints aren’t hard-capped but are limited by the $Solcapa supply. Each mint births a new unique Capa'
   },
   {
+    id: uuidv4(),
     name: 'WRAPPY',
     symbol: '$WCAT',
     media: 'https://pump.mypinata.cloud/ipfs/QmbNM5UWtJ5zSGrPmLWd6bPqaSWjRXNRWvQXEDVpPU91m8',
@@ -41,6 +46,7 @@ const mockCoins = [
     description: 'wrapped but cat'
   },
   {
+    id: uuidv4(),
     name: 'Popdog',
     symbol: 'POPDOG',
     media: 'https://pump.mypinata.cloud/ipfs/QmXR8CtdE8xyqJiDJDY6UfmWf2z8YAyKWBRaHivhbLh28S',
@@ -50,6 +56,7 @@ const mockCoins = [
     description: 'Kata Inu is a community-driven, fair launched DeFi Token. Three simple functions occur during each trade: Reflection, LP Acquisition, & Burn. And 3% of every transaction is redistributed to holders.'
   },
   {
+    id: uuidv4(),
     name: 'Wiender Dog',
     symbol: 'WEENY',
     media: 'https://pump.mypinata.cloud/ipfs/QmaktjQRc7iGgpj4nhMfHXZWRWt7CyGxk4y4WrFg8KKFd2',
@@ -59,6 +66,7 @@ const mockCoins = [
     description: 'Kata Inu is a community-driven, fair launched DeFi Token. Three simple functions occur during each trade: Reflection, LP Acquisition, & Burn. And 3% of every transaction is redistributed to holders.'
   },
   {
+    id: uuidv4(),
     name: 'Kata Inu',
     symbol: '$katainu',
     media: 'https://pump.mypinata.cloud/ipfs/QmbkoesHRQFaarNaHqv5w74oxTiBuy3MjPnNgLtuebrA2A?img-width=128&img-dpr=2&img-onerror=redirect',
@@ -73,6 +81,7 @@ const mockCoins = [
 export function createCoin(name, ticker, description, image, twitter, telegram, website) {
   const coins = getCoins();
   coins.push({
+    id: uuidv4(),
     name,
     symbol: ticker,
     media: image,
