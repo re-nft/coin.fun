@@ -6,11 +6,22 @@
 
 <h1>Coin Details for {coinId}</h1>
 
+<div class="my-4 flex justify-center md:hidden lg:hidden"></div>
+
 <div class="mb-16 mt-16 hidden p-4 md:block">
   <div class="flex justify-center">
     <a
       class="-mt-5 inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md px-4 py-2 text-2xl font-medium text-slate-50 ring-offset-white transition-colors hover:bg-transparent hover:font-bold hover:text-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:ring-offset-slate-950 dark:hover:bg-slate-800 dark:hover:text-slate-50 dark:focus-visible:ring-slate-300"
       href="/board">[go back]</a
+    >
+  </div>
+  <div class="mb-4 mt-4 w-fit rounded bg-green-300 p-4">
+    raydium pool seeded! view the coin on raydium <a
+      class="text-blue-500 hover:underline"
+      target="_blank"
+      rel="noopener noreferrer"
+      href="https://dexscreener.com/solana/79cREYHYSGe8kJSnWDKC5RPRBEWRZ18fRDjFdHi3jL6s"
+      >here</a
     >
   </div>
   <div class="mt-4 flex space-x-8">
@@ -19,34 +30,27 @@
         class="flex w-full items-center justify-between text-xs text-green-300"
       >
         <div class="flex items-center gap-4">
-          <div class="text-gray-400">Molly the cat</div>
-          <div class="text-gray-400">Ticker: MTC</div>
-          <div>Market cap: $3,719.262</div>
+          <div class="text-gray-400">Poseidon</div>
+          <div class="text-gray-400">Ticker: POSEIDON</div>
+          <div>Market cap: $15,723.49</div>
           <div class="text-gray-400">
-            <div
-              class="flex items-center"
-              data-dashlane-rid="1dcc1cf0c09b99c0"
-              data-form-type="other"
-            >
+            <div class="flex items-center">
               <label for="copy-ca">CA:</label><input
                 id="copy-ca"
                 class="ml-2 block w-full rounded-s-sm border border-gray-700 bg-black/10 px-1 py-0.5 text-xs focus-visible:outline-dashed focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50"
                 readonly=""
                 type="text"
-                value="FcnfsRn5exavV45ZpDpDMM6ngo8XW1JfDS42zNwNpump"
-                data-dashlane-rid="6859334d03d2512c"
-                data-form-type="other"
+                value="jyB2Gg5rvNx44dnAh2wmwU6Cv5DYHxp1DGz2j6Ypump"
               /><button
                 class=" inline-flex min-w-fit cursor-pointer items-center rounded-e-sm border border-s-0 border-gray-700 bg-black/20 px-2 py-0.5 text-xs text-gray-500 hover:bg-black/40 focus-visible:outline focus-visible:outline-1"
-                data-dashlane-rid="b077759fae50e971"
-                data-form-type="other"
-                data-dashlane-label="true">copy</button
+                >copy</button
               >
             </div>
           </div>
         </div>
         <div class="inline-flex items-center gap-2 text-sm">
-          <span>created by</span><a href="/profile/MTC54"
+          <span>created by</span><a
+            href="/profile/3GfDXSv54NNtDaonxWFnz59yWHTH1YeSoHmcTgH1x4bw"
             ><span class="flex items-center gap-1"
               ><img
                 alt=""
@@ -56,12 +60,12 @@
                 decoding="async"
                 data-nimg="1"
                 class="h-4 w-4 rounded"
-                src="https://pump.mypinata.cloud/ipfs/QmUrWAiJuxmdzvKSgRGAYzPkQsHNDj6hyGnAxtD63wxrdB?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
                 style="color: transparent;"
               /><span
                 class="flex gap-1 rounded px-1 text-black hover:underline"
-                style="background-color: rgb(127, 173, 211);"
-                >MTC54
+                style="background-color: rgb(140, 147, 158);"
+                >3GfDXS
               </span></span
             ></a
           >
@@ -69,17 +73,27 @@
       </div>
       <div class="h-4/8">
         <div class="grid h-fit gap-2">
+          <div class="flex h-fit items-center gap-1 text-white">
+            <div class="cursor-pointer rounded bg-green-300 px-1 text-black">
+              Pump chart
+            </div>
+            <div
+              class="cursor-pointer rounded px-1 text-gray-500 hover:bg-gray-800"
+            >
+              Current chart
+            </div>
+          </div>
           <div class="chart-container">
             <div
-              id="tv-chart-prw1h6agm5e"
+              id="tv-chart-c1utekxuwcj"
               class=""
               style="height: 400px; width: 99%;"
             >
               <iframe
-                id="tradingview_d0e0d"
-                name="tradingview_d0e0d"
-                src="blob:https://pump.fun/6ab88d49-cd5b-4895-a1ae-2684fcd45ac2"
-                data-widget-options="symbol=MTC&amp;interval=5&amp;widgetbar=%7B%22details%22%3Afalse%2C%22watchlist%22%3Afalse%2C%22news%22%3Afalse%2C%22datawindow%22%3Afalse%2C%22watchlist_settings%22%3A%7B%22default_symbols%22%3A%5B%5D%7D%7D&amp;timeFrames=%5B%7B%22text%22%3A%225y%22%2C%22resolution%22%3A%221W%22%7D%2C%7B%22text%22%3A%221y%22%2C%22resolution%22%3A%221W%22%7D%2C%7B%22text%22%3A%226m%22%2C%22resolution%22%3A%22120%22%7D%2C%7B%22text%22%3A%223m%22%2C%22resolution%22%3A%2260%22%7D%2C%7B%22text%22%3A%221m%22%2C%22resolution%22%3A%2230%22%7D%2C%7B%22text%22%3A%225d%22%2C%22resolution%22%3A%225%22%7D%2C%7B%22text%22%3A%221d%22%2C%22resolution%22%3A%221%22%7D%5D&amp;locale=en&amp;uid=tradingview_d0e0d&amp;clientId=0&amp;userId=0&amp;chartsStorageVer=1.0&amp;debug=false&amp;timezone=Etc%2FUTC&amp;theme=dark"
+                id="tradingview_5ffa1"
+                name="tradingview_5ffa1"
+                src="blob:https://pump.fun/5025ad99-5007-4a4f-81bc-14b5abc63e7a"
+                data-widget-options="symbol=POSEIDON&amp;interval=1&amp;widgetbar=%7B%22details%22%3Afalse%2C%22watchlist%22%3Afalse%2C%22news%22%3Afalse%2C%22datawindow%22%3Afalse%2C%22watchlist_settings%22%3A%7B%22default_symbols%22%3A%5B%5D%7D%7D&amp;timeFrames=%5B%7B%22text%22%3A%225y%22%2C%22resolution%22%3A%221W%22%7D%2C%7B%22text%22%3A%221y%22%2C%22resolution%22%3A%221W%22%7D%2C%7B%22text%22%3A%226m%22%2C%22resolution%22%3A%22120%22%7D%2C%7B%22text%22%3A%223m%22%2C%22resolution%22%3A%2260%22%7D%2C%7B%22text%22%3A%221m%22%2C%22resolution%22%3A%2230%22%7D%2C%7B%22text%22%3A%225d%22%2C%22resolution%22%3A%225%22%7D%2C%7B%22text%22%3A%221d%22%2C%22resolution%22%3A%221%22%7D%5D&amp;locale=en&amp;uid=tradingview_5ffa1&amp;clientId=0&amp;userId=0&amp;chartsStorageVer=1.0&amp;debug=false&amp;timezone=Etc%2FUTC&amp;theme=dark"
                 title="Financial Chart"
                 frameborder="0"
                 allowtransparency="true"
@@ -92,8 +106,7 @@
             <div class="hidden">
               <div id="dexscreener-embed">
                 <iframe
-                  src="https://dexscreener.com/solana/null?embed=1&amp;theme=dark&amp;trades=0&amp;info=0"
-                  data-dashlane-frameid="922"
+                  src="https://dexscreener.com/solana/79cREYHYSGe8kJSnWDKC5RPRBEWRZ18fRDjFdHi3jL6s?embed=1&amp;theme=dark&amp;trades=0&amp;info=0"
                   style="height: 400px; width: 99%;"
                 ></iframe>
               </div>
@@ -111,10 +124,68 @@
           Trades
         </div>
       </div>
-      <div class="relative grid gap-1 text-slate-300">
-        <div class="grid h-fit gap-1 bg-[#2e303a] p-1 text-sm">
-          <div class="flex gap-1 text-xs">
-            <a href="/profile/MTC54"
+      <div
+        class="w-full rounded-lg bg-transparent text-xs text-gray-400 sm:text-sm"
+      >
+        <div class="mb-3 flex items-center gap-2">
+          <label for="tradesByFollowing">Filter by following</label><button
+            type="button"
+            role="switch"
+            aria-checked="false"
+            data-state="unchecked"
+            data-disabled=""
+            disabled=""
+            value="on"
+            class="peer inline-flex h-4 w-11 shrink-0 cursor-pointer items-center rounded border-2 border-transparent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 focus-visible:ring-offset-white disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-green-300 data-[state=unchecked]:bg-slate-500 dark:focus-visible:ring-slate-300 dark:focus-visible:ring-offset-slate-950 dark:data-[state=checked]:bg-slate-50 dark:data-[state=unchecked]:bg-slate-800"
+            id="tradesByFollowing"
+            ><span
+              data-state="unchecked"
+              data-disabled=""
+              class="pointer-events-none block h-3 w-5 rounded-[.2rem] bg-white shadow-lg ring-0 transition-transform data-[state=checked]:translate-x-5 data-[state=unchecked]:translate-x-0 dark:bg-slate-950"
+            ></span></button
+          > connect your wallet to filter
+        </div>
+        <div class="grid grid-cols-4 rounded-lg bg-[#2e303a] sm:grid-cols-6">
+          <div class="col-span-1 p-3 text-left font-normal">account</div>
+          <div class="col-span-1 hidden p-3 text-left font-normal sm:block">
+            type
+          </div>
+          <div class="col-span-1 p-3 text-left font-normal sm:hidden">txn</div>
+          <div class="col-span-1 p-3 text-left font-normal">SOL</div>
+          <div class="col-span-1 p-3 text-left font-normal">POSEIDON</div>
+          <div class="col-span-1 hidden p-3 text-left font-normal md:block">
+            <div class="flex items-center">
+              date <button
+                class="ml-1 inline-block align-middle hover:text-gray-300"
+                ><svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  class="cursor-pointer"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="position: relative; top: 1px;"
+                  ><path
+                    d="M12 4C14.7486 4 17.1749 5.38626 18.6156 7.5H16V9.5H22V3.5H20V5.99936C18.1762 3.57166 15.2724 2 12 2C6.47715 2 2 6.47715 2 12H4C4 7.58172 7.58172 4 12 4ZM20 12C20 16.4183 16.4183 20 12 20C9.25144 20 6.82508 18.6137 5.38443 16.5H8V14.5H2V20.5H4V18.0006C5.82381 20.4283 8.72764 22 12 22C17.5228 22 22 17.5228 22 12H20Z"
+                  ></path></svg
+                ></button
+              >
+            </div>
+          </div>
+          <div class="col-span-1 hidden p-3 text-right font-normal sm:block">
+            transaction
+          </div>
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/21yJxgMqBSs75dJeabUTBXVJM7uMyC2oJp58hQHgsZFw"
               ><span class="flex items-center gap-1"
                 ><img
                   alt=""
@@ -124,29 +195,12693 @@
                   decoding="async"
                   data-nimg="1"
                   class="h-4 w-4 rounded"
-                  src="https://pump.mypinata.cloud/ipfs/QmUrWAiJuxmdzvKSgRGAYzPkQsHNDj6hyGnAxtD63wxrdB?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
                   style="color: transparent;"
                 /><span
                   class="flex gap-1 rounded px-1 text-black hover:underline"
-                  style="background-color: rgb(127, 173, 211);"
-                  >MTC54 (dev)</span
+                  style="background-color: rgb(222, 243, 187);"
+                  >21yJxg
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            7.2381
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            18.80m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5dXsWhWzmA8YFBp94zgCg5vLpnWkTiNAZi4T4kUDg5XuiVwtkGGK5Sthn4FB6E7LEKH357gjntguRfqe3oVXmeYD"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5dXsWh</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/HKkTCTNk7k7AJVFJjpn7UBfvRypAmMkZVegowHqkJ6wj"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(252, 181, 174);"
+                  >HKkTCT
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.1071
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            297.17k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/6s3ZkxrKKRmxbXgcD7bET9u6XPmw7t4GURBHXGw7gUNK2Jo6rWReMKHrdkm7ojVLXqeQxAB2u7MeUWkXiKUJtcF"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >6s3Zkx</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/rygghhvhn"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(243, 216, 152);"
+                  >rygghhvhn
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.5921
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.49m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/WCqribVyheEgdGnkiynQmbeUNTQwcXV5UzBTi5x5giv3Th9D4oH7atdD8Uu1y7DMcN3c5eTnNzkFbVY6hLxT8ve"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >WCqrib</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/2SX9MzADsQ6B1P1cmbWCmuFHzfLZZ7KhcrEv1vXWXgLZ"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(206, 205, 139);"
+                  >2SX9Mz
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.0198
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            2.95m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/EGWpydox1jKi4KbdexGXYqavEvpK5Ymf62AUemBXu8fsLYb7am8KoWZPFeY4KffqpjqVf7MXM9F92pcwEL5HAXW"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >EGWpyd</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/8nSuV8"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmQKaVh1B2pLJ4tddGDFdc2vEWSxmiNHKuCpoLkFeW7jXW?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(217, 247, 195);"
+                  >8nSuV8
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.0206
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.01m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4CNJaRk3W38qzv5WZ5bMV4ZjV1Jn5uhY238NTwtHmanXC8qVyyD5e6gz7pyYExcvcyq3Rq9WYMdAzBkHaDWpvDaA"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4CNJaR</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/DHb8SqdV662GVcvRB39qSHTiApbSQX6sEF9GuuioUu6b"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(151, 142, 172);"
+                  >DHb8Sq
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.0491
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.15m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4PK2ZoYALLqMgnaibtXpgyx7MGKbdvKzhRMLsKmEo7bQcREU3C9Vm9CR6pku6XKYBEYary7g361ou8t1HyoE9bZt"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4PK2Zo</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/78zTfxY5iBiMyenMHkuGzEoAg2Prtfpjdru3dSRjCtq3"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(204, 234, 167);"
+                  >78zTfx
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.1854
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            566.45k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/TUfygH5Ci7SBPfzFm6GprNpbsXV5UXHMM27cnnjiNsGHcZ2jsPVvPutpuaFD3KwQQHjQiuyjtBrGwDK7nqv47Pq"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >TUfygH</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/HjHcjEz34Nmd6ndUQy1u618MYqxBYjum4hqm8ZZEfqWS"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(231, 155, 170);"
+                  >HjHcjE
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0314
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            95.58k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5NeW9XN4VoHGKSFDTJone4uDre2oS6YsztiLhwHQyq2WCwGZNPhNgT2aMEMoNEF5UqmnrHcWiFw8M3m1mbLBHuhj"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5NeW9X</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/2KBynUhy1UrgtLFZaranRgvc88XV9bkJswDRfkDdSgsK"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(182, 133, 146);"
+                  >2KBynU
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.2089
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            635.49k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2Ej3JXb17RBcB5o5Na46QvKT9BfctyEtBa9MCZXASLf2Kmu1bQqt8FxFegDWuPraDoM9efv1cYdTQYUid24eUpts"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2Ej3JX</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/8nSuV8"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmQKaVh1B2pLJ4tddGDFdc2vEWSxmiNHKuCpoLkFeW7jXW?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(217, 247, 195);"
+                  >8nSuV8
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.0207
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.16m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2mowajmmRc2j32z7NE9iprfJwyB9Kt77Rs4DYHZGaPZPmHhNADWT3VSEMDxMY7MMVnNgBoNG8UCZBtt8ZPuv6Rob"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2mowaj</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/EkKnKGX3sihp2VJKKRNZsJEH7MEe8w2eU5MA7sm8dQN5"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(228, 242, 196);"
+                  >EkKnKG
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0300
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            95.58k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2kocR3tezBYVMrfkrgv7YFeB2xrbYir25kKJCqcb1J2gm4SEMmVcb35E3FUbWDKTHNivAjDbFMDCG5Z3Rqchn9GS"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2kocR3</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/EGUvJGw4ME4M83PrwdyvNbPoYYaCQqHXvv8zVfjdHZ88"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(223, 206, 206);"
+                  >EGUvJG
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.0006
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.16m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5S4RXzwstUVssSPTFWSfEoQzFrexQAT12iVsL4euqPMUWQoHmrf9o4xYe5CnFaPrzRoCnsVPmxPbUpXBNgPgHZW7"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5S4RXz</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/GRUbxAL8baH9erTEpn7JrgXNNSVn1zW3WZSFZMbaocim"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(160, 188, 210);"
+                  >GRUbxA
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.3130
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.00m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4FAKLjD3hLFzWovXJB8NXKiEgbx842PqyVVUVqSb1UTdgRC6Q2Vowo4pLoUZR7TTeKKwVBotnVJWBhJs2d4K2MVq"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4FAKLj</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/Fywp912WJxnc6BY6Q2FEkUGy9xyK9YvcGqmbCUUwzf2k"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(163, 154, 211);"
+                  >Fywp91
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.2077
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            670.02k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/425B8ouFc3m1wv2g9reV497JJQau9po7pATrkXfdDsv35hxwoqdoc69wEdzq2SaHHcZPPefhkYNSghLf62UVy9bK"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >425B8o</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/BuXbw8"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(157, 149, 185);"
+                  >BuXbw8
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.4065
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.31m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3PipBmHxbK7gkG2NYuxLEQybiXfrzkw788k9eoxtiQshwYVxiVFvTyw51yUriHXuX5Cd6MTCHUviPtpzZ28WAkAa"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3PipBm</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/bFwKfwFPJT6GT69gWSfq9poiYENXjbDigQr6TzTDkaK"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(214, 230, 178);"
+                  >bFwKfw
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.9802
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.19m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/FiaNTfKXm8po4enVCJGKZWFyRcDN9E9tNv3vczno4kx43gChtmx1xeato3BdkGJ6fxxuR8JvLW8Hgg1fbL3pB4N"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >FiaNTf</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/2DC6TegmWuUtmuinWdQjSP4vxwxccPtNanr9K56ziWyy"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(245, 214, 174);"
+                  >2DC6Te
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0238
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            78.04k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3FmgGM7WRAXdhC5mekXzV4WoH7eHhKweZUqNj7wsRTWPZZBncHhxCrTwaj7mNGksa7skSV4QMH4rJKTEnHJwnrCc"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3FmgGM</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/yjeet"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(169, 172, 205);"
+                  >yjeet
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.0008
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.32m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4duHSe75t34C5P93hL7fGGzMLxE4QhQETAcVBmsoci3yyPEUemmtMYso8H3TwuddqcbmMPyrvFeyx6n741iDmAPG"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4duHSe</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/GGYQaFhJzzmfSwDbH5nLs9B7tZidWaJDbge9XcREmtWy"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(252, 200, 185);"
+                  >GGYQaF
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0986
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            330.10k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/91jULcryucw1n3EnseFMbqDDLvbMHRquqP8MbmfUrh7nGPNa7w3mbVDVgdKhvMQHmMeaYYHLNAnunWestSAx558"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >91jULc</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/ojiT4EL2QFixLTZscsyHpJUAHq1Hj5XhsWqrxDpSEtn"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(200, 217, 142);"
+                  >ojiT4E
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.1386
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            464.52k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5GfsutmHLmS8k5r4dxF8e3wzHvBhivYKwT2EBrhTUDDm8TwuAYSvWXdtuUkZbUQ4eZqNafzQgUgqu28fz2pQmDJ8"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5Gfsut</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/6wHhu7MmrPng11JbwKRtXWzW6k87z7AWsU6hgaxFZkhM"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(130, 237, 211);"
+                  >6wHhu7
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.0000
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.37m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2Sv59f3sSrpcvC6oTitwQjZUev5sBrXHdzvVKR1jwAjFBbaoLPQaXduv6KruKf4GknmLNVVgqgCDQCS24zHF82mo"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2Sv59f</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/68ESkpqMjcnnsNhsD44ZGeLt3q7us2dEdacD6f9AJ3WQ"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(212, 247, 218);"
+                  >68ESkp
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.2901
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            970.41k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3WhhiZ2WDuew99KtuYehXXRCT4QSESUWVFUepzVVk3ym8BMiM1H9CR9z25q5d3MkUdsMSR21dWLmYkZp5bXpWzQ"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3WhhiZ</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/sa4bnj1"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmcWRpenfxRqP3bUsbKTRstnmB6i1gujfmQAbtrxg8xW1o?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(227, 202, 239);"
+                  >sa4bnj1
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.0092
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.47m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2QpDSKWp6q5oZhZ5iok9z3Cuqv87p2y9c7oJYDUWeLiF69YqQxFRwyg38f6WasCLxuiG3ZX5Q6VW3yvZ9JVnDDJL"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2QpDSK</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/GZ3Y3TrxtdnwXv79U9XfYHiJ6tm86DHvYiyHCzZSjVF1"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(249, 217, 179);"
+                  >GZ3Y3T
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.5058
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.77m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5geTaeBKo6FtPofq3wTeSELub8BnR8acEBZFRBtBHa1vVY9sR4iNUV1sWeztxo4fwPPpc8XnEdquRyTSAPChfLXy"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5geTae</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/hexican"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmbuqhnvnsBQMgqfo7CYyQPuL6bR8cfgCvtBeMUawoXeKh?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(154, 152, 199);"
+                  >hexican
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.2169
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            763.63k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2bc2Pn6jUyd69qkaLTDM7xucc1yVXUv9J4L57XgqorrWFqqMcMpapzGBeaNiWjqoSuxsrzdc4L67gThDLzuG5TjK"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2bc2Pn</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/3DVdgWG33BxurjN1PrGWiruSNFFicNmJ41aQh1P655Nv"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(142, 129, 237);"
+                  >3DVdgW
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.2763
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            972.13k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2i1g9GGxxkorw7rjDVnAjs5qFH1wGB9ucbEqDPrEdCwiM6Dr95S3Kh83Jku6dEcvz93AME2ncTJ3SccvKoUe2Jyb"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2i1g9G</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/4EsDP2YwBdwWzDTynwpu74ZmQPf2AZD8aZuvJdi2Yr47"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(227, 164, 188);"
+                  >4EsDP2
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.6087
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            2.15m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4ySqJ3nrz5mDohzHMcGNjQc5uZbe996gZEwcKHGtSPKh1JXvB9nNDDvkG6KbhRv2w6GhMY2Bcg2LVM5KkWSHREcm"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4ySqJ3</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/F4DBysPeKjoyNkdPSsWctd9GmVd5N3wq87FZuQLsyPdA"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(197, 240, 238);"
+                  >F4DBys
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0975
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            347.54k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5oZnfdw7koGgkH32WPLmWqwkFMQhCSfiurPjoi9jgGGGbcCcNZevSZ4tAejv4GmatfBAauAVrPnCAiZwhGnpyR5m"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5oZnfd</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/GZu9RPVuwEoVnHPed5WC7cYNmLn9FpS181zmLcobJUSk"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(148, 230, 209);"
+                  >GZu9RP
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.4826
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.73m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3eYyBwR3BvMbjoFSg64aZe7FTbosNDTvRN2QsyLufAPBqxaJqvRPgACty1UrbmudZjFEAar7eeJ9PmASsJ4eQ347"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3eYyBw</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/8eMmP4U3zzThTaxRfatgwcLqz5ic4rZhBYAtxjQ8FPhv"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(208, 203, 194);"
+                  >8eMmP4
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0977
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            347.54k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5UotzjR55vos953asC5pTKiUM2MA626vqG39qgwfj8XWfdPzjKEZrH2Z4L8ZY7dLj3dLX9mdCg27cjnH8ypchZn9"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5Uotzj</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/HxzE41PDRgZqgyA2ab2sTKburnTzyWgw8bBtdMWMEejA"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(135, 143, 206);"
+                  >HxzE41
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.4358
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.58m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5gt6zKupn2oVeoiGYDwFPf9StnbCUXXrYhkU9Zkq1W7g9UixxKHUS9iLWAWPCWnkWVybE5TSkudF1M6wo5p9TdA6"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5gt6zK</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/fd3ojf"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(149, 168, 217);"
+                  >fd3ojf
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0846
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            304.76k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2RaMULXN16JBnpipQqZMx9Y8fRVDBxhmfNEMWfwoFdvTemBDdFLCDh6BUza2ESJhUw67951aRUcCaAkGgxcjMQ9N"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2RaMUL</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/8vDEKDX4qrnauLoWXLceDDD4QmBQMqPTJz7pR1cFwxQB"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(215, 172, 173);"
+                  >8vDEKD
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.9220
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.32m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5fhAC1XyUJ9NyCCZXHBHojpM1WHTHPn7ot3JfDDJHDS69shZttYj4S4YMhpjP2Y9WpgrUNfT9tDnxABAw5WR9Ggs"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5fhAC1</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/DHb8SqdV662GVcvRB39qSHTiApbSQX6sEF9GuuioUu6b"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(151, 142, 172);"
+                  >DHb8Sq
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.1175
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.93m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/J3UD9YsWArsRznAZ3XzHTPBHSFgPQzFn9Scqy8mpK9mvz4iQaPoUnHfDW6iap3adDzMPJMD8HvznvReg5yXDaU6"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >J3UD9Y</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/FdbpzGpgjftWXpRR8BjBtJZku5H4iZNQAnpCS8wVJtFb"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(184, 168, 161);"
+                  >FdbpzG
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.7387
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            15.71m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4skwQYVJKDPuc6XSJMW9jrjRrQHJjLdvJn2xyif94a9WuzxQm18MToWuJA9PVgcwDtxxxbE7qy9YpxmTkvx5fQsp"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4skwQY</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/Be7G2ZNCVav76xsXNKDARF5nmbpTqBKXKHGtRqph2PZ8"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(186, 175, 200);"
+                  >Be7G2Z
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0960
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            303.60k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4YKrCSy4fV4yyMSRoyY5XKigLRYfdVyUiT9C7pdcV9SejBr3UgpVgMH1hP9JBTyD2ykzJFoQuA5QzE7QmQeBQKnr"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4YKrCS</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/rygghhvhn"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(243, 216, 152);"
+                  >rygghhvhn
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.5550
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.90m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/49umSBXkzYtFuGeofDYVFagySE9mz5VKvL4EXkSxb9KG4G6G1k5yMpPpF6FGxGBERTuQ9kF2CXAvVYmSuFbtsUBq"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >49umSB</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/DCv6KwzDJjbXZDgmpsNYwwMBiPPRF5BjtG5CX82BUNDC"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(138, 168, 239);"
+                  >DCv6Kw
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0986
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            306.22k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/6225CZMTn9CueUbQ8wJuTUUWPUMPZagMEyBAKb3922TmHoTZME7DcTC8PP1FxQRVwfQKfa15deDw1Y5E5dfBpXYS"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >6225CZ</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/kenz"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(170, 206, 236);"
+                  >kenz
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.5264
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.68m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2W9a2BncJQYEKEsfxgRe62A7wgr6briAdLqGJfAzCysbeKoToNn3BbFSRXBHnb31TwHANKodSRTwxao9Sv9PWhpR"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2W9a2B</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/BoQ6eDEtTQbXMS6caFPajjp3DdnRu6jmwJPryyQaCXrg"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(176, 178, 224);"
+                  >BoQ6eD
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.3875
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.17m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3KqTKwa6jJYAQkbNE6TCHBmHXrbkUGbKUB9y7xUZSZRMQiRn2gp9eAGcZVYxWZ4hB8GtPs53cRsC1xiBQKnPZZmB"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3KqTKw</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/xnxx"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(147, 235, 217);"
+                  >xnxx
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.5445
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.73m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/125DgCCUH7JGuiMrkaJQMtc1uPzvi9bKmMtQtvwaoNvpKSHm3dYfu2yuWWVejRv2BJRHucQxEWRxZepcfb7URZyZ"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >125DgC</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/jizz_king"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(185, 214, 140);"
+                  >jizz_king
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.4000
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.22m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4zQxnXJHiT4DkyEvwH4YffW3TSycgipkWwZaqo9uBVJ69GZUifrNBEh8Rgpu6oovvF12RYWZzYg2UhwioEEPMiLW"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4zQxnX</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/DnPSZU"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(167, 195, 188);"
+                  >DnPSZU
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0492
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            150.77k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/32NwDQer4P5xo6ds32vbQEaY3YbX2vLhoCB3bZVioByEvE2TEydzPvhWbd4QFr3ESYUCuT5A9hLmiAzFeB9JvxqK"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >32NwDQ</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/69vgUigu1DuCD1qzDFnUbpw7xd9LRSzCzpyPdn9w7YaN"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(231, 157, 127);"
+                  >69vgUi
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.1137
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            348.84k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3cbhPVHkpVnQeYpUuLhrhyEtRMDEmX93NvPAAuWsmEQRm26UkhzgxaS1XHxRDjUUxSLvWkk3xwc6kiZqfofTJFxD"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3cbhPV</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/AcueZGVYM7fJDN4A5FUkLA3urjgh8z1bjnxctvzqCNnh"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(254, 203, 147);"
+                  >AcueZG
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.2070
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            625.55k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3cYyd674pxZofrpf8zdzgfvAsXELVpw1FSENZKTtQ6AqTeaiXWvXs6SDijhNfnewMGjMY6hbRu6F1Kczq63jkTaE"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3cYyd6</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/adamsol"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(227, 243, 183);"
+                  >adamsol
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.2679
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            809.92k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3cSQA5ELfm8jR2oZTKace6YneZoGS9HJLzZK333deTBFi7cJNFGCiLtwnZoxxPhwRg6TnvHqqoWq731KJEcNhMgt"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3cSQA5</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/wKdoi9Qi8EHsyx4Eyzi5E6Ww5LAucjTQag3bU4rcxtP"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(144, 199, 158);"
+                  >wKdoi9
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.6986
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            2.13m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3gy1KQT9WrfhYzLMRQFDWA5J1zbB3rUQfCmxQVp3s4TeAEpURXHN2yLqet3FTPdDWvQmbyXTbGKB5PH3w6foyerS"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3gy1KQ</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/5Y5M1UxCfStEi9jZwFe3YvnyCFi8tqTnvELiyZ3vGHjc"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(191, 194, 239);"
+                  >5Y5M1U
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.1491
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            451.90k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5dfQKGZ3BYai481GC6U2rtRAvLWZk19RBjNGvt2aatAHTDH3wvqMwgAjPhJ7PrjPuHLD2oGpBjN9Pg8sJqvyeufy"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5dfQKG</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/DPxs4PTpWCL23y1G6jL7TosuKsRzPkxtCC4xzfGfiDdF"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(226, 164, 168);"
+                  >DPxs4P
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.4901
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.50m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3rL378CrEdSbbG3yhC9qy1aXd1dHhJ3exTjtSrpKfAQtyZ5ZyVyLn55gRqMjKxLqdw8u6fGu7vsuNxPsDejmsJsz"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3rL378</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/Lucky133"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(213, 249, 156);"
+                  >Lucky133
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.8181
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            2.49m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3Fk9ceaw87Nhzkr8BgbtWCZsMEEuhzf12mqtq2EUbjLYTsYnYJv1kK1cLdhUv2v6T9ZJf4HYqArxoTnbfMHmQH2t"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3Fk9ce</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/ppRREzpvrASHHLApecDj3JWonJ8a7e8E1GK8CCwsrPR"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(234, 237, 143);"
+                  >ppRREz
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0312
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            93.99k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3DmTj37ehVCT5PJyM1ZdRcWHW2AxhF6n5aRo6Ugb4SJhUo7C5y1SGQaRZALJfWRXSwWMsurxxxw44WkvJxXzyiNv"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3DmTj3</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/Jabroni"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(231, 226, 235);"
+                  >Jabroni
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.1316
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            396.41k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4YsUKw61soC5X8ZRqQYkymr4iH2TkEEzGfNdzFSTgTCgkgw3dchf28Nd1Yfics4EpV2KrdQQ7CdJwrYg3cRgn4wi"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4YsUKw</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/gigachad12"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(227, 187, 202);"
+                  >gigachad12
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.1039
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            313.08k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5ZQgAY7GSEVoZwrtDZGAPwqaokACiNnmW9fGeVHtjHvTu4c5UDYKhRoCEndbgsAbeMsCAPEetoTED158AQiUzXL7"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5ZQgAY</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/2KBynUhy1UrgtLFZaranRgvc88XV9bkJswDRfkDdSgsK"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(182, 133, 146);"
+                  >2KBynU
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.5278
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.60m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5AA3eLEQ9HT9eHsZuiHSGy1AFs1VoFPLVPCpb4htkuimgwjPWoeDtyMPoBHhE1mS3ykrdUtfD2iZatXZZgdihyma"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5AA3eL</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/53E9A1QZz2NkHTAfofDz4L5gvstSM54frCUJDeF34zaL"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(193, 194, 222);"
+                  >53E9A1
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.9826
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            6.09m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4JACFG71xLJX8TbQ5YgZocjwEA4bxSyyHdXovrMpFr4uDxdWYqcorAAu46kmeYe16wbQJY33kvvEC2zWW6H1CeBX"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4JACFG</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/allahgreat"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(186, 216, 206);"
+                  >allahgreat
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.9253
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            2.80m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/p1pbwkDQi9yy28zJ56PfXUfF6JysmY596WnryqLh7aanA3FUaAgViUB7v5dSJaMiwj1KfEhBTnRETvYX2ayDg2Q"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >p1pbwk</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/2545194148"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(246, 146, 182);"
+                  >2545194148
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.3589
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.08m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3LT1KPLRrndfShJ8t28Pcfwn8BzW6WoNk2WkSNan4r4pfLpKs1T6x6nQWHcy9HNJEB7YAsQjUEBbnwKSmuPzSJZt"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3LT1KP</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/6uk2JWU4YWVuhZMuHASEBh3GBieUZsXKYSeSW7wiywsM"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(178, 215, 198);"
+                  >6uk2JW
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.4394
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.37m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/RfyHrfw2YaX76sR15vCKPRcvBPf6H7RXAW4yjMGJ1ER8sTynb1SjWLZb9iWEZjSsVrzdc8qDPybws8sYydhTyt9"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >RfyHrf</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/DvgLSTTDcK8NbDjknjeV4EJQTt4ntPsCufML5BhVtR2W"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(151, 216, 183);"
+                  >DvgLST
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            2.9406
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            9.41m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4fUpT6NvkMvngH79cJMrgAPXrNoP3vFivnUqRA2JpqGBLPXV6Essx46KxzwXDMuJZkefbp5iboKwGrHpopapCmSY"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4fUpT6</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/teerepu"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(242, 148, 131);"
+                  >teerepu
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.1355
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.70m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4uuPRC382RpmhMAi2CULQ9Tsi2GWAyncsLraHo75fZftDet2pE6WRZD5nFnVLQR6MDQcVMNMwUn6k4jdnHKyNhuU"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4uuPRC</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/A8sBcpEqpZ3vFhQAvkXHFUDTnkrue3CiUnmat9SsHLYv"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(242, 238, 180);"
+                  >A8sBcp
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.2272
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.00m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5CLdufY3GjAna3JryzFpL6KezfraivkRWAzUogVZsK5QrPVSMLMLFu1EQ1RRzEwZ8rJAazHpXg8yuM2tCDLfKf1b"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5CLduf</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/3G4fZKLpaY2SuiQc6FU1zYAgwg1r6hJo9KqoyLhXsTX8"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(214, 216, 135);"
+                  >3G4fZK
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.3631
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.21m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2UzZcRH8hji8i7wcxfgPhwZS3pgxhhKLPjzSfTt86wVsZHcimUg1PbUapkTtiaVPvQKJfVM6LtpHRquRmExUVERG"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2UzZcR</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/Farfa"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(163, 225, 127);"
+                  >Farfa
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.2090
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            691.32k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2YA5CBb5YL2c3AcvnYwCGZkTVJmRcYAAtEQvWvouMu87M1PN5JYhPsrrvbgAnJMhHPpt3uygaHk4RzzNENtMrkVa"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2YA5CB</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/memesendor"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmfQ6KE59mcsswd3XGeereB2XRDBDBqJsaH5asBEt732aE?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(189, 163, 157);"
+                  >memesendor
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.0094
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.43m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2geTCDQtExFaEeFPv6DyuS6VzPPmgbJhJ8Jg7eoRrECSTKHNqa7aqBportZw1buw2Gxh3VEQBpe6bb2VLtRLz3eD"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2geTCD</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/yyjf"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(220, 135, 181);"
+                  >yyjf
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.3218
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.08m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5NupyhzHHN6QszJNWSuqu464u6z6BfUAQQ5Aq56bhuS3FG4WVLvg744zCuixbvTgF1x5xEZsuPNakBLuQV4s6zWj"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5Nupyh</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/D6Vcz3PuumDXNfvMEfs1RpWDibapjnENhBWdFNhJmbLk"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(247, 152, 170);"
+                  >D6Vcz3
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.4500
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.55m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/45M6iNUZJAHyALCAboSeAKgFUSFuDSxh7LzQWecZiYAHeFEyr1rM4BaBVY21bWeA51pZT3RjCybb4AhX3xgYCXv3"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >45M6iN</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/Ecy93qY7GiGLeNhV9M8eyKnLCtNEYAmLALtzJPPeoJZv"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(187, 214, 232);"
+                  >Ecy93q
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.2520
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            869.80k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/npVThC3WSe9yDQdagRy4jRGdNGT8c6RRpeW7qvBKtezG388p7mjNMRbbe4TgyCMrFnYkQWnMZzgFHDgW2LUMWa9"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >npVThC</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/manorman"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmXQEdNu7HwbwagTXAnjTWZ8raQWxM4BujgQjsgdaYmsdY?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(211, 145, 239);"
+                  >manorman
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.3013
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.04m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2MA14TyZ7kpnf6MenH4Qz5Qm9Q7bjwJtLFY7JAfdpKD74upYNjhxubCbYtwZ3SofVSMTwcYe3qo5uKhuFUNV1rLp"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2MA14T</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/YpLYQgBNC7ybCyUyHUD2YW7yjmDVCx8Q6RE8cknpYZ3"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(197, 130, 209);"
+                  >YpLYQg
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.2110
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.14m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/yNUxJpyP5oJKDkKCC4yoKv7GBWAEP5ZoLA4NWFFXjDdPwRHRRYdmV9Jye5GNExPUp4MD85oJGbBFxNWGyFAP2tS"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >yNUxJp</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/BuXbw8"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(157, 149, 185);"
+                  >BuXbw8
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.2662
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            899.49k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/bqG1QZ5WcbanqWXjA6TMEGuTNMy7drvQDdEiiRxxpyQeBB3Z37kdh2N1YcTc97mAypqkiecfZBeSPdCYwcLCgDL"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >bqG1QZ</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/Fywp912WJxnc6BY6Q2FEkUGy9xyK9YvcGqmbCUUwzf2k"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(163, 154, 211);"
+                  >Fywp91
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.1981
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            670.02k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2KFQAnHgnJsL6cjpcHvuT1oaNALb8xKtefCGPxU3nWn51SHK1NjmhRqM5Hhcihq7oLDAz3Sc8QC5trJ9U6aXqjBW"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2KFQAn</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/6wHhu7MmrPng11JbwKRtXWzW6k87z7AWsU6hgaxFZkhM"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(130, 237, 211);"
+                  >6wHhu7
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            2.8137
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            9.76m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/eRJ19xNjqHAoeGwLYM5N1KhCARcvF24yUuHUgQyDbScMACn6putXvXzNCStQgNi4QWBwWt227hEj9ALEf94wUMR"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >eRJ19x</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/7DGtDtRvxeRnDrCNmya6eqEHSf729EsWbUexHU5djnUQ"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(233, 201, 185);"
+                  >7DGtDt
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.3428
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.23m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4ka7zDFqLdkdZ6DLQBTWikMepkJz4yFcFrvfxP9rx28YRqk4sHsYMTerNewm8Dae7qxUguJYmgDrgzZPduaQKNhc"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4ka7zD</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/yeeterman"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(173, 156, 248);"
+                  >yeeterman
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0863
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            308.80k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2YWjutM12kLw7BV7DS8rzWKYSp5szFsd17g2wvR8f3P3r8Nh9BaBPDPRCeCy5yHGYm6jbedLc6gsjV8xAAjQrj4"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2YWjut</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/2pVNqwGLtEyCUX6a4yQj6LRnumjB3N1fSnR8TcXcZYfy"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(219, 225, 163);"
+                  >2pVNqw
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.4752
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            12.09m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/53bH5H5HxTcUdvYrJdQwU98sjNDKnH7U2C7i2xgW15vxmJcdRQvKoWhR2SNyezKHBVbnvAEgU9dhT4D6vsXdzuSi"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >53bH5H</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/johnwaka"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(175, 145, 191);"
+                  >johnwaka
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0392
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            131.52k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/25Rx97w4vP8mVfy3MGsmhauJyG3RVUQzTJGAnt5NKbY3Z2GieS1QRsccFS9xP8F6u5NCvPHV3Wj5xZH5EyhK2X5S"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >25Rx97</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/21112"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(144, 174, 240);"
+                  >21112
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.2716
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            824.64k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4Yf9PHMqEhoH7h8rBsPFieawH9143iY9oQuTJCTbFFkw7VUrgHuydjP29cH3usygrs361BcnwmQgeBetVcX9aetX"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4Yf9PH</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/CT9hBUcui71kemT8tXyASu3SMzAZKPdi8qXjBWPtC729"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(210, 222, 142);"
+                  >CT9hBU
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.9063
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            15.68m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/51bvJnhXzPsg69PVWZYSJuWFd7SbzJ4FgXNH6PHAUQ63M5SApT6bokn7mPVuFrEjSPE8r7WiEN3AsPUKJW7aXHoR"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >51bvJn</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/2SX9MzADsQ6B1P1cmbWCmuFHzfLZZ7KhcrEv1vXWXgLZ"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(206, 205, 139);"
+                  >2SX9Mz
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.0528
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.22m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2mwttatrbE5tGnnbjeAr4Uarsc4nbKouDCFwYjYy53CnswsSogbu9rp6McNUdcWqU2Tnjdsw2RWrP65XS5YjG8Q1"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2mwtta</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/4Nd6e3"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(217, 244, 180);"
+                  >4Nd6e3
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.5309
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.65m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5TRm6UvmjTaLy1cZck9cErz11BuPSxkyX2Smgr9YotR3mJZLR6XBbYSJzzLm2Bm6gApjNmEhJb1BrDfT7fChmCN2"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5TRm6U</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/2WDL6Mpg41QREwJkj37WGerGZJQpK77aFe7kD9HTm56n"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(195, 216, 187);"
+                  >2WDL6M
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.5055
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.64m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3nefFaKk78Ne9A8bpmwoaR3Y8QYKZbZGus9Vcvm4c6ib6eMYXFAZZXsumcDNbuxHmskxynxy8GY4KRMZSZ2R3aVU"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3nefFa</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/rygghhvhn"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(243, 216, 152);"
+                  >rygghhvhn
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.5446
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.90m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/o7pHrFAfiezRcEuCoy1hS4eXRmTspnRDBTRBkyYFczqA57cqjWcZXDtAmCZ7dG884TTASt2fHfq51ZJkzXUfYM1"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >o7pHrF</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/Gq95NL"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(227, 172, 250);"
+                  >Gq95NL
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.5044
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.65m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/297dGTWp6f5CmXqyMRBXCJFdgtVHtw5DyxfBXFiDDCMJt1RixU8DTBCXAQ5FviXS4q8bEPPZN74ESUF2NBF7ZGpc"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >297dGT</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/Gyfoj18qxCsjGqPJkcNoALjDyQwW8n4r1EuBXWnZTMiu"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(221, 195, 253);"
+                  >Gyfoj1
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0390
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            128.24k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2YbUYUvNUMPRQEMACTGkBGzNFwEBk7a51xH3jadMjHkriSFgvfACGVZ5SETdQrNAzNRCEy8YVWQrhzWhEdBYWjbu"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2YbUYU</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/3DVdgWG33BxurjN1PrGWiruSNFFicNmJ41aQh1P655Nv"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(142, 129, 237);"
+                  >3DVdgW
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.2941
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            972.13k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/43zj4kqmBigE9W5FwxRoH5NZo9FR5JSjptbc6jvzrsV3PoeU1By8da2RuJ7Dcgi2JxsL4ChmThyExms97VZEPTvR"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >43zj4k</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/GGYQaFhJzzmfSwDbH5nLs9B7tZidWaJDbge9XcREmtWy"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(252, 200, 185);"
+                  >GGYQaF
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.1003
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            330.10k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4tH91G7a3Qhh2y7bshmqjvikUeLNMD5N6zApcQRbGLdSxKzB258hwUjD6aGj3wLEMxHYWMxUVHySFpq7dFEHRaJj"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4tH91G</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/doge420"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmdqGnEJtZo4qmmCy5phjyfiacLHj83Xn3Atn5NgPYpvja?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(251, 185, 216);"
+                  >doge420
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.6900
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            2.27m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5dyTQ97YaYTLjpASAmd5RyVGxMeUHxRAD8i6MQuA62vLz4WWjbzdAHKatg3YsKsqZVurb779YEWU88m2DKctgHAL"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5dyTQ9</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/GretaTate"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(198, 135, 140);"
+                  >GretaTate
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0202
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            66.14k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5raS12XxFUsYGRkUsUGtRVfPPCpxFYcfbP1hgMLCKRdqxQmekKtPRAM5rdmbQKZ5GATbMM44rDSKQY5jgMr9epzU"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5raS12</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/hughjanus"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(221, 191, 129);"
+                  >hughjanus
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.9837
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.19m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2Re5S2iP2K4xf7uPPtJmLBpYzAob2t79EnWm2HsV9Wqtoyb2H3SDa9ELwcaCV8o5QBHCkwy48TLpY2VXDy9vL4wJ"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2Re5S2</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/68ESkpqMjcnnsNhsD44ZGeLt3q7us2dEdacD6f9AJ3WQ"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(212, 247, 218);"
+                  >68ESkp
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.3500
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.13m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5HxR4XkFNjjHDSAFm6djo4s6AYkmBCyYuj6kmoA7yTRyrShLYGvpvG1MvQd75fYGzM22ZUKKwb86UfugGLci9scU"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5HxR4X</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/YpLYQgBNC7ybCyUyHUD2YW7yjmDVCx8Q6RE8cknpYZ3"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(197, 130, 209);"
+                  >YpLYQg
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.1789
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.85m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3frTW5jhi4G621DYQ1EEZ5tx8FB4ae5dDgtmuvKRRxrAeV9MCCVeaHGNoXNt7mBXPS2Dm261sshgaMg4UUZX2k8Z"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3frTW5</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/6UsrCoJ7EdSber7dDH4FTibHE8eUX2NVp5eQj5jxp84y"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(137, 249, 136);"
+                  >6UsrCo
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.4145
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.38m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/41ePwPYQcRCFbLz4LPe9HmxHgtJGJYV8wm1ZEcWDfo2fqXNh3pxWf2QkLrzYqMWMkByzz2sJQzFw84eGe7JB4HzX"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >41ePwP</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/iJJSPi4jfn2eeSLqYoXSjQUmTYpPpZncGmvZTGV9oPU"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(220, 245, 156);"
+                  >iJJSPi
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            2.9253
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            10.06m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3ANa5BGErgTdSn1sapEsUqvbJwYkWZtgRoikwdkoY1quCi4STmh1XBCpgUCr6mc1ncdjjRcupupGooLAA2ZdX8Qa"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3ANa5B</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/ZG98FUCjb8mJ824Gbs6RsgVmr1FhXb2oNiJHa2dwmPd"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(164, 142, 231);"
+                  >ZG98FU
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0891
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            315.38k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4791pYrnZURJiTNDVZ49WLZKNddPypzUoD87ZKipgHA1hf5Emb4WGadUGjrbhsrAwQe9fEVco1jxt3S8eszauPKH"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4791pY</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/2YepxKe8NRWAcy33Z9duTKHqVr8SragY8ZAwJ8dpy68R"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(164, 150, 231);"
+                  >2YepxK
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0976
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            345.64k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/57pgHeFYurFnBdYAoS8iAcmDh1BmfvvbUYpJnVVTRqxUoSfEA1923UjVwPeRy3LzKiCG7pBU3AduRhTePYuZenHB"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >57pgHe</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/2545194148"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(246, 146, 182);"
+                  >2545194148
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.1149
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            407.61k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/gtA1M9CgMHJtg53ReXMXeTRyKxe7fQ4RhvThk7kw4MfKNnTVHkNX8vw5EW4paeANErUrWYcJXdJLmWvCVNe6Xmf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >gtA1M9</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/Cf7Pdj1HERccp6kjqepcPmUjqwKKLtZLd6c5rNv5FYHG"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(193, 199, 139);"
+                  >Cf7Pdj
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.2667
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.44m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4SGCAEcG3uS1Qki7hB3bgAEPXVMqZFVpQsA6jijkZ6RGwytvWdWmHGrwRytPZWxTC7xyojiAo1kYFNavyPR9Q12p"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4SGCAE</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/BpQXYcfuVR1SX4UdvyhoMEiUT8yM6BKfbGKYTLctFAE3"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(254, 199, 239);"
+                  >BpQXYc
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0500
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            173.09k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4xSzoTMKjvi1NAL4fDeTLtXkxCfsHh7jk5mp5AL3NvZgkM7zaQfyAzY2igv4Zqq3r8TiZgggYyekNqeaHH2xcWLQ"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4xSzoT</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/5Ge2DPk8Ja29TTb42chxUV8ZdELYpNdSfKJ3xUAHKwKY"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(234, 138, 135);"
+                  >5Ge2DP
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            2.9406
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            10.51m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5NmZjuQDwWYCopyWdaNwjcUthyMzVPTU7Gn3uvR9jMMKxyFrqujaWF2wvVBNbzm2hUioarimM98bKfXPzbP6cY1g"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5NmZju</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/Hqjxi5DEDtomdakv9Sm187woonK8qzcSrCmVrdf67RWR"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(156, 179, 183);"
+                  >Hqjxi5
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.2010
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            743.82k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4rhEyTeS1bWvhmm1RwCmZjfoH7exC7FyXrt3Sdg6dzzzb6mjzfqYWxu9K4oAvNtnLyppPiLWnnHV4qxqFHPWpm5E"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4rhEyT</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/4bckNWEtCSeAGWkAArgJZMKyX7HezLiJnWCF9uebNCug"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(222, 154, 206);"
+                  >4bckNW
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.1051
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            387.79k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/44b8DNH2FQjVbrQ7NF7PwmypxA7YTZAreCNdBk1LCKSmhRb66NT1s9KRu4FaWpDotdZs87PvPZ7WYKJBp5ZuMD3B"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >44b8DN</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/GjRFN8LYRkz7VpYzfPJX3ZosGinGwKyPqHoZ6V5BKn6z"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(224, 165, 163);"
+                  >GjRFN8
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.2450
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            910.93k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2D3m7qSHA9NpKMcJ8FXPJvUMcZsqdR2oBKzKmK6fSi5xuoSBRkUV9PYpW3sUEFuMxpHvNs8z2D2g6FVFann7YaBE"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2D3m7q</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/CEizD6ZdurJkzzvDn161nKSxumC5MymxGguEbBPKJaF2"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(196, 147, 209);"
+                  >CEizD6
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0207
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            76.63k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4nLJDx4oEmH3HdHn2ovh1oovPZ4DRYyrnuxVxe5CZxGP3oHEjdefqDa1tYoHVxgBfJyk7WoJW1DwM2eXBaLuTgvT"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4nLJDx</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/HSQPdyvq8Qx4SSTAn45oxsYzHrSTt9127EBGH9Uh8P3k"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(254, 149, 147);"
+                  >HSQPdy
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.2310
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            863.25k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/64AJjvze6bhTqkMXFYr97s9wC9aTPgH3FZrJ6sTwhTFq8e2H2X4YFPfc8swZVpjHXy6EbV4y2pSnstY4x9GB8SgN"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >64AJjv</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/D6b17kd4Qa1s9njTh3tQ8Lf6zgAYqCZ9uspvUTqK2VVn"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(212, 201, 174);"
+                  >D6b17k
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.5233
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            2.02m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/jytLywyg8V5hFNtvU5r8rTfUF24SJusVKw1MdLG1iRgPRNti69xLX5caxo1sKmbv4RMaaq1azVmtyqhzDjNDH94"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >jytLyw</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/YpLYQgBNC7ybCyUyHUD2YW7yjmDVCx8Q6RE8cknpYZ3"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(197, 130, 209);"
+                  >YpLYQg
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.1660
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.42m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/55kA8Qjn6upywtVhN6oJU7rqPoYnxuJRmz4HvhooAMTopm6nVzpmumSE385MKw5gaGwnhzc6zqNpoKAAxSpUd1xi"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >55kA8Q</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/28rgjPovxguPvfDavVTv42Ya7FAJ4JSJu9PDHPxCftF1"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(224, 212, 155);"
+                  >28rgjP
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.0172
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.00m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5aukUNGs93NKSCQoxfZ7fNj6gcF6J1QjCXKK4wnnRBCjutDx9jGb8SHhJ6aTJ91BrhKayBUjJp982ZufXSqT38yo"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5aukUN</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/oblaka"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmNYhrAgBtUSuk8jXwCZUJgBUJq3ytwmRQ6GMS8pAZq2Nc?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(248, 211, 225);"
+                  >oblaka
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.9737
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.92m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3n6KuRmn2ok1SdMWaKccZzdTgLFmsyW5gLH5GR5PwzWroXaJXYTLspUTbDnw6RLTShrLRNF2oaxqnSETmZbjMjzu"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3n6KuR</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/Jabroni"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(231, 226, 235);"
+                  >Jabroni
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0996
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            396.41k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3Y6PBHmywGwJaMwSaf2YbNFWNCJPkNtKF1GVRgLoPkCXdQK3LAkUUzZsj27tSAVui5GkwRuEcEzUZobCmm5qXsX3"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3Y6PBH</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/doge420"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmdqGnEJtZo4qmmCy5phjyfiacLHj83Xn3Atn5NgPYpvja?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(251, 185, 216);"
+                  >doge420
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.5616
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            2.27m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2kRqJxKWszfv971m6yGhFf3uqVwKybKRN4oaUa6BcX6y4PdbfdjXsucMnsCwFUZTeoB5WGDpz17aQyoGbLnhfxgg"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2kRqJx</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/FwA36XH3tAiEDJaZWu8b9giB6yjM7AYf53MBwHWu3uNF"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(228, 249, 157);"
+                  >FwA36X
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.5784
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            2.31m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/37MKwp1xti6TiFSJ5z5Ta7XnXR9yoRtDZrqEQW3Jw3iMjHZjNJFK1zPLHwzxDLYdQ6NVg1LLr9we5RS4ESz3Lbk4"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >37MKwp</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/68ESkpqMjcnnsNhsD44ZGeLt3q7us2dEdacD6f9AJ3WQ"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(212, 247, 218);"
+                  >68ESkp
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.2047
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            814.30k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/33iptkMxvazJJWZLwVRvQyiB5ZNimB8BBTW1NFqB1FBpgVyaQ4Zu6bJxopGP2oAxMLKjVjdgxCqSU9RCuWBSYG9t"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >33iptk</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/AVWZMrN5AGyed6idVT2oribZrXdyDXq1Ko6tDdJJzujf"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(156, 204, 206);"
+                  >AVWZMr
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0511
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            203.92k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4nopnTr8L94EgHFVf75NwUwLQGNdcac1bbBpPLhVDy3NhFCe2bLxTNLMt7x2ypDkzbBzhMJyFB42GaVTpziuRFHA"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4nopnT</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/HUYGrebNigHdyr68KcS4UdDy7NERj9Fgyfykb8tPWd6R"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(205, 199, 179);"
+                  >HUYGre
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.9900
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.00m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/XkMWS5MQBTkCsjr46ydvgQzyX9VqASLj1nQnh3MW36TCqx9esFfV1Tmy6m6vQhEUyRATz1os6YbQhN27idUi1vm"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >XkMWS5</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/5hLrnPFkK3QAecjJouNQvAggSWPysV7pWAmwVxmFfALu"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(154, 170, 205);"
+                  >5hLrnP
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.0510
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.24m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2htsoRLD86bNqtoxEJLwu9Eta3MNjcKVhVA1mZgmhJTszpxRvZh3JuBBh7jQ1iFW1BC2upCiMNrjVNkPHK1xcnUt"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2htsoR</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/dumb69"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmW2PUMy6q2M8aappYq8U4qCYSVjjLN7Ya9Aqr2Mnqn2dH?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(157, 215, 176);"
+                  >dumb69
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.6782
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            2.72m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2yBmQQ65CbN3txVvCUDtxDR4DsaWZUQLTPmFhpDzXk3gtZ9qEkjttM4YoanGQTV15JSycT8P8zBi8QMWY2YLZP3q"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2yBmQQ</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/7zzQbhvz1i3Uro2dUxAGtnaSuumhQgTYCnVYTsXzZeo7"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(191, 238, 201);"
+                  >7zzQbh
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.5536
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            6.40m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3UxajhuKiJkiaqEL9sYVcyFG19Zp5HEUFa2fLjXD5TeyE13KYRtNbN2hD7gPi9FqPyfredMmZimH8JwQBAKXzktf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3Uxajh</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/D5PuaS7ndqMZfRHXN2SPpHRCxP4Z8gp7EoXHQqjgVUJo"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(231, 135, 153);"
+                  >D5PuaS
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.6397
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            2.66m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/cVfs96So9n14zn4rNYcQ5WLRmnkBk142nfB2SWLUMKw1Cnr2ufxwNG5p4QSpDL2QvaU8obUcnncbQyE3BKNDsvL"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >cVfs96</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/EKfc6TfucxVHTTvLJgitsTAfDexKwqwCoNgXcgSr9xn2"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(128, 157, 142);"
+                  >EKfc6T
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.0344
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.22m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/55HKybQDXtrFk6XuoowAjHuGoWLfBwQpsiKgZwJmWeUfonVztbFMrxP12jmxHVTjSjreDZxgYMiXPUEwqjHvAHsz"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >55HKyb</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/GkSJyGgxdo9bvtLY7cvKqAPvvYW5DZafZDdTDqEAPX6f"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(136, 197, 177);"
+                  >GkSJyG
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.1203
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            13.05m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4d5PsGF2heucCDBreEmECHRVmDoAqNJqFc8XUbQrBemR1ihjHJnxsHTvK6tXYBdJhz2wHaLvmaUTUHMP5gtBTQ7T"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4d5PsG</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/3vNs8HrAZCk1YCoz3gLFWcFYPFzKhgQnkoYgfncoYG2H"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(215, 167, 170);"
+                  >3vNs8H
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.5135
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            2.24m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4cB5tfU41DaRhobn7xEaeMcnZuJ3zzMEC3tyG6qPjfeb1tS3qJEoSR63mxFPD5gnT6Gw83JcWdpS8iwmtprQXgM7"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4cB5tf</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/Doedel555"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(185, 189, 192);"
+                  >Doedel555
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.9762
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.33m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/52KKbpN9TxzcjQ77P3tf4GqGVykoRjaWjnWvhcU3BisgrPUPkb9SPrbSS316m7Yv8Z1EiTA1XyBoKkqNLvXshyrt"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >52KKbp</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/BuXbw8"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(157, 149, 185);"
+                  >BuXbw8
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.2000
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            899.49k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/28iqJ7g9ZFMKWLGrHsSxRGumSCGjyJTYCmh8U9sTXeT5zUMgSdqjSPiboqBYpDU5dGgYTLxNZuZ9gWcbMHgFNhJ7"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >28iqJ7</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/Hqjxi5DEDtomdakv9Sm187woonK8qzcSrCmVrdf67RWR"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(156, 179, 183);"
+                  >Hqjxi5
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.6000
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            2.72m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/9jzTjAVk2EpHA9BE6CkEEk4EUwbYDXEDrLVMjff6waeoQjuK8EvFeCeRa1epuawK6N9DnCc6mMEFn1qF5V1syXH"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >9jzTjA</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/6uk2JWU4YWVuhZMuHASEBh3GBieUZsXKYSeSW7wiywsM"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(178, 215, 198);"
+                  >6uk2JW
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.2988
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.37m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/SLpe1dEWgUR2vqXc9fk9xM2MNy2QmRdtkjgdNByX3fsgroZCqsMk9u8ZYFemyyFcrY1cxeRjPKAfrPT7a3FsHtG"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >SLpe1d</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/saltman"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmbCEo86U4qU2maNzYWbdSszJDHbVf4DghvgaqPAzyZBCD?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(198, 169, 170);"
+                  >saltman
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0994
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            458.42k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/CDcJKujc5uY5jgcxRgpAdXm4nMWbBVSuHzi6j4mkaeeMoLCSdqtngaetfUKoN75DBpfPGQGvsvfGa6ubddDaCYA"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >CDcJKu</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/hughjanus"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(221, 191, 129);"
+                  >hughjanus
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.6845
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.19m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3zahbY3u2TyxxUsXK9aRcTmpnrb5oJUgGvw7TBDbBGwDsMwpK76J9UcWexdVdR9YJzyExcNnG2Uwjy7GchnSjtzu"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3zahbY</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/BnYeemEJouVcHNSztUCS7B14n8aNHrtURjC1R4fWo2pF"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(191, 238, 214);"
+                  >BnYeem
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.9659
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.48m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3hbsuYkCLV71PaFNPtK9WMBcNF8VbPjTQy4HhYVaZRgdz5CjNyzzEn8Lb1p65LGzb7G7hMUSyUxWviLbDxXMXyMr"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3hbsuY</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/Kfg32"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(233, 199, 197);"
+                  >Kfg32
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0191
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            87.51k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2Qp58xU3xa5cLTBRXnXhdoJhTcjyQ82AKnsnRAucUSumpYdfiU79hFw2D5ENRf374KurBZMVHuxcQCfm6x984eay"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2Qp58x</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/sa4bnj1"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmcWRpenfxRqP3bUsbKTRstnmB6i1gujfmQAbtrxg8xW1o?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(227, 202, 239);"
+                  >sa4bnj1
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            2.0135
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            9.02m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4MRFqqaBHKHNiuAMa9kmBu7REduGENHh6SXVVrN7yMtYCX8nmqv9AwFC8omhWjNj28fqi4xh2daM3AtXPUJiXcRK"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4MRFqq</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/GSj4DTtvAXTK4jtvetP1oTZyTkbjryRWRbd1EnxTtiJB"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(133, 173, 233);"
+                  >GSj4DT
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0402
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            176.20k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/DAdbykatp329SE76Kjm5nPc287bon2EddKaKn4L1Jv88qphbjsWF1HejPdyL3mDC8MgP9c1mv7fweaNn5Bi2gcm"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >DAdbyk</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/J7JUvMLnY1wLgdXchwUxVmsicJnDntucmhfaREBQbw1S"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(176, 227, 142);"
+                  >J7JUvM
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.2602
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.14m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/J6bdWHft5VVzeWHfVqndXWSfWQ8BJUumgwzAuprA5ebwkTpt4b8fvMmkWY1d1yamMf8v7GAWFNUARaPXjaBCsoS"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >J6bdWH</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/CoDdw3cAX13dxwahw2C16ohsVhrDdrN3UVb4mvNLo9wD"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(199, 208, 144);"
+                  >CoDdw3
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.4901
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            2.17m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3QYritY3HYoHVNX1xf6P1oPg6GD3SfMsQysZcej3SrazSCSrVjsK7NxySB6ULNqm3AZ8b2VazWdcDAD1bDuddiq6"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3QYrit</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/AqVhwvajmfKyoJwHj46dYzm2EiZUYW64TjmTzYripByh"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(128, 140, 203);"
+                  >AqVhwv
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.5027
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            6.82m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2cF9Sa2Cj2u5DSmJbNxGTi1p7yinRWAkMLzaViHqehg5zn7Ww7pp3Wdw3WxBBYvz88UEadEHVVFCYBLp7kDaX15f"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2cF9Sa</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/DHb8SqdV662GVcvRB39qSHTiApbSQX6sEF9GuuioUu6b"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(151, 142, 172);"
+                  >DHb8Sq
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            2.6346
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            11.80m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/EfBMyXuJJg26YqTnmb8V1ajhqN4QvdyVAtZvvLniBXaSS8cAMqNNKrJGBM1g1AtJos9x7z5582q4gxwFw6cGY3A"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >EfBMyX</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/jrjubilum"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(233, 161, 156);"
+                  >jrjubilum
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.0459
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.60m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/22JZMGevejaz1J3Dk45FBdbtawrAcBgWkze7csacC18CRmZTgfLCnC7LJcUWzfF65yvmq66JGHnKTvkAW4u116tD"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >22JZMG</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/HH4DbCmyCvNDrxTGbKxmAQdencWpwPKnkJTSr9SyeKFG"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(176, 182, 235);"
+                  >HH4DbC
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.4157
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            6.41m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2eWb9qyD5ubYA6qtQnQTDRSvBE4NzjDhp5GaHKey8AgN3aKgqEGYCjP8AbFbK8upu2SJiVk5xvq1ski6n4y1mGyZ"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2eWb9q</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/wKdoi9Qi8EHsyx4Eyzi5E6Ww5LAucjTQag3bU4rcxtP"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(144, 199, 158);"
+                  >wKdoi9
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.4607
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            2.13m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3wN81TUgid7CkXwGTbdjXiXnNonKZRDeMNV9kCVaYsyL1zNqsgCHKPvdHHHgSfF6jMDhHM688VYkfvNRSFd9aYGY"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3wN81T</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/memesendor"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmfQ6KE59mcsswd3XGeereB2XRDBDBqJsaH5asBEt732aE?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(189, 163, 157);"
+                  >memesendor
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.4627
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            15.47m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/298qNm2Yfsm63dPdmeFDZ88N88M7fcCmKmhmGHD95qRPooBbKorP2ytCvczpej8rTgR9cne3HWaWhP2htH6NZVU7"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >298qNm</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/CoDdw3cAX13dxwahw2C16ohsVhrDdrN3UVb4mvNLo9wD"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(199, 208, 144);"
+                  >CoDdw3
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.9604
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            8.60m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4E1J2gGfdh8ChQYRNWZwqHyb84RZ4bBhPeoKSfcuJLxDr28CSxpTmPQ4eRoUjLF5g6aGVHjLM3QFsY7qFhGPERgJ"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4E1J2g</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/4r6GyAJVmCcFDPTjYxAEfqPiqj95cc7pJ8YgFH521LqK"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(182, 156, 155);"
+                  >4r6GyA
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.9848
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.50m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4yLtCWMGH3JADfQigvoTVa7cWEV5DXyWttJQmdYU7H533qaioKsG5FWHfMrGZv9kUZLctbN9DKsLg5CpVX93ZXmv"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4yLtCW</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/dumb69"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmW2PUMy6q2M8aappYq8U4qCYSVjjLN7Ya9Aqr2Mnqn2dH?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(157, 215, 176);"
+                  >dumb69
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.2487
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.12m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5AnNd1umrAq9XpAFhNNSFhiPtiKfEemttwBLb9EeWrRxwfTU7fCebbDyAn96kxCoybzZ7uNVyK2cjLy5R8cb9NvM"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5AnNd1</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/fd3ojf"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(149, 168, 217);"
+                  >fd3ojf
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.2203
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.02m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5KSczxVjbCFHB6UyxnaX83xi4pFTrgSCu2Wi6iWwe51qQW4cWXxZMq2c68cpZGa2cbrf7c6pvUka4nh3sBhbNhiy"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5KSczx</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/BXgxcvEAapMFepoxadEUUkpCujrRHgoMybhQquRuEgPf"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(249, 141, 167);"
+                  >BXgxcv
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0487
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            224.23k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3AfB16UvyW1qGFVsrbugsP26eP8Tej5RyrUSNQ7BXEkR3TH2Q84fjqVbxsHiUsTz9MyahSgSWYfJKNfnQ5L7XsoY"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3AfB16</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/12589635"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmX4mZBFeaoQUfu1L1Lbg7Mrixdynknn3qHSQwr72kvTzv?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(182, 217, 242);"
+                  >12589635
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0490
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            225.34k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/K4PwXLyVTJttNaqifpbD6n9AQgoVtbfoYZJW9J6TcApxR6u3Gk9zi3ffyrgy5iD4VX7XtAWKLfEW5TobCqoGjhU"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >K4PwXL</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/8rarDy"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(223, 165, 130);"
+                  >8rarDy
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.9872
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.49m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4meT6WAbUyEUnage6apHNgkFRXTuesfKYcNwLHZGmv82GuZ5tsoVnqkJBbHvnwsueybhTwfsFEjs8ByNQVzeyxmi"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4meT6W</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/GrPRKkoPY99o6eGM8CNR7aT4ZUMyDE7DbRE5ptRmhkom"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(140, 165, 147);"
+                  >GrPRKk
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.5505
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            2.49m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/343vRtZA7k4yYVgU3hSvG6vxUXyiDYcrmpghKY81A9konSohGM9RpS3qgaf4jMzoxj6Dme62EBG71eanLevXuZHG"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >343vRt</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/Hvfm3EKtuGTX1gY3MexyWzatA4URA5UPNd3pqtLWBNVc"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(216, 191, 243);"
+                  >Hvfm3E
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.5372
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            19.59m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5nNMkU6JZ32uwi6ZDd8YcgAH2qdTdbqMHP575ZZdggvNWDSaKggBQCWa8HBNAT3jJprzu3icWnN7fZor8d6Hso5y"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5nNMkU</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/AYpSTBCvs84D4AWhj1SW4rpReandxpqfCPnajwwPpRLn"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(200, 214, 132);"
+                  >AYpSTB
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0509
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            208.71k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/jzG1cMCBBw33SAQ6UUXaEM5kAWzmq72qgTA7VcCWDR8FysjMUQUWgCugd2V3R3g1tax27RRLDqmHHVcuwwst8Mi"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >jzG1cM</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/Lucky133"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(213, 249, 156);"
+                  >Lucky133
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.8014
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.32m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5c79KnBgb486CW7kWuwvgduLCULbcG5sKWwXKDy81b1MfyjnJtsVpWCyzoT95a6dtvXoQ1TRhDWvjTWtNaMB7haV"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5c79Kn</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/3mTCyaG1Q4ioyoRqFButGGbZbgJz7HYdBDxrTp8Ys3k2"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(208, 226, 173);"
+                  >3mTCya
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            5.7182
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            25.55m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2UFoqSjCYZyQRp1z3VnniMaMpVPq5R5fGeyLQtV8CzfazyX57HGZyjLsS8x49TnHd5oi169wgX9B291d6RsaeNx9"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2UFoqS</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/FdbpzGpgjftWXpRR8BjBtJZku5H4iZNQAnpCS8wVJtFb"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(184, 168, 161);"
+                  >FdbpzG
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.0000
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            15.71m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/49rZmPneUFqYnEvCbpyzoJESxvqbdkbdELqwj97f3YCGXruMbnTxMHgwb2hM14Xgy1Nfnx6dCfPmj512UVnLGSiD"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >49rZmP</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/4kQG4ozP6Cc8YsGQQYxinR12jRR94umaXSNRM1B1NvZE"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(135, 181, 196);"
+                  >4kQG4o
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            2.1591
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            10.60m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/FeGrCQppy1Y6oGCQPd9EvDsG87fKwp1Stg2AnKd5MkwtsnAp9TvLDKw12UvuVbCPrBKkm6ajDMVhC2JR1V326Lx"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >FeGrCQ</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/GKuB6oiUbGU62yMjTZjcXG1FeqfnLQk6jCbg9ZQoY66T"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(137, 164, 254);"
+                  >GKuB6o
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0304
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            165.60k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3pXdq1HfQV1pcvPbzwxuURd7yFPEhShEK1ag26qUgbyomuKXrUTUz9mRCkSTshaConUdER66YKKReLBZSLHuJwrs"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3pXdq1</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/Hy6ovzsaPKWWTu2kyMLKs7ZvtEBJfSy19KysqWDPDKQA"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(209, 186, 222);"
+                  >Hy6ovz
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.5339
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            2.93m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3JCxw2b71XzhAPNG3gV99Xe1AENPqxvszT41eckYyS68L4QzvvmeGdP2wEffLTJ1DFf3om4U4skc5oTEq12xCsvs"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3JCxw2</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/CEizD6ZdurJkzzvDn161nKSxumC5MymxGguEbBPKJaF2"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(196, 147, 209);"
+                  >CEizD6
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0196
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            108.29k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/fyL6Vth6bbtT6waYGs53AGiXScYFRUgKbrWeisfheWR9tr2aRzfpfta1P7CpfSHEP7wuxgB9WqHhaFXU4orf8qr"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >fyL6Vt</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/CFHaGJHGR4AupyuQvhRtKDG4gR6Mini3bCxw869QgbpQ"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(158, 205, 208);"
+                  >CFHaGJ
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.1000
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            553.24k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5AwPCgypSq7hGpZbAmUeU8WBtjDpdNKe7ZZuoMEevLBAgH1wpCxTWrKfgfVSyZMiwdpTzXRgtenjVwSgWoFNb9Lt"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5AwPCg</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/24b2yChddXjbuBQHwMQiWKV4quQBvcG4VEX6af9ThxQy"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(187, 235, 219);"
+                  >24b2yC
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.7952
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            28.35m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4zxmQGJ3TvECPt9Dd9byY2ybBt82jvM3Cg1r56QXZQzq3og7HnoYyeoWvcZ7QRj2wLySjWrvy5TYq52XiatVPRSk"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4zxmQG</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/sa4bnj1"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmcWRpenfxRqP3bUsbKTRstnmB6i1gujfmQAbtrxg8xW1o?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(227, 202, 239);"
+                  >sa4bnj1
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.4598
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            9.02m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/26eUcqhGaUoU8PFaSokjW8QsrbXNeV1QTJGF3kN9j5L8qQEHe7QHyyckdMAuRUhGfUXgQoxuo4hoNQ538erJVnq6"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >26eUcq</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/GFbLYy1oCYAvJhPZjkmkH4CeVuZJDxCWShvEytvQj6r2"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(200, 181, 175);"
+                  >GFbLYy
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.3000
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.82m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5ognRSe7B23XZNZezocobMfjLYix6yYDCTEa1S6F2NXQvtPe1dccqHPt5wfBm8s2nkFpxfxeroWieNnpisRq2yP8"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5ognRS</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/Hvfm3EKtuGTX1gY3MexyWzatA4URA5UPNd3pqtLWBNVc"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(216, 191, 243);"
+                  >Hvfm3E
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.0714
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            19.59m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2TwrP7BbLGih1E4iES9AiCmxaTVdiacj5jfQ3ownCfqYvJLAMgjby1dJCcd5W6PmmDwg1xaqdVEKkZJudCNpkTSm"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2TwrP7</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/allahgreat"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(186, 216, 206);"
+                  >allahgreat
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.8294
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            5.59m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5HmNSv86b1cknGF5eZChN5xr5e2AtBaBXc9EWzWyarRFQwkkwMXnMKD9Xrk5G8RN7WNSJmvsijHVg3kkgZotBVK6"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5HmNSv</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/D5PuaS7ndqMZfRHXN2SPpHRCxP4Z8gp7EoXHQqjgVUJo"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(231, 135, 153);"
+                  >D5PuaS
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.3880
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            2.66m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3ouv5uV4MQB3Fap3yuCbsfDDPX8uB4q4nhCwU1ZDynWqrpPfeYuA6tqG4paZorZx5iYgLBwxAb2NDWYWZmAwjDpZ"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3ouv5u</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/EKSwWBE1DiGjn9tQ81iFesN9QWr2oJzBTBS7oNQBr7W8"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(244, 200, 133);"
+                  >EKSwWB
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0212
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            146.44k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2HSuJxGdQCdisLCo72qtcMqfdbZsbpYMHevS5AL5a18NTEcpaM12qsJkevDyv78ja8x2tHNUidVKvb9gtGCwpeTL"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2HSuJx</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/E4nSpCdejFQEXZ8irqefG2ta76hQ9MQAFnxCDQGWAesW"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(198, 238, 205);"
+                  >E4nSpC
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.9545
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            6.49m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3H9oP2F2PJsGXT75HtZ54XRg44X8cn6W7EXYyWuhZ2mvSkgX9nsDA1ANR95nHMe9M6WhMcZd1pHDwFSNAy4oDdkZ"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3H9oP2</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/Uba"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(178, 203, 247);"
+                  >Uba
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.5000
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.38m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/rnf2Wv4hE7gPzQfwWngKotJzS6ao5Gf1GNA4qKc1eY6qgFQ85wcfrB1QTjRbsfHK3YvddkMqvWHUEn4r3W9jrum"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >rnf2Wv</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/5yT3wRT7WgPv5MwRkyiShDYSL8mJbWLRYkWwKnpjJi18"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(189, 241, 191);"
+                  >5yT3wR
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.5189
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.56m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4eaSqncaFydJRBpV2aVUXw3Y85TEd7vbHPBoDkFQqcN94xDHTJVzoWADBddLhaxtJCckTkNAsqtHuukaVYMsGNnj"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4eaSqn</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/A9siWcHMztUiC8zdgX52EzbQm67RCAHJUUupuSyDwJ5U"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(217, 150, 195);"
+                  >A9siWc
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.5153
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.67m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3aPKTBj5xVNbA4pbYeSqC1a4wgssLLdKWjBxwQ1NZV65ANh1KGyoVaBhoaHD37DZBT8CkSYtZTLqET9MDksG3FNJ"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3aPKTB</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/CJgUBsmcUAiSqFNH6eLTbnBtvmPghtFCx9PyJ1TejGFR"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(165, 149, 150);"
+                  >CJgUBs
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.2126
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.47m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/TtDTwVYFU3Jt9FPppSmNUyU6uWVPd7svzqqtMiEFP6aMhKTd1N6nnTqkM8DuBAoNWzQRb8MhE4wyRpe3qKVwqSk"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >TtDTwV</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/55xMWH4GCnKvmRHDEbQse473UeRFkT5Btam6FtLFmmhF"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(133, 238, 146);"
+                  >55xMWH
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.5233
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.67m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5trANsoBsotUZPGWfLvU5XpcrMPm8CWWgaWAHFjd2WpEC2yMQMU1hUfAxKuHQT3DsVefjPUPnxxh4QyzS5EAWpy6"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5trANs</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/FuyUS6ARBp1YcdW6VfeHSNtKjU1sZh5vnhpDEfZisfQz"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(173, 194, 155);"
+                  >FuyUS6
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.0000
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            7.28m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/nQXoc8xVdmbHo9XcqaG4jBoUpWFKGVo9SjMnvdUbsUrVu1XFYcaJbd8e1twFDYWVpfokcKHAUEMqt1WNnoUt4Bp"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >nQXoc8</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/ATdYVXTCDBsecSQgCu6Dz7NC4Qr6VGc54c38U6Kh9P24"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(169, 131, 184);"
+                  >ATdYVX
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.5000
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            11.34m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2jgBQndyx5C3k2mfpfTVLfTtFEoXUxSDVNkj2KUvz7zKqeni7jx3PAMyUsaM9edjnKPawUMXZuzm1efU5z5Nhwco"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2jgBQn</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/xnxx"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(147, 235, 217);"
+                  >xnxx
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.2000
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            9.46m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/55EHNg8tyZh1NQnBuuHevWcqLeMjaDykdaktSytM4KRDPskZDMf4FQT7p4zqzh59kjQMyctbGzUTEhCbXBSepSD4"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >55EHNg</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/FwA36XH3tAiEDJaZWu8b9giB6yjM7AYf53MBwHWu3uNF"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(228, 249, 157);"
+                  >FwA36X
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.4808
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.89m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3DhVNSLLsX1LdBym2AQYPDGaWr4ketbDLvr3akVDqt5BryRimnWCEXuY69cAAsdaBXqXdhg8qoCXy4R4sR3FB77Z"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3DhVNS</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/memesendor"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmfQ6KE59mcsswd3XGeereB2XRDBDBqJsaH5asBEt732aE?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(189, 163, 157);"
+                  >memesendor
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0500
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            408.05k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2kAnRrsg2YTBKJ2uvvE5xfXEy8sygaBGmVVHNseF1FEvknzUqjjprMpdB87HdJrmZexm1GP29c4jQNwXqWh4iA9Y"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2kAnRr</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/5CahcXgq4naCS3pN9M3DxGDkbEvd48NMGiVNYVpyguUU"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(233, 169, 205);"
+                  >5CahcX
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.2013
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.65m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3GvW4oQ9uAFnaLvNxHuWJmhH3rYm9ZoDLHFJLwJCG2THzmWHvAPa9cVwpKf9zr2jsZgiGxucc1WXvBsTHcZGFtNz"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3GvW4o</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/21112"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(144, 174, 240);"
+                  >21112
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.2000
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.65m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4Yg4DzkV25tLNcDkia8yKPhxaAuLRdBCM78qHyEkJdEBcVpwLY4AjJNhV398mkUmYoYrmNrbipGuXF4BxX4ayAvK"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4Yg4Dz</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/GTicUfAgSaBb5jByNRGUuAKRRXX6yxCHHUzwBiEiTMR2"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(183, 130, 248);"
+                  >GTicUf
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0999
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            827.78k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5i2DRXyPdhUbc1C6aMW1t4wauFS6BVF3AejvLgquWK5X1TWy9qZbiZCTVqhQk88TNG7LEYRLYuvhmwnSEfr4DjsX"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5i2DRX</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/4LQuLeQYrAsqHtsJ3s15dT8A4Jpbr6iEKnK2DJAL7ZNo"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(244, 140, 144);"
+                  >4LQuLe
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.8299
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            6.98m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3ZxFL4MSt1PnqQz7YijxnV4ByVASeHjGAtQr1Pxj7szANxqJmRDVCGbWRhSeCiQTpYSuLAauhKTJVgWEeZTmXgsB"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3ZxFL4</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/8vDEKDX4qrnauLoWXLceDDD4QmBQMqPTJz7pR1cFwxQB"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(215, 172, 173);"
+                  >8vDEKD
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.1960
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.68m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3jCQUg8xsNqy353LiZcr1SdxjQ8kSQbcc2y5Xbu1s2R8WKxV7AsNPZLRzU3nAU6hbAYW5sgM8WCn6rJxF4dJERQQ"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3jCQUg</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/5hLrnPFkK3QAecjJouNQvAggSWPysV7pWAmwVxmFfALu"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(154, 170, 205);"
+                  >5hLrnP
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.4901
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.24m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/2VuK637eJoQ2of9s7XPfo3XGvehEBqGJBwtiVkHxsHFTPJpdUXxmRYvoNJSqia3N4o9RCz56cNVKRqhg3T7wRFjh"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >2VuK63</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/wolf"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmUeioJEkpgx327RX5VbiZecrN1vLfZ7hcVDXYTBgbRjwr?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(192, 209, 221);"
+                  >wolf
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.4703
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            13.13m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5w9VA7LZsZu6HXzxYJDCfpXXfnAwoj2JkGnD8E5363Hu3DSEyCFCgvSYveVUGXsbbtvx4qvY1xZPnxcxP7y1J6mm"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5w9VA7</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/memesendor"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmfQ6KE59mcsswd3XGeereB2XRDBDBqJsaH5asBEt732aE?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(189, 163, 157);"
+                  >memesendor
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0501
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            458.78k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/35VjLzbLkuGdgE1rrcr2gQLdPK6DNgT3qS81z2bmqv8TV3TG5tFwVuJuYJRk4MmniVeBA5Ko5cKEwHcTvzqYUSou"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >35VjLz</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/H3nV7k7ZHQ9FtboNbjc5aY3SB6SPiQnRKeT7Awedntps"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(166, 229, 221);"
+                  >H3nV7k
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0490
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            449.71k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4Q2iga6EzA8aJXeinYyeSaefiET1GTsGu668iq4iE3LpRFT8sQbQmERtu576SGCz2wxRhNL91jzfku9KFNxQEXb8"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4Q2iga</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/teerepu"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(242, 148, 131);"
+                  >teerepu
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.4000
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.70m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/42KVhk2QLxrAYqiw8dcdrLycJghWj9GwRqtHeWotPKyBhAU7yqcDrpyR7ARoc7Gpmm5DYY12GEpTFob3kxEJsUm9"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >42KVhk</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/27wS9GW25D17bHcWvY2bigrUcVDQUusjooQMng9E6AMA"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(174, 177, 143);"
+                  >27wS9G
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.4901
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.60m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3ydFiAYx9CLbPnXzYqbdZqku5GpszxYoxBTo5n3ihwBWNozi8TinnHoe6AEZjS53Jtda3y3fDjg4ByrWpHKhvs7X"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3ydFiA</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/sa4bnj1"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmcWRpenfxRqP3bUsbKTRstnmB6i1gujfmQAbtrxg8xW1o?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(227, 202, 239);"
+                  >sa4bnj1
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.0178
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            9.81m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5eGrNEggMGb9EVoyZFNEC8BEbFVUTtxVX6DWt5oiAnkaa4AdHeZat4HDgL1umWfGwRh5xK5962UFbWJ6LUAWrPWB"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5eGrNE</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/memesendor"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmfQ6KE59mcsswd3XGeereB2XRDBDBqJsaH5asBEt732aE?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(189, 163, 157);"
+                  >memesendor
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.5000
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.95m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/41CDPUoApKRkUdPeiRMpCeha9QAC2z3kYnt6M8vq4eqpLHDrr8mUBo78ZkBF2XKrQ3aakxbRe1inK93hT2Ghinha"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >41CDPU</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/9gWBQZkvMwm4SDP3cWUVM11JUko9BKYWhi2dw4i1h77K"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(129, 189, 151);"
+                  >9gWBQZ
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.4730
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            32.66m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4j1S4vXDxQxQgw21xnpXYvFJEQeFW4pG8F6ei7NJoYthYA6Rhoy84LJXYMgQ2FxB8MVsodppN1hWMcmcTgPVgvQA"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4j1S4v</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/FktTq35NxnYYv8cQyZDmQDv9ikYgMgWPsSHzQyekio8z"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(166, 145, 140);"
+                  >FktTq3
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.1389
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            26.44m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/3EmF7wUBVjjduGgA8gdjm7KyZVsLaNYeoHhWGGet7SQK3NNY8F7bJ6VXjcCzj5So93E86Lj9eJZbNqsJfWvwV89U"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >3EmF7w</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/BXgxcvEAapMFepoxadEUUkpCujrRHgoMybhQquRuEgPf"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(249, 141, 167);"
+                  >BXgxcv
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.1221
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            975.30k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/35Uc1ZvFq3wNz34Jj1SgLpjzaH1sVnTSWk2eeCbHAGuNH2TCTnVSzKumMu81Covu3t774ZGM21KS2kXt4VUDGWZy"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >35Uc1Z</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/8vDEKDX4qrnauLoWXLceDDD4QmBQMqPTJz7pR1cFwxQB"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(215, 172, 173);"
+                  >8vDEKD
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.4901
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            3.94m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5Qj6u9vi1bNZis1qpqrHpeZB8jJYF7qL4T1xC8AtPt3UyPs8co9m9NRRyoRJQ2k2MSm9Zvc2sT7R3438dqx7TngN"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5Qj6u9</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/27wS9GW25D17bHcWvY2bigrUcVDQUusjooQMng9E6AMA"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(174, 177, 143);"
+                  >27wS9G
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.4901
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.00m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/H1dBH46C4iX37bXNasKeJ6HPa332mxsFm28kpxjhgq6NRQfacGKqppuR78EgL3XQDgecZsUobdifDBkom1NwqCD"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >H1dBH4</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/adamsol"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(227, 243, 183);"
+                  >adamsol
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0983
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            809.92k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4D1GYUrCXsAPAqG9Qwwu2d3dgJJ5QhiNxbhUbweWy5UXgrox2cJzYWqeR4ZafvPLSZac9vgXg8QaLCF3buq4TkHU"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4D1GYU</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/7QNBoDjA9CD59YBg2eXqdxMejxYKkrRvWVgjhXc83G1j"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(226, 243, 243);"
+                  >7QNBoD
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.5412
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.43m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4W76nmrkqCAJfgTaRfjQHVaYXRgk1GGkYkDnkGrFrbzm5RwyX2ZTKYBaXiSJTyNhTMJa3E9v4xNhksQ3enNDDYdC"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4W76nm</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/sa4bnj1"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmcWRpenfxRqP3bUsbKTRstnmB6i1gujfmQAbtrxg8xW1o?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(227, 202, 239);"
+                  >sa4bnj1
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.0000
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            8.24m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/27JEbo5Fx5dLMWjtXUQDbiBTsDMLAd3dkoMMH3VbhBSDZSRLmaFoTpNEHgLSBvb3CexzzpDAURN7pe49Ua8Yf9Dq"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >27JEbo</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/GfYevkicN8L6M4JBkbftp1Uvrn297PrX9nwvbPRb9Jhi"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(223, 239, 238);"
+                  >GfYevk
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-red-300 sm:block">sell</div>
+          <div
+            class="p-3 text-left text-red-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>sell 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.5035
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            4.18m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4YN6ZFcJUC8ab5fBXqW9inyV1EyEpS5qkLeKUg4F4w2vXPtV5GGdZFUkX7Cjhhe38gk481DP2r6UX8i1t2htobAJ"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4YN6ZF</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/E7YTPYSkD3jLxjbtGxrLUnJ5ZyZtvuhfDceFdqfA8kqd"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(245, 168, 238);"
+                  >E7YTPY
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.0150
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            123.65k
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5gkmz9bLHgV35mrrVhHXKq1X3Qba5PPXU4DoFm93MN5MXv8LiPpKAkx4n8nLSaRZ5nqGkTrMx8TJ6mTqxubgntH3"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5gkmz9</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/q8Qqp33EntKqXdGoqWGVKeZEC56Xtr937tyZqyHU1Ui"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(149, 180, 239);"
+                  >q8Qqp3
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            0.3099
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            2.57m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/4M6eGRVK4HnLXB5HWeGNb27cTaCUaDFk58CUgrNc97r2EbZjJH5FYbAQJoTyWksU6UteukDHJCVNEfmJM7cBASEe"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >4M6eGR</a
+          >
+        </div>
+        <div
+          class="my-1 grid grid-cols-4 items-start rounded-lg bg-[#2e303a] text-xs sm:grid-cols-6"
+        >
+          <div
+            class="flex flex-wrap items-center py-3 pl-2 text-left"
+            style="word-break: break-all;"
+          >
+            <a href="/profile/99HPwT6AQLYZLGNoJBohEdnmCH8BRTDXYBhzUBEgbgDG"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(228, 235, 136);"
+                  >99HPwT
+                </span></span
+              ></a
+            >
+          </div>
+          <div class="hidden p-3 text-left text-green-300 sm:block">buy</div>
+          <div
+            class="p-3 text-left text-green-300 sm:flex sm:hidden sm:items-center"
+          >
+            <span>buy 3h</span>
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            1.0000
+          </div>
+          <div class="overflow-hidden whitespace-nowrap p-3 text-left">
+            8.46m
+          </div>
+          <div class="hidden p-3 text-left md:block">3h ago</div>
+          <a
+            href="https://solscan.io/tx/5JJBUcpgHAU2Trh8JUxDRJ31ojmGP2fG42bGszg6YWb4LtNCMemhTcRnUJveiJst6X78JxZu9y7BeJJXQXTrv2QL"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hidden p-3 text-right hover:text-blue-500 hover:underline sm:block"
+            >5JJBUc</a
+          >
+        </div>
+        <div class="mt-4 flex w-full justify-center">
+          <div class="mb-20 justify-self-end">
+            <div class="flex justify-center space-x-2 text-slate-50">
+              <button
+                disabled=""
+                class="cursor-not-allowed text-sm text-slate-400"
+                >[ &lt;&lt; ]</button
+              ><span>1</span><button
+                class="text-sm text-slate-50 hover:bg-transparent hover:font-bold hover:text-slate-50"
+                >[ &gt;&gt; ]</button
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative grid gap-1 text-slate-300">
+        <div
+          class="w-fit cursor-pointer text-sm text-slate-300 hover:underline"
+        >
+          [scroll to bottom]
+        </div>
+        <div class="grid h-fit gap-1 bg-[#2e303a] p-1 text-sm">
+          <div class="flex gap-1 text-xs">
+            <a href="/profile/3GfDXSv54NNtDaonxWFnz59yWHTH1YeSoHmcTgH1x4bw"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(140, 147, 158);"
+                  >3GfDXS (dev)</span
                 ></span
               ></a
             >
-            <div class="text-slate-400">21/06/2024, 16:03:39</div>
+            <div class="text-slate-400">21/06/2024, 13:20:54</div>
           </div>
           <div
             class="relative flex items-start gap-3 overflow-auto text-xs text-slate-300"
           >
             <img
-              src="https://pump.mypinata.cloud/ipfs/QmUrWAiJuxmdzvKSgRGAYzPkQsHNDj6hyGnAxtD63wxrdB"
+              src="https://pump.mypinata.cloud/ipfs/QmYmKcCSyhZVR4FB7t7nWoy1pp5LcfWBwHLvRwDuAUTz7y"
               class="w-32 cursor-pointer object-contain"
             />
             <div class="grid">
-              <div class="text-sm font-bold">Molly the cat (ticker: MTC)</div>
-              <div>Molly the cute kitty on her way to the moon!!</div>
+              <div class="text-sm font-bold">Poseidon (ticker: POSEIDON)</div>
+              <div>Binance Cat</div>
             </div>
           </div>
+        </div>
+        <div
+          id="p4054137"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/27wS9GW25D17bHcWvY2bigrUcVDQUusjooQMng9E6AMA"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(174, 177, 143);"
+                  >27wS9G
+                </span></span
+              ></a
+            >
+            <div>13:22:06</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054137 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>rug the I buy</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054147"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/djaarot"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(141, 193, 209);"
+                  >djaarot
+                </span></span
+              ></a
+            >
+            <div>13:22:36</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054147 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>lfg</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054192"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/27wS9GW25D17bHcWvY2bigrUcVDQUusjooQMng9E6AMA"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(174, 177, 143);"
+                  >27wS9G
+                </span></span
+              ></a
+            >
+            <div>13:24:47</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054192 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>dev make a tg</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054210"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/Pannasvart"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(218, 137, 151);"
+                  >Pannasvart
+                </span></span
+              ></a
+            >
+            <div>13:25:40</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054210 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>DEV WHERES THE TG</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054216"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/Pannasvart"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(218, 137, 151);"
+                  >Pannasvart
+                </span></span
+              ></a
+            >
+            <div>13:26:05</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054216 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>DEV U PAY DEX NOW AND SEND SOLSCAN</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054220"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/Pannasvart"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(218, 137, 151);"
+                  >Pannasvart
+                </span></span
+              ></a
+            >
+            <div>13:26:30</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054220 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>NO ONE APE HE HASNT PAID ANYTHING</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054225"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/johnwaka"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(175, 145, 191);"
+                  >johnwaka
+                </span></span
+              ></a
+            >
+            <div>13:26:55</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054225 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>https://x.com/binance/status/1248973179965468677</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054249"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/Pannasvart"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(218, 137, 151);"
+                  >Pannasvart
+                </span></span
+              ></a
+            >
+            <div>13:27:21</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054249 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>Told ya</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054254"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/27wS9GW25D17bHcWvY2bigrUcVDQUusjooQMng9E6AMA"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(174, 177, 143);"
+                  >27wS9G
+                </span></span
+              ></a
+            >
+            <div>13:27:34</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054254 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>dev could you rug now? and with your other wallets, ty</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054278"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/27wS9GW25D17bHcWvY2bigrUcVDQUusjooQMng9E6AMA"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(174, 177, 143);"
+                  >27wS9G
+                </span></span
+              ></a
+            >
+            <div>13:28:16</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054278 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>okay he is out</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054292"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/27wS9GW25D17bHcWvY2bigrUcVDQUusjooQMng9E6AMA"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(174, 177, 143);"
+                  >27wS9G
+                </span></span
+              ></a
+            >
+            <div>13:28:47</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054292 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>I will cto it, making tg</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054330"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/Pannasvart"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(218, 137, 151);"
+                  >Pannasvart
+                </span></span
+              ></a
+            >
+            <div>13:29:28</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054330 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>LFGGGG THIS CAN RUN LETS CTO</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054370"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/Pannasvart"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(218, 137, 151);"
+                  >Pannasvart
+                </span></span
+              ></a
+            >
+            <div>13:30:45</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054370 [reply]
+            </div>
+          </div>
+          <div class="flex gap-1 text-xs text-slate-400">
+            Mentions: <a href="#p4054397" class="text-green-300 hover:underline"
+              >#4054397</a
+            >
+          </div>
+          <div class="flex items-start gap-2">
+            <div>Make tg and post it here asap</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054397"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/dogold"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(149, 130, 137);"
+                  >dogold
+                </span></span
+              ></a
+            >
+            <div>13:31:30</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054397 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>
+              <a
+                href="#p4054370"
+                class="font-bold text-green-300 hover:underline">#4054370</a
+              > the guy said cto sold
+            </div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054419"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/HXQK3PZqh1sbDohGv2dxnMGdWNo94FzsA6fx6PuSu5aT"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(166, 242, 217);"
+                  >HXQK3P
+                </span></span
+              ></a
+            >
+            <div>13:32:22</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054419 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>I will also help. lets run it</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054433"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/manorman"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmXQEdNu7HwbwagTXAnjTWZ8raQWxM4BujgQjsgdaYmsdY?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(211, 145, 239);"
+                  >manorman
+                </span></span
+              ></a
+            >
+            <div>13:32:50</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054433 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>Cto this</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054447"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/djaarot"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(141, 193, 209);"
+                  >djaarot
+                </span></span
+              ></a
+            >
+            <div>13:33:37</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054447 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>cto this shit lfg</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054449"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/HXQK3PZqh1sbDohGv2dxnMGdWNo94FzsA6fx6PuSu5aT"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(166, 242, 217);"
+                  >HXQK3P
+                </span></span
+              ></a
+            >
+            <div>13:33:45</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054449 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>Ok I will make it, have dex credits also</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054466"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/HXQK3PZqh1sbDohGv2dxnMGdWNo94FzsA6fx6PuSu5aT"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(166, 242, 217);"
+                  >HXQK3P
+                </span></span
+              ></a
+            >
+            <div>13:34:08</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054466 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>https://t.me/+jjkBryq4kBk1Y2Fk</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054472"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/PG"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmZt5vFWewLvhDZMMM7cyZ9cFdMEU1zsurcUj4ihqy5cx5?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(240, 147, 202);"
+                  >PG
+                </span></span
+              ></a
+            >
+            <div>13:34:20</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054472 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>Open Socials</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054490"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/memesendor"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmfQ6KE59mcsswd3XGeereB2XRDBDBqJsaH5asBEt732aE?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(189, 163, 157);"
+                  >memesendor
+                </span></span
+              ></a
+            >
+            <div>13:35:02</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054490 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>LFG</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054495"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/LastChance"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(156, 211, 246);"
+                  >LastChance
+                </span></span
+              ></a
+            >
+            <div>13:35:06</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054495 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>It looks cool lol</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054509"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/HXQK3PZqh1sbDohGv2dxnMGdWNo94FzsA6fx6PuSu5aT"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(166, 242, 217);"
+                  >HXQK3P
+                </span></span
+              ></a
+            >
+            <div>13:36:04</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054509 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>https://t.me/+jjkBryq4kBk1Y2Fk</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054556"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/9t7doFjbgApfFmK77KThv789mWZS3FzQM8sYsQQa3KNr"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(222, 230, 192);"
+                  >9t7doF
+                </span></span
+              ></a
+            >
+            <div>13:37:31</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054556 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>join cto - https://t.me/+jjkBryq4kBk1Y2Fk</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054591"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/manorman"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmXQEdNu7HwbwagTXAnjTWZ8raQWxM4BujgQjsgdaYmsdY?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(211, 145, 239);"
+                  >manorman
+                </span></span
+              ></a
+            >
+            <div>13:38:47</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054591 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>bullish CTO</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054599"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/manorman"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmXQEdNu7HwbwagTXAnjTWZ8raQWxM4BujgQjsgdaYmsdY?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(211, 145, 239);"
+                  >manorman
+                </span></span
+              ></a
+            >
+            <div>13:39:03</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054599 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>https://t.me/+MyZLwedlIEczNDBk bullish CTO</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054601"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/memesendor"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmfQ6KE59mcsswd3XGeereB2XRDBDBqJsaH5asBEt732aE?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(189, 163, 157);"
+                  >memesendor
+                </span></span
+              ></a
+            >
+            <div>13:39:05</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054601 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>DEX will be paid soon, making portal</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054622"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/memesendor"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmfQ6KE59mcsswd3XGeereB2XRDBDBqJsaH5asBEt732aE?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(189, 163, 157);"
+                  >memesendor
+                </span></span
+              ></a
+            >
+            <div>13:40:20</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054622 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>CTOing lead is based; LFG!</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054626"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/HXQK3PZqh1sbDohGv2dxnMGdWNo94FzsA6fx6PuSu5aT"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(166, 242, 217);"
+                  >HXQK3P
+                </span></span
+              ></a
+            >
+            <div>13:40:25</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054626 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>Created portal also https://t.me/poseidoncatcto</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054638"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/memesendor"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmfQ6KE59mcsswd3XGeereB2XRDBDBqJsaH5asBEt732aE?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(189, 163, 157);"
+                  >memesendor
+                </span></span
+              ></a
+            >
+            <div>13:40:52</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054638 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>He gonna pay the DEX as soon as he finishes a website</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054661"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/7Lgp6P"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(247, 128, 185);"
+                  >7Lgp6P
+                </span></span
+              ></a
+            >
+            <div>13:41:41</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054661 [reply]
+            </div>
+          </div>
+          <div class="flex gap-1 text-xs text-slate-400">
+            Mentions: <a href="#p4054872" class="text-green-300 hover:underline"
+              >#4054872</a
+            >
+          </div>
+          <div class="flex items-start gap-2">
+            <div>
+              dex paid with credit join cto tg https://t.me/poseidoncatcto
+            </div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054690"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/Be7G2ZNCVav76xsXNKDARF5nmbpTqBKXKHGtRqph2PZ8"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(186, 175, 200);"
+                  >Be7G2Z
+                </span></span
+              ></a
+            >
+            <div>13:43:05</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054690 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>Is this shit going to the moon?</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054768"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/manorman"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmXQEdNu7HwbwagTXAnjTWZ8raQWxM4BujgQjsgdaYmsdY?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(211, 145, 239);"
+                  >manorman
+                </span></span
+              ></a
+            >
+            <div>13:45:36</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054768 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>to the moon</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054791"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/manorman"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmXQEdNu7HwbwagTXAnjTWZ8raQWxM4BujgQjsgdaYmsdY?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(211, 145, 239);"
+                  >manorman
+                </span></span
+              ></a
+            >
+            <div>13:46:09</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054791 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>Work is underway to pay for dex</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054793"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/manorman"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmXQEdNu7HwbwagTXAnjTWZ8raQWxM4BujgQjsgdaYmsdY?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(211, 145, 239);"
+                  >manorman
+                </span></span
+              ></a
+            >
+            <div>13:46:17</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054793 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>guys</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054795"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/manorman"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmXQEdNu7HwbwagTXAnjTWZ8raQWxM4BujgQjsgdaYmsdY?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(211, 145, 239);"
+                  >manorman
+                </span></span
+              ></a
+            >
+            <div>13:46:21</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054795 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>sendor</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054817"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/9SS8XC"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/Qmbny4caFxuQ9dV9z37AxqQa2S7N2pavbPXHapF4agDXBg?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(169, 241, 251);"
+                  >9SS8XC
+                </span></span
+              ></a
+            >
+            <div>13:47:08</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054817 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <img
+              src="https://pump.mypinata.cloud/ipfs/QmYmKcCSyhZVR4FB7t7nWoy1pp5LcfWBwHLvRwDuAUTz7y"
+              class="max-h-[500px] w-32 cursor-pointer object-contain"
+            />
+            <div>CTO -https://t.me/Poseidon_CTO</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054839"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/wolf"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmUeioJEkpgx327RX5VbiZecrN1vLfZ7hcVDXYTBgbRjwr?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(192, 209, 221);"
+                  >wolf
+                </span></span
+              ></a
+            >
+            <div>13:47:38</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054839 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>
+              Easy sendor... binance dog hit 1 mil, this is second best if not
+              better since it's a cat. SEND IT!
+            </div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054851"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/27wS9GW25D17bHcWvY2bigrUcVDQUusjooQMng9E6AMA"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(174, 177, 143);"
+                  >27wS9G
+                </span></span
+              ></a
+            >
+            <div>13:48:17</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054851 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>TWITTER MADE TOO https://x.com/POSEIDONCTO</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054852"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/xnxx"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(147, 235, 217);"
+                  >xnxx
+                </span></span
+              ></a
+            >
+            <div>13:48:22</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054852 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>Lfg</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054855"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/9SS8XC"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/Qmbny4caFxuQ9dV9z37AxqQa2S7N2pavbPXHapF4agDXBg?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(169, 241, 251);"
+                  >9SS8XC
+                </span></span
+              ></a
+            >
+            <div>13:48:35</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054855 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <img
+              src="https://pump.mypinata.cloud/ipfs/QmYmKcCSyhZVR4FB7t7nWoy1pp5LcfWBwHLvRwDuAUTz7y"
+              class="max-h-[500px] w-32 cursor-pointer object-contain"
+            />
+            <div>CTO -https://t.me/Poseidon_CTO</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054872"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/9NxWqJyFC73vDK4sS7VjCFzhE43Td7JhaEcrN5Pufm5m"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(204, 196, 198);"
+                  >9NxWqJ
+                </span></span
+              ></a
+            >
+            <div>13:49:16</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054872 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>
+              <a
+                href="#p4054661"
+                class="font-bold text-green-300 hover:underline">#4054661</a
+              > Checkdex.xyz is a thing you know
+            </div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054883"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/holymoly"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmTnC5JCuovPiMER44Ws999f6GebkJJ2U9sEPrETGKFyty?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(238, 157, 188);"
+                  >holymoly
+                </span></span
+              ></a
+            >
+            <div>13:49:41</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054883 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>poseidon exist kek</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054891"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/5f8XwdJfKvbrhVrX21zCfuxU9Jjbtn5JR41Y2d4L3VYE"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(189, 131, 168);"
+                  >5f8Xwd
+                </span></span
+              ></a
+            >
+            <div>13:49:57</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054891 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <img
+              src="https://pump.mypinata.cloud/ipfs/QmYmKcCSyhZVR4FB7t7nWoy1pp5LcfWBwHLvRwDuAUTz7y"
+              class="max-h-[500px] w-32 cursor-pointer object-contain"
+            />
+            <div>CTO -&gt; https://t.me/SolanaPoseidon</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054894"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/9SS8XC"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/Qmbny4caFxuQ9dV9z37AxqQa2S7N2pavbPXHapF4agDXBg?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(169, 241, 251);"
+                  >9SS8XC
+                </span></span
+              ></a
+            >
+            <div>13:50:03</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054894 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <img
+              src="https://pump.mypinata.cloud/ipfs/QmYmKcCSyhZVR4FB7t7nWoy1pp5LcfWBwHLvRwDuAUTz7y"
+              class="max-h-[500px] w-32 cursor-pointer object-contain"
+            />
+            <div>CTO -https://t.me/Poseidon_CTO</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054902"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/pfcdev"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmapSGvY7fnNNTzsP2eQCcUCPqhYHQJ27UzDv68irc5ahU?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(133, 218, 168);"
+                  >pfcdev
+                </span></span
+              ></a
+            >
+            <div>13:50:25</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054902 [reply]
+            </div>
+          </div>
+          <div class="flex gap-1 text-xs text-slate-400">
+            Mentions: <a href="#p4054917" class="text-green-300 hover:underline"
+              >#4054917</a
+            >
+          </div>
+          <div class="flex items-start gap-2">
+            <div>Telegram ? Twitter ? Dev ?</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054907"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/4APwHE"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(240, 156, 245);"
+                  >4APwHE
+                </span></span
+              ></a
+            >
+            <div>13:50:33</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054907 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>hitttt</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054917"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/8Fmm1jDKt9uW7Jg5tX6rhZsXKNmCJcaZANYFv6FWDbkh"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(134, 251, 155);"
+                  >8Fmm1j
+                </span></span
+              ></a
+            >
+            <div>13:51:00</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054917 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>
+              <a
+                href="#p4054902"
+                class="font-bold text-green-300 hover:underline">#4054902</a
+              > https://t.me/poseidoncatcto real cto tg
+            </div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054934"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/9SS8XC"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/Qmbny4caFxuQ9dV9z37AxqQa2S7N2pavbPXHapF4agDXBg?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(169, 241, 251);"
+                  >9SS8XC
+                </span></span
+              ></a
+            >
+            <div>13:51:47</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054934 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <img
+              src="https://pump.mypinata.cloud/ipfs/QmYmKcCSyhZVR4FB7t7nWoy1pp5LcfWBwHLvRwDuAUTz7y"
+              class="max-h-[500px] w-32 cursor-pointer object-contain"
+            />
+            <div>CTO -https://t.me/Poseidon_CTO</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054997"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/D6Vcz3PuumDXNfvMEfs1RpWDibapjnENhBWdFNhJmbLk"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(247, 152, 170);"
+                  >D6Vcz3
+                </span></span
+              ></a
+            >
+            <div>13:54:22</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054997 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>Mooonnnn</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4055008"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/7Lgp6P"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(247, 128, 185);"
+                  >7Lgp6P
+                </span></span
+              ></a
+            >
+            <div>13:54:50</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4055008 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>dex being paid lfg just waiting for update</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4055019"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/7Lgp6P"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(247, 128, 185);"
+                  >7Lgp6P
+                </span></span
+              ></a
+            >
+            <div>13:55:08</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4055019 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>join cto tg https://t.me/poseidoncatcto</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4055021"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/7Lgp6P"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(247, 128, 185);"
+                  >7Lgp6P
+                </span></span
+              ></a
+            >
+            <div>13:55:13</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4055021 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>join cto tg https://t.me/poseidoncatcto</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4055027"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/7Lgp6P"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(247, 128, 185);"
+                  >7Lgp6P
+                </span></span
+              ></a
+            >
+            <div>13:55:18</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4055027 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>join cto tg https://t.me/poseidoncatcto</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          class="absolute bottom-0 left-0 w-fit cursor-pointer text-sm text-slate-300 hover:underline"
+        >
+          [scroll to top]
         </div>
         <div class="cursor-pointer justify-self-center hover:underline">
           [Post a reply]
@@ -155,41 +12890,36 @@
     </div>
     <div class="grid h-fit w-1/3 w-fit gap-4">
       <div class="grid w-[350px] gap-4">
+        <div class="rounded bg-blue-500 p-2 text-white">
+          Trade on raydium via Pump
+        </div>
         <div
           class="grid gap-4 rounded-lg border border-none bg-[#2e303a] p-4 text-gray-400"
-          data-dashlane-rid="01df3663469731ba"
-          data-form-type="other"
         >
-          <div class="mb-4 grid grid-cols-2 gap-2">
+          <div class="grid grid-cols-2 gap-2">
             <button class="rounded bg-green-400 p-2 text-center text-primary"
               >Buy</button
             ><button class="text-grey-600 rounded bg-gray-800 p-2 text-center"
               >Sell</button
             >
           </div>
-          <div class="flex w-full justify-between gap-2">
-            <button
-              class="rounded bg-primary px-2 py-1 text-xs text-gray-400 hover:bg-gray-800 hover:text-gray-300"
-              >switch to MTC</button
-            ><button
-              class="rounded bg-primary px-2 py-1 text-xs text-gray-400 hover:bg-gray-800"
-              type="button"
-              aria-haspopup="dialog"
-              aria-expanded="false"
-              aria-controls="radix-:r25:"
-              data-state="closed">Set max slippage</button
-            >
-          </div>
-          <div class="flex flex-col">
+          <div>
+            <div class="mb-2 flex items-center justify-between">
+              <div></div>
+              <button
+                class="rounded bg-primary px-2 py-1 text-xs text-gray-400 hover:bg-gray-800"
+                type="button"
+                aria-haspopup="dialog"
+                aria-expanded="false"
+                aria-controls="radix-:rf:"
+                data-state="closed">Set max slippage</button
+              >
+            </div>
             <div class="relative flex items-center rounded-md bg-[#2e303a]">
               <input
                 class="flex h-10 w-full rounded-md border border-slate-200 bg-transparent px-3 py-2 pl-3 text-sm text-white outline-none ring-offset-white file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-slate-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-slate-800 dark:bg-slate-950 dark:ring-offset-slate-950 dark:placeholder:text-slate-400 dark:focus-visible:ring-slate-300"
-                id="amount"
                 placeholder="0.0"
                 type="number"
-                data-dashlane-rid="ad224402b51f4df2"
-                data-form-type="other"
-                value=""
               />
               <div class="absolute right-2 ml-2 flex items-center">
                 <span class="mr-2 text-white">SOL</span><img
@@ -209,71 +12939,41 @@
             <div class="mt-2 flex rounded-lg bg-[#2e303a] p-1">
               <button
                 class="-ml-1 rounded bg-primary px-2 py-1 text-xs text-gray-400 hover:bg-gray-800 hover:text-gray-300"
-                data-dashlane-rid="c5ba6005dbd06b84"
-                data-form-type="action"
-                data-dashlane-label="true">reset</button
+                >reset</button
               ><button
                 class="ml-1 rounded bg-primary px-2 py-1 text-xs text-gray-400 hover:bg-gray-800 hover:text-gray-300"
-                data-dashlane-rid="bbb8f7fa224f22fa"
-                data-form-type="action"
-                data-dashlane-label="true">1 SOL</button
+                >1 SOL</button
               ><button
                 class="ml-1 rounded bg-primary px-2 py-1 text-xs text-gray-400 hover:bg-gray-800 hover:text-gray-300"
-                data-dashlane-rid="a333dc292869d84d"
-                data-form-type="action"
-                data-dashlane-label="true">5 SOL</button
+                >5 SOL</button
               ><button
                 class="ml-1 rounded bg-primary px-2 py-1 text-xs text-gray-400 hover:bg-gray-800 hover:text-gray-300"
-                data-dashlane-rid="89d7450916a9de47"
-                data-form-type="action"
-                data-dashlane-label="true">10 SOL</button
+                >10 SOL</button
               >
             </div>
           </div>
           <button
             class="inline-flex h-10 w-full items-center justify-center whitespace-nowrap rounded-md bg-green-400 px-4 py-3 text-sm font-medium text-primary ring-offset-white transition-colors hover:bg-green-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:bg-slate-50 dark:text-slate-900 dark:ring-offset-slate-950 dark:hover:bg-slate-50/90 dark:focus-visible:ring-slate-300"
-            data-dashlane-rid="761f035cb9b10d5f"
-            data-form-type="action"
-            data-dashlane-label="true">place trade</button
+            >place trade</button
           >
         </div>
       </div>
       <div
         class="grid w-[350px] gap-4 rounded-lg border border-none bg-transparent text-gray-400"
       >
-        <div class="flex gap-4">
-          <a
-            href="https://x.com/Molly_solona"
-            target="_blank"
-            rel="noopener noreferrer"
-            class=" text-gray-400 hover:underline">[twitter]</a
-          ><a
-            href="https://t.me/Molly_cto_CTO"
-            target="_blank"
-            rel="noopener noreferrer"
-            class=" text-gray-400 hover:underline">[telegram]</a
-          ><a
-            href="https://x.com/Molly_solona"
-            target="_blank"
-            rel="noopener noreferrer"
-            class=" text-gray-400 hover:underline">[website]</a
-          >
-        </div>
         <div class="flex h-fit items-start gap-3">
           <img
-            src="https://pump.mypinata.cloud/ipfs/QmUrWAiJuxmdzvKSgRGAYzPkQsHNDj6hyGnAxtD63wxrdB"
+            src="https://pump.mypinata.cloud/ipfs/QmYmKcCSyhZVR4FB7t7nWoy1pp5LcfWBwHLvRwDuAUTz7y"
             class="w-32 cursor-pointer object-contain"
           />
           <div>
-            <div class="text-sm font-bold">Molly the cat (ticker: MTC)</div>
-            <div class="text-xs text-gray-400">
-              Molly the cute kitty on her way to the moon!!
-            </div>
+            <div class="text-sm font-bold">Poseidon (ticker: POSEIDON)</div>
+            <div class="text-xs text-gray-400">Binance Cat</div>
           </div>
         </div>
         <div>
           <div class="mb-1 text-sm text-gray-400">
-            bonding curve progress: 1%
+            bonding curve progress: 100%
           </div>
           <div
             aria-valuemax="100"
@@ -287,37 +12987,18 @@
               data-state="indeterminate"
               data-max="100"
               class="h-full w-full flex-1 bg-green-300 transition-all dark:bg-slate-50"
-              style="transform: translateX(-99%);"
+              style="transform: translateX(0%);"
             ></div>
           </div>
         </div>
         <div class="text-xs text-gray-400">
-          when the market cap reaches $55,013 all the liquidity from the bonding
+          when the market cap reaches $0 all the liquidity from the bonding
           curve will be deposited into Raydium and burned. progression increases
-          as the price goes up.<br /><br />there are 787,993,903 tokens still
-          available for sale in the bonding curve and there is 0.143 SOL in the
-          bonding curve.
+          as the price goes up.<br /><br />there are 0 tokens still available
+          for sale in the bonding curve and there is 0 SOL in the bonding curve.
         </div>
-        <div class="grid gap-2">
-          <div class="text-sm text-gray-400">king of the hill progress: 0%</div>
-          <div
-            aria-valuemax="100"
-            aria-valuemin="0"
-            role="progressbar"
-            data-state="indeterminate"
-            data-max="100"
-            class="relative h-4 w-full overflow-hidden rounded-full bg-gray-700 dark:bg-slate-800"
-          >
-            <div
-              data-state="indeterminate"
-              data-max="100"
-              class="h-full w-full flex-1 bg-yellow-500 transition-all dark:bg-slate-50"
-              style="transform: translateX(-100%);"
-            ></div>
-          </div>
-          <div class="text-xs text-gray-400">
-            dethrone the current king at a $26,582 mcap
-          </div>
+        <div class="font-bold text-yellow-500">
+          👑 Crowned king of the hill on 21/06/2024, 13:44:34
         </div>
         <div class="grid gap-2">
           <div class="flex items-center justify-between font-bold">
@@ -331,74 +13012,182 @@
               <div class="flex justify-between">
                 <a
                   class="hover:underline"
-                  href="https://solscan.io/account/HnUnB6Xr1HwnFzRmRQfJ674RNTdKnvVVyBQP9DJrvWwa"
+                  href="https://solscan.io/account/GT85NLK8nvpUqYNjp5D2GXhWXcCcPsxoT6ZXkjGoziGn"
                   target="_blank"
-                  rel="noopener noreferrer">1. HnUnB6 🏦 (bonding curve)</a
+                  rel="noopener noreferrer">1. GT85NL</a
                 >
-                <div>99.95%</div>
+                <div>38.52%</div>
               </div>
               <div class="flex justify-between">
                 <a
                   class="hover:underline"
-                  href="https://solscan.io/account/GdWaoWDuZFQSGKVqnAf7Dq4zbkdgBMgG9oLRX9QssWMd"
+                  href="https://solscan.io/account/5n2NzQgHKRuHGBSss8TPBRkvjy1HNBBpFVw9qJ1STuhJ"
                   target="_blank"
-                  rel="noopener noreferrer">2. GdWaoW</a
+                  rel="noopener noreferrer">2. 5n2NzQ</a
                 >
-                <div>0.04%</div>
+                <div>4.23%</div>
               </div>
               <div class="flex justify-between">
                 <a
                   class="hover:underline"
-                  href="https://solscan.io/account/61K4PjnY41fcR73kCdVnpy5TTPeZYBFyp94MyzMRSdsr"
+                  href="https://solscan.io/account/9kQiNnFiaCVbRDenS4BKzgkuMjQgmndMgfS3XFWi87rB"
                   target="_blank"
-                  rel="noopener noreferrer">3. 61K4Pj</a
+                  rel="noopener noreferrer">3. 9kQiNn</a
                 >
-                <div>0.00%</div>
+                <div>3.96%</div>
               </div>
               <div class="flex justify-between">
                 <a
                   class="hover:underline"
-                  href="https://solscan.io/account/5evWZnVJsbtiCkNPj62jK2LPwUwprnuDbFVonzKPxPPW"
+                  href="https://solscan.io/account/B6bHdQmuNDpnMiXixG1qcxhcSyCKiQ68PGHzDjKVy9y4"
                   target="_blank"
-                  rel="noopener noreferrer">4. 5evWZn</a
+                  rel="noopener noreferrer">4. B6bHdQ</a
                 >
-                <div>0.00%</div>
+                <div>3.42%</div>
               </div>
               <div class="flex justify-between">
                 <a
                   class="hover:underline"
-                  href="https://solscan.io/account/CCeHtPnszLi9CgVd4qABWYoggJLmkorfUkF9sxKSx1Xx"
+                  href="https://solscan.io/account/pPLdkq5CcrNd7k3FAZhaFcbpH13xNqUvGKdgfuCDKj7"
                   target="_blank"
-                  rel="noopener noreferrer">5. CCeHtP</a
+                  rel="noopener noreferrer">5. pPLdkq</a
                 >
-                <div>0.00%</div>
+                <div>2.55%</div>
               </div>
               <div class="flex justify-between">
                 <a
                   class="hover:underline"
-                  href="https://solscan.io/account/2ZhnTnfAgYrQraaqbzUS3Y2d2FEDR12gX2qopoQEwycX"
+                  href="https://solscan.io/account/92sEVeLaGy2GXwcijaokHHsNtE8Y9GtmbkQMy1U5ik7c"
                   target="_blank"
-                  rel="noopener noreferrer">6. 2ZhnTn</a
+                  rel="noopener noreferrer">6. 92sEVe</a
                 >
-                <div>0.00%</div>
+                <div>2.22%</div>
               </div>
               <div class="flex justify-between">
                 <a
                   class="hover:underline"
-                  href="https://solscan.io/account/6miJC2xz4qheLTc5ZLN4xxmT4hFXKFPoTsoq4vZxJEYW"
+                  href="https://solscan.io/account/4Kvc5vJCtqeGKEupPckUExP8eXTH2nRkUPMxtHZG8uYo"
                   target="_blank"
-                  rel="noopener noreferrer">7. 6miJC2</a
+                  rel="noopener noreferrer">7. 4Kvc5v</a
                 >
-                <div>0.00%</div>
+                <div>2.15%</div>
               </div>
               <div class="flex justify-between">
                 <a
                   class="hover:underline"
-                  href="https://solscan.io/account/AKHjz5iiRaMLk1toTNjWvXnV4jPqWX1xnwwnbP8x7Btm"
+                  href="https://solscan.io/account/4SgbyGaZ2AN6sJYfZxUmXff2PCUVUUSz42UMmA5TSihr"
                   target="_blank"
-                  rel="noopener noreferrer">8. AKHjz5 🤵‍♂️ (dev)</a
+                  rel="noopener noreferrer">8. 4SgbyG</a
                 >
-                <div>0.00%</div>
+                <div>1.94%</div>
+              </div>
+              <div class="flex justify-between">
+                <a
+                  class="hover:underline"
+                  href="https://solscan.io/account/DZ25CGUVczLKz8mCDoNZV4JcCaH2SAGzsJ83EGtSLbRy"
+                  target="_blank"
+                  rel="noopener noreferrer">9. DZ25CG</a
+                >
+                <div>1.74%</div>
+              </div>
+              <div class="flex justify-between">
+                <a
+                  class="hover:underline"
+                  href="https://solscan.io/account/A6r2iwRotXSxqtMuabXz57LAaZCaEG2iJ8XGn1Sjunnq"
+                  target="_blank"
+                  rel="noopener noreferrer">10. A6r2iw</a
+                >
+                <div>1.60%</div>
+              </div>
+              <div class="flex justify-between">
+                <a
+                  class="hover:underline"
+                  href="https://solscan.io/account/EpyHqw9ZVHDTdrwWk58QLVSi5PVcixJo25Y3CPegXoDP"
+                  target="_blank"
+                  rel="noopener noreferrer">11. EpyHqw</a
+                >
+                <div>1.44%</div>
+              </div>
+              <div class="flex justify-between">
+                <a
+                  class="hover:underline"
+                  href="https://solscan.io/account/9LHBhFCugDv7Qre1uDWJJQwC7VQhbEcxNWcPEjSvXMey"
+                  target="_blank"
+                  rel="noopener noreferrer">12. 9LHBhF</a
+                >
+                <div>1.42%</div>
+              </div>
+              <div class="flex justify-between">
+                <a
+                  class="hover:underline"
+                  href="https://solscan.io/account/5iiwX9L57a43yb3M1sJzWiPWRazfutsDZsZ6tDGSgm2V"
+                  target="_blank"
+                  rel="noopener noreferrer">13. 5iiwX9</a
+                >
+                <div>1.33%</div>
+              </div>
+              <div class="flex justify-between">
+                <a
+                  class="hover:underline"
+                  href="https://solscan.io/account/E3dh8mdoixgUWm6MfEyJJLqWAfiQUsipm8KwQvchP8CS"
+                  target="_blank"
+                  rel="noopener noreferrer">14. E3dh8m</a
+                >
+                <div>1.30%</div>
+              </div>
+              <div class="flex justify-between">
+                <a
+                  class="hover:underline"
+                  href="https://solscan.io/account/Fq9mHTYNoNwsHJqnDiXWkJw4diY8LrG8SGM2X1AcPm7A"
+                  target="_blank"
+                  rel="noopener noreferrer">15. Fq9mHT</a
+                >
+                <div>1.13%</div>
+              </div>
+              <div class="flex justify-between">
+                <a
+                  class="hover:underline"
+                  href="https://solscan.io/account/8rRM8UdQUVooG43GiRoxDWkWq13C2q1FwjAVdsY5PJq8"
+                  target="_blank"
+                  rel="noopener noreferrer">16. 8rRM8U</a
+                >
+                <div>1.08%</div>
+              </div>
+              <div class="flex justify-between">
+                <a
+                  class="hover:underline"
+                  href="https://solscan.io/account/4KLgSj38moiSPQMCRQYPr1935AFrcZumUDkJVDLUuvN9"
+                  target="_blank"
+                  rel="noopener noreferrer">17. 4KLgSj</a
+                >
+                <div>1.03%</div>
+              </div>
+              <div class="flex justify-between">
+                <a
+                  class="hover:underline"
+                  href="https://solscan.io/account/9pkpUceHJbvzYiMPp48hT1v3Ypqf5THXLYVjxisJfsrR"
+                  target="_blank"
+                  rel="noopener noreferrer">18. 9pkpUc</a
+                >
+                <div>0.96%</div>
+              </div>
+              <div class="flex justify-between">
+                <a
+                  class="hover:underline"
+                  href="https://solscan.io/account/Cqqp1z9NwJLME5jLtV74xtfeWBqmAoGstR8ntDSVqXBH"
+                  target="_blank"
+                  rel="noopener noreferrer">19. Cqqp1z</a
+                >
+                <div>0.92%</div>
+              </div>
+              <div class="flex justify-between">
+                <a
+                  class="hover:underline"
+                  href="https://solscan.io/account/CXmEK3JmKqDrPET9DMdbxTQ73h7RCo58oxKLdLp6WDS1"
+                  target="_blank"
+                  rel="noopener noreferrer">20. CXmEK3</a
+                >
+                <div>0.87%</div>
               </div>
             </div>
           </div>
@@ -413,37 +13202,3204 @@
   style="grid-template-rows: 1fr auto;"
 >
   <div class="h-full overflow-auto p-4">
-    <div class="h-full w-full" id="chart">
-      <div class="grid h-fit gap-2">
-        <div class="chart-container">
-          <div
-            id="tv-chart-m3a9p7618cl"
-            class=""
-            style="height: 600px; width: 95%;"
+    <div class="grid gap-1">
+      <div class="mb-4 w-fit rounded bg-green-300 p-4">
+        raydium pool seeded! view the coin on raydium <a
+          class="text-blue-500 hover:underline"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://dexscreener.com/solana/79cREYHYSGe8kJSnWDKC5RPRBEWRZ18fRDjFdHi3jL6s"
+          >here</a
+        >
+      </div>
+      <div class="flex gap-2 text-sm text-green-300">
+        Market cap: $15,723.49
+      </div>
+      <div class="mb-3 text-gray-400">
+        <div class="flex items-center">
+          <label for="copy-ca">CA:</label><input
+            id="copy-ca"
+            class="ml-2 block w-full rounded-s-sm border border-gray-700 bg-black/10 px-1 py-0.5 text-sm focus-visible:outline-dashed focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50"
+            readonly=""
+            type="text"
+            value="jyB2Gg5rvNx44dnAh2wmwU6Cv5DYHxp1DGz2j6Ypump"
+          /><button
+            class=" inline-flex min-w-fit cursor-pointer items-center rounded-e-sm border border-s-0 border-gray-700 bg-black/20 px-2 py-0.5 text-sm text-gray-500 hover:bg-black/40 focus-visible:outline focus-visible:outline-1"
+            >copy</button
           >
-            <iframe
-              id="tradingview_61818"
-              name="tradingview_61818"
-              src="blob:https://pump.fun/454174f7-9792-4023-a537-5caed5c598c8"
-              data-widget-options="symbol=MTC&amp;interval=5&amp;widgetbar=%7B%22details%22%3Afalse%2C%22watchlist%22%3Afalse%2C%22news%22%3Afalse%2C%22datawindow%22%3Afalse%2C%22watchlist_settings%22%3A%7B%22default_symbols%22%3A%5B%5D%7D%7D&amp;timeFrames=%5B%7B%22text%22%3A%225y%22%2C%22resolution%22%3A%221W%22%7D%2C%7B%22text%22%3A%221y%22%2C%22resolution%22%3A%221W%22%7D%2C%7B%22text%22%3A%226m%22%2C%22resolution%22%3A%22120%22%7D%2C%7B%22text%22%3A%223m%22%2C%22resolution%22%3A%2260%22%7D%2C%7B%22text%22%3A%221m%22%2C%22resolution%22%3A%2230%22%7D%2C%7B%22text%22%3A%225d%22%2C%22resolution%22%3A%225%22%7D%2C%7B%22text%22%3A%221d%22%2C%22resolution%22%3A%221%22%7D%5D&amp;locale=en&amp;uid=tradingview_61818&amp;clientId=0&amp;userId=0&amp;chartsStorageVer=1.0&amp;debug=false&amp;timezone=Etc%2FUTC&amp;theme=dark"
-              title="Financial Chart"
-              frameborder="0"
-              allowtransparency="true"
-              scrolling="no"
-              allowfullscreen=""
-              style="display: block; width: 100%; height: 100%;"
+        </div>
+      </div>
+      <div class="grid w-[350px] gap-4">
+        <div class="rounded bg-blue-500 p-2 text-white">
+          Trade on raydium via Pump
+        </div>
+        <div
+          class="grid gap-4 rounded-lg border border-none bg-[#2e303a] p-4 text-gray-400"
+        >
+          <div class="grid grid-cols-2 gap-2">
+            <button class="rounded bg-green-400 p-2 text-center text-primary"
+              >Buy</button
+            ><button class="text-grey-600 rounded bg-gray-800 p-2 text-center"
+              >Sell</button
             >
-            </iframe>
           </div>
-          <div class="hidden">
-            <div id="dexscreener-embed">
-              <iframe
-                src="https://dexscreener.com/solana/null?embed=1&amp;theme=dark&amp;trades=0&amp;info=0"
-                data-dashlane-frameid="922"
-                style="height: 600px; width: 95%;"
-              ></iframe>
+          <div>
+            <div class="mb-2 flex items-center justify-between">
+              <div></div>
+              <button
+                class="rounded bg-primary px-2 py-1 text-xs text-gray-400 hover:bg-gray-800"
+                type="button"
+                aria-haspopup="dialog"
+                aria-expanded="false"
+                aria-controls="radix-:ri:"
+                data-state="closed">Set max slippage</button
+              >
+            </div>
+            <div class="relative flex items-center rounded-md bg-[#2e303a]">
+              <input
+                class="flex h-10 w-full rounded-md border border-slate-200 bg-transparent px-3 py-2 pl-3 text-sm text-white outline-none ring-offset-white file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-slate-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-slate-800 dark:bg-slate-950 dark:ring-offset-slate-950 dark:placeholder:text-slate-400 dark:focus-visible:ring-slate-300"
+                placeholder="0.0"
+                type="number"
+              />
+              <div class="absolute right-2 ml-2 flex items-center">
+                <span class="mr-2 text-white">SOL</span><img
+                  alt="SOL"
+                  loading="lazy"
+                  width="32"
+                  height="32"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-8 w-8 rounded-full"
+                  srcset="/_next/image?url=%2Fsolana-logo-square.png&amp;w=32&amp;q=75 1x, /_next/image?url=%2Fsolana-logo-square.png&amp;w=64&amp;q=75 2x"
+                  src="/_next/image?url=%2Fsolana-logo-square.png&amp;w=64&amp;q=75"
+                  style="color: transparent;"
+                />
+              </div>
+            </div>
+            <div class="mt-2 flex rounded-lg bg-[#2e303a] p-1">
+              <button
+                class="-ml-1 rounded bg-primary px-2 py-1 text-xs text-gray-400 hover:bg-gray-800 hover:text-gray-300"
+                >reset</button
+              ><button
+                class="ml-1 rounded bg-primary px-2 py-1 text-xs text-gray-400 hover:bg-gray-800 hover:text-gray-300"
+                >1 SOL</button
+              ><button
+                class="ml-1 rounded bg-primary px-2 py-1 text-xs text-gray-400 hover:bg-gray-800 hover:text-gray-300"
+                >5 SOL</button
+              ><button
+                class="ml-1 rounded bg-primary px-2 py-1 text-xs text-gray-400 hover:bg-gray-800 hover:text-gray-300"
+                >10 SOL</button
+              >
             </div>
           </div>
+          <button
+            class="inline-flex h-10 w-full items-center justify-center whitespace-nowrap rounded-md bg-green-400 px-4 py-3 text-sm font-medium text-primary ring-offset-white transition-colors hover:bg-green-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:bg-slate-50 dark:text-slate-900 dark:ring-offset-slate-950 dark:hover:bg-slate-50/90 dark:focus-visible:ring-slate-300"
+            >place trade</button
+          >
+        </div>
+      </div>
+      <div class="flex gap-2">
+        <div class="cursor-pointer rounded bg-green-300 px-1 text-black">
+          Thread
+        </div>
+        <div
+          class="cursor-pointer rounded px-1 text-gray-500 hover:bg-gray-800"
+        >
+          Wall of fame
+        </div>
+      </div>
+      <div class="relative grid gap-1 text-slate-300">
+        <div
+          class="w-fit cursor-pointer text-sm text-slate-300 hover:underline"
+        >
+          [scroll to bottom]
+        </div>
+        <div class="grid h-fit gap-1 bg-[#2e303a] p-1 text-sm">
+          <div class="flex gap-1 text-xs">
+            <a href="/profile/3GfDXSv54NNtDaonxWFnz59yWHTH1YeSoHmcTgH1x4bw"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(140, 147, 158);"
+                  >3GfDXS (dev)</span
+                ></span
+              ></a
+            >
+            <div class="text-slate-400">21/06/2024, 13:20:54</div>
+          </div>
+          <div
+            class="relative flex items-start gap-3 overflow-auto text-xs text-slate-300"
+          >
+            <img
+              src="https://pump.mypinata.cloud/ipfs/QmYmKcCSyhZVR4FB7t7nWoy1pp5LcfWBwHLvRwDuAUTz7y"
+              class="w-32 cursor-pointer object-contain"
+            />
+            <div class="grid">
+              <div class="text-sm font-bold">Poseidon (ticker: POSEIDON)</div>
+              <div>Binance Cat</div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="p4054137"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/27wS9GW25D17bHcWvY2bigrUcVDQUusjooQMng9E6AMA"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(174, 177, 143);"
+                  >27wS9G
+                </span></span
+              ></a
+            >
+            <div>13:22:06</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054137 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>rug the I buy</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054147"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/djaarot"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(141, 193, 209);"
+                  >djaarot
+                </span></span
+              ></a
+            >
+            <div>13:22:36</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054147 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>lfg</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054192"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/27wS9GW25D17bHcWvY2bigrUcVDQUusjooQMng9E6AMA"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(174, 177, 143);"
+                  >27wS9G
+                </span></span
+              ></a
+            >
+            <div>13:24:47</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054192 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>dev make a tg</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054210"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/Pannasvart"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(218, 137, 151);"
+                  >Pannasvart
+                </span></span
+              ></a
+            >
+            <div>13:25:40</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054210 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>DEV WHERES THE TG</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054216"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/Pannasvart"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(218, 137, 151);"
+                  >Pannasvart
+                </span></span
+              ></a
+            >
+            <div>13:26:05</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054216 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>DEV U PAY DEX NOW AND SEND SOLSCAN</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054220"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/Pannasvart"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(218, 137, 151);"
+                  >Pannasvart
+                </span></span
+              ></a
+            >
+            <div>13:26:30</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054220 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>NO ONE APE HE HASNT PAID ANYTHING</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054225"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/johnwaka"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(175, 145, 191);"
+                  >johnwaka
+                </span></span
+              ></a
+            >
+            <div>13:26:55</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054225 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>https://x.com/binance/status/1248973179965468677</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054249"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/Pannasvart"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(218, 137, 151);"
+                  >Pannasvart
+                </span></span
+              ></a
+            >
+            <div>13:27:21</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054249 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>Told ya</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054254"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/27wS9GW25D17bHcWvY2bigrUcVDQUusjooQMng9E6AMA"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(174, 177, 143);"
+                  >27wS9G
+                </span></span
+              ></a
+            >
+            <div>13:27:34</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054254 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>dev could you rug now? and with your other wallets, ty</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054278"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/27wS9GW25D17bHcWvY2bigrUcVDQUusjooQMng9E6AMA"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(174, 177, 143);"
+                  >27wS9G
+                </span></span
+              ></a
+            >
+            <div>13:28:16</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054278 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>okay he is out</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054292"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/27wS9GW25D17bHcWvY2bigrUcVDQUusjooQMng9E6AMA"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(174, 177, 143);"
+                  >27wS9G
+                </span></span
+              ></a
+            >
+            <div>13:28:47</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054292 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>I will cto it, making tg</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054330"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/Pannasvart"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(218, 137, 151);"
+                  >Pannasvart
+                </span></span
+              ></a
+            >
+            <div>13:29:28</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054330 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>LFGGGG THIS CAN RUN LETS CTO</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054370"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/Pannasvart"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(218, 137, 151);"
+                  >Pannasvart
+                </span></span
+              ></a
+            >
+            <div>13:30:45</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054370 [reply]
+            </div>
+          </div>
+          <div class="flex gap-1 text-xs text-slate-400">
+            Mentions: <a href="#p4054397" class="text-green-300 hover:underline"
+              >#4054397</a
+            >
+          </div>
+          <div class="flex items-start gap-2">
+            <div>Make tg and post it here asap</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054397"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/dogold"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(149, 130, 137);"
+                  >dogold
+                </span></span
+              ></a
+            >
+            <div>13:31:30</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054397 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>
+              <a
+                href="#p4054370"
+                class="font-bold text-green-300 hover:underline">#4054370</a
+              > the guy said cto sold
+            </div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054419"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/HXQK3PZqh1sbDohGv2dxnMGdWNo94FzsA6fx6PuSu5aT"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(166, 242, 217);"
+                  >HXQK3P
+                </span></span
+              ></a
+            >
+            <div>13:32:22</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054419 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>I will also help. lets run it</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054433"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/manorman"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmXQEdNu7HwbwagTXAnjTWZ8raQWxM4BujgQjsgdaYmsdY?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(211, 145, 239);"
+                  >manorman
+                </span></span
+              ></a
+            >
+            <div>13:32:50</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054433 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>Cto this</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054447"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/djaarot"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(141, 193, 209);"
+                  >djaarot
+                </span></span
+              ></a
+            >
+            <div>13:33:37</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054447 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>cto this shit lfg</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054449"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/HXQK3PZqh1sbDohGv2dxnMGdWNo94FzsA6fx6PuSu5aT"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(166, 242, 217);"
+                  >HXQK3P
+                </span></span
+              ></a
+            >
+            <div>13:33:45</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054449 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>Ok I will make it, have dex credits also</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054466"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/HXQK3PZqh1sbDohGv2dxnMGdWNo94FzsA6fx6PuSu5aT"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(166, 242, 217);"
+                  >HXQK3P
+                </span></span
+              ></a
+            >
+            <div>13:34:08</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054466 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>https://t.me/+jjkBryq4kBk1Y2Fk</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054472"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/PG"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmZt5vFWewLvhDZMMM7cyZ9cFdMEU1zsurcUj4ihqy5cx5?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(240, 147, 202);"
+                  >PG
+                </span></span
+              ></a
+            >
+            <div>13:34:20</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054472 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>Open Socials</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054490"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/memesendor"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmfQ6KE59mcsswd3XGeereB2XRDBDBqJsaH5asBEt732aE?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(189, 163, 157);"
+                  >memesendor
+                </span></span
+              ></a
+            >
+            <div>13:35:02</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054490 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>LFG</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054495"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/LastChance"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(156, 211, 246);"
+                  >LastChance
+                </span></span
+              ></a
+            >
+            <div>13:35:06</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054495 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>It looks cool lol</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054509"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/HXQK3PZqh1sbDohGv2dxnMGdWNo94FzsA6fx6PuSu5aT"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(166, 242, 217);"
+                  >HXQK3P
+                </span></span
+              ></a
+            >
+            <div>13:36:04</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054509 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>https://t.me/+jjkBryq4kBk1Y2Fk</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054556"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/9t7doFjbgApfFmK77KThv789mWZS3FzQM8sYsQQa3KNr"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(222, 230, 192);"
+                  >9t7doF
+                </span></span
+              ></a
+            >
+            <div>13:37:31</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054556 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>join cto - https://t.me/+jjkBryq4kBk1Y2Fk</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054591"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/manorman"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmXQEdNu7HwbwagTXAnjTWZ8raQWxM4BujgQjsgdaYmsdY?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(211, 145, 239);"
+                  >manorman
+                </span></span
+              ></a
+            >
+            <div>13:38:47</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054591 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>bullish CTO</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054599"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/manorman"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmXQEdNu7HwbwagTXAnjTWZ8raQWxM4BujgQjsgdaYmsdY?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(211, 145, 239);"
+                  >manorman
+                </span></span
+              ></a
+            >
+            <div>13:39:03</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054599 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>https://t.me/+MyZLwedlIEczNDBk bullish CTO</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054601"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/memesendor"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmfQ6KE59mcsswd3XGeereB2XRDBDBqJsaH5asBEt732aE?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(189, 163, 157);"
+                  >memesendor
+                </span></span
+              ></a
+            >
+            <div>13:39:05</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054601 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>DEX will be paid soon, making portal</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054622"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/memesendor"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmfQ6KE59mcsswd3XGeereB2XRDBDBqJsaH5asBEt732aE?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(189, 163, 157);"
+                  >memesendor
+                </span></span
+              ></a
+            >
+            <div>13:40:20</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054622 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>CTOing lead is based; LFG!</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054626"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/HXQK3PZqh1sbDohGv2dxnMGdWNo94FzsA6fx6PuSu5aT"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(166, 242, 217);"
+                  >HXQK3P
+                </span></span
+              ></a
+            >
+            <div>13:40:25</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054626 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>Created portal also https://t.me/poseidoncatcto</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054638"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/memesendor"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmfQ6KE59mcsswd3XGeereB2XRDBDBqJsaH5asBEt732aE?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(189, 163, 157);"
+                  >memesendor
+                </span></span
+              ></a
+            >
+            <div>13:40:52</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054638 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>He gonna pay the DEX as soon as he finishes a website</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054661"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/7Lgp6P"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(247, 128, 185);"
+                  >7Lgp6P
+                </span></span
+              ></a
+            >
+            <div>13:41:41</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054661 [reply]
+            </div>
+          </div>
+          <div class="flex gap-1 text-xs text-slate-400">
+            Mentions: <a href="#p4054872" class="text-green-300 hover:underline"
+              >#4054872</a
+            >
+          </div>
+          <div class="flex items-start gap-2">
+            <div>
+              dex paid with credit join cto tg https://t.me/poseidoncatcto
+            </div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054690"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/Be7G2ZNCVav76xsXNKDARF5nmbpTqBKXKHGtRqph2PZ8"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(186, 175, 200);"
+                  >Be7G2Z
+                </span></span
+              ></a
+            >
+            <div>13:43:05</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054690 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>Is this shit going to the moon?</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054768"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/manorman"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmXQEdNu7HwbwagTXAnjTWZ8raQWxM4BujgQjsgdaYmsdY?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(211, 145, 239);"
+                  >manorman
+                </span></span
+              ></a
+            >
+            <div>13:45:36</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054768 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>to the moon</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054791"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/manorman"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmXQEdNu7HwbwagTXAnjTWZ8raQWxM4BujgQjsgdaYmsdY?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(211, 145, 239);"
+                  >manorman
+                </span></span
+              ></a
+            >
+            <div>13:46:09</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054791 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>Work is underway to pay for dex</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054793"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/manorman"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmXQEdNu7HwbwagTXAnjTWZ8raQWxM4BujgQjsgdaYmsdY?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(211, 145, 239);"
+                  >manorman
+                </span></span
+              ></a
+            >
+            <div>13:46:17</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054793 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>guys</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054795"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/manorman"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmXQEdNu7HwbwagTXAnjTWZ8raQWxM4BujgQjsgdaYmsdY?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(211, 145, 239);"
+                  >manorman
+                </span></span
+              ></a
+            >
+            <div>13:46:21</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054795 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>sendor</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054817"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/9SS8XC"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/Qmbny4caFxuQ9dV9z37AxqQa2S7N2pavbPXHapF4agDXBg?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(169, 241, 251);"
+                  >9SS8XC
+                </span></span
+              ></a
+            >
+            <div>13:47:08</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054817 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <img
+              src="https://pump.mypinata.cloud/ipfs/QmYmKcCSyhZVR4FB7t7nWoy1pp5LcfWBwHLvRwDuAUTz7y"
+              class="max-h-[500px] w-32 cursor-pointer object-contain"
+            />
+            <div>CTO -https://t.me/Poseidon_CTO</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054839"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/wolf"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmUeioJEkpgx327RX5VbiZecrN1vLfZ7hcVDXYTBgbRjwr?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(192, 209, 221);"
+                  >wolf
+                </span></span
+              ></a
+            >
+            <div>13:47:38</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054839 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>
+              Easy sendor... binance dog hit 1 mil, this is second best if not
+              better since it's a cat. SEND IT!
+            </div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054851"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/27wS9GW25D17bHcWvY2bigrUcVDQUusjooQMng9E6AMA"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(174, 177, 143);"
+                  >27wS9G
+                </span></span
+              ></a
+            >
+            <div>13:48:17</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054851 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>TWITTER MADE TOO https://x.com/POSEIDONCTO</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054852"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/xnxx"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(147, 235, 217);"
+                  >xnxx
+                </span></span
+              ></a
+            >
+            <div>13:48:22</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054852 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>Lfg</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054855"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/9SS8XC"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/Qmbny4caFxuQ9dV9z37AxqQa2S7N2pavbPXHapF4agDXBg?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(169, 241, 251);"
+                  >9SS8XC
+                </span></span
+              ></a
+            >
+            <div>13:48:35</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054855 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <img
+              src="https://pump.mypinata.cloud/ipfs/QmYmKcCSyhZVR4FB7t7nWoy1pp5LcfWBwHLvRwDuAUTz7y"
+              class="max-h-[500px] w-32 cursor-pointer object-contain"
+            />
+            <div>CTO -https://t.me/Poseidon_CTO</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054872"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/9NxWqJyFC73vDK4sS7VjCFzhE43Td7JhaEcrN5Pufm5m"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(204, 196, 198);"
+                  >9NxWqJ
+                </span></span
+              ></a
+            >
+            <div>13:49:16</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054872 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>
+              <a
+                href="#p4054661"
+                class="font-bold text-green-300 hover:underline">#4054661</a
+              > Checkdex.xyz is a thing you know
+            </div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054883"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/holymoly"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmTnC5JCuovPiMER44Ws999f6GebkJJ2U9sEPrETGKFyty?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(238, 157, 188);"
+                  >holymoly
+                </span></span
+              ></a
+            >
+            <div>13:49:41</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054883 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>poseidon exist kek</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054891"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/5f8XwdJfKvbrhVrX21zCfuxU9Jjbtn5JR41Y2d4L3VYE"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(189, 131, 168);"
+                  >5f8Xwd
+                </span></span
+              ></a
+            >
+            <div>13:49:57</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054891 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <img
+              src="https://pump.mypinata.cloud/ipfs/QmYmKcCSyhZVR4FB7t7nWoy1pp5LcfWBwHLvRwDuAUTz7y"
+              class="max-h-[500px] w-32 cursor-pointer object-contain"
+            />
+            <div>CTO -&gt; https://t.me/SolanaPoseidon</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054894"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/9SS8XC"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/Qmbny4caFxuQ9dV9z37AxqQa2S7N2pavbPXHapF4agDXBg?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(169, 241, 251);"
+                  >9SS8XC
+                </span></span
+              ></a
+            >
+            <div>13:50:03</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054894 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <img
+              src="https://pump.mypinata.cloud/ipfs/QmYmKcCSyhZVR4FB7t7nWoy1pp5LcfWBwHLvRwDuAUTz7y"
+              class="max-h-[500px] w-32 cursor-pointer object-contain"
+            />
+            <div>CTO -https://t.me/Poseidon_CTO</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054902"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/pfcdev"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmapSGvY7fnNNTzsP2eQCcUCPqhYHQJ27UzDv68irc5ahU?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(133, 218, 168);"
+                  >pfcdev
+                </span></span
+              ></a
+            >
+            <div>13:50:25</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054902 [reply]
+            </div>
+          </div>
+          <div class="flex gap-1 text-xs text-slate-400">
+            Mentions: <a href="#p4054917" class="text-green-300 hover:underline"
+              >#4054917</a
+            >
+          </div>
+          <div class="flex items-start gap-2">
+            <div>Telegram ? Twitter ? Dev ?</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054907"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/4APwHE"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(240, 156, 245);"
+                  >4APwHE
+                </span></span
+              ></a
+            >
+            <div>13:50:33</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054907 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>hitttt</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054917"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/8Fmm1jDKt9uW7Jg5tX6rhZsXKNmCJcaZANYFv6FWDbkh"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(134, 251, 155);"
+                  >8Fmm1j
+                </span></span
+              ></a
+            >
+            <div>13:51:00</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054917 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>
+              <a
+                href="#p4054902"
+                class="font-bold text-green-300 hover:underline">#4054902</a
+              > https://t.me/poseidoncatcto real cto tg
+            </div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054934"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/9SS8XC"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/Qmbny4caFxuQ9dV9z37AxqQa2S7N2pavbPXHapF4agDXBg?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(169, 241, 251);"
+                  >9SS8XC
+                </span></span
+              ></a
+            >
+            <div>13:51:47</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054934 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <img
+              src="https://pump.mypinata.cloud/ipfs/QmYmKcCSyhZVR4FB7t7nWoy1pp5LcfWBwHLvRwDuAUTz7y"
+              class="max-h-[500px] w-32 cursor-pointer object-contain"
+            />
+            <div>CTO -https://t.me/Poseidon_CTO</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4054997"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/D6Vcz3PuumDXNfvMEfs1RpWDibapjnENhBWdFNhJmbLk"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(247, 152, 170);"
+                  >D6Vcz3
+                </span></span
+              ></a
+            >
+            <div>13:54:22</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4054997 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2"><div>Mooonnnn</div></div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4055008"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/7Lgp6P"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(247, 128, 185);"
+                  >7Lgp6P
+                </span></span
+              ></a
+            >
+            <div>13:54:50</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4055008 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>dex being paid lfg just waiting for update</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4055019"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/7Lgp6P"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(247, 128, 185);"
+                  >7Lgp6P
+                </span></span
+              ></a
+            >
+            <div>13:55:08</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>1</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4055019 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>join cto tg https://t.me/poseidoncatcto</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4055021"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/7Lgp6P"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(247, 128, 185);"
+                  >7Lgp6P
+                </span></span
+              ></a
+            >
+            <div>13:55:13</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4055021 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>join cto tg https://t.me/poseidoncatcto</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          id="p4055027"
+          class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
+        >
+          <div
+            class="flex w-full flex-wrap items-start gap-2 text-xs text-slate-400"
+          >
+            <a href="/profile/7Lgp6P"
+              ><span class="flex items-center gap-1"
+                ><img
+                  alt=""
+                  loading="lazy"
+                  width="16"
+                  height="16"
+                  decoding="async"
+                  data-nimg="1"
+                  class="h-4 w-4 rounded"
+                  src="https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect"
+                  style="color: transparent;"
+                /><span
+                  class="flex gap-1 rounded px-1 text-black hover:underline"
+                  style="background-color: rgb(247, 128, 185);"
+                  >7Lgp6P
+                </span></span
+              ></a
+            >
+            <div>13:55:18</div>
+            <div
+              class="flex w-fit cursor-pointer items-center gap-2 hover:stroke-red-500 hover:text-red-500"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-heart"
+                ><path
+                  d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"
+                ></path></svg
+              >
+              <div>0</div>
+            </div>
+            <div class="cursor-pointer justify-self-end hover:underline">
+              #4055027 [reply]
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div>join cto tg https://t.me/poseidoncatcto</div>
+          </div>
+          <div class="flex gap-2"></div>
+        </div>
+        <div
+          class="absolute bottom-0 left-0 w-fit cursor-pointer text-sm text-slate-300 hover:underline"
+        >
+          [scroll to top]
+        </div>
+        <div class="cursor-pointer justify-self-center hover:underline">
+          [Post a reply]
         </div>
       </div>
     </div>
@@ -455,10 +16411,10 @@
       class="inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md px-4 py-2 text-sm font-medium text-black ring-offset-white transition-colors hover:bg-transparent hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:ring-offset-slate-950 dark:hover:bg-slate-800 dark:hover:text-slate-50 dark:focus-visible:ring-slate-300"
       >[info]</button
     ><button
-      class="inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-transparent px-4 py-2 text-sm font-bold text-white ring-offset-white transition-colors hover:bg-transparent hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:ring-offset-slate-950 dark:hover:bg-slate-800 dark:hover:text-slate-50 dark:focus-visible:ring-slate-300"
+      class="inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md px-4 py-2 text-sm font-medium text-black ring-offset-white transition-colors hover:bg-transparent hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:ring-offset-slate-950 dark:hover:bg-slate-800 dark:hover:text-slate-50 dark:focus-visible:ring-slate-300"
       >[chart]</button
     ><button
-      class="inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md px-4 py-2 text-sm font-medium text-black ring-offset-white transition-colors hover:bg-transparent hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:ring-offset-slate-950 dark:hover:bg-slate-800 dark:hover:text-slate-50 dark:focus-visible:ring-slate-300"
+      class="inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md bg-transparent px-4 py-2 text-sm font-bold text-white ring-offset-white transition-colors hover:bg-transparent hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:ring-offset-slate-950 dark:hover:bg-slate-800 dark:hover:text-slate-50 dark:focus-visible:ring-slate-300"
       >[buy/sell]</button
     ><button
       class="inline-flex h-10 items-center justify-center whitespace-nowrap rounded-md px-4 py-2 text-sm font-medium text-black ring-offset-white transition-colors hover:bg-transparent hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-950 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:ring-offset-slate-950 dark:hover:bg-slate-800 dark:hover:text-slate-50 dark:focus-visible:ring-slate-300"
@@ -489,8 +16445,7 @@
     </p>
     <a
       class="flex-shrink-0"
-      href="/report/coins/FcnfsRn5exavV45ZpDpDMM6ngo8XW1JfDS42zNwNpump"
-      >Report</a
+      href="/report/coins/jyB2Gg5rvNx44dnAh2wmwU6Cv5DYHxp1DGz2j6Ypump">Report</a
     >
   </div>
 </div>
