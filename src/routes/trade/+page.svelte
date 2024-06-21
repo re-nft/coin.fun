@@ -26,17 +26,26 @@
 </div>
 
 <style>
+  :global(main.container) {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .grid {
     display: grid;
     gap: 1rem;
-    padding: 1rem;
+    width: 100%;
+    max-width: none;
   }
 
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem 0;
+    width: 100%;
   }
 
   .makecoin-button {
@@ -83,6 +92,7 @@
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
     border: 2px solid transparent;
+    width: 100%;
   }
 
   .card:hover {
