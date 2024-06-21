@@ -31,7 +31,7 @@
 
 <Navigation />
 
-<main class="container flow-root">
+<main class="flow-root">
   <slot />
 </main>
 

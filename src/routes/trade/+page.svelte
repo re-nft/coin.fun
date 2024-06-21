@@ -28,14 +28,6 @@
 </div>
 
 <style>
-  :global(main.container) {
-    margin-left: 0;
-    margin-right: 0;
-    max-width: 100%;
-    padding-left: 0;
-    padding-right: 0;
-  }
-
   .grid {
     display: grid;
     gap: 1rem;
