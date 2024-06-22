@@ -25,19 +25,21 @@ BEGIN
       FROM profiles
       WHERE character_s1 IS NOT NULL
   ),
-  -- Step 2: Select all tweets since the last update to points where quest_id = '0003-daily-tweet'. If no such update exists, select all tweets.
-  last_update AS (
-      SELECT user_id, MAX(acquired_at) AS last_acquired_at
+  -- Step 2: Select previously allocated points from tweets...
+  points_from_tweets AS (
+      SELECT user_id, acquired_at
       FROM points
       WHERE quest_id = '0003-daily-tweet'
-      GROUP BY user_id
   ),
-  tweets_since_last_update AS (
+  -- and only select the tweets without an allocation on a specific date.
+  tweets_since_last_allocation AS (
       SELECT t.*
       FROM tweets t
       JOIN users_with_character u ON t.user_id = u.id
-      LEFT JOIN last_update lu ON t.user_id = lu.user_id
-      WHERE t.created_at > COALESCE(lu.last_acquired_at, '1970-01-01 00:00:00'::timestamp)
+      WHERE t.created_at::date NOT IN (
+        SELECT acquired_at::date FROM points_from_tweets
+        WHERE user_id = u.id
+      )
   ),
   -- Step 3: Reduce the tweets to only the one with the most engagement per day
   tweets_with_engagement AS (
@@ -46,7 +48,7 @@ BEGIN
           t.created_at::date AS tweet_date,
           t.id,
           t.favorite_count + t.quote_count + t.reply_count + t.retweet_count AS engagement
-      FROM tweets_since_last_update t
+      FROM tweets_since_last_allocation t
   ),
   most_engaging_tweets AS (
       SELECT DISTINCT ON (user_id, tweet_date)
