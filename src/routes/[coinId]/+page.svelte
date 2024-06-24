@@ -863,18 +863,12 @@
         <button
           class="cursor-pointer rounded {activeView === 'comments' ? 'bg-green-300 text-black' : 'text-gray-500 hover:bg-gray-800'}"
           on:click={toggleView}
-          on:keydown={(e) => e.key === 'Enter' && toggleView()}
-          role="tab"
-          aria-selected={activeView === 'thread'}
         >
           Thread
         </button>
         <button
           class="cursor-pointer rounded {activeView === 'trades' ? 'bg-green-300 text-black' : 'text-gray-500 hover:bg-gray-800'}"
           on:click={toggleView}
-          on:keydown={(e) => e.key === 'Enter' && toggleView()}
-          role="tab"
-          aria-selected={activeView === 'trades'}
         >
           Trades
         </button>
