@@ -58,7 +58,9 @@
     <p>Our server borked serving this quest. Quest rugged.</p>
   {:else}
     {#if $$slots.content}
-      <slot name="content" />
+      <div class="flex min-h-64 items-center justify-center px-8">
+        <slot name="content" />
+      </div>
     {/if}
     {#if $$slots.footer}
       <footer class="p-8">

@@ -1,7 +1,7 @@
 <script lang="ts">
-  import { cubicInOut } from 'svelte/easing';
+  import { Button } from '$lib/components/ui/button';
+  import { expoInOut } from 'svelte/easing';
   import { tweened } from 'svelte/motion';
-  import { flip } from 'svelte/animate';
   export let division: number = 8;
 
   const spinningDivision = Array.from({ length: division }, (_, index) => ({
@@ -9,23 +9,31 @@
     value: index * 1000
   }));
 
-  let a;
+  const progress = tweened(0, {
+    duration: 4000,
+    easing: expoInOut
+  });
+
+  let spinnTo = 0;
 
   const handleSpin = async () => {
+    if ($progress === 1) return;
+
     const selectedItem =
       spinningDivision[Math.floor(Math.random() * spinningDivision.length)];
     const selectedItemFromPosition = 45 * selectedItem.index;
-    const selectedItemToPosition = 360 + 45 - selectedItemFromPosition;
-    console.log(selectedItemToPosition);
-    a = selectedItemToPosition;
+    const selectedItemToPosition = 360 - (selectedItemFromPosition - 45) + 24.5;
+    spinnTo = selectedItemToPosition;
+
+    await progress.set(1);
   };
 
-  $: wheelSpin = a;
+  $: wheelSpin = $progress ? $progress * 3600 + spinnTo : 0;
 </script>
 
-<div class="relative m-auto h-64 w-64">
+<div class="relative m-auto h-64 w-64 p-8">
   <div
-    class="absolute inset-0 rounded-full border-2 border-[--color] transition-transform"
+    class="absolute inset-0 rounded-full border-2 border-[--color] transition-transform will-change-transform"
     style="transform: rotate({wheelSpin}deg)"
   >
     {#each spinningDivision as division}
@@ -57,10 +65,11 @@
   </div>
   <div
     on:click={handleSpin}
-    class="absolute left-full top-1/2 h-6 w-6 -translate-y-1/2 text-black"
-  >
-    <img alt="" class="h-4 w-4" role="presentation" src="/logo.svg" />
-  </div>
+    class="triangle absolute left-full top-1/2 h-0 h-6 w-0 w-6 -translate-y-1/2 border-transparent text-black"
+  ></div>
+</div>
+<div class="p-8">
+  <Button disabled={$progress === 1} on:click={handleSpin}>Spin</Button>
 </div>
 
 <style>
@@ -84,5 +93,12 @@
     100% {
       transform: translate(0, 0) rotate(0deg);
     }
+  }
+
+  .triangle {
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+
+    border-right: 20px solid var(--color);
   }
 </style>

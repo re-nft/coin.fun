@@ -1,7 +1,5 @@
 <script lang="ts">
-  import { enhance } from '$app/forms';
   import Quest from '$lib/components/Quest.svelte';
-  import { Button } from '$lib/components/ui/button';
   import { SpinningWheel } from '$lib/components/ui/spinning-wheel';
   import type { QuestStatus } from '$lib/quests';
 
