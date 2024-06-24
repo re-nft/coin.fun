@@ -2,7 +2,7 @@ import { and, eq, or, sql } from 'drizzle-orm';
 
 import { OnError, Quest } from '$lib/quests';
 import { db, points, tweets } from '$lib/server/db';
-import { getProfile } from '$lib/server/twitter';
+import { getTweet } from '$lib/server/twitter';
 import { Memoize } from '$lib/utils/decorators';
 
 export class Quest0003DailyTweet extends Quest {
@@ -46,11 +46,25 @@ export class Quest0003DailyTweet extends Quest {
   }
 
   async registerTweet(urlStr: string) {
+    if (!this.userId) throw new Error('Not signed in.');
+
     try {
       const url = new URL(urlStr);
       const [, , id] = url.pathname.split('/');
 
       if (!id) throw new Error(`No valid id: ${id}`);
+
+      const [{ existingId = undefined }] = await db
+        .select({ existingId: tweets.id })
+        .from(tweets)
+        .where(and(eq(tweets.id, id)))
+        .limit(1);
+
+      if (existingId) throw new Error(`We already have this tweet.`);
+
+      const status = await getTweet(id);
+
+      // TODO: save in DB
 
       return { id };
     } catch (error) {

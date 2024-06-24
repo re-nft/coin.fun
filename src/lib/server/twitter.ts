@@ -201,7 +201,7 @@ export async function getProfile(id: string) {
 }
 
 export async function getTweet(id: string) {
-  return fetchSocialData(
+  return fetchSocialData<TwitterStatus>(
     `https://api.socialdata.tools/twitter/statuses/show?id=${id}`
   );
 }
