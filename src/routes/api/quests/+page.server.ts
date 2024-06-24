@@ -59,13 +59,11 @@ export const actions = {
       }
 
       const method: (...args: unknown[]) => unknown = proto[methodName];
-      console.log('params', method.length);
 
       if (
         !params.every((param) => typeof param === 'string') ||
         params.length !== method.length
       ) {
-        console.log(params);
         return throwError({
           name: 'NoValidParams',
           message: `Quest:${methodName} expects ${method.length} arguments.`
