@@ -828,6 +828,7 @@
                 <iframe
                   src="https://dexscreener.com/solana/79cREYHYSGe8kJSnWDKC5RPRBEWRZ18fRDjFdHi3jL6s?embed=1&amp;theme=dark&amp;trades=0&amp;info=0"
                   style="height: 400px; width: 99%;"
+                  title="dexscreener"
                 ></iframe>
               </div>
             </div>
@@ -954,6 +955,7 @@
             <img
               src="https://pump.mypinata.cloud/ipfs/QmYmKcCSyhZVR4FB7t7nWoy1pp5LcfWBwHLvRwDuAUTz7y"
               class="w-32 cursor-pointer object-contain"
+              alt="poseidon"
             />
             <div class="grid">
               <div class="text-sm font-bold">Poseidon (ticker: POSEIDON)</div>
@@ -2502,6 +2504,7 @@
           <img
             src="https://pump.mypinata.cloud/ipfs/QmYmKcCSyhZVR4FB7t7nWoy1pp5LcfWBwHLvRwDuAUTz7y"
             class="w-32 cursor-pointer object-contain"
+            alt="poseidon"
           />
           <div>
             <div class="text-sm font-bold">Poseidon (ticker: POSEIDON)</div>

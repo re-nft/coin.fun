@@ -1,5 +1,6 @@
 <script>
   export let data;
+  import kingImage from '$lib/assets/king.webp';
 
   let { coins } = data;
 </script>
@@ -87,8 +88,8 @@
                         decoding="async"
                         data-nimg="1"
                         class="h-4"
-                        srcset="/_next/image?url=%2Fking.png&amp;w=32&amp;q=75 1x, /_next/image?url=%2Fking.png&amp;w=48&amp;q=75 2x"
-                        src="/_next/image?url=%2Fking.png&amp;w=48&amp;q=75"
+                        srcset="{kingImage} 1x, {kingImage} 2x"
+                        src="{kingImage}"
                         style="color: transparent;"
                       />
                     </div>
@@ -490,8 +491,8 @@
                         decoding="async"
                         data-nimg="1"
                         class="h-4"
-                        srcset="/_next/image?url=%2Fking.png&amp;w=32&amp;q=75 1x, /_next/image?url=%2Fking.png&amp;w=48&amp;q=75 2x"
-                        src="/_next/image?url=%2Fking.png&amp;w=48&amp;q=75"
+                        srcset="{kingImage} 1x, {kingImage} 2x"
+                        src="{kingImage}"
                         style="color: transparent;"
                       />
                     </div>
@@ -791,8 +792,8 @@
                         decoding="async"
                         data-nimg="1"
                         class="h-4"
-                        srcset="/_next/image?url=%2Fking.png&amp;w=32&amp;q=75 1x, /_next/image?url=%2Fking.png&amp;w=48&amp;q=75 2x"
-                        src="/_next/image?url=%2Fking.png&amp;w=48&amp;q=75"
+                        srcset="{kingImage} 1x, {kingImage} 2x"
+                        src="{kingImage}"
                         style="color: transparent;"
                       />
                     </div>
@@ -1404,8 +1405,8 @@
                         decoding="async"
                         data-nimg="1"
                         class="h-4"
-                        srcset="/_next/image?url=%2Fking.png&amp;w=32&amp;q=75 1x, /_next/image?url=%2Fking.png&amp;w=48&amp;q=75 2x"
-                        src="/_next/image?url=%2Fking.png&amp;w=48&amp;q=75"
+                        srcset="{kingImage} 1x, {kingImage} 2x"
+                        src="{kingImage}"
                         style="color: transparent;"
                       />
                     </div>
@@ -1655,8 +1656,8 @@
                         decoding="async"
                         data-nimg="1"
                         class="h-4"
-                        srcset="/_next/image?url=%2Fking.png&amp;w=32&amp;q=75 1x, /_next/image?url=%2Fking.png&amp;w=48&amp;q=75 2x"
-                        src="/_next/image?url=%2Fking.png&amp;w=48&amp;q=75"
+                        srcset="{kingImage} 1x, {kingImage} 2x"
+                        src="{kingImage}"
                         style="color: transparent;"
                       />
                     </div>
@@ -2116,8 +2117,8 @@
                         decoding="async"
                         data-nimg="1"
                         class="h-4"
-                        srcset="/_next/image?url=%2Fking.png&amp;w=32&amp;q=75 1x, /_next/image?url=%2Fking.png&amp;w=48&amp;q=75 2x"
-                        src="/_next/image?url=%2Fking.png&amp;w=48&amp;q=75"
+                        srcset="{kingImage} 1x, {kingImage} 2x"
+                        src="{kingImage}"
                         style="color: transparent;"
                       />
                     </div>
@@ -2540,8 +2541,8 @@
                         decoding="async"
                         data-nimg="1"
                         class="h-4"
-                        srcset="/_next/image?url=%2Fking.png&amp;w=32&amp;q=75 1x, /_next/image?url=%2Fking.png&amp;w=48&amp;q=75 2x"
-                        src="/_next/image?url=%2Fking.png&amp;w=48&amp;q=75"
+                        srcset="{kingImage} 1x, {kingImage} 2x"
+                        src="{kingImage}"
                         style="color: transparent;"
                       />
                     </div>
@@ -2624,8 +2625,8 @@
                         decoding="async"
                         data-nimg="1"
                         class="h-4"
-                        srcset="/_next/image?url=%2Fking.png&amp;w=32&amp;q=75 1x, /_next/image?url=%2Fking.png&amp;w=48&amp;q=75 2x"
-                        src="/_next/image?url=%2Fking.png&amp;w=48&amp;q=75"
+                        srcset="{kingImage} 1x, {kingImage} 2x"
+                        src="{kingImage}"
                         style="color: transparent;"
                       />
                     </div>
@@ -2982,8 +2983,8 @@
                         decoding="async"
                         data-nimg="1"
                         class="h-4"
-                        srcset="/_next/image?url=%2Fking.png&amp;w=32&amp;q=75 1x, /_next/image?url=%2Fking.png&amp;w=48&amp;q=75 2x"
-                        src="/_next/image?url=%2Fking.png&amp;w=48&amp;q=75"
+                        srcset="{kingImage} 1x, {kingImage} 2x"
+                        src="{kingImage}"
                         style="color: transparent;"
                       />
                     </div>
