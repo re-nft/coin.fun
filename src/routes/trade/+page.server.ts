@@ -12,11 +12,11 @@ class Coin {
   constructor(coin: {
     name: string;
     symbol: string;
-    media: string,
-    createdBy: string,
-    marketCap: number,
-    replies: number,
-    description: string
+    media: string;
+    createdBy: string;
+    marketCap: number;
+    replies: number;
+    description: string;
   }) {
     this.name = coin.name;
     this.symbol = coin.symbol;
@@ -36,7 +36,7 @@ class Coin {
       marketCap: this.marketCap,
       replies: this.replies,
       description: this.description
-    }
+    };
   }
 }
 

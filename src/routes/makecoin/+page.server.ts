@@ -26,9 +26,9 @@ export const actions = {
         return { success: false, message: 'Failed to upload image' };
       }
 
-      const { data: { publicUrl } } = supabase.storage
-        .from('coin-images')
-        .getPublicUrl(fileName);
+      const {
+        data: { publicUrl }
+      } = supabase.storage.from('coin-images').getPublicUrl(fileName);
 
       imageUrl = publicUrl;
     } else {
@@ -37,7 +37,15 @@ export const actions = {
     }
 
     try {
-      createCoin(name, ticker, description, imageUrl, twitter, telegram, website);
+      createCoin(
+        name,
+        ticker,
+        description,
+        imageUrl,
+        twitter,
+        telegram,
+        website
+      );
       return { success: true, message: 'Coin created successfully' };
     } catch (error) {
       console.error('Error creating coin:', error);

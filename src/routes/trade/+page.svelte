@@ -89,7 +89,7 @@
                         data-nimg="1"
                         class="h-4"
                         srcset="{kingImage} 1x, {kingImage} 2x"
-                        src="{kingImage}"
+                        src={kingImage}
                         style="color: transparent;"
                       />
                     </div>
@@ -492,7 +492,7 @@
                         data-nimg="1"
                         class="h-4"
                         srcset="{kingImage} 1x, {kingImage} 2x"
-                        src="{kingImage}"
+                        src={kingImage}
                         style="color: transparent;"
                       />
                     </div>
@@ -793,7 +793,7 @@
                         data-nimg="1"
                         class="h-4"
                         srcset="{kingImage} 1x, {kingImage} 2x"
-                        src="{kingImage}"
+                        src={kingImage}
                         style="color: transparent;"
                       />
                     </div>
@@ -1406,7 +1406,7 @@
                         data-nimg="1"
                         class="h-4"
                         srcset="{kingImage} 1x, {kingImage} 2x"
-                        src="{kingImage}"
+                        src={kingImage}
                         style="color: transparent;"
                       />
                     </div>
@@ -1657,7 +1657,7 @@
                         data-nimg="1"
                         class="h-4"
                         srcset="{kingImage} 1x, {kingImage} 2x"
-                        src="{kingImage}"
+                        src={kingImage}
                         style="color: transparent;"
                       />
                     </div>
@@ -2118,7 +2118,7 @@
                         data-nimg="1"
                         class="h-4"
                         srcset="{kingImage} 1x, {kingImage} 2x"
-                        src="{kingImage}"
+                        src={kingImage}
                         style="color: transparent;"
                       />
                     </div>
@@ -2542,7 +2542,7 @@
                         data-nimg="1"
                         class="h-4"
                         srcset="{kingImage} 1x, {kingImage} 2x"
-                        src="{kingImage}"
+                        src={kingImage}
                         style="color: transparent;"
                       />
                     </div>
@@ -2626,7 +2626,7 @@
                         data-nimg="1"
                         class="h-4"
                         srcset="{kingImage} 1x, {kingImage} 2x"
-                        src="{kingImage}"
+                        src={kingImage}
                         style="color: transparent;"
                       />
                     </div>
@@ -2984,7 +2984,7 @@
                         data-nimg="1"
                         class="h-4"
                         srcset="{kingImage} 1x, {kingImage} 2x"
-                        src="{kingImage}"
+                        src={kingImage}
                         style="color: transparent;"
                       />
                     </div>
@@ -3170,8 +3170,9 @@
   <div class="mt-4 flex w-full justify-center">
     <div class="mb-20 justify-self-end">
       <div class="flex justify-center space-x-2 text-slate-50">
-        <button disabled={true} class="cursor-not-allowed text-sm text-slate-400"
-          >[ &lt;&lt; ]</button
+        <button
+          disabled={true}
+          class="cursor-not-allowed text-sm text-slate-400">[ &lt;&lt; ]</button
         ><span>1</span><button
           class="text-sm text-slate-50 hover:bg-transparent hover:font-bold hover:text-slate-50"
           >[ &gt;&gt; ]</button
