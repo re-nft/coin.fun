@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { page } from '$app/stores';
+  import solanaLogoSquare from '$lib/assets/solana-logo-square.webp';
 
 
   interface CommentProps {
@@ -1052,8 +1052,8 @@
                   decoding="async"
                   data-nimg="1"
                   class="h-8 w-8 rounded-full"
-                  srcset="/_next/image?url=%2Fsolana-logo-square.png&amp;w=32&amp;q=75 1x, /_next/image?url=%2Fsolana-logo-square.png&amp;w=64&amp;q=75 2x"
-                  src="/_next/image?url=%2Fsolana-logo-square.png&amp;w=64&amp;q=75"
+                  srcset="{solanaLogoSquare} 1x, {solanaLogoSquare} 2x"
+                  src="{solanaLogoSquare}"
                   style="color: transparent;"
                 />
               </div>

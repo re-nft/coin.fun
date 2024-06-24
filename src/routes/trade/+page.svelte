@@ -24,8 +24,8 @@
         decoding="async"
         data-nimg="1"
         class="h-8 justify-self-center"
-        srcset="/_next/image?url=%2Fking-of-the-hill.png&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fking-of-the-hill.png&amp;w=384&amp;q=75 2x"
-        src="/_next/image?url=%2Fking-of-the-hill.png&amp;w=384&amp;q=75"
+        srcset="{kingImage} 1x, {kingImage} 2x"
+        src="{kingImage}"
         style="color: transparent;"
       /><a href="/2MBgUUj1uWB2csSSde3wR95XsBSWFWjppTzjhViypump"
         ><div
