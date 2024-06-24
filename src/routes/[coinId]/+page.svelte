@@ -759,12 +759,7 @@
     }
   ];
 
-  $: activeView = 'comments';
-  $: coinId = $page.params.coinId;
-  $: {
-    console.log('activeView reactivity triggered:', activeView);
-  }
-
+  let activeView = 'comments';
   function toggleView() {
     activeView = activeView === 'comments' ? 'trades' : 'comments';
   }
