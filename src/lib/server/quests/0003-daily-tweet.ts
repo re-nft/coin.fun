@@ -2,6 +2,7 @@ import { and, eq, or, sql } from 'drizzle-orm';
 
 import { OnError, Quest } from '$lib/quests';
 import { db, points, tweets } from '$lib/server/db';
+import { getProfile } from '$lib/server/twitter';
 import { Memoize } from '$lib/utils/decorators';
 
 export class Quest0003DailyTweet extends Quest {
@@ -42,6 +43,20 @@ export class Quest0003DailyTweet extends Quest {
       .where(eq(tweets.userId, this.userId));
 
     return { ...meta, tweets: data };
+  }
+
+  async registerTweet(urlStr: string) {
+    try {
+      const url = new URL(urlStr);
+      const [, , id] = url.pathname.split('/');
+
+      if (!id) throw new Error(`No valid id: ${id}`);
+
+      return { id };
+    } catch (error) {
+      if (error instanceof Error) throw error;
+      throw new Error(`Not a valid URL.`);
+    }
   }
 }
 

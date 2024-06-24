@@ -2,6 +2,11 @@ import type { Session, User } from '@supabase/supabase-js';
 
 export type QuestStatus = 'available' | 'done' | 'error' | 'locked';
 
+export interface QuestCallError {
+  name: string;
+  message: string;
+}
+
 export abstract class Quest {
   abstract id: string;
   abstract component: string;

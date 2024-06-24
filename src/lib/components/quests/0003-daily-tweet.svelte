@@ -1,10 +1,13 @@
 <script lang="ts">
+  import { enhance } from '$app/forms';
   import Quest from '$lib/components/Quest.svelte';
+  import type { QuestCallError } from '$lib/quests';
   import type { Profile, TweetSelect } from '$lib/server/db';
   import { cn } from '$lib/utils/ui';
 
   import { Button } from '../ui/button';
 
+  export let id: string;
   export let locale: string | undefined = undefined;
   export let profile: Profile | undefined = undefined;
   export let tweets: (TweetSelect & { points?: number })[];
@@ -16,6 +19,12 @@
   const tweetText = encodeURIComponent(
     'Get poor quicker. Fill my bags @coindotfun'
   );
+
+  let data: { id: string } | { errors: QuestCallError[] } | undefined =
+    undefined;
+  $: errors = data && 'errors' in data ? data?.errors : undefined;
+
+  let url: string;
 </script>
 
 <Quest
@@ -78,7 +87,28 @@
       Tweet @coindotfun
     </Button>
 
-    <form action="#" class="flex flex-col gap-4" method="POST">
+    <form
+      action="/api/quests?/call"
+      class="flex flex-col gap-4"
+      method="POST"
+      use:enhance={async () => {
+        data = undefined;
+        return async ({ update, result }) => {
+          await update();
+          data = 'data' in result && result.data ? result.data : undefined;
+          console.log({ result });
+        };
+      }}
+    >
+      {#if errors}
+        {JSON.stringify(errors)}
+      {:else}
+        {JSON.stringify(data)}
+      {/if}
+
+      <input name="questId" type="hidden" value={id} />
+      <input name="methodName" type="hidden" value="registerTweet" />
+
       <h2 class="sr-only">Add a tweet</h2>
       <p class="text-sm text-muted-foreground">
         Tweet not in the list? Add it here.
@@ -92,13 +122,15 @@
         <input
           class="my-0.5 min-w-0 flex-1 basis-full border-0 bg-brand-black/60 text-brand-beige placeholder:text-brand-beige/50"
           id="url"
-          name="url"
+          name="params[]"
           placeholder="https//x.com/{profile?.userName}/123…"
           type="text"
+          bind:value={url}
         />
 
         <button
           class="mx-2 bg-brand-yellow px-2 font-bold uppercase transition hover:bg-brand-orange"
+          disabled={!url}
           type="submit">Add</button
         >
       </p>
