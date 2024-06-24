@@ -81,6 +81,24 @@
     `;
   }
 
+  interface HolderEntryProps {
+    rank?: number;
+    address: string;
+    shortAddress: string;
+    percentage: string;
+  }
+
+  function HolderEntry(props: HolderEntryProps) {
+    return `
+      <div class="flex justify-between">
+        <a class="hover:underline" href="https://solscan.io/account/${props.address}" target="_blank" rel="noopener noreferrer">
+          ${props.rank}. ${props.shortAddress}
+        </a>
+        <div>${props.percentage}</div>
+      </div>
+    `;
+  }
+
   function getRandomColor() {
     return `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)}, ${Math.floor(Math.random() * 256)})`;
   }
@@ -598,6 +616,108 @@
       transactionId: "5JJBUc"
     }
   ];
+  const holders: HolderEntryProps[] = [
+    {
+      address: "GT85NLK8nvpUqYNjp5D2GXhWXcCcPsxoT6ZXkjGoziGn",
+      shortAddress: "GT85NL",
+      percentage: "38.52%"
+    },
+    {
+      address: "5n2NzQgHKRuHGBSss8TPBRkvjy1HNBBpFVw9qJ1STuhJ",
+      shortAddress: "5n2NzQ",
+      percentage: "4.23%"
+    },
+    {
+      address: "9kQiNnFiaCVbRDenS4BKzgkuMjQgmndMgfS3XFWi87rB",
+      shortAddress: "9kQiNn",
+      percentage: "3.96%"
+    },
+    {
+      address: "B6bHdQmuNDpnMiXixG1qcxhcSyCKiQ68PGHzDjKVy9y4",
+      shortAddress: "B6bHdQ",
+      percentage: "3.42%"
+    },
+    {
+      address: "pPLdkq5CcrNd7k3FAZhaFcbpH13xNqUvGKdgfuCDKj7",
+      shortAddress: "pPLdkq",
+      percentage: "2.55%"
+    },
+    {
+      address: "92sEVeLaGy2GXwcijaokHHsNtE8Y9GtmbkQMy1U5ik7c",
+      shortAddress: "92sEVe",
+      percentage: "2.22%"
+    },
+    {
+      address: "4Kvc5vJCtqeGKEupPckUExP8eXTH2nRkUPMxtHZG8uYo",
+      shortAddress: "4Kvc5v",
+      percentage: "2.15%"
+    },
+    {
+      address: "4SgbyGaZ2AN6sJYfZxUmXff2PCUVUUSz42UMmA5TSihr",
+      shortAddress: "4SgbyG",
+      percentage: "1.94%"
+    },
+    {
+      address: "DZ25CGUVczLKz8mCDoNZV4JcCaH2SAGzsJ83EGtSLbRy",
+      shortAddress: "DZ25CG",
+      percentage: "1.74%"
+    },
+    {
+      address: "A6r2iwRotXSxqtMuabXz57LAaZCaEG2iJ8XGn1Sjunnq",
+      shortAddress: "A6r2iw",
+      percentage: "1.60%"
+    },
+    {
+      address: "EpyHqw9ZVHDTdrwWk58QLVSi5PVcixJo25Y3CPegXoDP",
+      shortAddress: "EpyHqw",
+      percentage: "1.44%"
+    },
+    {
+      address: "9LHBhFCugDv7Qre1uDWJJQwC7VQhbEcxNWcPEjSvXMey",
+      shortAddress: "9LHBhF",
+      percentage: "1.42%"
+    },
+    {
+      address: "5iiwX9L57a43yb3M1sJzWiPWRazfutsDZsZ6tDGSgm2V",
+      shortAddress: "5iiwX9",
+      percentage: "1.33%"
+    },
+    {
+      address: "E3dh8mdoixgUWm6MfEyJJLqWAfiQUsipm8KwQvchP8CS",
+      shortAddress: "E3dh8m",
+      percentage: "1.30%"
+    },
+    {
+      address: "Fq9mHTYNoNwsHJqnDiXWkJw4diY8LrG8SGM2X1AcPm7A",
+      shortAddress: "Fq9mHT",
+      percentage: "1.13%"
+    },
+    {
+      address: "8rRM8UdQUVooG43GiRoxDWkWq13C2q1FwjAVdsY5PJq8",
+      shortAddress: "8rRM8U",
+      percentage: "1.08%"
+    },
+    {
+      address: "4KLgSj38moiSPQMCRQYPr1935AFrcZumUDkJVDLUuvN9",
+      shortAddress: "4KLgSj",
+      percentage: "1.03%"
+    },
+    {
+      address: "9pkpUceHJbvzYiMPp48hT1v3Ypqf5THXLYVjxisJfsrR",
+      shortAddress: "9pkpUc",
+      percentage: "0.96%"
+    },
+    {
+      address: "Cqqp1z9NwJLME5jLtV74xtfeWBqmAoGstR8ntDSVqXBH",
+      shortAddress: "Cqqp1z",
+      percentage: "0.92%"
+    },
+    {
+      address: "CXmEK3JmKqDrPET9DMdbxTQ73h7RCo58oxKLdLp6WDS1",
+      shortAddress: "CXmEK3",
+      percentage: "0.87%"
+    }
+  ];
 
   $: coinId = $page.params.coinId;
 </script>
@@ -798,6 +918,7 @@
           </div>
         </div>
       </div>
+
       <div class="relative grid gap-1 text-slate-300">
         <div
           class="w-fit cursor-pointer text-sm text-slate-300 hover:underline"
@@ -840,6 +961,8 @@
             </div>
           </div>
         </div>
+
+        <!-- SECTION START: COMMENTS -->
         <div
           id="p4054137"
           class="grid gap-1 overflow-auto bg-[#2e303a] p-1 text-sm text-slate-200"
@@ -2282,6 +2405,7 @@
           </div>
           <div class="flex gap-2"></div>
         </div>
+        <!-- SECTION END: COMMENTS -->
 
 
 
@@ -2420,190 +2544,15 @@
               >Generate bubble map</button
             >
           </div>
+          <!-- SECTION START: Holder distribution -->
           <div class="text-sm">
             <div class="grid gap-1">
-              <div class="flex justify-between">
-                <a
-                  class="hover:underline"
-                  href="https://solscan.io/account/GT85NLK8nvpUqYNjp5D2GXhWXcCcPsxoT6ZXkjGoziGn"
-                  target="_blank"
-                  rel="noopener noreferrer">1. GT85NL</a
-                >
-                <div>38.52%</div>
-              </div>
-              <div class="flex justify-between">
-                <a
-                  class="hover:underline"
-                  href="https://solscan.io/account/5n2NzQgHKRuHGBSss8TPBRkvjy1HNBBpFVw9qJ1STuhJ"
-                  target="_blank"
-                  rel="noopener noreferrer">2. 5n2NzQ</a
-                >
-                <div>4.23%</div>
-              </div>
-              <div class="flex justify-between">
-                <a
-                  class="hover:underline"
-                  href="https://solscan.io/account/9kQiNnFiaCVbRDenS4BKzgkuMjQgmndMgfS3XFWi87rB"
-                  target="_blank"
-                  rel="noopener noreferrer">3. 9kQiNn</a
-                >
-                <div>3.96%</div>
-              </div>
-              <div class="flex justify-between">
-                <a
-                  class="hover:underline"
-                  href="https://solscan.io/account/B6bHdQmuNDpnMiXixG1qcxhcSyCKiQ68PGHzDjKVy9y4"
-                  target="_blank"
-                  rel="noopener noreferrer">4. B6bHdQ</a
-                >
-                <div>3.42%</div>
-              </div>
-              <div class="flex justify-between">
-                <a
-                  class="hover:underline"
-                  href="https://solscan.io/account/pPLdkq5CcrNd7k3FAZhaFcbpH13xNqUvGKdgfuCDKj7"
-                  target="_blank"
-                  rel="noopener noreferrer">5. pPLdkq</a
-                >
-                <div>2.55%</div>
-              </div>
-              <div class="flex justify-between">
-                <a
-                  class="hover:underline"
-                  href="https://solscan.io/account/92sEVeLaGy2GXwcijaokHHsNtE8Y9GtmbkQMy1U5ik7c"
-                  target="_blank"
-                  rel="noopener noreferrer">6. 92sEVe</a
-                >
-                <div>2.22%</div>
-              </div>
-              <div class="flex justify-between">
-                <a
-                  class="hover:underline"
-                  href="https://solscan.io/account/4Kvc5vJCtqeGKEupPckUExP8eXTH2nRkUPMxtHZG8uYo"
-                  target="_blank"
-                  rel="noopener noreferrer">7. 4Kvc5v</a
-                >
-                <div>2.15%</div>
-              </div>
-              <div class="flex justify-between">
-                <a
-                  class="hover:underline"
-                  href="https://solscan.io/account/4SgbyGaZ2AN6sJYfZxUmXff2PCUVUUSz42UMmA5TSihr"
-                  target="_blank"
-                  rel="noopener noreferrer">8. 4SgbyG</a
-                >
-                <div>1.94%</div>
-              </div>
-              <div class="flex justify-between">
-                <a
-                  class="hover:underline"
-                  href="https://solscan.io/account/DZ25CGUVczLKz8mCDoNZV4JcCaH2SAGzsJ83EGtSLbRy"
-                  target="_blank"
-                  rel="noopener noreferrer">9. DZ25CG</a
-                >
-                <div>1.74%</div>
-              </div>
-              <div class="flex justify-between">
-                <a
-                  class="hover:underline"
-                  href="https://solscan.io/account/A6r2iwRotXSxqtMuabXz57LAaZCaEG2iJ8XGn1Sjunnq"
-                  target="_blank"
-                  rel="noopener noreferrer">10. A6r2iw</a
-                >
-                <div>1.60%</div>
-              </div>
-              <div class="flex justify-between">
-                <a
-                  class="hover:underline"
-                  href="https://solscan.io/account/EpyHqw9ZVHDTdrwWk58QLVSi5PVcixJo25Y3CPegXoDP"
-                  target="_blank"
-                  rel="noopener noreferrer">11. EpyHqw</a
-                >
-                <div>1.44%</div>
-              </div>
-              <div class="flex justify-between">
-                <a
-                  class="hover:underline"
-                  href="https://solscan.io/account/9LHBhFCugDv7Qre1uDWJJQwC7VQhbEcxNWcPEjSvXMey"
-                  target="_blank"
-                  rel="noopener noreferrer">12. 9LHBhF</a
-                >
-                <div>1.42%</div>
-              </div>
-              <div class="flex justify-between">
-                <a
-                  class="hover:underline"
-                  href="https://solscan.io/account/5iiwX9L57a43yb3M1sJzWiPWRazfutsDZsZ6tDGSgm2V"
-                  target="_blank"
-                  rel="noopener noreferrer">13. 5iiwX9</a
-                >
-                <div>1.33%</div>
-              </div>
-              <div class="flex justify-between">
-                <a
-                  class="hover:underline"
-                  href="https://solscan.io/account/E3dh8mdoixgUWm6MfEyJJLqWAfiQUsipm8KwQvchP8CS"
-                  target="_blank"
-                  rel="noopener noreferrer">14. E3dh8m</a
-                >
-                <div>1.30%</div>
-              </div>
-              <div class="flex justify-between">
-                <a
-                  class="hover:underline"
-                  href="https://solscan.io/account/Fq9mHTYNoNwsHJqnDiXWkJw4diY8LrG8SGM2X1AcPm7A"
-                  target="_blank"
-                  rel="noopener noreferrer">15. Fq9mHT</a
-                >
-                <div>1.13%</div>
-              </div>
-              <div class="flex justify-between">
-                <a
-                  class="hover:underline"
-                  href="https://solscan.io/account/8rRM8UdQUVooG43GiRoxDWkWq13C2q1FwjAVdsY5PJq8"
-                  target="_blank"
-                  rel="noopener noreferrer">16. 8rRM8U</a
-                >
-                <div>1.08%</div>
-              </div>
-              <div class="flex justify-between">
-                <a
-                  class="hover:underline"
-                  href="https://solscan.io/account/4KLgSj38moiSPQMCRQYPr1935AFrcZumUDkJVDLUuvN9"
-                  target="_blank"
-                  rel="noopener noreferrer">17. 4KLgSj</a
-                >
-                <div>1.03%</div>
-              </div>
-              <div class="flex justify-between">
-                <a
-                  class="hover:underline"
-                  href="https://solscan.io/account/9pkpUceHJbvzYiMPp48hT1v3Ypqf5THXLYVjxisJfsrR"
-                  target="_blank"
-                  rel="noopener noreferrer">18. 9pkpUc</a
-                >
-                <div>0.96%</div>
-              </div>
-              <div class="flex justify-between">
-                <a
-                  class="hover:underline"
-                  href="https://solscan.io/account/Cqqp1z9NwJLME5jLtV74xtfeWBqmAoGstR8ntDSVqXBH"
-                  target="_blank"
-                  rel="noopener noreferrer">19. Cqqp1z</a
-                >
-                <div>0.92%</div>
-              </div>
-              <div class="flex justify-between">
-                <a
-                  class="hover:underline"
-                  href="https://solscan.io/account/CXmEK3JmKqDrPET9DMdbxTQ73h7RCo58oxKLdLp6WDS1"
-                  target="_blank"
-                  rel="noopener noreferrer">20. CXmEK3</a
-                >
-                <div>0.87%</div>
-              </div>
+            {#each holders as holder, index (holder.address)}
+              {@html HolderEntry({rank: index + 1, ...holder})}
+            {/each}
             </div>
           </div>
+          <!-- SECTION END: Holder distribution -->
         </div>
       </div>
     </div>
