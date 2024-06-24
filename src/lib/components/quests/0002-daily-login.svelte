@@ -2,16 +2,22 @@
   import Quest from '$lib/components/Quest.svelte';
   import { SpinningWheel } from '$lib/components/ui/spinning-wheel';
   import type { QuestStatus } from '$lib/quests';
+  import type { ComponentEvents } from 'svelte';
 
   export let id: string;
   export let status: QuestStatus;
 
   let submitting = false;
+  let points = 0;
+
+  const handleSetPoints = (event: ComponentEvents<SpinningWheel>['points']) => {
+    points = event.detail;
+  };
 </script>
 
-<Quest {...$$restProps} {status}>
+<Quest {...$$restProps} {status} {points}>
   <div class="flex flex-col gap-4" slot="content">
-    <SpinningWheel />
+    <SpinningWheel on:points={handleSetPoints} />
     {#if status === 'done'}
       <p>Filled your bag.</p>
       <p>

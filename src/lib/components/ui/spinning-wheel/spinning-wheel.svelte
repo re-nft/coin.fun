@@ -1,12 +1,15 @@
 <script lang="ts">
+  import { createEventDispatcher } from 'svelte';
   import { Button } from '$lib/components/ui/button';
   import { expoInOut } from 'svelte/easing';
   import { tweened } from 'svelte/motion';
   export let division: number = 8;
 
+  const dispatch = createEventDispatcher();
+
   const spinningDivision = Array.from({ length: division }, (_, index) => ({
     index: index + 1,
-    value: index * 1000
+    value: (index + 1) * 10000
   }));
 
   const progress = tweened(0, {
@@ -26,6 +29,8 @@
     spinnTo = selectedItemToPosition;
 
     await progress.set(1);
+
+    dispatch('points', selectedItem.value);
   };
 
   $: wheelSpin = $progress ? $progress * 3600 + spinnTo : 0;
@@ -45,7 +50,7 @@
     <div class="absolute inset-0 rotate-[22.5deg]">
       {#each spinningDivision as division}
         <b
-          class="absolute inset-3 text-center"
+          class="absolute inset-3 text-center text-sm"
           style="transform: rotate(calc(45deg * {division.index}))"
           >{division.value}</b
         >
