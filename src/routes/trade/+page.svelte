@@ -73,7 +73,7 @@
                   <div>
                     <div
                       class="hover:opacity-7 cursor-pointer"
-                      type="button"
+                      role="button"
                       aria-haspopup="dialog"
                       aria-expanded="false"
                       aria-controls="radix-:r2n:"
@@ -476,7 +476,7 @@
                   <div>
                     <div
                       class="hover:opacity-7 cursor-pointer"
-                      type="button"
+                      role="button"
                       aria-haspopup="dialog"
                       aria-expanded="false"
                       aria-controls="radix-:r2o:"
@@ -777,7 +777,7 @@
                   <div>
                     <div
                       class="hover:opacity-7 cursor-pointer"
-                      type="button"
+                      role="button"
                       aria-haspopup="dialog"
                       aria-expanded="false"
                       aria-controls="radix-:r2p:"
@@ -1390,7 +1390,7 @@
                   <div>
                     <div
                       class="hover:opacity-7 cursor-pointer"
-                      type="button"
+                      role="button"
                       aria-haspopup="dialog"
                       aria-expanded="false"
                       aria-controls="radix-:r2q:"
@@ -1641,7 +1641,7 @@
                   <div>
                     <div
                       class="hover:opacity-7 cursor-pointer"
-                      type="button"
+                      role="button"
                       aria-haspopup="dialog"
                       aria-expanded="false"
                       aria-controls="radix-:r2r:"
@@ -2102,7 +2102,7 @@
                   <div>
                     <div
                       class="hover:opacity-7 cursor-pointer"
-                      type="button"
+                      role="button"
                       aria-haspopup="dialog"
                       aria-expanded="false"
                       aria-controls="radix-:r2s:"
@@ -2526,7 +2526,7 @@
                   <div>
                     <div
                       class="hover:opacity-7 cursor-pointer"
-                      type="button"
+                      role="button"
                       aria-haspopup="dialog"
                       aria-expanded="false"
                       aria-controls="radix-:r2t:"
@@ -2610,7 +2610,7 @@
                   <div>
                     <div
                       class="hover:opacity-7 cursor-pointer"
-                      type="button"
+                      role="button"
                       aria-haspopup="dialog"
                       aria-expanded="false"
                       aria-controls="radix-:r2u:"
@@ -2968,7 +2968,7 @@
                   <div>
                     <div
                       class="hover:opacity-7 cursor-pointer"
-                      type="button"
+                      role="button"
                       aria-haspopup="dialog"
                       aria-expanded="false"
                       aria-controls="radix-:r2v:"
@@ -3169,7 +3169,7 @@
   <div class="mt-4 flex w-full justify-center">
     <div class="mb-20 justify-self-end">
       <div class="flex justify-center space-x-2 text-slate-50">
-        <button disabled="" class="cursor-not-allowed text-sm text-slate-400"
+        <button disabled={true} class="cursor-not-allowed text-sm text-slate-400"
           >[ &lt;&lt; ]</button
         ><span>1</span><button
           class="text-sm text-slate-50 hover:bg-transparent hover:font-bold hover:text-slate-50"
