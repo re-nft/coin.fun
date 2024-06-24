@@ -7,7 +7,7 @@
 </script>
 
 <Quest {...$$restProps}>
-  <div class="flex flex-col gap-4" slot="content">
+  <div class="flex flex-col gap-4 p-8" slot="content">
     {#if profile}
       <p>
         Hi, <a

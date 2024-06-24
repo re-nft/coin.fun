@@ -23,34 +23,31 @@ export class Quest0003DailyTweet extends Quest {
 
     if (!this.userId) return meta;
 
-    const userTweets = await db
-      .select()
+    const data = await db
+      .select({
+        id: tweets.id,
+        fullText: tweets.fullText,
+        createdAt: tweets.createdAt,
+        points: points.points
+      })
       .from(tweets)
+      .leftJoin(
+        points,
+        and(
+          eq(points.acquiredAt, tweets.createdAt),
+          eq(points.questId, this.id),
+          eq(points.userId, tweets.userId)
+        )
+      )
       .where(eq(tweets.userId, this.userId));
 
-    const tweetPoints = await db
-      .select()
-      .from(points)
-      .where(
-        or(
-          ...userTweets.map(({ userId, createdAt }) =>
-            and(
-              eq(points.acquiredAt, createdAt),
-              eq(points.questId, this.id),
-              eq(points.userId, userId)
-            )
-          )
-        )
-      );
-
-    return {
-      ...meta,
-      tweets: userTweets.map((tweet) => ({
-        ...tweet,
-        points: tweetPoints.find(
-          ({ acquiredAt }) => acquiredAt.getTime() === tweet.createdAt.getTime()
-        )?.points
-      }))
-    };
+    return { ...meta, tweets: data };
   }
 }
+
+export type Pretty<T> = {
+  [Key in keyof T]: T[Key];
+};
+export type QuestData = Pretty<
+  Awaited<ReturnType<Quest0003DailyTweet['toJSON']>>
+>;

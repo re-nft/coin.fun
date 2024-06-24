@@ -11,7 +11,7 @@
 </script>
 
 <Quest {...$$restProps} {status}>
-  <div class="flex flex-col gap-4" slot="content">
+  <div class="flex flex-col gap-4 p-8" slot="content">
     {#if status === 'done'}
       <p>Filled your bag.</p>
       <p>

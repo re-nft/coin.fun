@@ -38,5 +38,10 @@ export async function load({ data, depends, fetch }) {
         }
       });
 
-  return { ...data, solana, supabase };
+  return {
+    ...data,
+    locale: globalThis?.navigator?.language.split(',').at(0) ?? data.locale,
+    solana,
+    supabase
+  };
 }

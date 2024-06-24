@@ -1,5 +1,9 @@
-export async function load({ depends, locals: { safeGetSession } }) {
+export async function load({ depends, locals: { safeGetSession }, request }) {
   depends('supabase:auth');
+
+  const acceptLanguage = request.headers.get('accept-language');
+  const locale = acceptLanguage?.split(',').at(0);
+
   const { session, user } = await safeGetSession();
-  return { session, user };
+  return { locale, session, user };
 }
