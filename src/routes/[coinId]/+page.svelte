@@ -310,7 +310,6 @@
       timestamp: '13:31:30',
       content: '#4054370 the guy said cto sold',
       likes: 1,
-      mentions: ['#4054370']
     },
     {
       id: '4054419',
@@ -419,32 +418,6 @@
       timestamp: '13:36:04',
       content: 'https://t.me/+jjkBryq4kBk1Y2Fk',
       likes: 1
-    },
-    {
-      id: '4054370',
-      author: {
-        name: 'Pannasvart',
-        avatar:
-          'https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect',
-        color: 'rgb(166, 242, 217)'
-      },
-      timestamp: '13:30:45',
-      content: 'Make tg and post it here asap',
-      likes: 1,
-      mentions: ['#4054397']
-    },
-    {
-      id: '4054397',
-      author: {
-        name: 'dogold',
-        avatar:
-          'https://pump.mypinata.cloud/ipfs/QmeSzchzEPqCU1jwTnsipwcBAeH7S4bmVvFGfF65iA1BY1?img-width=16&amp;img-dpr=2&amp;img-onerror=redirect',
-        color: 'rgb(149, 130, 137)'
-      },
-      timestamp: '13:31:30',
-      content: '#4054370 the guy said cto sold',
-      likes: 1,
-      mentions: ['#4054370']
     }
   ];
   const trades: TradeEntryProps[] = [
@@ -760,13 +733,15 @@
   ];
 
   let activeView = 'comments';
-  function toggleView() {
-    activeView = activeView === 'comments' ? 'trades' : 'comments';
-  }
+  const setActiveView = (view: string) => {
+    activeView = view;
+  };
+
 </script>
 
 <!-- <h1>Coin Details for {coinId}</h1> -->
 
+<div>{activeView}</div>
 <div class="mb-16 hidden p-4 md:block">
   <div class="mt-4 flex space-x-8">
     <div class="flex w-2/3 flex-col gap-2">
@@ -862,13 +837,13 @@
       <div class="mt-4 flex h-fit gap-2">
         <button
           class="cursor-pointer rounded {activeView === 'comments' ? 'bg-green-300 text-black' : 'text-gray-500 hover:bg-gray-800'}"
-          on:click={toggleView}
+          on:click={() => setActiveView('comments')}
         >
           Thread
         </button>
         <button
           class="cursor-pointer rounded {activeView === 'trades' ? 'bg-green-300 text-black' : 'text-gray-500 hover:bg-gray-800'}"
-          on:click={toggleView}
+          on:click={() => setActiveView('trades')}
         >
           Trades
         </button>
