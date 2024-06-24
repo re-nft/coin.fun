@@ -23,6 +23,7 @@
     rafId = requestAnimationFrame(updateEachSecond);
     return () => typeof rafId === 'number' && cancelAnimationFrame(rafId);
   });
+  
 
   $: characters = String(virtualPoints).padStart(12, '0');
 </script>

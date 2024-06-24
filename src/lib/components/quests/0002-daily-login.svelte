@@ -2,6 +2,7 @@
   import { enhance } from '$app/forms';
   import Quest from '$lib/components/Quest.svelte';
   import { Button } from '$lib/components/ui/button';
+  import { SpinningWheel } from '$lib/components/ui/spinning-wheel';
   import type { QuestStatus } from '$lib/quests';
 
   export let id: string;
@@ -11,7 +12,8 @@
 </script>
 
 <Quest {...$$restProps} {status}>
-  <div class="flex flex-col gap-4 p-8" slot="content">
+  <div class="flex flex-col gap-4" slot="content">
+    <SpinningWheel />
     {#if status === 'done'}
       <p>Filled your bag.</p>
       <p>
