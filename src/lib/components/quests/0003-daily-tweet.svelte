@@ -10,6 +10,7 @@
   import Quest from '$lib/components/Quest.svelte';
   import type { QuestCallError } from '$lib/quests';
   import type { Profile, TweetSelect } from '$lib/server/db';
+  import { suffix } from '$lib/utils/number';
   import { cn } from '$lib/utils/ui';
 
   import { Button } from '../ui/button';
@@ -54,7 +55,7 @@
   {...$$restProps}
   class={cn(
     'fixed bottom-0 right-0 w-full max-w-[575px] bg-brand-black/90 shadow-none backdrop-blur transition-all before:hidden after:hidden hover:transform-none',
-    collapsed ? 'max-h-[3rem] overflow-auto' : 'overflow-none max-h-[75dvh]'
+    collapsed ? 'max-h-[3rem] overflow-hidden' : 'max-h-[75dvh] overflow-auto'
   )}
   style="--color: hsl(var(--color-red));"
 >
@@ -83,14 +84,28 @@
 
   <div class="flex flex-col gap-8" slot="content">
     {#if tweets?.length}
-      <div class="flex max-h-[400px] flex-col overflow-y-auto bg-[#15202B]">
+      <div
+        class="flex max-h-[400px] flex-col overflow-y-auto border-y border-y-[--color] bg-[#15202B]"
+      >
         {#each tweets as status (status.id)}
-          <div class={cn('p-2', status.points && 'bg-brand-yellow/25')}>
-            <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark">
+          <div class={cn('p-2', status.points && 'bg-brand-yellow/10')}>
+            {#if status.points}
               <p>
+                This gib <span class="text-brand-yellow"
+                  >{suffix(status.points)}</span
+                >
+              </p>
+            {/if}
+            <blockquote
+              class="twitter-tweet text-brand-beige/40"
+              data-dnt="true"
+              data-theme="dark"
+            >
+              <p class="my-2 text-brand-beige">
                 {status.fullText}
               </p>
-              &mdash; {profile?.displayName} (@{profile?.userName})<a
+              &mdash; {profile?.displayName} (@{profile?.userName})
+              <a
                 href="https://twitter.com/{profile?.userName}/status/{status.id}?ref_src=twsrc%5Etfw"
                 >{intlDate.format(status?.createdAt)}</a
               >
@@ -104,20 +119,23 @@
           These posts represent your bags. I.e. empty.
         </p>
 
-        <ol class="max-w-fit list-inside list-decimal text-left">
-          {#if 'characterS1 === normie'}
-            <li>Meme @coindotfun</li>
-            <li>Mention @coindotfun</li>
-            <li>
-              Gib <span class="text-glow-green">150k</span> points.
-            </li>
-          {:else if 'characterS1 === heftie'}
-            <li>
-              Retweet a normie: <span class="text-glow">100k</span> points
-            </li>
-            <li>Quote a normie: <span class="text-glow">200k</span> points</li>
-          {/if}
-        </ol>
+        {#if profile}
+          <ol class="max-w-fit list-inside list-decimal text-left">
+            {#if profile?.characterS1 === 'normie'}
+              <li>Meme or mention @coindotfun</li>
+              <li>
+                Gib <span class="text-glow-green">150k</span> points.
+              </li>
+            {:else if profile?.characterS1 === 'heftie'}
+              <li>
+                Retweet a normie: <span class="text-glow">100k</span> points
+              </li>
+              <li>
+                Quote a normie: <span class="text-glow">200k</span> points
+              </li>
+            {/if}
+          </ol>
+        {/if}
 
         <p class="text-sm text-muted-foreground">
           Get those @inversebrah's going.
@@ -134,7 +152,7 @@
 
     <h2 class="sr-only">Add a tweet</h2>
     <p class="text-sm text-muted-foreground">
-      Tweet not in the list? Add it here.
+      Tweet not in the list? Add it below:
     </p>
 
     <form
