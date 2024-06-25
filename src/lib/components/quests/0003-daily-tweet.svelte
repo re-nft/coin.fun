@@ -1,5 +1,8 @@
 <script lang="ts">
   import type { ActionResult } from '@sveltejs/kit';
+  import ChevronsDownUp from 'lucide-svelte/icons/chevrons-down-up';
+  import ChevronsUpDown from 'lucide-svelte/icons/chevrons-up-down';
+  import { onMount } from 'svelte';
   import { slide } from 'svelte/transition';
 
   import { enhance } from '$app/forms';
@@ -38,18 +41,49 @@
     if (prevUrl !== url) errors = undefined;
     prevUrl = url;
   }
+
+  let collapsed = false;
+
+  onMount(() => {
+    collapsed = !window.matchMedia('(min-width: 768px) and (min-height: 768px)')
+      .matches;
+  });
 </script>
 
 <Quest
   {...$$restProps}
-  class="absolute bottom-1 right-1 shadow-none before:hidden after:hidden hover:transform-none"
+  class={cn(
+    'fixed bottom-0 right-0 w-full max-w-[575px] bg-brand-black/90 shadow-none backdrop-blur transition-all before:hidden after:hidden hover:transform-none',
+    collapsed ? 'max-h-[3rem] overflow-auto' : 'overflow-none max-h-[75dvh]'
+  )}
   style="--color: hsl(var(--color-red));"
 >
-  <span slot="points">Daily tweets</span>
+  <header class="flex w-full items-center gap-4" slot="header">
+    Daily tweets:
+    {#if profile?.characterS1 === 'normie'}
+      <span class="text-[--color]">150k</span>
+    {:else if profile?.characterS1 === 'heftie'}
+      <span class="text-[--color]">100k or 200k</span>
+    {/if}
+
+    <button
+      class="ml-auto mr-4 flex size-8 items-center justify-center rounded border border-muted"
+      on:click={() => {
+        collapsed = !collapsed;
+      }}
+      type="button"
+    >
+      {#if collapsed}
+        <ChevronsDownUp size={16} />
+      {:else}
+        <ChevronsUpDown size={16} />
+      {/if}
+    </button>
+  </header>
 
   <div class="flex flex-col gap-8" slot="content">
     {#if tweets?.length}
-      <div class="p flex max-h-[400px] flex-col overflow-y-auto bg-[#15202B]">
+      <div class="flex max-h-[400px] flex-col overflow-y-auto bg-[#15202B]">
         {#each tweets as status (status.id)}
           <div class={cn('p-2', status.points && 'bg-brand-yellow/25')}>
             <blockquote class="twitter-tweet" data-dnt="true" data-theme="dark">

@@ -39,18 +39,18 @@
     {title}
   </h2>
 
-  <p
+  <div
     class="order-first flex items-center gap-4 border-b border-b-[--color] text-muted-foreground"
   >
     <span
       class="flex size-12 items-center justify-center border-r border-[--color] p-4"
       aria-label={status}>{statusIcon}</span
     >
-    <slot name="points">
+    <slot name="header">
       points:
       <span class="text-[--color]">{suffix(points)}</span>
     </slot>
-  </p>
+  </div>
 
   {#if status === 'error'}
     <p>Our server borked serving this quest. Quest rugged.</p>
