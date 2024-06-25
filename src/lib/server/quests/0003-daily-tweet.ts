@@ -93,6 +93,16 @@ export class Quest0003DailyTweet extends Quest {
       if (status.user.screen_name !== this.profile.userName)
         throw new Error(`This is not your tweet.`);
 
+      if (
+        (this.profile?.characterS1 === 'normie' &&
+          !status.full_text.includes(`@coindotfun`)) ||
+        (this.profile?.characterS1 === 'heftie' &&
+          (!status.retweeted_status?.full_text.includes('@coindotfun') ||
+            !status.quoted_status?.full_text.includes('@coindotfun')))
+      ) {
+        throw new Error(`Tweet is not eligible for points.`);
+      }
+
       const statusAdded = await db
         .insert(tweets)
         .values(
