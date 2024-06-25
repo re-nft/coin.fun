@@ -2,7 +2,7 @@
   import type { ActionResult } from '@sveltejs/kit';
   import ChevronsDownUp from 'lucide-svelte/icons/chevrons-down-up';
   import ChevronsUpDown from 'lucide-svelte/icons/chevrons-up-down';
-  import { onMount } from 'svelte';
+  import { onDestroy, onMount } from 'svelte';
   import { scale, slide } from 'svelte/transition';
 
   import { enhance } from '$app/forms';
@@ -66,16 +66,20 @@
   }
 
   // Collapse code
-  let collapsed = true;
+  const MIN_MEDIA = '(min-width: 768px) and (min-height: 768px)';
+  let collapsed =
+    typeof window !== 'undefined' && !window.matchMedia(MIN_MEDIA).matches;
 
   $: {
     if (typeof document !== 'undefined')
-      document.body.style.overflow = collapsed ? '' : 'hidden';
+      document.body.style.overflow =
+        collapsed ? ''
+        : !window.matchMedia(MIN_MEDIA).matches ? 'hidden'
+        : '';
   }
 
-  onMount(() => {
-    collapsed = !window.matchMedia('(min-width: 768px) and (min-height: 768px)')
-      .matches;
+  onDestroy(() => {
+    if (typeof document !== 'undefined') document.body.style.overflow = '';
   });
 </script>
 
