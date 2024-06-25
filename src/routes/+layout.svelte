@@ -5,7 +5,7 @@
   import { inject } from '@vercel/analytics';
   import { onMount, setContext } from 'svelte';
 
-  import { invalidate } from '$app/navigation';
+  import { afterNavigate, invalidate } from '$app/navigation';
   import EmojiBackdrop from '$lib/components/EmojiBackdrop.svelte';
   import Navigation from '$lib/components/Navigation.svelte';
   import { createStore as createSolanaStore } from '$lib/solana';
@@ -26,6 +26,11 @@
       }
     });
     return () => data.subscription.unsubscribe();
+  });
+
+  afterNavigate(() => {
+    // @ts-expect-error TODO: types
+    window?.twttr?.widgets?.load?.();
   });
 </script>
 
