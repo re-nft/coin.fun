@@ -1,6 +1,13 @@
 <script lang="ts">
   import solanaLogoSquare from '$lib/assets/solana-logo-square.webp';
 
+  let lastElement: HTMLElement;
+  function scrollToBottom() {
+    lastElement.scrollIntoView({ behavior: 'smooth' });
+  }
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 
   interface CommentProps {
     id: string;
@@ -851,11 +858,12 @@
 
       {#if activeView === 'comments'}
         <div class="relative grid gap-1 text-slate-300">
-          <div
+          <button
             class="w-fit cursor-pointer text-sm text-slate-300 hover:underline"
+            on:click={scrollToBottom}
           >
             [scroll to bottom]
-          </div>
+          </button>
           <div class="grid h-fit gap-1 bg-[#2e303a] p-1 text-sm">
             <div class="flex gap-1 text-xs">
               <a href="/profile/3GfDXSv54NNtDaonxWFnz59yWHTH1YeSoHmcTgH1x4bw"
@@ -898,11 +906,12 @@
             {@html Comment(comment)}
           {/each}
           <!-- SECTION END: COMMENTS -->
-          <div
+          <button
             class="absolute bottom-0 left-0 w-fit cursor-pointer text-sm text-slate-300 hover:underline"
+            on:click={scrollToTop}
           >
             [scroll to top]
-          </div>
+          </button>
           <div class="cursor-pointer justify-self-center hover:underline">
             [Post a reply]
           </div>
@@ -1117,7 +1126,7 @@
   </div>
 </div>
 
-<div class="mt-auto px-2 py-4 text-sm text-gray-400 md:px-12">
+<div class="mt-auto px-2 py-4 text-sm text-gray-400 md:px-12" bind:this={lastElement}>
   <div class="relative flex items-center justify-between">
     <p class="flex-shrink-0">© coin.fun 2024</p>
     <p
