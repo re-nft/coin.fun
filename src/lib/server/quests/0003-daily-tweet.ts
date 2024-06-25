@@ -1,8 +1,9 @@
-import { and, desc, eq, or, sql } from 'drizzle-orm';
+import { and, desc, eq, gt, lt } from 'drizzle-orm';
 
-import { OnError, Quest } from '$lib/quests';
+import { Quest } from '$lib/quests';
 import { db, points, tweets, tweetToInsert } from '$lib/server/db';
 import { getTweet } from '$lib/server/twitter';
+import { getUTCDayStart } from '$lib/utils/date';
 import { Memoize } from '$lib/utils/decorators';
 
 export class Quest0003DailyTweet extends Quest {
@@ -17,7 +18,28 @@ export class Quest0003DailyTweet extends Quest {
   }
 
   override async getStatus() {
-    return 'locked' as const;
+    if (!this.userId) return 'locked';
+    if (await this.hasTodaysTweet()) return 'done';
+    return 'available';
+  }
+
+  @Memoize
+  async hasTodaysTweet() {
+    if (!this.userId) return false;
+
+    const result = await db
+      .select({ id: tweets.id })
+      .from(tweets)
+      .where(
+        and(
+          lt(tweets.createdAt, new Date()),
+          gt(tweets.createdAt, getUTCDayStart()),
+          eq(tweets.userId, this.userId)
+        )
+      )
+      .limit(1);
+
+    return Boolean(result?.length);
   }
 
   async toJSON() {
@@ -67,6 +89,9 @@ export class Quest0003DailyTweet extends Quest {
       if (existingId) throw new Error(`We already have this tweet.`);
 
       const status = await getTweet(id);
+
+      if (status.user.screen_name !== this.profile.userName)
+        throw new Error(`This is not your tweet.`);
 
       const statusAdded = await db
         .insert(tweets)
