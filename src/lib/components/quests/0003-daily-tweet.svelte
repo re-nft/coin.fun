@@ -143,107 +143,116 @@
       </div>
     {/if}
 
-    <Button
-      class="mx-8 max-w-fit self-center"
-      href="https://twitter.com/intent/tweet?text={tweetText}"
-    >
-      Tweet @coindotfun
-    </Button>
-
-    <h2 class="sr-only">Add a tweet</h2>
-    <p class="text-sm text-muted-foreground">
-      Tweet not in the list? Add it below:
-    </p>
-
-    <form
-      action="/api/quests?/call"
-      class="relative flex flex-col gap-4"
-      method="POST"
-      use:enhance={async () => {
-        formData = undefined;
-        formStatus = 'pending';
-        return async ({ update, result }) => {
-          if (result.type === 'error') {
-            formData = {
-              errors: [{ name: 'FormError', message: 'Form cannot submit.' }]
-            };
-            return;
-          }
-
-          if (result.type === 'redirect') {
-            return goto(result.location);
-          }
-
-          // @ts-expect-error TODO: types
-          formData = result?.data;
-          formStatus = result.type;
-
-          setTimeout(() => {
-            formData = undefined;
-            formStatus = 'idle';
-          }, 10_000);
-
-          await update();
-
-          // We need to re-initialze tweets after svelte has updated state
-          // through it's loaders.
-          if (formStatus === 'success')
-            // @ts-expect-error TODO: types
-            window?.twttr?.widgets?.load?.();
-        };
-      }}
-    >
-      {#if errors || data}
-        <div
-          class="absolute bottom-full left-0 right-0 text-brand-beige"
-          transition:slide
-        >
-          {#if errors?.length}
-            <ol class="flex flex-col items-center bg-brand-red p-2">
-              {#each errors as error (error.message)}
-                <li>{error.message}</li>
-              {/each}
-            </ol>
-          {/if}
-
-          {#if formStatus === 'success'}
-            <p class="bg-brand-green p-2">
-              Tweet added. Points are updated every hour.
-            </p>
-          {/if}
-        </div>
-      {/if}
-
-      <input name="questId" type="hidden" value={id} />
-      <input name="methodName" type="hidden" value="registerTweet" />
-
-      <p
-        class="flex items-center justify-stretch bg-brand-red/80 text-brand-black"
+    {#if profile}
+      <Button
+        class="mx-8 max-w-fit self-center"
+        href="https://twitter.com/intent/tweet?text={tweetText}"
       >
-        <label class="px-2 text-sm text-brand-beige/75" for="url">Link:</label>
+        Tweet @coindotfun
+      </Button>
 
-        <input
-          class="my-0.5 min-w-0 flex-1 basis-full border-0 bg-brand-black/60 text-brand-beige placeholder:text-brand-beige/50"
-          id="url"
-          disabled={formStatus === 'pending'}
-          name="params[]"
-          placeholder="https//x.com/{profile?.userName}/123…"
-          type="text"
-          bind:value={url}
-        />
-
-        <button
-          class="mx-2 w-[5rem] bg-brand-yellow px-2 font-bold uppercase transition hover:bg-brand-orange disabled:cursor-not-allowed disabled:bg-brand-black/20"
-          disabled={!url || formStatus === 'pending'}
-          type="submit"
-        >
-          {#if formStatus === 'pending'}
-            <span class="block animate-spin">🥳</span>
-          {:else}
-            Add
-          {/if}
-        </button>
+      <p class="text-sm text-muted-foreground">
+        Tweet not in the list? Add it below:
       </p>
-    </form>
+
+      <form
+        action="/api/quests?/call"
+        class="relative flex flex-col gap-4"
+        method="POST"
+        use:enhance={async () => {
+          formData = undefined;
+          formStatus = 'pending';
+          return async ({ update, result }) => {
+            if (result.type === 'error') {
+              formData = {
+                errors: [{ name: 'FormError', message: 'Form cannot submit.' }]
+              };
+              return;
+            }
+
+            if (result.type === 'redirect') {
+              return goto(result.location);
+            }
+
+            // @ts-expect-error TODO: types
+            formData = result?.data;
+            formStatus = result.type;
+
+            setTimeout(() => {
+              formData = undefined;
+              formStatus = 'idle';
+            }, 10_000);
+
+            await update();
+
+            // We need to re-initialze tweets after svelte has updated state
+            // through it's loaders.
+            if (formStatus === 'success')
+              // @ts-expect-error TODO: types
+              window?.twttr?.widgets?.load?.();
+          };
+        }}
+      >
+        {#if errors || data}
+          <div
+            class="absolute bottom-full left-0 right-0 text-brand-beige"
+            transition:slide
+          >
+            {#if errors?.length}
+              <ol class="flex flex-col items-center bg-brand-red p-2">
+                {#each errors as error (error.message)}
+                  <li>{error.message}</li>
+                {/each}
+              </ol>
+            {/if}
+
+            {#if formStatus === 'success'}
+              <p class="bg-brand-green p-2">
+                Tweet added. Points are updated every hour.
+              </p>
+            {/if}
+          </div>
+        {/if}
+
+        <input name="questId" type="hidden" value={id} />
+        <input name="methodName" type="hidden" value="registerTweet" />
+
+        <p
+          class="flex items-center justify-stretch bg-brand-red/80 text-brand-black"
+        >
+          <label class="px-2 text-sm text-brand-beige/75" for="url">Link:</label
+          >
+
+          <input
+            class="my-0.5 min-w-0 flex-1 basis-full border-0 bg-brand-black/60 text-brand-beige placeholder:text-brand-beige/50"
+            id="url"
+            disabled={formStatus === 'pending'}
+            name="params[]"
+            placeholder="https//x.com/{profile?.userName}/123…"
+            type="text"
+            bind:value={url}
+          />
+
+          <button
+            class="mx-2 w-[5rem] bg-brand-yellow px-2 font-bold uppercase transition hover:bg-brand-orange disabled:cursor-not-allowed disabled:bg-brand-black/20"
+            disabled={!url || formStatus === 'pending'}
+            type="submit"
+          >
+            {#if formStatus === 'pending'}
+              <span class="block animate-spin">🥳</span>
+            {:else}
+              Add
+            {/if}
+          </button>
+        </p>
+      </form>
+    {:else}
+      <Button
+        class="mx-8 mb-8 max-w-fit self-center"
+        href="/api/twitter/sign-in"
+      >
+        Sign in
+      </Button>
+    {/if}
   </div>
 </Quest>
