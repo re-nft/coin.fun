@@ -171,6 +171,7 @@
                   >
                     <blockquote
                       class="twitter-tweet text-brand-beige/40"
+                      data-conversation="none"
                       data-dnt="true"
                       data-theme="dark"
                     >
