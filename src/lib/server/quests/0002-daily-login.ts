@@ -7,12 +7,12 @@ import { Memoize } from '$lib/utils/decorators';
 export class Quest0002DailyLogin extends Quest {
   id = '0002-daily-login';
   component = 'Quest2';
-  points = 100000;
   publicMethods = ['complete'];
   title = 'Quest 2: daily check-in';
+  points = 0;
 
   @OnError(false)
-  override async complete() {
+  override async complete(i: number) {
     if (!this.userId) return false;
     if (await this.isCompleted()) {
       console.log(`Quest (${this.id}): already completed.`);
@@ -22,7 +22,7 @@ export class Quest0002DailyLogin extends Quest {
     const [result] = await db
       .insert(points)
       .values({
-        points: this.points,
+        points: i,
         questId: this.id,
         userId: this.userId
       })

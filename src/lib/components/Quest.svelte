@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { QuestStatus } from '$lib/quests';
+  import { fly } from 'svelte/transition';
   import { suffix } from '$lib/utils/number';
   import { cn } from '$lib/utils/ui';
 
@@ -48,10 +49,12 @@
       class="flex size-12 items-center justify-center border-r border-[--color] p-4"
       aria-label={status}>{statusIcon}</span
     >
-    <slot name="header">
-      points:
+    points:
+    {#if points}
+      <span transition:fly class="text-[--color]">{suffix(points)}</span>
+    {:else}
       <span class="text-[--color]">{suffix(points)}</span>
-    </slot>
+    {/if}
   </div>
 
   {#if status === 'error'}

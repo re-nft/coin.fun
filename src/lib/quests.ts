@@ -15,7 +15,7 @@ export abstract class Quest {
   abstract points: number;
   abstract title: string;
 
-  abstract complete(): Promise<boolean>;
+  abstract complete(points?: number): Promise<boolean>;
   abstract getStatus(): Promise<QuestStatus>;
 
   protected profile: Profile | null;
@@ -79,6 +79,7 @@ export function OnError<T>(
       try {
         return originalMethod.apply(context, ...args);
       } catch (error) {
+        console.log(error);
         console.error(`QuestError (${name}:${propertyKey}):`, {
           id: context.id,
           userId: context.userId

@@ -1,5 +1,7 @@
 import { type ClassValue, clsx } from 'clsx';
-import { cubicOut } from 'svelte/easing';
+import { cubicOut, expoInOut } from 'svelte/easing';
+import { writable, get } from 'svelte/store';
+import { tweened } from 'svelte/motion';
 import type { TransitionConfig } from 'svelte/transition';
 import { twMerge } from 'tailwind-merge';
 
@@ -58,5 +60,30 @@ export const flyAndScale = (
       });
     },
     easing: cubicOut
+  };
+};
+
+export const spinner = (division: number) => {
+  let velocity = tweened(0, { easing: expoInOut, duration: 4000 });
+  let rotation = writable(0);
+
+  const selectedIndex = Math.floor(Math.random() * division);
+  const wheelSection = Number(360 / division);
+  const from = wheelSection * selectedIndex;
+  const to = 360 - (from - wheelSection) + wheelSection / 2;
+
+  function animate() {
+    rotation.update(() => get(velocity) * 3600 + to);
+  }
+
+  velocity.subscribe(() => animate());
+
+  return {
+    start: async () => {
+      await velocity.set(1);
+    },
+    selectedIndex,
+    wheelSection,
+    ...rotation
   };
 };
