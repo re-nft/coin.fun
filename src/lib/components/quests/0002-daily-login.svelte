@@ -23,7 +23,7 @@
     {:else if status === 'available'}
       <p>Gib points?</p>
       <form
-        action="/api/quests?/complete"
+        action="/api/quests?/call"
         method="POST"
         use:enhance={() => {
           submitting = true;
@@ -34,6 +34,7 @@
         }}
       >
         <input name="questId" type="hidden" value={id} />
+        <input name="methodName" type="hidden" value="complete" />
         <Button
           class="text-2xl font-bold"
           disabled={submitting}
