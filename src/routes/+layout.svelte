@@ -5,7 +5,7 @@
   import { inject } from '@vercel/analytics';
   import { onMount, setContext } from 'svelte';
 
-  import { goto, invalidate } from '$app/navigation';
+  import { invalidate } from '$app/navigation';
   import EmojiBackdrop from '$lib/components/EmojiBackdrop.svelte';
   import Navigation from '$lib/components/Navigation.svelte';
   import { createStore as createSolanaStore } from '$lib/solana';
@@ -31,7 +31,7 @@
 
 <Navigation />
 
-<main class="container flow-root">
+<main class="flow-root">
   <slot />
 </main>
 

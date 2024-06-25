@@ -44,6 +44,7 @@
     "tailwind-merge": "2.3.0",
     "tailwind-variants": "0.2.1",
     "three": "0.165.0",
+    "uuidv4": "^6.2.13",
     "valibot": "0.32.0"
   },
   "devDependencies": {

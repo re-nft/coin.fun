@@ -8,9 +8,10 @@
   import { cn } from '$lib/utils/ui';
 
   const pages = {
+    'trade': '/trade',
     'earn $COIN': '/tokenomics',
     'quests': '/quests',
-    'leaderboard': '/leaderboard'
+    'leaderboard': '/leaderboard',
   };
 
   let open = false;
