@@ -17,7 +17,7 @@
   import { Button } from '../ui/button';
 
   type Tweet = TweetSelect & { points?: number };
-  type TweetsByDate = Map<Date, Tweet[]>;
+  type TweetsByDate = Map<number, Tweet[]>;
 
   export let id: string;
   export let locale: string | undefined = undefined;
@@ -44,19 +44,20 @@
       const nextDate = getUTCDayStart(status.createdAt);
       let currDate = prevDate;
 
-      while (currDate >= nextDate) {
-        tweetsByDate.set(new Date(currDate), []);
+      while (currDate > nextDate) {
         currDate.setDate(currDate.getDate() - 1);
+        const key = currDate.getTime();
+        tweetsByDate.set(key, []);
       }
 
-      tweetsByDate.set(currDate, [
-        ...(tweetsByDate.get(currDate) ?? []),
+      tweetsByDate.set(nextDate.getTime(), [
+        ...(tweetsByDate.get(nextDate.getTime()) ?? []),
         status
       ]);
 
       return [tweetsByDate, nextDate];
     },
-    [new Map<Date, Tweet[]>(), getUTCDayStart()]
+    [new Map<number, Tweet[]>(), getUTCDayStart()]
   );
 
   $: collapsedDates = Array.from(tweetsByDate.keys());
@@ -128,7 +129,8 @@
             <h3 class="flex items-center gap-2 text-muted-foreground/50">
               <time
                 class="flex h-12 flex-none items-center gap-2 whitespace-nowrap before:basis-4 before:border-b before:border-b-muted-foreground/50"
-                datetime={date.toISOString()}>{intlDate.format(date)}</time
+                datetime={new Date(date).toISOString()}
+                >{intlDate.format(new Date(date))}</time
               >
               <span
                 class="flex h-12 grow items-center gap-2 before:basis-4 before:border-b before:border-b-muted-foreground/50 after:flex-1 after:border-b after:border-b-muted-foreground/50"
