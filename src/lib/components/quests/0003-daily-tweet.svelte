@@ -208,7 +208,7 @@
 
             {#if formStatus === 'success'}
               <p class="bg-brand-green p-2">
-                Tweet added. Points are updated every hour.
+                Tweet added. Points are updated every day.
               </p>
             {/if}
           </div>
