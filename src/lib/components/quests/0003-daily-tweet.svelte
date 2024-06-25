@@ -37,28 +37,16 @@
   );
 
   // Twitter list setup
-  $: [tweetsByDate] = tweets.reduce<
-    [tweetsByDate: TweetsByDate, prevDate: Date]
-  >(
-    ([tweetsByDate, prevDate], status) => {
-      const nextDate = getUTCDayStart(status.createdAt);
-      let currDate = prevDate;
+  $: tweetsByDate = tweets.reduce<TweetsByDate>((tweetsByDate, status) => {
+    const nextDate = getUTCDayStart(status.createdAt);
 
-      while (currDate > nextDate) {
-        currDate.setDate(currDate.getDate() - 1);
-        const key = currDate.getTime();
-        tweetsByDate.set(key, []);
-      }
+    tweetsByDate.set(nextDate.getTime(), [
+      ...(tweetsByDate.get(nextDate.getTime()) ?? []),
+      status
+    ]);
 
-      tweetsByDate.set(nextDate.getTime(), [
-        ...(tweetsByDate.get(nextDate.getTime()) ?? []),
-        status
-      ]);
-
-      return [tweetsByDate, nextDate];
-    },
-    [new Map<number, Tweet[]>(), getUTCDayStart()]
-  );
+    return tweetsByDate;
+  }, new Map<number, Tweet[]>());
 
   $: collapsedDates = Array.from(tweetsByDate.keys());
 
