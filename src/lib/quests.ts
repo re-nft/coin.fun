@@ -1,5 +1,7 @@
 import type { Session, User } from '@supabase/supabase-js';
 
+import type { Profile } from '$lib/server/db';
+
 export type QuestStatus = 'available' | 'done' | 'error' | 'locked';
 
 export interface QuestCallError {
@@ -16,18 +18,23 @@ export abstract class Quest {
   abstract complete(): Promise<boolean>;
   abstract getStatus(): Promise<QuestStatus>;
 
+  protected profile: Profile | null;
   protected session: Session | null;
   protected user: User | null;
 
+  publicMethods?: string[] | undefined;
   userId?: string | null;
 
   constructor({
+    profile,
     session,
     user
   }: {
+    profile: Profile | null;
     session: Session | null;
     user: User | null;
   }) {
+    this.profile = profile;
     this.session = session;
     this.user = user;
     this.userId = user?.id;

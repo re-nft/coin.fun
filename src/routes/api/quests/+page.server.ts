@@ -51,10 +51,13 @@ export const actions = {
 
       const proto = Object.getPrototypeOf(quest);
 
-      if (!(methodName in proto)) {
+      if (
+        !quest.publicMethods?.includes(methodName) ||
+        !(methodName in proto)
+      ) {
         return throwError({
           name: 'NoMethodInQuest',
-          message: `Quest "${questId}" does not have a method named "${methodName}".`
+          message: `Quest "${questId}" does not have a public method named "${methodName}".`
         });
       }
 

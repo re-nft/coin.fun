@@ -1,7 +1,7 @@
 import { and, eq } from 'drizzle-orm';
 
 import { OnError, Quest } from '$lib/quests';
-import { db, points, type Profile, profiles } from '$lib/server/db';
+import { db, points, profiles } from '$lib/server/db';
 import { getProfile } from '$lib/server/twitter';
 import { Memoize } from '$lib/utils/decorators';
 
@@ -11,18 +11,7 @@ export class Quest0001Signup extends Quest {
   points = 100000;
   title = 'Quest 1: sign up';
 
-  profile?: Profile;
-
   override async init() {
-    if (this.userId) {
-      const [profile] = await db
-        .select()
-        .from(profiles)
-        .where(eq(profiles.id, this.userId))
-        .limit(1);
-      this.profile = profile;
-    }
-
     await this.complete();
   }
 
