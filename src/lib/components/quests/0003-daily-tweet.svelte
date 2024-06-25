@@ -22,7 +22,7 @@
   export let id: string;
   export let locale: string | undefined = undefined;
   export let profile: Profile | undefined = undefined;
-  export let tweets: Tweet[];
+  export let tweets: Tweet[] = [];
 
   // We're snooping the title from the props here because we don't actually
   // want to use it for this component. Maybe rewrite Quest.svelte some point.
