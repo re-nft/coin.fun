@@ -29,6 +29,7 @@
         : Quest}
         class="min-w-[240px] flex-1"
         {...quest}
+        locale={data?.locale}
         {profile}
       />
     {/each}

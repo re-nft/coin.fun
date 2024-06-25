@@ -4,10 +4,13 @@
   import { cn } from '$lib/utils/ui';
 
   let className: string | undefined = undefined;
-  export { className as class };
-  export let title: string | undefined = undefined;
-  export let status: QuestStatus = 'locked';
+  let styleProps = '';
+
+  export { className as class, styleProps as style };
+
   export let points: number = 0;
+  export let status: QuestStatus = 'locked';
+  export let title: string | undefined = undefined;
 
   $: statusIcon = {
     available: '❗',
@@ -19,40 +22,43 @@
 
 <article
   class={cn(
-    'flex-column relative flex max-w-sm flex-col justify-between border border-[--color-right] text-center',
+    'flex-column relative flex max-w-sm flex-col justify-between border border-[--color] text-center',
     'three-d',
     className
   )}
-  style="
+  style={styleProps ||
+    `
     --color: hsl(var(--color-yellow));
     --color-bottom: hsl(var(--color-orange));
     --color-right: hsl(var(--color-yellow));
-  "
+  `}
 >
-  <h2
-    class="p-8 text-lg font-bold leading-normal tracking-tight text-brand-beige"
-  >
-    {title}
-  </h2>
+  {#if title}
+    <h2
+      class="p-8 text-lg font-bold leading-normal tracking-tight text-brand-beige"
+    >
+      {title}
+    </h2>
+  {/if}
 
-  <p
+  <div
     class="order-first flex items-center gap-4 border-b border-b-[--color] text-muted-foreground"
   >
     <span
       class="flex size-12 items-center justify-center border-r border-[--color] p-4"
       aria-label={status}>{statusIcon}</span
     >
-    points:
-    <span class="text-[--color]">{suffix(points)}</span>
-  </p>
+    <slot name="header">
+      points:
+      <span class="text-[--color]">{suffix(points)}</span>
+    </slot>
+  </div>
 
   {#if status === 'error'}
     <p>Our server borked serving this quest. Quest rugged.</p>
   {:else}
     {#if $$slots.content}
-      <div class="p-8">
-        <slot name="content" />
-      </div>
+      <slot name="content" />
     {/if}
     {#if $$slots.footer}
       <footer class="p-8">

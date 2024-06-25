@@ -11,7 +11,7 @@
 </script>
 
 <Quest {...$$restProps} {status}>
-  <div class="flex flex-col gap-4" slot="content">
+  <div class="flex flex-col gap-4 p-8" slot="content">
     {#if status === 'done'}
       <p>Filled your bag.</p>
       <p>
@@ -23,7 +23,7 @@
     {:else if status === 'available'}
       <p>Gib points?</p>
       <form
-        action="/api/quests?/complete"
+        action="/api/quests?/call"
         method="POST"
         use:enhance={() => {
           submitting = true;
@@ -34,6 +34,7 @@
         }}
       >
         <input name="questId" type="hidden" value={id} />
+        <input name="methodName" type="hidden" value="complete" />
         <Button
           class="text-2xl font-bold"
           disabled={submitting}

@@ -8,6 +8,7 @@ export class Quest0002DailyLogin extends Quest {
   id = '0002-daily-login';
   component = 'Quest2';
   points = 100000;
+  publicMethods = ['complete'];
   title = 'Quest 2: daily check-in';
 
   @OnError(false)
