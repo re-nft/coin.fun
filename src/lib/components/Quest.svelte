@@ -33,11 +33,13 @@
     --color-right: hsl(var(--color-yellow));
   `}
 >
-  <h2
-    class="p-8 text-lg font-bold leading-normal tracking-tight text-brand-beige"
-  >
-    {title}
-  </h2>
+  {#if title}
+    <h2
+      class="p-8 text-lg font-bold leading-normal tracking-tight text-brand-beige"
+    >
+      {title}
+    </h2>
+  {/if}
 
   <div
     class="order-first flex items-center gap-4 border-b border-b-[--color] text-muted-foreground"

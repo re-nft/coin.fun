@@ -18,6 +18,7 @@
   export let id: string;
   export let locale: string | undefined = undefined;
   export let profile: Profile | undefined = undefined;
+  export let title: string | undefined = undefined;
   export let tweets: (TweetSelect & { points?: number })[];
 
   const intlDate = new Intl.DateTimeFormat(locale, {
@@ -43,7 +44,12 @@
     prevUrl = url;
   }
 
-  let collapsed = false;
+  let collapsed = true;
+
+  $: {
+    if (typeof document !== 'undefined')
+      document.body.style.overflow = collapsed ? '' : 'hidden';
+  }
 
   onMount(() => {
     collapsed = !window.matchMedia('(min-width: 768px) and (min-height: 768px)')
@@ -54,13 +60,15 @@
 <Quest
   {...$$restProps}
   class={cn(
-    'fixed bottom-0 right-0 w-full max-w-[575px] bg-brand-black/90 shadow-none backdrop-blur transition-all before:hidden after:hidden hover:transform-none',
-    collapsed ? 'max-h-[3rem] overflow-hidden' : 'max-h-[75dvh] overflow-auto'
+    'fixed bottom-0 right-0 z-[1] w-full max-w-[575px] bg-brand-black/90 shadow-none backdrop-blur transition-all before:hidden after:hidden hover:transform-none max-md:h-[100dvh]',
+    collapsed ?
+      'max-h-[3rem] overflow-hidden'
+    : 'max-h-[100dvh] md:max-h-[75dvh]'
   )}
   style="--color: hsl(var(--color-red));"
 >
   <header class="flex w-full items-center gap-4" slot="header">
-    Daily tweets:
+    Quest 3 daily tweets:
     {#if profile?.characterS1 === 'normie'}
       <span class="text-[--color]">150k</span>
     {:else if profile?.characterS1 === 'heftie'}
@@ -82,35 +90,38 @@
     </button>
   </header>
 
-  <div class="flex flex-col gap-8" slot="content">
+  <div class="flex min-h-0 grow flex-col gap-8" slot="content">
     {#if tweets?.length}
       <div
-        class="flex max-h-[400px] flex-col overflow-y-auto border-y border-y-[--color] bg-[#15202B]"
+        class="flex min-h-0 grow flex-col overflow-y-auto border-b border-b-[--color] bg-[#15202B]"
       >
         {#each tweets as status (status.id)}
-          <div class={cn('p-2', status.points && 'bg-brand-yellow/10')}>
-            {#if status.points}
-              <p>
-                This gib <span class="text-brand-yellow"
-                  >{suffix(status.points)}</span
-                >
-              </p>
-            {/if}
-            <blockquote
-              class="twitter-tweet text-brand-beige/40"
-              data-dnt="true"
-              data-theme="dark"
-            >
-              <p class="my-2 text-brand-beige">
-                {status.fullText}
-              </p>
-              &mdash; {profile?.displayName} (@{profile?.userName})
-              <a
-                href="https://twitter.com/{profile?.userName}/status/{status.id}?ref_src=twsrc%5Etfw"
-                >{intlDate.format(status?.createdAt)}</a
+          {#each tweets as status (status.id)}
+            <div class={cn('p-2', status.points && 'bg-brand-yellow/10')}>
+              {#if status.points}
+                <p>
+                  This gib <span class="text-brand-yellow"
+                    >{suffix(status.points)}</span
+                  >
+                </p>
+              {/if}
+              <blockquote
+                class="twitter-tweet text-brand-beige/40"
+                data-dnt="true"
+                data-theme="dark"
               >
-            </blockquote>
-          </div>
+                <p class="my-2 text-brand-beige">
+                  {status.fullText}
+                </p>
+                &mdash; {profile?.displayName} (@{profile?.userName})
+                <a
+                  class="text-brand-orange underline transition hover:text-brand-yellow"
+                  href="https://twitter.com/{profile?.userName}/status/{status.id}?ref_src=twsrc%5Etfw"
+                  >{intlDate.format(status?.createdAt)}</a
+                >
+              </blockquote>
+            </div>
+          {/each}
         {/each}
       </div>
     {:else}
@@ -144,108 +155,113 @@
     {/if}
 
     {#if profile}
-      <Button
-        class="mx-8 max-w-fit self-center"
-        href="https://twitter.com/intent/tweet?text={tweetText}"
-      >
-        Tweet @coindotfun
-      </Button>
-
-      <p class="text-sm text-muted-foreground">
-        Tweet not in the list? Add it below:
-      </p>
-
-      <form
-        action="/api/quests?/call"
-        class="relative flex flex-col gap-4"
-        method="POST"
-        use:enhance={async () => {
-          formData = undefined;
-          formStatus = 'pending';
-          return async ({ update, result }) => {
-            if (result.type === 'error') {
-              formData = {
-                errors: [{ name: 'FormError', message: 'Form cannot submit.' }]
-              };
-              return;
-            }
-
-            if (result.type === 'redirect') {
-              return goto(result.location);
-            }
-
-            // @ts-expect-error TODO: types
-            formData = result?.data;
-            formStatus = result.type;
-
-            setTimeout(() => {
-              formData = undefined;
-              formStatus = 'idle';
-            }, 10_000);
-
-            await update();
-
-            // We need to re-initialze tweets after svelte has updated state
-            // through it's loaders.
-            if (formStatus === 'success')
-              // @ts-expect-error TODO: types
-              window?.twttr?.widgets?.load?.();
-          };
-        }}
-      >
-        {#if errors || data}
-          <div
-            class="absolute bottom-full left-0 right-0 text-brand-beige"
-            transition:slide
-          >
-            {#if errors?.length}
-              <ol class="flex flex-col items-center bg-brand-red p-2">
-                {#each errors as error (error.message)}
-                  <li>{error.message}</li>
-                {/each}
-              </ol>
-            {/if}
-
-            {#if formStatus === 'success'}
-              <p class="bg-brand-green p-2">
-                Tweet added. Points are updated every day.
-              </p>
-            {/if}
-          </div>
-        {/if}
-
-        <input name="questId" type="hidden" value={id} />
-        <input name="methodName" type="hidden" value="registerTweet" />
-
-        <p
-          class="flex items-center justify-stretch bg-brand-red/80 text-brand-black"
+      <div class="flex flex-none flex-col items-center gap-8">
+        <Button
+          class="mx-8 max-w-fit self-center"
+          href="https://twitter.com/intent/tweet?text={tweetText}"
         >
-          <label class="px-2 text-sm text-brand-beige/75" for="url">Link:</label
-          >
+          Tweet @coindotfun
+        </Button>
 
-          <input
-            class="my-0.5 min-w-0 flex-1 basis-full border-0 bg-brand-black/60 text-brand-beige placeholder:text-brand-beige/50"
-            id="url"
-            disabled={formStatus === 'pending'}
-            name="params[]"
-            placeholder="https//x.com/{profile?.userName}/123…"
-            type="text"
-            bind:value={url}
-          />
-
-          <button
-            class="mx-2 w-[5rem] bg-brand-yellow px-2 font-bold uppercase transition hover:bg-brand-orange disabled:cursor-not-allowed disabled:bg-brand-black/20"
-            disabled={!url || formStatus === 'pending'}
-            type="submit"
-          >
-            {#if formStatus === 'pending'}
-              <span class="block animate-spin">🥳</span>
-            {:else}
-              Add
-            {/if}
-          </button>
+        <p class="text-sm text-muted-foreground">
+          Tweet not in the list? Add it below:
         </p>
-      </form>
+
+        <form
+          action="/api/quests?/call"
+          class="relative flex w-full flex-col gap-4"
+          method="POST"
+          use:enhance={async () => {
+            formData = undefined;
+            formStatus = 'pending';
+            return async ({ update, result }) => {
+              if (result.type === 'error') {
+                formData = {
+                  errors: [
+                    { name: 'FormError', message: 'Form cannot submit.' }
+                  ]
+                };
+                return;
+              }
+
+              if (result.type === 'redirect') {
+                return goto(result.location);
+              }
+
+              // @ts-expect-error TODO: types
+              formData = result?.data;
+              formStatus = result.type;
+
+              setTimeout(() => {
+                formData = undefined;
+                formStatus = 'idle';
+              }, 10_000);
+
+              await update();
+
+              // We need to re-initialze tweets after svelte has updated state
+              // through it's loaders.
+              if (formStatus === 'success')
+                // @ts-expect-error TODO: types
+                window?.twttr?.widgets?.load?.();
+            };
+          }}
+        >
+          {#if errors || data}
+            <div
+              class="absolute bottom-full left-0 right-0 text-brand-beige"
+              transition:slide
+            >
+              {#if errors?.length}
+                <ol class="flex flex-col items-center bg-brand-red p-2">
+                  {#each errors as error (error.message)}
+                    <li>{error.message}</li>
+                  {/each}
+                </ol>
+              {/if}
+
+              {#if formStatus === 'success'}
+                <p class="bg-brand-green p-2">
+                  Tweet added. Points are updated every day.
+                </p>
+              {/if}
+            </div>
+          {/if}
+
+          <input name="questId" type="hidden" value={id} />
+          <input name="methodName" type="hidden" value="registerTweet" />
+
+          <p
+            class="flex items-center justify-stretch bg-brand-red/80 text-brand-black"
+          >
+            <label class="px-2 text-sm text-brand-beige/75" for="url"
+              >Link:</label
+            >
+
+            <input
+              class="my-0.5 min-w-0 flex-1 basis-full border-0 bg-brand-black/60 text-brand-beige placeholder:text-brand-beige/50"
+              id="url"
+              disabled={formStatus === 'pending'}
+              name="params[]"
+              placeholder="https//x.com/{profile?.userName}/123…"
+              type="text"
+              bind:value={url}
+            />
+
+            <button
+              class="mx-2 w-[5rem] bg-brand-yellow px-2 font-bold uppercase transition hover:bg-brand-orange disabled:cursor-not-allowed disabled:bg-brand-black/20"
+              disabled={!url || formStatus === 'pending'}
+              type="submit"
+            >
+              {#if formStatus === 'pending'}
+                <span class="block animate-spin">🥳</span>
+              {:else}
+                Add
+              {/if}
+            </button>
+          </p>
+        </form>
+      </div>
     {:else}
       <Button
         class="mx-8 mb-8 max-w-fit self-center"
