@@ -68,7 +68,7 @@ BEGIN
           CASE
               WHEN u.character_s1 = 'heftie' AND t.retweeted_id IS NOT NULL THEN 100000
               WHEN u.character_s1 = 'heftie' AND t.quoted_id IS NOT NULL THEN 200000
-              WHEN u.character_s1 = 'normie' THEN 100000
+              WHEN u.character_s1 = 'normie' THEN 150000
               ELSE NULL
           END AS points
       FROM most_engaging_tweets met
