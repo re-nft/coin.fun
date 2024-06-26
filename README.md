@@ -1,39 +1,5 @@
 # 021 Svelte
 
-### TODOS
-
-v1.0 launch:
-
-1/ once logged in user into the server side session, persist that information
-in a store -> this isn't needed. we start supabase session server side
-so we can retrieve the session any time. in fact, I have implemented an api
-get endpoint for this
-2/ ask for oauth that is longer than 1 hour initially
-3/ figure out if we need to refresh the auth -> we are using this: https://supabase.com/docs/reference/javascript/auth-setsession
-which it seems handles autorefresh by itself
-4/ how do we check the validity of oauth tokens -> I think supabase does this check
-5/ do not ask the user to connect to twitter if they have used x for web3auth
--> let's implement this
-6/ fist few quests
-7/ waitlist
-8/ referrals
-9/ some form of tokenomics
-10/ leaderboard as per points
-11/ how many cumulative users
-12/ design and copy
-13/ in tokenomics show how many $COIN points have been already claimed
-14/ need urgency levers. the sooner you do quests - the more $COIN points you
-get. the later you do it, the less points you will get
-15/ moon math section. how much would you earn given pump.fun fees given
-you have x $COIN points
-16/ daily check in bonus
-17/ tap on coin and earn coin (like notcoin)
-18/ sentry + analytics (ga?)
-
-hack their brain to the max
-
-v2.0 launch:
-
 ## Template Intro
 
 Everything you need to build a Blockchain Svelte project, powered by:
