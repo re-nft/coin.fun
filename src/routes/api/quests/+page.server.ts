@@ -1,6 +1,7 @@
 import { fail, redirect } from '@sveltejs/kit';
 
 import { type QuestCallError } from '$lib/quests';
+
 export const actions = {
   async call({ request, locals: { quests, user } }) {
     if (!user) return fail(401);
@@ -60,7 +61,7 @@ export const actions = {
         });
       }
 
-      const result = await method.call(quest, params);
+      const result = await method.apply(quest, params);
 
       if (request.headers.has('x-sveltekit-action')) return result;
       else return redirect(303, '/quests');
