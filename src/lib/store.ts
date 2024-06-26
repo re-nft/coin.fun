@@ -28,22 +28,15 @@ export function persisted<T>(
   const key = `${prefix}${name}`;
 
   if (!enabled) {
-    console.warn(`writableStore "${key}" disabled. config:\n`, options);
+    console.warn(`persistable "${key}" disabled.`);
     return writable(initialValue);
   }
-
-  console.log(
-    `writableStore "${key}" initialized with\n`,
-    initialValue,
-    options
-  );
 
   function persist(value?: T) {
     try {
       storage.setItem(key, serialize(value));
     } catch (error) {
-      console.debug(`SET ${key}`, value);
-      console.error(error);
+      console.error(`PersistError: ${key}`, error);
     }
   }
 
@@ -51,8 +44,7 @@ export function persisted<T>(
     try {
       return deserialize(storage.getItem(key) ?? 'null');
     } catch (error) {
-      console.debug(`GET ${key}`, storage.getItem(key));
-      console.error(error);
+      console.error(`RetrieveError: ${key}`, error);
     }
   }
 
@@ -63,7 +55,7 @@ export function persisted<T>(
       persist(value);
       set(value);
     },
-    // run: Subscriber<T>, invalidate?: Invalidator<T> | undefined) => Unsubscriber
+
     subscribe(
       run: Subscriber<T>,
       invalidate?: Invalidator<T> | undefined

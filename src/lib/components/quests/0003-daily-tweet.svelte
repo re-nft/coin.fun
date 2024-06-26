@@ -76,7 +76,6 @@
   );
 
   $: {
-    console.log($collapsed);
     if (typeof document !== 'undefined')
       document.body.style.overflow =
         $collapsed ? ''
