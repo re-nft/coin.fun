@@ -746,9 +746,6 @@
 
 </script>
 
-<!-- <h1>Coin Details for {coinId}</h1> -->
-
-<div>{activeView}</div>
 <div class="mb-16 hidden p-4 md:block">
   <div class="mt-4 flex space-x-8">
     <div class="flex w-2/3 flex-col gap-2">
@@ -1106,10 +1103,7 @@
         </div>
         <div class="grid gap-2">
           <div class="flex items-center justify-between font-bold">
-            Holder distribution <button
-              class="whitespace-nowrap rounded bg-gray-700 px-2 py-1 text-xs font-medium text-gray-400 ring-offset-white transition-colors hover:bg-gray-600"
-              >Generate bubble map</button
-            >
+            Holder distribution
           </div>
           <!-- SECTION START: Holder distribution -->
           <div class="text-sm">
