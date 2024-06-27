@@ -1,7 +1,5 @@
-<script>
+<script lang="ts">
   import { onDestroy, onMount } from 'svelte';
-
-  let countdown = 0;
 
   let now = new Date().getTime();
   let end = now - (now % 86400000) + 86400000;
@@ -24,7 +22,7 @@
     interval = setInterval(updateTimer, 1000);
   });
 
-  const padValue = (value, length = 2, char = '0') => {
+  const padValue = (value: number, length = 2, char = '0') => {
     const { length: currentLength } = value.toString();
     if (currentLength >= length) return value.toString();
     return `${char.repeat(length - currentLength)}${value}`;

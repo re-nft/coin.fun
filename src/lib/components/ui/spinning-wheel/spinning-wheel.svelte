@@ -33,7 +33,7 @@
       {/each}
     </div>
   </div>
-  <div
+  <button
     on:click
     class="btn group absolute inset-0 m-auto flex cursor-pointer select-none items-center justify-center rounded-full text-sm"
   >
@@ -43,7 +43,7 @@
       role="presentation"
       src="/logo.svg"
     />
-  </div>
+  </button>
   <div
     class="triangle absolute left-full top-1/2 h-0 w-0 -translate-y-1/2 border-transparent text-black"
   ></div>
