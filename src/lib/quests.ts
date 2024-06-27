@@ -77,7 +77,7 @@ export function OnError<T>(
       const name = context.constructor.name;
 
       try {
-        return originalMethod.apply(context, ...args);
+        return originalMethod.apply(context, args);
       } catch (error) {
         console.error(`QuestError (${name}:${propertyKey}):`, {
           id: context.id,
