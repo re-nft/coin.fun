@@ -1,8 +1,9 @@
+import { parseLocale } from '$lib/utils/locale';
+
 export async function load({ depends, locals: { safeGetSession }, request }) {
   depends('supabase:auth');
 
-  const acceptLanguage = request.headers.get('accept-language');
-  const locale = acceptLanguage?.split?.(',').at(0) ?? 'en';
+  const locale = parseLocale(request.headers.get('accept-language')) || 'en';
 
   const { session, user } = await safeGetSession();
   return { locale, session, user };

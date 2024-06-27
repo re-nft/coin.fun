@@ -10,6 +10,7 @@ import {
   PUBLIC_SUPABASE_URL
 } from '$env/static/public';
 import type { SolanaStore } from '$lib/solana';
+import { parseLocale } from '$lib/utils/locale';
 import { connection } from '$vendor/solana';
 
 export async function load({ data, depends, fetch }) {
@@ -38,11 +39,11 @@ export async function load({ data, depends, fetch }) {
         }
       });
 
-  const locale = globalThis?.navigator?.language?.split?.(',')?.[0];
+  const locale = parseLocale(globalThis?.navigator?.language);
 
   return {
     ...data,
-    locale: locale ?? data.locale,
+    locale: locale || data.locale,
     solana,
     supabase
   };
