@@ -1,5 +1,5 @@
 import { type ClassValue, clsx } from 'clsx';
-import { cubicOut, expoInOut } from 'svelte/easing';
+import { cubicOut, expoIn } from 'svelte/easing';
 import { writable, get } from 'svelte/store';
 import { tweened } from 'svelte/motion';
 import type { TransitionConfig } from 'svelte/transition';
@@ -64,7 +64,7 @@ export const flyAndScale = (
 };
 
 export const spinner = (division: number) => {
-  let velocity = tweened(0, { easing: expoInOut, duration: 4000 });
+  let velocity = tweened(0, { easing: expoIn, duration: 4000 });
   let rotation = writable(0);
 
   const selectedIndex = Math.floor(Math.random() * division);

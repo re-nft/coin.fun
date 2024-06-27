@@ -4,8 +4,8 @@
   import { Button } from '$lib/components/ui/button';
   import { SpinningWheel } from '$lib/components/ui/spinning-wheel';
   import type { QuestStatus } from '$lib/quests';
-  import type { ComponentEvents } from 'svelte';
   import { spinner } from '$lib/utils/ui';
+  import SpinningWheelSound from '$lib/assets/spinning-wheel-sound.m4a';
 
   export let id: string;
   export let status: QuestStatus;
@@ -19,6 +19,8 @@
     index: index + 1,
     value: (index + 1) * 10000
   }));
+
+  console.log(status);
 
   const handleSpin = async () => {
     spinning = true;
