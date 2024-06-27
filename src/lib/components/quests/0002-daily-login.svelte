@@ -65,10 +65,10 @@
           </g>
         </svg>
         <!-- Pointer at the top -->
-        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-0 h-0 
+        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-0 h-0 
                     border-l-[10px] border-l-transparent
                     border-r-[10px] border-r-transparent
-                    border-b-[20px] border-b-red-500"></div>
+                    border-t-[20px] border-t-red-500"></div>
       </div>
       <button
         on:click={spinWheel}
