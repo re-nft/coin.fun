@@ -4,30 +4,26 @@
   import { Button } from '$lib/components/ui/button';
   import { SpinningWheel } from '$lib/components/ui/spinning-wheel';
   import type { QuestStatus } from '$lib/quests';
-  import { spinner } from '$lib/utils/ui';
+  import { useSpinner } from '$lib/utils/ui';
   import SpinningWheelSound from '$lib/assets/spinning-wheel-sound.m4a';
 
   export let id: string;
   export let status: QuestStatus;
+  export let points: number;
+  export let spinPointsIdx: number;
 
   const division = 8;
-  let points = 0;
+  const { start, wheelSection, ...spin } = useSpinner(division, spinPointsIdx);
+
   let form: HTMLFormElement;
   let spinning = false;
-  let { start, selectedIndex, wheelSection, ...spin } = spinner(division);
-  const spinningDivision = Array.from({ length: division }, (_, index) => ({
-    index: index + 1,
-    value: (index + 1) * 10000
-  }));
-
-  console.log(status);
+  const spinningDivision = [
+    10000, 30000, 40000, 50000, 60000, 70000, 80000, 100000
+  ];
 
   const handleSpin = async () => {
     spinning = true;
     await start();
-    points = spinningDivision.find(
-      (item) => item.index === selectedIndex
-    )?.value;
     form.requestSubmit();
     spinning = false;
   };
@@ -47,9 +43,8 @@
     >
       <SpinningWheel
         spin={$spin}
-        {selectedIndex}
         {wheelSection}
-        {division}
+        {spinPointsIdx}
         {spinningDivision}
         on:click={handleSpin}
       />
@@ -60,7 +55,12 @@
       </div>
 
       <input name="questId" type="hidden" value={id} />
-      <input name="points" type="hidden" value={points} />
+      <input
+        type="hidden"
+        id="points"
+        name="params[]"
+        value={spinningDivision[spinPointsIdx]}
+      />
       <input name="methodName" type="hidden" value="complete" />
     </form>
   </div>

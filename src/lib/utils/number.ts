@@ -11,6 +11,8 @@ export function suffix(num: number): string {
 }
 
 export const getDateIdIndex = (userId: string, division: number) => {
+  if (!userId) return 0;
+
   const now = new Date();
   const utcDay = now.getUTCDate();
   const utcMonth = now.getUTCMonth();

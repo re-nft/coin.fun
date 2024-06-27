@@ -11,7 +11,7 @@ export const actions = {
     const methodName = form.get('methodName');
     const params = form.getAll('params[]') ?? [];
 
-    console.debug(`Quest:call ${questId} ${methodName} [${params}]`);
+    console.log(`Quest:call ${questId} ${methodName} [${params}]`);
 
     const errors: QuestCallError[] = [];
 
@@ -51,10 +51,8 @@ export const actions = {
 
       const method: (...args: unknown[]) => unknown = proto[methodName];
 
-      if (
-        !params.every((param) => typeof param === 'string') ||
-        params.length !== method.length
-      ) {
+      console.log(params.length, method.length);
+      if (!params.every((param) => typeof param === 'string')) {
         return throwError({
           name: 'NoValidParams',
           message: `Quest:${methodName} expects ${method.length} arguments.`

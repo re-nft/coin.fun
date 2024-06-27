@@ -1,16 +1,10 @@
 <script lang="ts">
   import { cn } from '$lib/utils/ui';
 
-  type SpinItem = {
-    index: number;
-    value: number;
-  };
-
-  export let division: number = 8;
   export let spin: number;
-  export let selectedIndex;
+  export let spinPointsIdx;
   export let wheelSection: number;
-  export let spinningDivision: SpinItem[];
+  export let spinningDivision: number[];
 </script>
 
 <div class="relative m-auto h-64 w-64 p-8">
@@ -18,23 +12,23 @@
     class="absolute inset-0 rounded-full border-2 border-[--color] transition-transform will-change-transform"
     style="transform: rotate({spin}deg)"
   >
-    {#each spinningDivision as division}
+    {#each spinningDivision as _, index}
       <span
         class="absolute left-[calc(50%-1px)] h-full w-0.5 bg-[--color]"
-        style="transform: rotate(calc({wheelSection} * {division.index}deg))"
+        style="transform: rotate(calc({wheelSection} * {index}deg))"
       ></span>
     {/each}
     <div
       class="absolute inset-0 rotate-[{wheelSection / 2}deg]"
       style="transform: rotate({wheelSection / 2}deg)"
     >
-      {#each spinningDivision as division}
+      {#each spinningDivision as division, index}
         <b
           class={cn('absolute inset-3 text-center text-sm', {
-            'text-brand-red': division.index === selectedIndex
+            'text-brand-red': index === spinPointsIdx
           })}
-          style="transform: rotate(calc({wheelSection} * {division.index}deg))"
-          >{division.value}</b
+          style="transform: rotate(calc({wheelSection} * {index}deg))"
+          >{division}</b
         >
       {/each}
     </div>

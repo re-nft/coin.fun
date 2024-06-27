@@ -63,13 +63,12 @@ export const flyAndScale = (
   };
 };
 
-export const spinner = (division: number) => {
+export const useSpinner = (division: number, spinPointsIx: number) => {
   let velocity = tweened(0, { easing: expoIn, duration: 4000 });
   let rotation = writable(0);
 
-  const selectedIndex = Math.floor(Math.random() * division);
   const wheelSection = Number(360 / division);
-  const from = wheelSection * selectedIndex;
+  const from = wheelSection * spinPointsIx;
   const to = 360 - (from - wheelSection) + wheelSection / 2;
 
   function animate() {
@@ -82,7 +81,6 @@ export const spinner = (division: number) => {
     start: async () => {
       await velocity.set(1);
     },
-    selectedIndex,
     wheelSection,
     ...rotation
   };

@@ -6,6 +6,8 @@
 
   export let data;
   $: ({ profile, profilePoints, quests } = data);
+
+  console.log(quests);
 </script>
 
 <PageMeta
