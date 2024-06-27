@@ -2,6 +2,7 @@
   import { enhance } from '$app/forms';
   import Quest from '$lib/components/Quest.svelte';
   import { Button } from '$lib/components/ui/button';
+  import { CountdownTimer } from '$lib/components/ui/countdown-timer';
   import { SpinningWheel } from '$lib/components/ui/spinning-wheel';
   import type { QuestStatus } from '$lib/quests';
   import { useSpinner } from '$lib/utils/ui';
@@ -39,8 +40,6 @@
     form.requestSubmit();
   };
 
-  console.log(status);
-
   $: rotateValue = status === 'available' && !isSpinning ? 0 : $spin;
   $: inxValue = status === 'available' && !isSpinning ? null : spinPointsIdx;
 </script>
@@ -68,6 +67,8 @@
       <div class="p-8">
         {#if status === 'available'}
           <Button disabled={isSpinning} on:click={handleSpin}>Spin</Button>
+        {:else}
+          Filled your bag! <br /> Try next time in <br /> <CountdownTimer />
         {/if}
       </div>
 
