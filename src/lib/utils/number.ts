@@ -9,3 +9,23 @@ export function suffix(num: number): string {
 
   return `${formattedNum}${suffixes[exponent]}`;
 }
+
+export const getDateIdIndex = (userId: string, division: number) => {
+  const now = new Date();
+  const utcDay = now.getUTCDate();
+  const utcMonth = now.getUTCMonth();
+  const utcYear = now.getUTCFullYear();
+
+  const seed = `${userId}-${utcDay}-${utcMonth}-${utcYear}`;
+
+  let hash = 0;
+  for (let i = 0; i < seed.length; i++) {
+    const char = seed.charCodeAt(i);
+    hash = (hash << 5) - hash + char;
+    hash = hash & hash;
+  }
+
+  const result = Math.abs(hash) % division;
+
+  return result;
+};
