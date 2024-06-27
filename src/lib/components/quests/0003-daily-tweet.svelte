@@ -10,8 +10,8 @@
   import Quest from '$lib/components/Quest.svelte';
   import type { QuestCallError } from '$lib/quests';
   import type { Profile, TweetSelect } from '$lib/server/db';
+  import { persisted } from '$lib/store';
   import { getUTCDayStart } from '$lib/utils/date';
-  import { suffix } from '$lib/utils/number';
   import { cn } from '$lib/utils/ui';
 
   import { Button } from '../ui/button';
@@ -48,7 +48,10 @@
     return tweetsByDate;
   }, new Map<number, Tweet[]>());
 
-  $: collapsedDates = Array.from(tweetsByDate.keys());
+  $: collapsedDates = persisted(
+    `${id}:collapsed:tweets`,
+    Array.from(tweetsByDate.keys())
+  );
 
   // Form things
   let formData: { id: string } | { errors: QuestCallError[] } | undefined =
@@ -67,13 +70,15 @@
 
   // Collapse code
   const MIN_MEDIA = '(min-width: 768px) and (min-height: 768px)';
-  let collapsed =
-    typeof window !== 'undefined' && !window.matchMedia(MIN_MEDIA).matches;
+  let collapsed = persisted(
+    `${id}:collapsed`,
+    typeof window === 'undefined' ? true : !window.matchMedia(MIN_MEDIA).matches
+  );
 
   $: {
     if (typeof document !== 'undefined')
       document.body.style.overflow =
-        collapsed ? ''
+        $collapsed ? ''
         : !window.matchMedia(MIN_MEDIA).matches ? 'hidden'
         : '';
   }
@@ -87,7 +92,7 @@
   {...$$restProps}
   class={cn(
     'fixed bottom-0 right-0 z-[1] w-full max-w-[575px] bg-brand-black/90 shadow-none backdrop-blur transition-all before:hidden after:hidden hover:transform-none max-md:h-[100dvh]',
-    collapsed ?
+    $collapsed ?
       'max-h-[3rem] overflow-hidden'
     : 'max-h-[100dvh] md:max-h-[75dvh]'
   )}
@@ -99,11 +104,11 @@
     <button
       class="ml-auto mr-4 flex size-8 items-center justify-center rounded border border-muted"
       on:click={() => {
-        collapsed = !collapsed;
+        collapsed.update((value) => !value);
       }}
       type="button"
     >
-      {#if !collapsed}
+      {#if !$collapsed}
         <ChevronsDownUp size={16} />
       {:else}
         <ChevronsUpDown size={16} />
@@ -138,23 +143,26 @@
               <button
                 class="ml-auto mr-4 flex size-8 items-center justify-center rounded border border-muted"
                 on:click={() => {
-                  collapsedDates =
-                    collapsedDates.includes(date) ?
-                      collapsedDates.filter((_) => _ !== date)
-                    : [...collapsedDates, date];
-                  // @ts-expect-error TODO: types
-                  window?.twttr?.widgets?.load?.();
+                  collapsedDates.update((dates) => {
+                    const nextDates =
+                      dates.includes(date) ?
+                        dates.filter((_) => _ !== date)
+                      : [...dates, date];
+                    // @ts-expect-error TODO: types
+                    window?.twttr?.widgets?.load?.();
+                    return nextDates;
+                  });
                 }}
                 type="button"
               >
-                {#if !collapsedDates.includes(date)}
+                {#if !$collapsedDates.includes(date)}
                   <ChevronsDownUp size={16} />
                 {:else}
                   <ChevronsUpDown size={16} />
                 {/if}
               </button>
             </h3>
-            {#if !collapsedDates.includes(date)}
+            {#if !$collapsedDates.includes(date)}
               <div transition:slide>
                 {#each tweets as status (status.id)}
                   <div
