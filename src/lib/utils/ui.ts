@@ -81,6 +81,9 @@ export const useSpinner = (division: number, spinPointsIx: number) => {
     start: async () => {
       await velocity.set(1);
     },
+    stop: async () => {
+      await velocity.set(0);
+    },
     wheelSection,
     ...rotation
   };

@@ -7,7 +7,7 @@
   import type { QuestStatus } from '$lib/quests';
   import { useSpinner } from '$lib/utils/ui';
   import { Sound } from 'svelte-sound';
-  import SpinningWheelSound from '$lib/assets/spinning-wheel-sound.m4a';
+  import SpinningWheelSound from '$lib/assets/spinning-wheel-sound.wav';
 
   export let id: string;
   export let status: QuestStatus;
@@ -34,8 +34,8 @@
       return;
     }
 
-    rotationSound.play();
     isSpinning = true;
+    rotationSound.play();
     await startRotation();
     form.requestSubmit();
   };
