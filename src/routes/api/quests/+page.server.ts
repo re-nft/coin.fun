@@ -1,3 +1,4 @@
+import * as Sentry from '@sentry/sveltekit';
 import { fail, redirect } from '@sveltejs/kit';
 
 import { type QuestCallError } from '$lib/quests';
@@ -72,8 +73,19 @@ export const actions = {
 
       console.error(
         `QuestCallError: ${message}`,
-        new Error(errors.reverse().join('\n\t'), { cause: error })
+        errors.reverse().join('\n\t'),
+        error
       );
+
+      Sentry.captureException(error, {
+        extra: {
+          questId,
+          methodName,
+          params,
+          errors: errors.reverse().join('\n\t')
+        }
+      });
+
       return fail(400, { errors });
     }
   }
