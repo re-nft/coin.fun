@@ -1,6 +1,5 @@
 <script lang="ts">
   import type { QuestStatus } from '$lib/quests';
-  import { fade } from 'svelte/transition';
   import { suffix } from '$lib/utils/number';
   import { cn } from '$lib/utils/ui';
 
@@ -52,9 +51,9 @@
     <slot name="header">
       points:
       {#if points}
-        <span in:fade class="text-[--color]">{suffix(points)}</span>
+        <span class="text-[--color]">{suffix(points)}</span>
       {:else}
-        <span out:fade class="text-[--color]">{suffix(points)}</span>
+        <span class="text-[--color]">{suffix(points)}</span>
       {/if}
     </slot>
   </div>
