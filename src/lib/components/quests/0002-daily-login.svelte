@@ -19,7 +19,6 @@
     
     setTimeout(() => {
       spinning = false;
-      // Calculate the selected number based on final position
       selectedNumber = Math.floor((360 - (rotationDegrees % 360)) / 45) % 8;
     }, 3000);
   }
@@ -47,22 +46,21 @@
           <g transform={`rotate(${rotationDegrees} 50 50)`} 
              style="transition: transform 3s cubic-bezier(0.25, 0.1, 0.25, 1);">
             {#each Array(8) as _, i}
-              <g transform={`rotate(${i * 45} 50 50)`}>
-                <path
-                  d="M50 50 L50 10 A40 40 0 0 1 83.4 25 Z"
-                  fill={i === selectedNumber ? '#FFD700' : '#E0E0E0'}
-                  stroke="black"
-                />
-                <text
-                  x="50"
-                  y="25"
-                  text-anchor="middle"
-                  dominant-baseline="middle"
-                  transform="rotate({-i * 45} 50 25)"
-                >
-                  {i}
-                </text>
-              </g>
+              <path
+                d={`M50 50 L${50 + 40 * Math.cos((i * 45 - 22.5) * Math.PI / 180)} ${50 + 40 * Math.sin((i * 45 - 22.5) * Math.PI / 180)} A40 40 0 0 1 ${50 + 40 * Math.cos((i * 45 + 22.5) * Math.PI / 180)} ${50 + 40 * Math.sin((i * 45 + 22.5) * Math.PI / 180)} Z`}
+                fill={i === selectedNumber ? '#FFD700' : '#E0E0E0'}
+                stroke="black"
+                stroke-width="0.5"
+              />
+              <text
+                x={50 + 30 * Math.cos(i * 45 * Math.PI / 180)}
+                y={50 + 30 * Math.sin(i * 45 * Math.PI / 180)}
+                text-anchor="middle"
+                dominant-baseline="middle"
+                transform={`rotate(${i * 45} ${50 + 30 * Math.cos(i * 45 * Math.PI / 180)} ${50 + 30 * Math.sin(i * 45 * Math.PI / 180)})`}
+              >
+                {i}
+              </text>
             {/each}
           </g>
         </svg>
