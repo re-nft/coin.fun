@@ -62,7 +62,7 @@ export class Quest0002DailyLogin extends Quest {
 
     return {
       ...meta,
-      points: result.points || 0,
+      points: result?.points || 0,
       spinPointsIdx: getDateIdIndex(this.userId, 8)
     };
   }

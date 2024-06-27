@@ -71,6 +71,8 @@ export const useSpinner = (division: number, spinPointsIx: number) => {
   const from = wheelSection * spinPointsIx;
   const to = 360 - (from - wheelSection) + wheelSection / 2;
 
+  console.log(to);
+
   function animate() {
     rotation.update(() => get(velocity) * 3600 + to);
   }

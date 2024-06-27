@@ -2,7 +2,7 @@
   import { cn } from '$lib/utils/ui';
 
   export let spin: number;
-  export let spinPointsIdx;
+  export let spinPointsIdx: number | null;
   export let wheelSection: number;
   export let spinningDivision: number[];
 </script>
