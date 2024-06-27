@@ -12,14 +12,20 @@
   function spinWheel() {
     if (spinning) return;
     spinning = true;
-    const randomRotations = 2 + Math.random() * 3; // 2 to 5 rotations
+
+    const currentPosition = rotationDegrees % 360;
+
+    // to make circle spin a lot
+    // this would just make us end up on the number we began with
+    const randomRotations = 2 + Math.floor(Math.random() * 4); // 2 to 5 rotations
     const additionalDegrees = Math.random() * 360; // Random additional rotation
-    const totalRotation = randomRotations * 360 + additionalDegrees;
+    // const totalRotation = randomRotations * 360 + additionalDegrees;
+    const totalRotation = 360 * randomRotations;
     rotationDegrees += totalRotation;
     
     setTimeout(() => {
       spinning = false;
-      selectedNumber = Math.floor((360 - (rotationDegrees % 360)) / 45) % 8;
+      selectedNumber = Math.floor((360 - (currentPosition % 360)) / 45) % 8;
     }, 3000);
   }
 
