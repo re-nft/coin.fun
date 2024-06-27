@@ -11,9 +11,10 @@ export class Quest0002DailyLogin extends Quest {
   publicMethods = ['complete'];
   title = 'Quest 2: daily check-in';
   points = 0;
+  spinningDivision = [10000, 30000, 40000, 50000, 60000, 70000, 80000, 100000];
 
   @OnError(false)
-  override async complete(pointsNumber: number) {
+  override async complete() {
     if (!this.userId) return false;
 
     if (await this.isCompleted()) {
@@ -24,7 +25,10 @@ export class Quest0002DailyLogin extends Quest {
     const [result] = await db
       .insert(points)
       .values({
-        points: pointsNumber,
+        points:
+          this.spinningDivision[
+            getDateIdIndex(this.userId, this.spinningDivision.length)
+          ],
         questId: this.id,
         userId: this.userId
       })
@@ -59,7 +63,8 @@ export class Quest0002DailyLogin extends Quest {
     return {
       ...meta,
       points: result?.points || 0,
-      spinPointsIdx: getDateIdIndex(this.userId, 8)
+      spinPointsIdx: getDateIdIndex(this.userId, this.spinningDivision.length),
+      spinningDivision: this.spinningDivision
     };
   }
 

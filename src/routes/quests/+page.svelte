@@ -18,7 +18,7 @@
   <Points points={profilePoints} />
 </div>
 
-<div class="mb-56 flex flex-wrap justify-center gap-16">
+<div class="flex flex-wrap justify-center gap-16">
   {#if quests}
     {#each quests as quest (quest.id)}
       <svelte:component

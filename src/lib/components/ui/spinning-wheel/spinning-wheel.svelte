@@ -7,7 +7,7 @@
   export let spinningDivision: number[];
 </script>
 
-<div class="relative m-auto h-64 w-64 p-8">
+<div class="relative m-auto size-64 p-8">
   <div
     class="absolute inset-0 rounded-full border-2 border-[--color] transition-transform will-change-transform"
     style="transform: rotate({spin}deg)"

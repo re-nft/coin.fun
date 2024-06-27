@@ -22,12 +22,6 @@
     interval = setInterval(updateTimer, 1000);
   });
 
-  const padValue = (value: number, length = 2, char = '0') => {
-    const { length: currentLength } = value.toString();
-    if (currentLength >= length) return value.toString();
-    return `${char.repeat(length - currentLength)}${value}`;
-  };
-
   onDestroy(() => {
     clearInterval(interval);
   });
@@ -35,6 +29,6 @@
 
 <span class="text-brand-red"
   >{#each Object.entries({ h, m, s }) as [key, value], i}
-    <span>{padValue(value)}</span><span>{key}</span>
+    <span>{String(value).padStart(2, '0')}</span><span>{key}</span>
   {/each}</span
 >

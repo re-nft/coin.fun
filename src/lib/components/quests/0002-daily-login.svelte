@@ -13,21 +13,18 @@
   export let status: QuestStatus;
   export let points: number;
   export let spinPointsIdx: number;
+  export let spinningDivision: number[];
 
   const rotationSound = new Sound(SpinningWheelSound);
 
-  const division = 8;
   const {
     start: startRotation,
     wheelSection,
     ...spin
-  } = useSpinner(division, spinPointsIdx);
+  } = useSpinner(spinningDivision.length, spinPointsIdx);
 
   let form: HTMLFormElement;
   let isSpinning = false;
-  const spinningDivision = [
-    10000, 30000, 40000, 50000, 60000, 70000, 80000, 100000
-  ];
 
   const handleSpin = async () => {
     if (!!points || status === 'done') {
@@ -74,12 +71,6 @@
       </div>
 
       <input name="questId" type="hidden" value={id} />
-      <input
-        type="hidden"
-        id="points"
-        name="params[]"
-        value={spinningDivision[spinPointsIdx]}
-      />
       <input name="methodName" type="hidden" value="complete" />
     </form>
   </div>

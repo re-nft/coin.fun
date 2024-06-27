@@ -1,6 +1,6 @@
 <script lang="ts">
   import type { QuestStatus } from '$lib/quests';
-  import { fly } from 'svelte/transition';
+  import { fade } from 'svelte/transition';
   import { suffix } from '$lib/utils/number';
   import { cn } from '$lib/utils/ui';
 
@@ -51,9 +51,9 @@
     >
     points:
     {#if points}
-      <span transition:fly class="text-[--color]">{suffix(points)}</span>
+      <span in:fade class="text-[--color]">{suffix(points)}</span>
     {:else}
-      <span class="text-[--color]">{suffix(points)}</span>
+      <span out:fade class="text-[--color]">{suffix(points)}</span>
     {/if}
   </div>
 
@@ -61,9 +61,7 @@
     <p>Our server borked serving this quest. Quest rugged.</p>
   {:else}
     {#if $$slots.content}
-      <div class="flex min-h-64 items-center justify-center px-8">
-        <slot name="content" />
-      </div>
+      <slot name="content" />
     {/if}
     {#if $$slots.footer}
       <footer class="p-8">
