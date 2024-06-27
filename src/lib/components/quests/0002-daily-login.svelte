@@ -13,12 +13,14 @@
     if (spinning) return;
     spinning = true;
     const randomRotations = 2 + Math.random() * 3; // 2 to 5 rotations
-    const additionalDegrees = Math.floor(Math.random() * 8) * 45;
-    rotationDegrees += randomRotations * 360 + additionalDegrees;
+    const additionalDegrees = Math.random() * 360; // Random additional rotation
+    const totalRotation = randomRotations * 360 + additionalDegrees;
+    rotationDegrees += totalRotation;
     
     setTimeout(() => {
       spinning = false;
-      selectedNumber = Math.floor((rotationDegrees % 360) / 45);
+      // Calculate the selected number based on final position
+      selectedNumber = Math.floor((360 - (rotationDegrees % 360)) / 45) % 8;
     }, 3000);
   }
 
@@ -53,10 +55,10 @@
                 />
                 <text
                   x="50"
-                  y="20"
+                  y="25"
                   text-anchor="middle"
                   dominant-baseline="middle"
-                  transform="rotate({-i * 45} 50 20)"
+                  transform="rotate({-i * 45} 50 25)"
                 >
                   {i}
                 </text>
@@ -64,7 +66,7 @@
             {/each}
           </g>
         </svg>
-        <!-- Static arrow pointer -->
+        <!-- Pointer at the top -->
         <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-0 h-0 
                     border-l-[10px] border-l-transparent
                     border-r-[10px] border-r-transparent
