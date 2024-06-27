@@ -22,7 +22,19 @@ export class Quest0002DailyLogin extends Quest {
       return false;
     }
 
-    return await this.getLastCompletion();
+    const [result] = await db
+      .insert(points)
+      .values({
+        points:
+          this.spinningDivision[
+            getDateIdIndex(this.userId, this.spinningDivision.length)
+          ],
+        questId: this.id,
+        userId: this.userId
+      })
+      .returning();
+
+    return Boolean(result);
   }
 
   override async getStatus() {
@@ -59,13 +71,6 @@ export class Quest0002DailyLogin extends Quest {
   @OnError(false)
   @Memoize
   async isCompleted() {
-    if (!this.userId) return false;
-
-    return await this.getLastCompletion();
-  }
-
-  @Memoize
-  async getLastCompletion() {
     if (!this.userId) return false;
 
     const [result] = await db
