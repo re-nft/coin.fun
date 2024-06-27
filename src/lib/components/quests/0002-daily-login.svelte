@@ -65,6 +65,8 @@
       <div class="p-8">
         {#if status === 'available'}
           <Button disabled={isSpinning} on:click={handleSpin}>Spin</Button>
+        {:else if status === 'locked'}
+          Sign in for daily spin revards
         {:else}
           Filled your bag! <br /> Try next time in <br /> <CountdownTimer />
         {/if}

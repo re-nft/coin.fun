@@ -46,7 +46,11 @@ export class Quest0002DailyLogin extends Quest {
   async toJSON() {
     const meta = await super.toJSON();
 
-    if (!this.userId) return meta;
+    if (!this.userId)
+      return {
+        ...meta,
+        spinningDivision: this.spinningDivision
+      };
 
     const [result] = await db
       .select()
