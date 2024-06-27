@@ -6,29 +6,41 @@ import {
   writable
 } from 'svelte/store';
 
+/**
+ * Creates a `writable` svelte store which synchronizes with a `Storage`.
+ * By default this is `window.localStorage`. If `options.storage` is
+ * unavailable fall back to a regular in-memory `writable`.
+ */
 export function persisted<T>(
+  /** The name of the store. Storage key will become `[prefix]:[name]`. */
   name: string,
+  /** Initial store value. */
   initialValue?: T,
+  /** Storage configuration options. */
   options?: {
-    enabled?: boolean;
+    /** Prefix used for Storage keys. */
     prefix?: string;
+    /** An object adhering to the `Storage` interface. */
     storage?: Storage;
+    /** Takes a `value` T and serializes to `string`. */
     serialize?: (value: T) => string;
-    deserialize?: (value: string) => T;
+    /** Takes a `string` and serializes to T. */
+    deserialize?: (str: string) => T;
   }
 ) {
   const {
-    enabled = Boolean('localStorage' in globalThis),
     prefix = 'store:',
-    storage = globalThis.localStorage,
+    storage = globalThis?.localStorage,
     serialize = JSON.stringify,
     deserialize = JSON.parse
   } = options ?? {};
 
   const key = `${prefix}${name}`;
 
-  if (!enabled) {
-    console.warn(`persistable "${key}" disabled.`);
+  if (!storage) {
+    console.warn(
+      `persistable "${key}" disabled. Storage "${storage}" not found.`
+    );
     return writable(initialValue);
   }
 
