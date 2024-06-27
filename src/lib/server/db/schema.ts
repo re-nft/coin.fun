@@ -1,5 +1,4 @@
 import {
-  type AnyPgColumn,
   bigint,
   index,
   integer,
@@ -23,6 +22,24 @@ const users = authSchema.table('users', {
 });
 
 export const characterS1 = pgEnum('character_s1', ['normie', 'heftie']);
+
+export const coins = pgTable('coins', {
+  id: uuid('id').primaryKey().notNull(),
+
+  address: text('address'),
+  name: text('name'),
+  symbol: text('symbol'),
+  description: text('description'),
+  media: text('media'),
+
+  // Not sure if we want to 1) reference user ids and 2) whether
+  // we want to nuke a user's created coins when we nuke the user.
+  createdBy: uuid('created_by')
+    .references(() => users.id, { onDelete: 'cascade' })
+    .notNull(),
+
+  meta: json('meta')
+});
 
 export const profiles = pgTable(
   'profiles',

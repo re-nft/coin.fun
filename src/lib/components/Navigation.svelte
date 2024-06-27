@@ -8,6 +8,7 @@
   import { cn } from '$lib/utils/ui';
 
   const pages = {
+    'new COIN': '/new',
     'earn $COIN': '/tokenomics',
     'quests': '/quests',
     'leaderboard': '/leaderboard'
