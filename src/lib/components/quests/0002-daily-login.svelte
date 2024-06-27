@@ -13,7 +13,7 @@
   export let status: QuestStatus;
   export let points: number;
   export let spinPointsIdx: number;
-  export let spinningDivision: number[];
+  export let spinningDivision: number[] = [];
 
   const rotationSound = new Sound(SpinningWheelSound);
 
