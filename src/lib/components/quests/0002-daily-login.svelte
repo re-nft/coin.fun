@@ -6,26 +6,41 @@
   import { onMount } from 'svelte';
 
   let spinning = false;
-  let selectedNumber = -1;
+  let selectedNumber = 6;
   let rotationDegrees = 0;
+
+  function backwardMod(initialPosition: number, perturbation: number) {
+    const setLength = 8; // There are 8 elements in the set [0, 1, 2, ..., 7]
+
+    // Calculate the final position after applying the perturbation backward
+    let finalPosition = (initialPosition - perturbation) % setLength;
+
+    // Adjust if the final position is negative
+    if (finalPosition < 0) {
+        finalPosition += setLength;
+    }
+
+    return finalPosition;
+  }
 
   function spinWheel() {
     if (spinning) return;
     spinning = true;
 
-    const currentPosition = rotationDegrees % 360;
-
     // to make circle spin a lot
     // this would just make us end up on the number we began with
     const randomRotations = 2 + Math.floor(Math.random() * 4); // 2 to 5 rotations
-    const additionalDegrees = Math.random() * 360; // Random additional rotation
-    // const totalRotation = randomRotations * 360 + additionalDegrees;
+
+    const perturbationSteps = Math.floor(Math.random() * 8);
+    const perturbation = perturbationSteps * 45;
+
     const totalRotation = 360 * randomRotations;
-    rotationDegrees += totalRotation;
+
+    rotationDegrees += totalRotation + perturbation;
     
     setTimeout(() => {
       spinning = false;
-      selectedNumber = Math.floor((360 - (currentPosition % 360)) / 45) % 8;
+      selectedNumber = backwardMod(selectedNumber, perturbationSteps);
     }, 3000);
   }
 
