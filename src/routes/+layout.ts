@@ -38,7 +38,7 @@ export async function load({ data, depends, fetch }) {
         }
       });
 
-  const locale = globalThis?.navigator?.language?.split?.(',')?.at(0);
+  const locale = globalThis?.navigator?.language?.split?.(',')?.[0];
 
   return {
     ...data,
