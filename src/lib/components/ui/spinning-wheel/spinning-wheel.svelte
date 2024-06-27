@@ -24,7 +24,7 @@
     >
       {#each spinningDivision as division, index}
         <b
-          class={cn('absolute inset-3 text-center text-sm', {
+          class={cn('absolute inset-3 text-center text-sm transition-colors', {
             'text-brand-red': index === spinPointsIdx
           })}
           style="transform: rotate(calc({wheelSection} * {index}deg))"
@@ -45,8 +45,10 @@
     />
   </button>
   <div
-    class="triangle absolute left-full top-1/2 h-0 w-0 -translate-y-1/2 border-transparent text-black"
-  ></div>
+    class="absolute left-full top-1/2 flex -translate-y-1/2 border-transparent"
+  >
+    <div class="triangle h-0 w-0 rounded"></div>
+  </div>
 </div>
 
 <style>

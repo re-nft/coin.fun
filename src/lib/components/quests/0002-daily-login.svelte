@@ -41,7 +41,7 @@
   };
 
   $: rotateValue = status === 'available' && !isSpinning ? 0 : $spin;
-  $: inxValue = status === 'available' && !isSpinning ? null : spinPointsIdx;
+  $: inxValue = status === 'available' ? null : spinPointsIdx;
 </script>
 
 <Quest {...$$restProps} {status} {points}>
@@ -54,6 +54,7 @@
         return async ({ update }) => {
           await update();
           isSpinning = false;
+          rotationSound.stop();
         };
       }}
     >

@@ -21,8 +21,6 @@ export class Quest0002DailyLogin extends Quest {
       return false;
     }
 
-    console.log({ pointsNumber });
-
     const [result] = await db
       .insert(points)
       .values({
@@ -45,8 +43,6 @@ export class Quest0002DailyLogin extends Quest {
     const meta = await super.toJSON();
 
     if (!this.userId) return meta;
-
-    console.log(this.userId);
 
     const [result] = await db
       .select()
