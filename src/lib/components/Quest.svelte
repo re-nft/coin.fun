@@ -49,12 +49,14 @@
       class="flex size-12 items-center justify-center border-r border-[--color] p-4"
       aria-label={status}>{statusIcon}</span
     >
-    points:
-    {#if points}
-      <span in:fade class="text-[--color]">{suffix(points)}</span>
-    {:else}
-      <span out:fade class="text-[--color]">{suffix(points)}</span>
-    {/if}
+    <slot name="header">
+      points:
+      {#if points}
+        <span in:fade class="text-[--color]">{suffix(points)}</span>
+      {:else}
+        <span out:fade class="text-[--color]">{suffix(points)}</span>
+      {/if}
+    </slot>
   </div>
 
   {#if status === 'error'}
