@@ -23,25 +23,36 @@ const users = authSchema.table('users', {
 
 export const characterS1 = pgEnum('character_s1', ['normie', 'heftie']);
 
-export const coins = pgTable('coins', {
-  id: uuid('id').primaryKey().notNull(),
-  createdAt: timestamp('created_at').notNull().defaultNow(),
+export const coins = pgTable(
+  'coins',
+  {
+    id: uuid('id').primaryKey().notNull(),
+    createdAt: timestamp('created_at').notNull().defaultNow(),
 
-  // Not sure if we want to 1) reference user ids and 2) whether
-  // we want to nuke a user's created coins when we nuke the user.
-  createdBy: uuid('created_by')
-    .references(() => users.id, { onDelete: 'cascade' })
-    .notNull(),
+    // Not sure if we want to 1) reference user ids and 2) whether
+    // we want to nuke a user's created coins when we nuke the user.
+    createdBy: uuid('created_by')
+      .references(() => users.id, { onDelete: 'cascade' })
+      .notNull(),
 
-  address: text('address'),
-  description: text('description'),
-  media: text('media'),
-  name: text('name'),
-  symbol: text('symbol'),
-  telegram: text('telegram'),
-  twitter: text('twitter'),
-  website: text('website')
-});
+    address: text('address'),
+    description: text('description'),
+    media: text('media'),
+    name: text('name'),
+    symbol: text('symbol'),
+    telegram: text('telegram'),
+    twitter: text('twitter'),
+    website: text('website')
+  },
+  (table) => {
+    return {
+      addressIdx: index('coins_address_idx').on(table.address),
+      createdAtIdx: index('coins_created_at_idx').on(table.createdAt),
+      createdByIdx: index('coins_created_by_idx').on(table.createdBy),
+      symbolIdx: index('coins_symbol_idx').on(table.symbol)
+    };
+  }
+);
 
 export const profiles = pgTable(
   'profiles',
