@@ -31,9 +31,6 @@
       return;
     }
 
-    isSpinning = true;
-    rotationSound.play();
-    await startRotation();
     form.requestSubmit();
   };
 
@@ -48,6 +45,10 @@
       action="/api/quests?/call"
       method="POST"
       use:enhance={() => {
+        isSpinning = true;
+        rotationSound.play();
+        startRotation();
+
         return async ({ update }) => {
           await update();
           isSpinning = false;
@@ -67,7 +68,7 @@
           <Button disabled={isSpinning} on:click={handleSpin}>Spin</Button>
         {:else if status === 'locked'}
           Sign in for daily spin revards
-        {:else}
+        {:else if !isSpinning}
           Filled your bag! <br /> Try next time in <br /> <CountdownTimer />
         {/if}
       </div>
