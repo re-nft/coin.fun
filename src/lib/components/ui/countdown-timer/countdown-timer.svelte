@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onDestroy, onMount } from 'svelte';
 
-  export let acquiredAt;
+  export let acquiredAt: number;
 
   const date = new Date(acquiredAt);
   let now = date.getTime();
