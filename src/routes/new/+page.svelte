@@ -10,6 +10,9 @@
   function toggleShowMore() {
     showMore = !showMore;
   }
+
+  let ticker = '';
+  $: ticker = ticker.toUpperCase();
 </script>
 
 <h1>Create coin.</h1>
@@ -31,14 +34,24 @@
     </div>
   {/if}
 
-  <label>
-    Name
-    <input type="text" name="name" autocomplete="off" required />
-  </label>
-  <label>
-    Ticker
-    <input type="text" name="symbol" autocomplete="off" required />
-  </label>
+  <fieldset class="flex gap-4">
+    <label class="flex-1">
+      Name
+      <input type="text" name="name" autocomplete="off" required />
+    </label>
+
+    <label class="flex-none">
+      Ticker
+      <input
+        type="text"
+        name="symbol"
+        autocomplete="off"
+        required
+        bind:value={ticker}
+      />
+    </label>
+  </fieldset>
+
   <label>
     Description
     <textarea name="description" rows="3" autocomplete="off" required
@@ -89,7 +102,7 @@
 
 <style lang="postcss">
   label {
-    @apply flex;
+    @apply flex flex-col;
   }
 
   label > :last-child {

@@ -2,4 +2,9 @@
   body {
     @apply bg-background font-mono text-foreground;
   }
+
+  input[type='text'],
+  textarea {
+    @apply rounded bg-brand-black/50;
+  }
 }
