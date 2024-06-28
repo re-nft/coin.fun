@@ -6,7 +6,6 @@
   import { SpinningWheel } from '$lib/components/ui/spinning-wheel';
   import type { QuestStatus } from '$lib/quests';
   import { useSpinner } from '$lib/utils/ui';
-  import { Sound } from 'svelte-sound';
   import SpinningWheelSound from '$lib/assets/spinning-wheel-sound.wav';
 
   export let id: string;
@@ -15,7 +14,7 @@
   export let spinPointsIdx: number;
   export let spinningDivision: number[] = [];
 
-  const rotationSound = new Sound(SpinningWheelSound);
+  let audio: HTMLAudioElement;
 
   const {
     start: startRotation,
@@ -46,13 +45,12 @@
       method="POST"
       use:enhance={() => {
         isSpinning = true;
-        rotationSound.play();
+        audio.play();
         startRotation();
 
         return async ({ update }) => {
           await update();
           isSpinning = false;
-          rotationSound.stop();
         };
       }}
     >
@@ -78,3 +76,4 @@
     </form>
   </div>
 </Quest>
+<audio class="hidden" src={SpinningWheelSound} bind:this={audio}></audio>
