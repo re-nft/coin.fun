@@ -7,5 +7,9 @@
 <h1>These coins gmi</h1>
 
 {#each coins as coin (coin.id)}
-  <p>Name: {coin.name}</p>
+  <a href="/trade/{coin.address}">
+    <article>
+      <p>Name: {coin.name}</p>
+    </article>
+  </a>
 {/each}
