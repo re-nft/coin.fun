@@ -34,12 +34,12 @@
     form.requestSubmit();
   };
 
-  $: rotateValue = status === 'available' && !isSpinning ? 0 : $spin;
-  $: inxValue = status === 'available' ? null : spinPointsIdx;
   $: isAnimating = isSpinning && isRequesting;
+  $: rotateValue = status === 'available' && !isSpinning ? 0 : $spin;
+  $: pointsValue = !isAnimating ? points : 0;
 </script>
 
-<Quest {...$$restProps} {status} {points}>
+<Quest {...$$restProps} {status} points={pointsValue}>
   <div class="flex flex-col gap-4" slot="content">
     <form
       bind:this={form}
@@ -53,14 +53,14 @@
         return async ({ update }) => {
           isRequesting = true;
           await update();
-          isRequesting = true;
+          isRequesting = false;
         };
       }}
     >
       <SpinningWheel
         spin={rotateValue}
         {wheelSection}
-        spinPointsIdx={inxValue}
+        points={pointsValue}
         {spinningDivision}
         on:click={handleSpin}
       />

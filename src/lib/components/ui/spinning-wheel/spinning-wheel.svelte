@@ -2,7 +2,7 @@
   import { cn } from '$lib/utils/ui';
 
   export let spin: number;
-  export let spinPointsIdx: number | null;
+  export let points: number;
   export let wheelSection: number;
   export let spinningDivision: number[];
 </script>
@@ -25,7 +25,7 @@
       {#each spinningDivision as division, index}
         <b
           class={cn('absolute inset-3 text-center text-sm transition-colors', {
-            'text-brand-red': index === spinPointsIdx
+            'text-brand-red': division === points
           })}
           style="transform: rotate(calc({wheelSection} * {index}deg))"
           >{division}</b
