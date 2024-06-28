@@ -35,7 +35,7 @@
     form.requestSubmit();
   };
 
-  $: isAnimating = isSpinning && isRequesting;
+  $: isAnimating = isSpinning || isRequesting;
   $: rotateValue = status === 'available' && !isSpinning ? 0 : $spin;
   $: pointsValue = !isAnimating ? points : 0;
 </script>

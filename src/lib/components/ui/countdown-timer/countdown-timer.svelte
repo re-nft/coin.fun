@@ -4,8 +4,9 @@
   export let acquiredAt: number;
 
   const date = new Date(acquiredAt);
+
   let now = date.getTime();
-  let end = date.setDate(date.getDate() + 1);
+  let end = now + 86400000;
 
   $: count = Math.round((end - now) / 1000);
   $: h = Math.floor(count / 3600);
@@ -20,8 +21,6 @@
   $: if (count === 0) clearInterval(interval);
 
   onMount(() => {
-    now = Date.now();
-    end = now + count * 1000;
     interval = setInterval(updateTimer, 1000);
   });
 
