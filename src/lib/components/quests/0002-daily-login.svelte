@@ -69,7 +69,7 @@
         {#if status === 'available' || isAnimating}
           <Button disabled={isSpinning} on:click={handleSpin}>Spin</Button>
         {:else if status === 'locked'}
-          Sign in for daily spin revards
+          Sign in for daily spin revards.
         {:else}
           Filled your bag! <br /> Try next time in <br />
           <CountdownTimer {acquiredAt} />
