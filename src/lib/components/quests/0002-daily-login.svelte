@@ -13,6 +13,7 @@
   export let points: number;
   export let spinPointsIdx: number;
   export let spinningDivision: number[] = [];
+  export let acquiredAt;
 
   let audio: HTMLAudioElement;
 
@@ -70,7 +71,8 @@
         {:else if status === 'locked'}
           Sign in for daily spin revards
         {:else if !isAnimating}
-          Filled your bag! <br /> Try next time in <br /> <CountdownTimer />
+          Filled your bag! <br /> Try next time in <br />
+          <CountdownTimer {acquiredAt} />
         {/if}
       </div>
 

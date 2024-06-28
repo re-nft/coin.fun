@@ -1,8 +1,11 @@
 <script lang="ts">
   import { onDestroy, onMount } from 'svelte';
 
-  let now = new Date().getTime();
-  let end = now - (now % 86400000) + 86400000;
+  export let acquiredAt;
+
+  const date = new Date(acquiredAt);
+  let now = date.getTime();
+  let end = date.setDate(date.getDate() + 1);
 
   $: count = Math.round((end - now) / 1000);
   $: h = Math.floor(count / 3600);
