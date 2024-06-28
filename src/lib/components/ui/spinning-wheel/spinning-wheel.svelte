@@ -34,7 +34,7 @@
     </div>
   </div>
   <button
-    on:click
+    on:click|preventDefault
     class="btn group absolute inset-0 m-auto flex cursor-pointer select-none items-center justify-center rounded-full text-sm"
   >
     <img
