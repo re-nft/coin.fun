@@ -78,8 +78,9 @@ export const useSpinner = (division: number, spinPointsIx: number) => {
   velocity.subscribe(() => animate());
 
   return {
-    start: async () => {
+    start: async (cb: () => void) => {
       await velocity.set(1);
+      cb?.();
     },
     stop: async () => {
       await velocity.set(0);

@@ -24,9 +24,10 @@
 
   let form: HTMLFormElement;
   let isSpinning = false;
+  let isRequesting = false;
 
   const handleSpin = async () => {
-    if (!!points || status === 'done') {
+    if (!!points || status !== 'available') {
       return;
     }
 
@@ -35,6 +36,7 @@
 
   $: rotateValue = status === 'available' && !isSpinning ? 0 : $spin;
   $: inxValue = status === 'available' ? null : spinPointsIdx;
+  $: isAnimating = isSpinning && isRequesting;
 </script>
 
 <Quest {...$$restProps} {status} {points}>
@@ -46,11 +48,12 @@
       use:enhance={() => {
         isSpinning = true;
         audio.play();
-        startRotation();
+        startRotation(() => (isSpinning = false));
 
         return async ({ update }) => {
+          isRequesting = true;
           await update();
-          isSpinning = false;
+          isRequesting = true;
         };
       }}
     >
@@ -66,7 +69,7 @@
           <Button disabled={isSpinning} on:click={handleSpin}>Spin</Button>
         {:else if status === 'locked'}
           Sign in for daily spin revards
-        {:else if !isSpinning}
+        {:else if !isAnimating}
           Filled your bag! <br /> Try next time in <br /> <CountdownTimer />
         {/if}
       </div>
