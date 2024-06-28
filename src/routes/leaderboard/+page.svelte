@@ -1,5 +1,6 @@
 <script lang="ts">
   import PageMeta from '$lib/components/PageMeta.svelte';
+  import LeaderboardProgression from '$lib/components/LeaderboardProgression.svelte';
   import * as Table from '$lib/components/ui/table';
 
   export let data;
@@ -24,6 +25,9 @@
       <Table.Head>#</Table.Head>
       <Table.Head>Username</Table.Head>
       <Table.Head class="text-right">Points</Table.Head>
+      <Table.Head class="w-12 text-right">Day</Table.Head>
+      <Table.Head class="w-12 text-right">Week</Table.Head>
+      <Table.Head class="w-12 text-right">Month</Table.Head>
     </Table.Row>
   </Table.Header>
   <Table.Body>
@@ -49,6 +53,15 @@
           >
         </Table.Cell>
         <Table.Cell class="text-right">{user.total}</Table.Cell>
+        <Table.Cell class="text-right"
+          ><LeaderboardProgression progression={1} /></Table.Cell
+        >
+        <Table.Cell class="text-right"
+          ><LeaderboardProgression progression={0} /></Table.Cell
+        >
+        <Table.Cell class="text-right"
+          ><LeaderboardProgression progression={-3} /></Table.Cell
+        >
       </Table.Row>
     {/each}
   </Table.Body>
