@@ -5,6 +5,6 @@
 
   input[type='text'],
   textarea {
-    @apply rounded bg-brand-black/50;
+    @apply block rounded border-x-0 border-t-0 border-dotted bg-muted-foreground/10 text-brand-beige;
   }
 }
