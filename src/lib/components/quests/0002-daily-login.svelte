@@ -66,11 +66,11 @@
         on:click={handleSpin}
       />
       <div class="p-8">
-        {#if status === 'available'}
+        {#if status === 'available' || isAnimating}
           <Button disabled={isSpinning} on:click={handleSpin}>Spin</Button>
         {:else if status === 'locked'}
           Sign in for daily spin revards
-        {:else if !isAnimating}
+        {:else}
           Filled your bag! <br /> Try next time in <br />
           <CountdownTimer {acquiredAt} />
         {/if}
