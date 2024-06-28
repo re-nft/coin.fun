@@ -5,8 +5,8 @@
 
   const date = new Date(acquiredAt);
 
-  let now = date.getTime();
-  let end = now + 86400000;
+  let now = Date.now();
+  let end = date.getTime() + 86400000;
 
   $: count = Math.round((end - now) / 1000);
   $: h = Math.floor(count / 3600);
