@@ -25,12 +25,7 @@ export const characterS1 = pgEnum('character_s1', ['normie', 'heftie']);
 
 export const coins = pgTable('coins', {
   id: uuid('id').primaryKey().notNull(),
-
-  address: text('address'),
-  name: text('name'),
-  symbol: text('symbol'),
-  description: text('description'),
-  media: text('media'),
+  createdAt: timestamp('created_at').notNull().defaultNow(),
 
   // Not sure if we want to 1) reference user ids and 2) whether
   // we want to nuke a user's created coins when we nuke the user.
@@ -38,7 +33,14 @@ export const coins = pgTable('coins', {
     .references(() => users.id, { onDelete: 'cascade' })
     .notNull(),
 
-  meta: json('meta')
+  address: text('address'),
+  description: text('description'),
+  media: text('media'),
+  name: text('name'),
+  symbol: text('symbol'),
+  telegram: text('telegram'),
+  twitter: text('twitter'),
+  website: text('website')
 });
 
 export const profiles = pgTable(

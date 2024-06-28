@@ -1,5 +1,5 @@
 {
-  "id": "9e0bd9ae-59c0-4c2b-abcd-77035bb55ee1",
+  "id": "59b9f3a2-2ec6-4cd0-a619-a574b2382951",
   "prevId": "fb4a3ca9-fb58-4aac-8e4c-aa2da5881a96",
   "version": "7",
   "dialect": "postgresql",
@@ -14,20 +14,21 @@
           "primaryKey": true,
           "notNull": true
         },
+        "created_at": {
+          "name": "created_at",
+          "type": "timestamp",
+          "primaryKey": false,
+          "notNull": true,
+          "default": "now()"
+        },
+        "created_by": {
+          "name": "created_by",
+          "type": "uuid",
+          "primaryKey": false,
+          "notNull": true
+        },
         "address": {
           "name": "address",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "name": {
-          "name": "name",
-          "type": "text",
-          "primaryKey": false,
-          "notNull": false
-        },
-        "symbol": {
-          "name": "symbol",
           "type": "text",
           "primaryKey": false,
           "notNull": false
@@ -44,15 +45,33 @@
           "primaryKey": false,
           "notNull": false
         },
-        "created_by": {
-          "name": "created_by",
-          "type": "uuid",
+        "name": {
+          "name": "name",
+          "type": "text",
           "primaryKey": false,
-          "notNull": true
+          "notNull": false
         },
-        "meta": {
-          "name": "meta",
-          "type": "json",
+        "symbol": {
+          "name": "symbol",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "telegram": {
+          "name": "telegram",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "twitter": {
+          "name": "twitter",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "website": {
+          "name": "website",
+          "type": "text",
           "primaryKey": false,
           "notNull": false
         }

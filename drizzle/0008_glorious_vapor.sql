@@ -1,12 +1,15 @@
 CREATE TABLE IF NOT EXISTS "coins" (
 	"id" uuid PRIMARY KEY NOT NULL,
+	"created_at" timestamp DEFAULT now() NOT NULL,
+	"created_by" uuid NOT NULL,
 	"address" text,
-	"name" text,
-	"symbol" text,
 	"description" text,
 	"media" text,
-	"created_by" uuid NOT NULL,
-	"meta" json
+	"name" text,
+	"symbol" text,
+	"telegram" text,
+	"twitter" text,
+	"website" text
 );
 --> statement-breakpoint
 DO $$ BEGIN
