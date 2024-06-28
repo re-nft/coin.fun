@@ -50,7 +50,11 @@
     >
     <slot name="header">
       points:
-      <span class="text-[--color]">{suffix(points)}</span>
+      {#if points}
+        <span class="text-[--color]">{suffix(points)}</span>
+      {:else}
+        <span class="text-[--color]">{suffix(points)}</span>
+      {/if}
     </slot>
   </div>
 

@@ -53,8 +53,8 @@ export const actions = {
       const method: (...args: unknown[]) => unknown = proto[methodName];
 
       if (
-        !params.every((param) => typeof param === 'string') ||
-        params.length !== method.length
+        params.length !== method.length &&
+        !params.every((param) => typeof param === 'string')
       ) {
         return throwError({
           name: 'NoValidParams',
