@@ -9,7 +9,7 @@
 
 <div class="relative m-auto size-64 p-8">
   <div
-    class="absolute inset-0 rounded-full border-2 border-[--color] transition-transform will-change-transform"
+    class="absolute inset-0 overflow-hidden rounded-full border-2 border-[--color] transition-transform will-change-transform"
     style="transform: rotate({spin}deg)"
   >
     {#each spinningDivision as _, index}
