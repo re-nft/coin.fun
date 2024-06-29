@@ -9,16 +9,16 @@ import {
   PUBLIC_SUPABASE_ANON_KEY,
   PUBLIC_SUPABASE_URL
 } from '$env/static/public';
-import type { SolanaStore } from '$lib/solana';
+// import type { SolanaStore } from '$lib/solana';
 import { parseLocale } from '$lib/utils/locale';
-import { connection } from '$vendor/solana';
+// import { connection } from '$vendor/solana';
 
 export async function load({ data, depends, fetch }) {
   depends('supabase:auth');
 
-  const solana: SolanaStore = {
-    block: await connection.getBlockHeight()
-  };
+  // const solana: SolanaStore = {
+  //   block: await connection.getBlockHeight()
+  // };
 
   const supabase =
     isBrowser() ?
@@ -44,7 +44,7 @@ export async function load({ data, depends, fetch }) {
   return {
     ...data,
     locale: locale || data.locale,
-    solana,
+    // solana,
     supabase
   };
 }

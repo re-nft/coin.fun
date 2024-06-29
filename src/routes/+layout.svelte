@@ -14,7 +14,7 @@
   export let data;
   $: ({ session, supabase } = data);
 
-  setContext('solana', createSolanaStore(data.solana));
+  // setContext('solana', createSolanaStore(data.solana));
   setContext('user', createUserStore(data.user));
 
   inject();
