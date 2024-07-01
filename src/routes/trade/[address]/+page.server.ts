@@ -14,5 +14,5 @@ export async function load({ params }) {
     return error(404, `Coin ${params.address} not found.`);
   }
 
-  return { address: params.address, coin };
+  return { coin };
 }
