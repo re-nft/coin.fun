@@ -32,10 +32,7 @@ const config: Config = {
   theme: {
     container: {
       center: true,
-      padding: '2rem',
-      screens: {
-        '2xl': '1400px'
-      }
+      padding: '2rem'
     },
     extend: {
       animation: {
@@ -116,6 +113,22 @@ const config: Config = {
         mono: ['var(--font-mono)', ...fontFamily.mono],
         sans: ['var(--font-sans)', ...fontFamily.sans],
         serif: ['var(--font-serif)', ...fontFamily.serif]
+      },
+      gridTemplateColumns: ({ theme }) => {
+        const steps: Record<string, string> = {
+          ...(theme('padding') as Record<string, string>),
+          ...(theme('maxWidth') as Record<string, string>)
+        };
+        return Object.entries(steps).reduce(
+          (declarations, [key, value]) => ({
+            ...declarations,
+            [`fill-${key}`]: `repeat(auto-fill, minmax(min(${value}, 100%), 1fr))`
+          }),
+          {}
+        );
+      },
+      screens: {
+        '3xl': '1800px'
       }
     }
   }
