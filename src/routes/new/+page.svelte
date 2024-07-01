@@ -71,7 +71,7 @@
     <div class="flex flex-col items-center gap-8" transition:slide>
       <p>{form.message}</p>
       <p>
-        <Button href={`/trade/${form.result.id}`}>View coin</Button>
+        <Button href={`/trade/${form.result.address}`}>View coin</Button>
         <Button href="/new">Create another</Button>
       </p>
     </div>
