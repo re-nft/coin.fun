@@ -4,6 +4,7 @@
   import { slide } from 'svelte/transition';
 
   import { enhance } from '$app/forms';
+  import PageMeta from '$lib/components/PageMeta.svelte';
   import { Button } from '$lib/components/ui/button';
   import { cn } from '$lib/utils/ui';
 
@@ -45,6 +46,8 @@
 
   let isSubmitting = false;
 </script>
+
+<PageMeta title="Create new money sink" />
 
 <h1
   class="text-glow-green mx-auto my-20 max-w-screen-md text-center font-mono text-3xl font-extrabold uppercase text-primary"
