@@ -35,11 +35,11 @@ export const coins = pgTable(
       .references(() => users.id, { onDelete: 'cascade' })
       .notNull(),
 
-    address: text('address'),
-    description: text('description'),
-    media: text('media'),
-    name: text('name'),
-    symbol: text('symbol'),
+    address: text('address').notNull(),
+    description: text('description').notNull(),
+    media: text('media').notNull(),
+    name: text('name').notNull(),
+    symbol: text('symbol').notNull(),
     telegram: text('telegram'),
     twitter: text('twitter'),
     website: text('website')
