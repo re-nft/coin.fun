@@ -135,7 +135,7 @@ export const tweetIndexerLogs = pgTable(
   }
 );
 
-export const trimmedUser = pgMaterializedView('leaderboard', {
+export const leaderboard = pgMaterializedView('leaderboard', {
   userId: serial('user_id').primaryKey(),
   points: bigint('points', { mode: 'number' }),
   date: timestamp('date').notNull()
