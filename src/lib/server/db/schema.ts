@@ -13,7 +13,8 @@ import {
   text,
   timestamp,
   uniqueIndex,
-  uuid
+  uuid,
+  pgMaterializedView
 } from 'drizzle-orm/pg-core';
 
 const authSchema = pgSchema('auth');
@@ -133,3 +134,9 @@ export const tweetIndexerLogs = pgTable(
     };
   }
 );
+
+export const trimmedUser = pgMaterializedView('leaderboard', {
+  userId: serial('user_id').primaryKey(),
+  points: bigint('points', { mode: 'number' }),
+  date: timestamp('date').notNull()
+}).existing();

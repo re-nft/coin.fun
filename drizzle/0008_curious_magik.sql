@@ -2,14 +2,14 @@ CREATE MATERIALIZED VIEW leaderboard AS
 SELECT 
     user_id,
     SUM(points) AS total_points,
-    createdAt
+    date
 FROM 
     points
 GROUP BY 
-    user_id, createdAt;
+    user_id, date;
 
 CREATE OR REPLACE FUNCTION refresh_leaderboard()
-RETURNS VOID AS $$
+    RETURNS VOID AS $$
 BEGIN
     REFRESH MATERIALIZED VIEW leaderboard;
 END;
