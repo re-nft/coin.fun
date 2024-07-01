@@ -36,40 +36,15 @@ export const actions = {
       });
     }
 
+    // ! We're mutating `data` to be used `form.data` and input validation.
     data.media = file.name;
-    let media = '';
 
-    try {
-      const fileExt = file.name.split('.').pop();
-      const fileName = `${Date.now()}.${randomUUID()}.${fileExt}`;
-      const { error } = await supabase.storage
-        .from('coin-images')
-        .upload(fileName, file);
-
-      if (error) {
-        throw new Error('Error uploading image.', { cause: error });
-      }
-
-      const {
-        data: { publicUrl }
-      } = supabase.storage.from('coin-images').getPublicUrl(fileName);
-
-      media = publicUrl;
-    } catch (error) {
-      console.error(JSON.stringify(error, null, 2));
-      return fail(500, {
-        ok: false,
-        error: 'Could not upload image.',
-        data
-      });
-    }
-
+    // ! Validate input before uploading images.
     const { issues, output, success } = safeParse(CoinInsertSchema, {
       ...data,
       id: randomUUID(),
       address: randomUUID(),
-      createdBy: user.id,
-      media
+      createdBy: user.id
     });
 
     if (!success) {
@@ -96,6 +71,33 @@ export const actions = {
           },
           undefined
         ),
+        data
+      });
+    }
+
+    // Upload image after validation.
+    try {
+      const fileExt = file.name.split('.').pop();
+      const fileName = `${Date.now()}.${randomUUID()}.${fileExt}`;
+      const { error } = await supabase.storage
+        .from('coin-images')
+        .upload(fileName, file);
+
+      if (error) {
+        throw new Error('Error uploading image.', { cause: error });
+      }
+
+      const {
+        data: { publicUrl }
+      } = supabase.storage.from('coin-images').getPublicUrl(fileName);
+
+      // ! We're mutating our validated `output` to be passed to our DB.
+      output.media = publicUrl;
+    } catch (error) {
+      console.error(JSON.stringify(error, null, 2));
+      return fail(500, {
+        ok: false,
+        error: 'Could not upload image.',
         data
       });
     }
