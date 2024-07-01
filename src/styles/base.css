@@ -2,4 +2,9 @@
   body {
     @apply bg-background font-mono text-foreground;
   }
+
+  input[type='text'],
+  textarea {
+    @apply block rounded border-x-0 border-t-0 border-dotted bg-muted-foreground/10 text-brand-beige;
+  }
 }

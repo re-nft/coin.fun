@@ -57,6 +57,13 @@
       "when": 1718992373802,
       "tag": "0007_milky_norman_osborn",
       "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1719566643226,
+      "tag": "0008_glorious_vapor",
+      "breakpoints": true
     }
   ]
 }
